@@ -10,7 +10,7 @@ import SwiftUI
 
 struct DemonstrationView: View {
     var body: some View {
-        Text("Demonstration video clip appear here.")
+        Text("Demonstration video clip appears here.")
     }
 }
 

@@ -13,15 +13,17 @@ import Combine
 
 struct BodyTrackedView: View {
     var body: some View {
-        return BodyTrackedViewContainer().edgesIgnoringSafeArea(.all);
+        ZStack(alignment: .bottomTrailing) {
+            BodyTrackedViewContainer().edgesIgnoringSafeArea(.all);
+            Text("Addition information appears here")
+                .padding(.trailing)
+        }
     }
 }
 
 let arSessionDelegate = SessionDelegate();
 
 struct BodyTrackedViewContainer: UIViewRepresentable {
-    
-    let characterAnchor = AnchorEntity();
     
     func makeUIView(context: Context) -> ARView {
         let arView = ARView(frame: .zero);
@@ -35,8 +37,6 @@ struct BodyTrackedViewContainer: UIViewRepresentable {
         
         let configuration = ARBodyTrackingConfiguration();
         arView.session.run(configuration);
-        
-        arView.scene.addAnchor(characterAnchor);
         
         return arView;
     }
