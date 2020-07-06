@@ -15,6 +15,8 @@
 		B02EA6C624B33A0D00CC3023 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B02EA6C424B33A0D00CC3023 /* LaunchScreen.storyboard */; };
 		B02EA6D124B33A0D00CC3023 /* ArgosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02EA6D024B33A0D00CC3023 /* ArgosTests.swift */; };
 		B02EA6DC24B33A0D00CC3023 /* ArgosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02EA6DB24B33A0D00CC3023 /* ArgosUITests.swift */; };
+		B02EA6EA24B33AFB00CC3023 /* BodyTrackedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02EA6E924B33AFB00CC3023 /* BodyTrackedView.swift */; };
+		B02EA6ED24B33CB200CC3023 /* character in Resources */ = {isa = PBXBuildFile; fileRef = B02EA6EC24B33CB200CC3023 /* character */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		B02EA6D724B33A0D00CC3023 /* ArgosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ArgosUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B02EA6DB24B33A0D00CC3023 /* ArgosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArgosUITests.swift; sourceTree = "<group>"; };
 		B02EA6DD24B33A0D00CC3023 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B02EA6E924B33AFB00CC3023 /* BodyTrackedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyTrackedView.swift; sourceTree = "<group>"; };
+		B02EA6EC24B33CB200CC3023 /* character */ = {isa = PBXFileReference; lastKnownFileType = folder; path = character; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,11 +104,13 @@
 			isa = PBXGroup;
 			children = (
 				B02EA6B924B33A0B00CC3023 /* AppDelegate.swift */,
+				B02EA6E924B33AFB00CC3023 /* BodyTrackedView.swift */,
 				B02EA6BB24B33A0B00CC3023 /* ContentView.swift */,
 				B02EA6BD24B33A0C00CC3023 /* Experience.rcproject */,
 				B02EA6BF24B33A0D00CC3023 /* Assets.xcassets */,
 				B02EA6C424B33A0D00CC3023 /* LaunchScreen.storyboard */,
 				B02EA6C724B33A0D00CC3023 /* Info.plist */,
+				B02EA6EC24B33CB200CC3023 /* character */,
 				B02EA6C124B33A0D00CC3023 /* Preview Content */,
 			);
 			path = Argos;
@@ -242,6 +248,7 @@
 			files = (
 				B02EA6C624B33A0D00CC3023 /* LaunchScreen.storyboard in Resources */,
 				B02EA6C324B33A0D00CC3023 /* Preview Assets.xcassets in Resources */,
+				B02EA6ED24B33CB200CC3023 /* character in Resources */,
 				B02EA6C024B33A0D00CC3023 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -270,6 +277,7 @@
 				B02EA6BC24B33A0B00CC3023 /* ContentView.swift in Sources */,
 				B02EA6BA24B33A0B00CC3023 /* AppDelegate.swift in Sources */,
 				B02EA6BE24B33A0C00CC3023 /* Experience.rcproject in Sources */,
+				B02EA6EA24B33AFB00CC3023 /* BodyTrackedView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,0 +1,329 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "Experience"
+provides-nominal:
+- "5Argos10ExperienceO"
+- "5Argos10ExperienceO20LoadRealityFileErrorO"
+- "5Argos10ExperienceO3BoxC"
+provides-member:
+- ["5Argos10ExperienceO", ""]
+- ["5Argos10ExperienceO20LoadRealityFileErrorO", ""]
+- ["5Argos10ExperienceO3BoxC", ""]
+provides-dynamic-lookup:
+- "steelBox"
+depends-top-level:
+- !private "==="
+- "AssignmentPrecedence"
+- !private "BooleanLiteralType"
+- "Combine"
+- "Error"
+- "Experience"
+- !private "Foundation"
+- "RealityKit"
+- "String"
+- !private "StringLiteralType"
+- "Swift"
+- "Void"
+depends-member:
+- !private ["10RealityKit12AnchorEntityC", "anchoring"]
+- !private ["7Combine14AnyCancellableC", "store"]
+- ["Sa", "init"]
+- !private ["Sa", "removeAll"]
+- ["SK", "init"]
+- !private ["SK", "removeAll"]
+- ["5Argos10ExperienceO3BoxC", "RealityKit"]
+- !private ["5Argos10ExperienceO3BoxC", "addChild"]
+- !private ["5Argos10ExperienceO3BoxC", "anchoring"]
+- ["5Argos10ExperienceO3BoxC", "deinit"]
+- !private ["5Argos10ExperienceO3BoxC", "findEntity"]
+- ["5Argos10ExperienceO3BoxC", "init"]
+- !private ["5Argos10ExperienceO3BoxC", "loadAnchor"]
+- !private ["5Argos10ExperienceO3BoxC", "loadAnchorAsync"]
+- ["5Argos10ExperienceO3BoxC", "steelBox"]
+- !private ["So8NSBundleC", "init"]
+- !private ["So8NSBundleC", "url"]
+- ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "removeAll"]
+- !private ["s7CVarArgP", "url"]
+- !private ["7Combine11CancellableP", "store"]
+- ["Sl", "init"]
+- !private ["Sl", "removeAll"]
+- !private ["7Combine11SubscribersO10CompletionO", "failure"]
+- ["10Foundation15ContiguousBytesP", "init"]
+- !private ["10Foundation15ContiguousBytesP", "removeAll"]
+- ["s28CustomDebugStringConvertibleP", ""]
+- !private ["s28CustomDebugStringConvertibleP", "addChild"]
+- !private ["s28CustomDebugStringConvertibleP", "anchoring"]
+- !private ["s28CustomDebugStringConvertibleP", "appendingPathComponent"]
+- !private ["s28CustomDebugStringConvertibleP", "findEntity"]
+- ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "loadAnchor"]
+- !private ["s28CustomDebugStringConvertibleP", "loadAnchorAsync"]
+- !private ["s28CustomDebugStringConvertibleP", "removeAll"]
+- !private ["s28CustomDebugStringConvertibleP", "url"]
+- ["s17CustomReflectableP", "init"]
+- !private ["s17CustomReflectableP", "removeAll"]
+- !private ["s23CustomStringConvertibleP", "appendingPathComponent"]
+- ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "removeAll"]
+- !private ["s23CustomStringConvertibleP", "url"]
+- ["10Foundation12DataProtocolP", "init"]
+- !private ["10Foundation12DataProtocolP", "removeAll"]
+- !private ["Se", "appendingPathComponent"]
+- !private ["Se", "failure"]
+- ["Se", "init"]
+- !private ["Se", "removeAll"]
+- !private ["SE", "appendingPathComponent"]
+- !private ["SE", "failure"]
+- ["SE", "init"]
+- !private ["SE", "removeAll"]
+- ["10RealityKit6EntityC", "RealityKit"]
+- ["10RealityKit6EntityC", ""]
+- !private ["10RealityKit6EntityC", "addChild"]
+- !private ["10RealityKit6EntityC", "anchoring"]
+- !private ["10RealityKit6EntityC", "findEntity"]
+- ["10RealityKit6EntityC", "init"]
+- !private ["10RealityKit6EntityC", "loadAnchor"]
+- !private ["10RealityKit6EntityC", "loadAnchorAsync"]
+- ["10RealityKit6EntityC", "steelBox"]
+- ["SQ", ""]
+- !private ["SQ", "addChild"]
+- !private ["SQ", "anchoring"]
+- !private ["SQ", "appendingPathComponent"]
+- !private ["SQ", "failure"]
+- !private ["SQ", "findEntity"]
+- ["SQ", "init"]
+- !private ["SQ", "loadAnchor"]
+- !private ["SQ", "loadAnchorAsync"]
+- !private ["SQ", "removeAll"]
+- !private ["SQ", "store"]
+- !private ["SQ", "success"]
+- !private ["SQ", "url"]
+- ["s5ErrorP", ""]
+- ["s5ErrorP", "_code"]
+- ["s5ErrorP", "_domain"]
+- ["s5ErrorP", "_getEmbeddedNSError"]
+- ["s5ErrorP", "_userInfo"]
+- !private ["s5ErrorP", "fileNotFound"]
+- ["10RealityKit11EventSourceP", ""]
+- !private ["10RealityKit11EventSourceP", "addChild"]
+- !private ["10RealityKit11EventSourceP", "anchoring"]
+- !private ["10RealityKit11EventSourceP", "findEntity"]
+- !private ["10RealityKit11EventSourceP", "init"]
+- !private ["10RealityKit11EventSourceP", "loadAnchor"]
+- !private ["10RealityKit11EventSourceP", "loadAnchorAsync"]
+- ["5Argos10ExperienceO", "Box"]
+- ["5Argos10ExperienceO", "Combine"]
+- ["5Argos10ExperienceO", "Error"]
+- ["5Argos10ExperienceO", "Experience"]
+- !private ["5Argos10ExperienceO", "Foundation"]
+- ["5Argos10ExperienceO", "LoadRealityFileError"]
+- ["5Argos10ExperienceO", "RealityKit"]
+- ["5Argos10ExperienceO", "String"]
+- ["5Argos10ExperienceO", "Swift"]
+- ["5Argos10ExperienceO", "Void"]
+- !private ["5Argos10ExperienceO", "createBox"]
+- ["5Argos10ExperienceO", "loadBox"]
+- ["5Argos10ExperienceO", "loadBoxAsync"]
+- !private ["5Argos10ExperienceO", "streams"]
+- ["s25ExpressibleByArrayLiteralP", "init"]
+- !private ["s25ExpressibleByArrayLiteralP", "removeAll"]
+- ["10RealityKit12HasAnchoringP", ""]
+- !private ["10RealityKit12HasAnchoringP", "addChild"]
+- !private ["10RealityKit12HasAnchoringP", "anchoring"]
+- !private ["10RealityKit12HasAnchoringP", "findEntity"]
+- !private ["10RealityKit12HasAnchoringP", "init"]
+- !private ["10RealityKit12HasAnchoringP", "loadAnchor"]
+- !private ["10RealityKit12HasAnchoringP", "loadAnchorAsync"]
+- ["10RealityKit12HasHierarchyP", ""]
+- !private ["10RealityKit12HasHierarchyP", "addChild"]
+- !private ["10RealityKit12HasHierarchyP", "anchoring"]
+- !private ["10RealityKit12HasHierarchyP", "findEntity"]
+- !private ["10RealityKit12HasHierarchyP", "init"]
+- !private ["10RealityKit12HasHierarchyP", "loadAnchor"]
+- !private ["10RealityKit12HasHierarchyP", "loadAnchorAsync"]
+- ["10RealityKit18HasSynchronizationP", ""]
+- !private ["10RealityKit18HasSynchronizationP", "addChild"]
+- !private ["10RealityKit18HasSynchronizationP", "anchoring"]
+- !private ["10RealityKit18HasSynchronizationP", "findEntity"]
+- !private ["10RealityKit18HasSynchronizationP", "init"]
+- !private ["10RealityKit18HasSynchronizationP", "loadAnchor"]
+- !private ["10RealityKit18HasSynchronizationP", "loadAnchorAsync"]
+- ["10RealityKit12HasTransformP", ""]
+- !private ["10RealityKit12HasTransformP", "addChild"]
+- !private ["10RealityKit12HasTransformP", "anchoring"]
+- !private ["10RealityKit12HasTransformP", "findEntity"]
+- !private ["10RealityKit12HasTransformP", "init"]
+- !private ["10RealityKit12HasTransformP", "loadAnchor"]
+- !private ["10RealityKit12HasTransformP", "loadAnchorAsync"]
+- ["SH", ""]
+- !private ["SH", "addChild"]
+- !private ["SH", "anchoring"]
+- !private ["SH", "appendingPathComponent"]
+- !private ["SH", "failure"]
+- !private ["SH", "findEntity"]
+- ["SH", "init"]
+- !private ["SH", "loadAnchor"]
+- !private ["SH", "loadAnchorAsync"]
+- !private ["SH", "removeAll"]
+- !private ["SH", "store"]
+- !private ["SH", "success"]
+- !private ["SH", "url"]
+- ["s12IdentifiableP", ""]
+- !private ["s12IdentifiableP", "addChild"]
+- !private ["s12IdentifiableP", "anchoring"]
+- !private ["s12IdentifiableP", "findEntity"]
+- !private ["s12IdentifiableP", "init"]
+- !private ["s12IdentifiableP", "loadAnchor"]
+- !private ["s12IdentifiableP", "loadAnchorAsync"]
+- ["5Argos10ExperienceO20LoadRealityFileErrorO", "String"]
+- ["5Argos10ExperienceO20LoadRealityFileErrorO", "_code"]
+- ["5Argos10ExperienceO20LoadRealityFileErrorO", "_domain"]
+- ["5Argos10ExperienceO20LoadRealityFileErrorO", "_getEmbeddedNSError"]
+- ["5Argos10ExperienceO20LoadRealityFileErrorO", "_userInfo"]
+- ["5Argos10ExperienceO20LoadRealityFileErrorO", "deinit"]
+- ["5Argos10ExperienceO20LoadRealityFileErrorO", "fileNotFound"]
+- !private ["10RealityKit11LoadRequestC", "sink"]
+- ["SM", "init"]
+- !private ["SM", "removeAll"]
+- ["10Foundation19MutableDataProtocolP", "init"]
+- !private ["10Foundation19MutableDataProtocolP", "removeAll"]
+- !private ["So8NSObjectC", "init"]
+- !private ["So8NSObjectC", "url"]
+- !private ["So8NSObjectP", "init"]
+- !private ["So8NSObjectP", "url"]
+- !private ["7Combine9PublisherP", "sink"]
+- ["Sk", "init"]
+- !private ["Sk", "removeAll"]
+- ["Sm", "init"]
+- !private ["Sm", "removeAll"]
+- !private ["10Foundation20ReferenceConvertibleP", "appendingPathComponent"]
+- !private ["s6ResultO", "failure"]
+- !private ["s6ResultO", "success"]
+- ["ST", "init"]
+- !private ["ST", "removeAll"]
+- !private ["10Foundation3URLV", "appendingPathComponent"]
+- ["s14_ArrayProtocolP", "init"]
+- !private ["s14_ArrayProtocolP", "removeAll"]
+- !private ["s30_CustomPlaygroundQuickLookableP", "appendingPathComponent"]
+- ["s24_DestructorSafeContainerP", "init"]
+- !private ["s24_DestructorSafeContainerP", "removeAll"]
+- !private ["s34_ExpressibleByFileReferenceLiteralP", "appendingPathComponent"]
+- ["s19_HasContiguousBytesP", "init"]
+- !private ["s19_HasContiguousBytesP", "removeAll"]
+- ["s35_HasCustomAnyHashableRepresentationP", "init"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "removeAll"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "url"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "init"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "url"]
+- !private ["s21_ObjectiveCBridgeableP", "appendingPathComponent"]
+- ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "removeAll"]
+depends-nominal:
+- !private "10RealityKit12AnchorEntityC"
+- !private "7Combine14AnyCancellableC"
+- "Sa"
+- "SK"
+- "5Argos10ExperienceO3BoxC"
+- !private "So8NSBundleC"
+- "s7CVarArgP"
+- !private "7Combine11CancellableP"
+- "Sl"
+- !private "7Combine11SubscribersO10CompletionO"
+- "10Foundation15ContiguousBytesP"
+- "s28CustomDebugStringConvertibleP"
+- "s17CustomReflectableP"
+- "s23CustomStringConvertibleP"
+- "10Foundation12DataProtocolP"
+- "Se"
+- "SE"
+- "10RealityKit6EntityC"
+- "SQ"
+- "s5ErrorP"
+- "10RealityKit11EventSourceP"
+- "5Argos10ExperienceO"
+- "s25ExpressibleByArrayLiteralP"
+- "10RealityKit12HasAnchoringP"
+- "10RealityKit12HasHierarchyP"
+- "10RealityKit18HasSynchronizationP"
+- "10RealityKit12HasTransformP"
+- "SH"
+- "s12IdentifiableP"
+- "5Argos10ExperienceO20LoadRealityFileErrorO"
+- !private "10RealityKit11LoadRequestC"
+- "SM"
+- "10Foundation19MutableDataProtocolP"
+- !private "So8NSObjectC"
+- !private "So8NSObjectP"
+- !private "7Combine9PublisherP"
+- "Sk"
+- "Sm"
+- !private "10Foundation20ReferenceConvertibleP"
+- !private "s6ResultO"
+- "ST"
+- !private "10Foundation3URLV"
+- "s14_ArrayProtocolP"
+- !private "s30_CustomPlaygroundQuickLookableP"
+- "s24_DestructorSafeContainerP"
+- !private "s34_ExpressibleByFileReferenceLiteralP"
+- "s19_HasContiguousBytesP"
+- "s35_HasCustomAnyHashableRepresentationP"
+- !private "10Foundation27_KeyValueCodingAndObservingP"
+- !private "10Foundation37_KeyValueCodingAndObservingPublishingP"
+- "s21_ObjectiveCBridgeableP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/ObjectiveC.swiftmodule/arm64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/CoreMIDI.swiftmodule/arm64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/ModelIO.swiftmodule/arm64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/CoreMedia.swiftmodule/arm64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/CoreData.swiftmodule/arm64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/simd.swiftmodule/arm64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/CoreImage.swiftmodule/arm64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/QuartzCore.swiftmodule/arm64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/Dispatch.swiftmodule/arm64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/Metal.swiftmodule/arm64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/Darwin.swiftmodule/arm64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/Foundation.swiftmodule/arm64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/AVFoundation.swiftmodule/arm64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/CoreFoundation.swiftmodule/arm64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/CoreAudio.swiftmodule/arm64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/CoreGraphics.swiftmodule/arm64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/os.swiftmodule/arm64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/Swift.swiftmodule/arm64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/UIKit.swiftmodule/arm64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/GLKit.swiftmodule/arm64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/ARKit.swiftmodule/arm64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/SceneKit.swiftmodule/arm64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/SpriteKit.swiftmodule/arm64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/SwiftOnoneSupport.swiftmodule/arm64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/Combine.swiftmodule/arm64-apple-ios.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/RealityKit.swiftmodule/arm64-apple-ios.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.5.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.5.sdk/System/Library/Frameworks/ModelIO.framework/Headers/ModelIO.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.5.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.5.sdk/System/Library/Frameworks/CoreMedia.framework/Headers/CoreMedia.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.5.sdk/System/Library/Frameworks/CoreData.framework/Headers/CoreData.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.5.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.5.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/apinotes/Dispatch.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.5.sdk/System/Library/Frameworks/QuickLook.framework/Headers/QuickLook.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.5.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.5.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.5.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.5.sdk/System/Library/Frameworks/AVFoundation.framework/Headers/AVFoundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.5.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.5.sdk/System/Library/Frameworks/CoreAudioTypes.framework/Headers/CoreAudioTypes.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.5.sdk/System/Library/Frameworks/UserNotifications.framework/Headers/UserNotifications.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/apinotes/os.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.5.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.5.sdk/System/Library/Frameworks/GLKit.framework/Headers/GLKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.5.sdk/System/Library/Frameworks/SceneKit.framework/Headers/SceneKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.5.sdk/System/Library/Frameworks/SpriteKit.framework/Headers/SpriteKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.5.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.5.sdk/System/Library/Frameworks/MediaToolbox.framework/Headers/MediaToolbox.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.5.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AudioToolbox.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.5.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.5.sdk/System/Library/Frameworks/MultipeerConnectivity.framework/Headers/MultipeerConnectivity.apinotes"
+interface-hash: "cb54098396b6ac000f54210ebed3dad7"
