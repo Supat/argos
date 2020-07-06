@@ -13,9 +13,14 @@ import Combine
 
 struct BodyTrackedView: View {
     var body: some View {
-        ZStack(alignment: .bottomTrailing) {
-            BodyTrackedViewContainer().edgesIgnoringSafeArea(.all);
-            Text("Addition information appears here")
+        ZStack(alignment: .topTrailing) {
+            ZStack(alignment: .bottomTrailing) {
+                Text("Score: ")
+                BodyTrackedViewContainer().edgesIgnoringSafeArea(.all);
+                Text("Addition information appears here")
+                    .padding(.trailing)
+            }
+            Text("Score: ")
                 .padding(.trailing)
         }
     }

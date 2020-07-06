@@ -19,6 +19,7 @@
 		B02EA6ED24B33CB200CC3023 /* character in Resources */ = {isa = PBXBuildFile; fileRef = B02EA6EC24B33CB200CC3023 /* character */; };
 		B02EA6EF24B3530B00CC3023 /* StageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02EA6EE24B3530B00CC3023 /* StageView.swift */; };
 		B02EA6F124B353CB00CC3023 /* DemonstrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02EA6F024B353CB00CC3023 /* DemonstrationView.swift */; };
+		B02EA6F324B35BD600CC3023 /* StageSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02EA6F224B35BD600CC3023 /* StageSelectionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		B02EA6EC24B33CB200CC3023 /* character */ = {isa = PBXFileReference; lastKnownFileType = folder; path = character; sourceTree = "<group>"; };
 		B02EA6EE24B3530B00CC3023 /* StageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StageView.swift; sourceTree = "<group>"; };
 		B02EA6F024B353CB00CC3023 /* DemonstrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemonstrationView.swift; sourceTree = "<group>"; };
+		B02EA6F224B35BD600CC3023 /* StageSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StageSelectionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,9 +110,8 @@
 			isa = PBXGroup;
 			children = (
 				B02EA6B924B33A0B00CC3023 /* AppDelegate.swift */,
-				B02EA6E924B33AFB00CC3023 /* BodyTrackedView.swift */,
-				B02EA6EE24B3530B00CC3023 /* StageView.swift */,
-				B02EA6F024B353CB00CC3023 /* DemonstrationView.swift */,
+				B02EA6F224B35BD600CC3023 /* StageSelectionView.swift */,
+				B02EA6F424B35D4B00CC3023 /* Stage */,
 				B02EA6BB24B33A0B00CC3023 /* ContentView.swift */,
 				B02EA6BD24B33A0C00CC3023 /* Experience.rcproject */,
 				B02EA6BF24B33A0D00CC3023 /* Assets.xcassets */,
@@ -146,6 +147,16 @@
 				B02EA6DD24B33A0D00CC3023 /* Info.plist */,
 			);
 			path = ArgosUITests;
+			sourceTree = "<group>";
+		};
+		B02EA6F424B35D4B00CC3023 /* Stage */ = {
+			isa = PBXGroup;
+			children = (
+				B02EA6E924B33AFB00CC3023 /* BodyTrackedView.swift */,
+				B02EA6EE24B3530B00CC3023 /* StageView.swift */,
+				B02EA6F024B353CB00CC3023 /* DemonstrationView.swift */,
+			);
+			path = Stage;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -280,6 +291,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B02EA6F324B35BD600CC3023 /* StageSelectionView.swift in Sources */,
 				B02EA6F124B353CB00CC3023 /* DemonstrationView.swift in Sources */,
 				B02EA6EF24B3530B00CC3023 /* StageView.swift in Sources */,
 				B02EA6BC24B33A0B00CC3023 /* ContentView.swift in Sources */,
