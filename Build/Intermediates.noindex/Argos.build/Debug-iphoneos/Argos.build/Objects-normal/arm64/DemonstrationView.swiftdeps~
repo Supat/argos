@@ -12,13 +12,18 @@ provides-dynamic-lookup:
 depends-top-level:
 - "DemonstrationView"
 - "DemonstrationView_Previews"
+- !private "FloatLiteralType"
+- !private "Image"
 - "PreviewProvider"
 - !private "StringLiteralType"
 - !private "Text"
+- !private "VStack"
 - "View"
 depends-member:
 - ["5Argos17DemonstrationViewV", "Body"]
+- !private ["5Argos17DemonstrationViewV", "Image"]
 - !private ["5Argos17DemonstrationViewV", "Text"]
+- !private ["5Argos17DemonstrationViewV", "VStack"]
 - ["5Argos17DemonstrationViewV", "View"]
 - ["5Argos17DemonstrationViewV", "_Default_Body"]
 - ["5Argos17DemonstrationViewV", "_makeView"]
@@ -36,7 +41,12 @@ depends-member:
 - ["5Argos26DemonstrationView_PreviewsV", "init"]
 - ["5Argos26DemonstrationView_PreviewsV", "platform"]
 - ["5Argos26DemonstrationView_PreviewsV", "previews"]
+- !private ["SQ", "frame"]
 - !private ["SQ", "init"]
+- !private ["SQ", "resizable"]
+- !private ["7SwiftUI5ImageV", "frame"]
+- !private ["7SwiftUI5ImageV", "init"]
+- !private ["7SwiftUI5ImageV", "resizable"]
 - !private ["7SwiftUI15PreviewProviderP", "DemonstrationView"]
 - ["7SwiftUI15PreviewProviderP", "Previews"]
 - ["7SwiftUI15PreviewProviderP", ""]
@@ -46,14 +56,20 @@ depends-member:
 - ["7SwiftUI15PreviewProviderP", "platform"]
 - ["7SwiftUI15PreviewProviderP", "previews"]
 - !private ["7SwiftUI4TextV", "init"]
+- !private ["7SwiftUI6VStackV", "init"]
 - ["7SwiftUI4ViewP", "Body"]
+- !private ["7SwiftUI4ViewP", "Image"]
 - !private ["7SwiftUI4ViewP", "Text"]
+- !private ["7SwiftUI4ViewP", "VStack"]
 - ["7SwiftUI4ViewP", ""]
 - ["7SwiftUI4ViewP", "_Default_Body"]
 - ["7SwiftUI4ViewP", "_makeView"]
 - ["7SwiftUI4ViewP", "_makeViewList"]
 - ["7SwiftUI4ViewP", "body"]
+- !private ["7SwiftUI4ViewP", "frame"]
 - !private ["7SwiftUI4ViewP", "init"]
+- !private ["7SwiftUI4ViewP", "resizable"]
+- !private ["7SwiftUI11ViewBuilderV", "buildBlock"]
 - !private ["7SwiftUI16_PreviewProviderP", "DemonstrationView"]
 - ["7SwiftUI16_PreviewProviderP", "Previews"]
 - ["7SwiftUI16_PreviewProviderP", ""]
@@ -66,9 +82,12 @@ depends-nominal:
 - "5Argos17DemonstrationViewV"
 - "5Argos26DemonstrationView_PreviewsV"
 - !private "SQ"
+- !private "7SwiftUI5ImageV"
 - "7SwiftUI15PreviewProviderP"
 - !private "7SwiftUI4TextV"
+- !private "7SwiftUI6VStackV"
 - "7SwiftUI4ViewP"
+- !private "7SwiftUI11ViewBuilderV"
 - "7SwiftUI16_PreviewProviderP"
 depends-dynamic-lookup:
 depends-external:

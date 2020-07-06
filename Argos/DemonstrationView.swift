@@ -10,7 +10,11 @@ import SwiftUI
 
 struct DemonstrationView: View {
     var body: some View {
-        Text("Demonstration video clip appears here.")
+        VStack {
+            Image(systemName: "play.circle.fill").resizable()
+                .frame(width: 120.0, height: 120.0)
+            Text("Demonstration video clip appears here.")
+        }
     }
 }
 

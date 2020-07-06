@@ -1,8 +1,8 @@
 version: "Apple Swift version 5.2.4 (swiftlang-1103.0.32.9 clang-1103.0.32.53)"
 options: "cec03be6fae380ce6b1e1bd8502de326"
-build_time: [1594040713, 371076000]
+build_time: [1594041311, 601379000]
 inputs:
-  "/Users/Sui/Documents/Xcode Projects/Argos/Argos/DemonstrationView.swift": [1594040250, 203800759]
+  "/Users/Sui/Documents/Xcode Projects/Argos/Argos/DemonstrationView.swift": [1594041311, 531680776]
   "/Users/Sui/Documents/Xcode Projects/Argos/Argos/StageView.swift": [1594039751, 514824788]
   "/Users/Sui/Documents/Xcode Projects/Argos/Argos/ContentView.swift": [1594032779, 985643999]
   "/Users/Sui/Documents/Xcode Projects/Argos/Argos/AppDelegate.swift": [1594039442, 972630251]
