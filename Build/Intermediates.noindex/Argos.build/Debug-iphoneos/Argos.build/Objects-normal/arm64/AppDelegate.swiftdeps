@@ -15,9 +15,9 @@ provides-dynamic-lookup:
 depends-top-level:
 - "AppDelegate"
 - "AssignmentPrecedence"
-- !private "BodyTrackedView"
 - "Bool"
 - !private "BooleanLiteralType"
+- !private "StageView"
 - "UIApplication"
 - "UIApplicationDelegate"
 - !private "UIHostingController"
@@ -25,8 +25,8 @@ depends-top-level:
 - !private "UIScreen"
 - "UIWindow"
 depends-member:
-- !private ["5Argos11AppDelegateC", "BodyTrackedView"]
 - ["5Argos11AppDelegateC", "Bool"]
+- !private ["5Argos11AppDelegateC", "StageView"]
 - ["5Argos11AppDelegateC", "UIApplication"]
 - !private ["5Argos11AppDelegateC", "UIHostingController"]
 - !private ["5Argos11AppDelegateC", "UIScreen"]
@@ -46,13 +46,11 @@ depends-member:
 - ["5Argos11AppDelegateC", "deinit"]
 - ["5Argos11AppDelegateC", "init"]
 - ["5Argos11AppDelegateC", "window"]
-- !private ["5Argos15BodyTrackedViewV", "deinit"]
-- !private ["5Argos15BodyTrackedViewV", "init"]
 - !private ["So15CALayerDelegateP", "init"]
 - !private ["So15CALayerDelegateP", "makeKeyAndVisible"]
 - !private ["So15CALayerDelegateP", "rootViewController"]
-- !private ["s7CVarArgP", "BodyTrackedView"]
 - ["s7CVarArgP", "LaunchOptionsKey"]
+- !private ["s7CVarArgP", "StageView"]
 - !private ["s7CVarArgP", "UIHostingController"]
 - !private ["s7CVarArgP", "UIScreen"]
 - !private ["s7CVarArgP", "UIWindow"]
@@ -75,8 +73,8 @@ depends-member:
 - !private ["s7CVarArgP", "makeKeyAndVisible"]
 - !private ["s7CVarArgP", "rootViewController"]
 - ["s7CVarArgP", "window"]
-- !private ["s28CustomDebugStringConvertibleP", "BodyTrackedView"]
 - ["s28CustomDebugStringConvertibleP", "LaunchOptionsKey"]
+- !private ["s28CustomDebugStringConvertibleP", "StageView"]
 - !private ["s28CustomDebugStringConvertibleP", "UIHostingController"]
 - !private ["s28CustomDebugStringConvertibleP", "UIScreen"]
 - !private ["s28CustomDebugStringConvertibleP", "UIWindow"]
@@ -99,8 +97,8 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "makeKeyAndVisible"]
 - !private ["s28CustomDebugStringConvertibleP", "rootViewController"]
 - ["s28CustomDebugStringConvertibleP", "window"]
-- !private ["s23CustomStringConvertibleP", "BodyTrackedView"]
 - ["s23CustomStringConvertibleP", "LaunchOptionsKey"]
+- !private ["s23CustomStringConvertibleP", "StageView"]
 - !private ["s23CustomStringConvertibleP", "UIHostingController"]
 - !private ["s23CustomStringConvertibleP", "UIScreen"]
 - !private ["s23CustomStringConvertibleP", "UIWindow"]
@@ -123,8 +121,8 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "makeKeyAndVisible"]
 - !private ["s23CustomStringConvertibleP", "rootViewController"]
 - ["s23CustomStringConvertibleP", "window"]
-- !private ["SQ", "BodyTrackedView"]
 - ["SQ", "LaunchOptionsKey"]
+- !private ["SQ", "StageView"]
 - !private ["SQ", "UIHostingController"]
 - !private ["SQ", "UIScreen"]
 - !private ["SQ", "UIWindow"]
@@ -147,8 +145,8 @@ depends-member:
 - !private ["SQ", "makeKeyAndVisible"]
 - !private ["SQ", "rootViewController"]
 - ["SQ", "window"]
-- !private ["SH", "BodyTrackedView"]
 - ["SH", "LaunchOptionsKey"]
+- !private ["SH", "StageView"]
 - !private ["SH", "UIHostingController"]
 - !private ["SH", "UIScreen"]
 - !private ["SH", "UIWindow"]
@@ -175,9 +173,9 @@ depends-member:
 - !private ["So8NSCodingP", "makeKeyAndVisible"]
 - !private ["So8NSCodingP", "rootViewController"]
 - !private ["So26NSExtensionRequestHandlingP", "init"]
-- !private ["So8NSObjectC", "BodyTrackedView"]
 - ["So8NSObjectC", "Bool"]
 - ["So8NSObjectC", "LaunchOptionsKey"]
+- !private ["So8NSObjectC", "StageView"]
 - ["So8NSObjectC", "UIApplication"]
 - !private ["So8NSObjectC", "UIHostingController"]
 - !private ["So8NSObjectC", "UIScreen"]
@@ -200,8 +198,8 @@ depends-member:
 - !private ["So8NSObjectC", "makeKeyAndVisible"]
 - !private ["So8NSObjectC", "rootViewController"]
 - ["So8NSObjectC", "window"]
-- !private ["So8NSObjectP", "BodyTrackedView"]
 - ["So8NSObjectP", "LaunchOptionsKey"]
+- !private ["So8NSObjectP", "StageView"]
 - !private ["So8NSObjectP", "UIHostingController"]
 - !private ["So8NSObjectP", "UIScreen"]
 - !private ["So8NSObjectP", "UIWindow"]
@@ -224,6 +222,8 @@ depends-member:
 - !private ["So8NSObjectP", "makeKeyAndVisible"]
 - !private ["So8NSObjectP", "rootViewController"]
 - ["So8NSObjectP", "window"]
+- !private ["5Argos9StageViewV", "deinit"]
+- !private ["5Argos9StageViewV", "init"]
 - !private ["So29UIAccessibilityIdentificationP", "init"]
 - !private ["So29UIAccessibilityIdentificationP", "makeKeyAndVisible"]
 - !private ["So29UIAccessibilityIdentificationP", "rootViewController"]
@@ -234,7 +234,7 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "makeKeyAndVisible"]
 - !private ["So21UIAppearanceContainerP", "rootViewController"]
 - ["So13UIApplicationC", "LaunchOptionsKey"]
-- !private ["So21UIApplicationDelegateP", "BodyTrackedView"]
+- !private ["So21UIApplicationDelegateP", "StageView"]
 - !private ["So21UIApplicationDelegateP", "UIHostingController"]
 - !private ["So21UIApplicationDelegateP", "UIScreen"]
 - !private ["So21UIApplicationDelegateP", "UIWindow"]
@@ -272,8 +272,8 @@ depends-member:
 - !private ["So24UILargeContentViewerItemP", "init"]
 - !private ["So24UILargeContentViewerItemP", "makeKeyAndVisible"]
 - !private ["So24UILargeContentViewerItemP", "rootViewController"]
-- !private ["So30UIPasteConfigurationSupportingP", "BodyTrackedView"]
 - ["So30UIPasteConfigurationSupportingP", "LaunchOptionsKey"]
+- !private ["So30UIPasteConfigurationSupportingP", "StageView"]
 - !private ["So30UIPasteConfigurationSupportingP", "UIHostingController"]
 - !private ["So30UIPasteConfigurationSupportingP", "UIScreen"]
 - !private ["So30UIPasteConfigurationSupportingP", "UIWindow"]
@@ -294,9 +294,9 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "makeKeyAndVisible"]
 - !private ["So30UIPasteConfigurationSupportingP", "rootViewController"]
 - ["So30UIPasteConfigurationSupportingP", "window"]
-- !private ["So11UIResponderC", "BodyTrackedView"]
 - ["So11UIResponderC", "Bool"]
 - ["So11UIResponderC", "LaunchOptionsKey"]
+- !private ["So11UIResponderC", "StageView"]
 - ["So11UIResponderC", "UIApplication"]
 - !private ["So11UIResponderC", "UIHostingController"]
 - !private ["So11UIResponderC", "UIScreen"]
@@ -318,8 +318,8 @@ depends-member:
 - !private ["So11UIResponderC", "makeKeyAndVisible"]
 - !private ["So11UIResponderC", "rootViewController"]
 - ["So11UIResponderC", "window"]
-- !private ["So30UIResponderStandardEditActionsP", "BodyTrackedView"]
 - ["So30UIResponderStandardEditActionsP", "LaunchOptionsKey"]
+- !private ["So30UIResponderStandardEditActionsP", "StageView"]
 - !private ["So30UIResponderStandardEditActionsP", "UIHostingController"]
 - !private ["So30UIResponderStandardEditActionsP", "UIScreen"]
 - !private ["So30UIResponderStandardEditActionsP", "UIWindow"]
@@ -348,8 +348,8 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "main"]
 - !private ["So18UITraitEnvironmentP", "makeKeyAndVisible"]
 - !private ["So18UITraitEnvironmentP", "rootViewController"]
-- !private ["So23UIUserActivityRestoringP", "BodyTrackedView"]
 - ["So23UIUserActivityRestoringP", "LaunchOptionsKey"]
+- !private ["So23UIUserActivityRestoringP", "StageView"]
 - !private ["So23UIUserActivityRestoringP", "UIHostingController"]
 - !private ["So23UIUserActivityRestoringP", "UIScreen"]
 - !private ["So23UIUserActivityRestoringP", "UIWindow"]
@@ -378,8 +378,8 @@ depends-member:
 - !private ["So8UIWindowC", "makeKeyAndVisible"]
 - !private ["So8UIWindowC", "rootViewController"]
 - !private ["7SwiftUI4ViewP", "init"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "BodyTrackedView"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "LaunchOptionsKey"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "StageView"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIHostingController"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIScreen"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIWindow"]
@@ -402,8 +402,8 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "makeKeyAndVisible"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "rootViewController"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "window"]
-- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "BodyTrackedView"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", "LaunchOptionsKey"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "StageView"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "UIHostingController"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "UIScreen"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "UIWindow"]
@@ -432,7 +432,6 @@ depends-member:
 - !private ["s38__DefaultCustomPlaygroundQuickLookableP", "rootViewController"]
 depends-nominal:
 - "5Argos11AppDelegateC"
-- !private "5Argos15BodyTrackedViewV"
 - !private "So15CALayerDelegateP"
 - "s7CVarArgP"
 - "s28CustomDebugStringConvertibleP"
@@ -443,6 +442,7 @@ depends-nominal:
 - !private "So26NSExtensionRequestHandlingP"
 - "So8NSObjectC"
 - "So8NSObjectP"
+- !private "5Argos9StageViewV"
 - !private "So29UIAccessibilityIdentificationP"
 - !private "So12UIAppearanceP"
 - !private "So21UIAppearanceContainerP"

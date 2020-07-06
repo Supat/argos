@@ -1,0 +1,735 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "BodyTrackedView"
+- "arSessionDelegate"
+- "BodyTrackedViewContainer"
+- "SessionDelegate"
+- "BodyTrackedView_Previews"
+provides-nominal:
+- "5Argos15BodyTrackedViewV"
+- "5Argos24BodyTrackedViewContainerV"
+- "5Argos15SessionDelegateC"
+- "5Argos24BodyTrackedView_PreviewsV"
+provides-member:
+- ["5Argos15BodyTrackedViewV", ""]
+- ["5Argos24BodyTrackedViewContainerV", ""]
+- ["5Argos15SessionDelegateC", ""]
+- ["5Argos24BodyTrackedView_PreviewsV", ""]
+provides-dynamic-lookup:
+- "arView"
+- "character"
+- "characterAnchor"
+- "characterOffset"
+- "session"
+- "set"
+depends-top-level:
+- !private "!="
+- !private "+"
+- !private "=="
+- "ARAnchor"
+- !private "ARBodyAnchor"
+- !private "ARBodyTrackingConfiguration"
+- "ARSession"
+- "ARSessionDelegate"
+- "ARView"
+- "AnchorEntity"
+- !private "AnyCancellable"
+- "AssignmentPrecedence"
+- "BodyTrackedEntity"
+- "BodyTrackedView"
+- "BodyTrackedViewContainer"
+- "BodyTrackedView_Previews"
+- "CastingPrecedence"
+- "Context"
+- !private "Entity"
+- "Float"
+- "FloatLiteralType"
+- "IntegerLiteralType"
+- "NSObject"
+- "PreviewProvider"
+- "SIMD3"
+- "SessionDelegate"
+- !private "StringLiteralType"
+- !private "Transform"
+- "UIViewRepresentable"
+- "View"
+- "arSessionDelegate"
+- !private "fatalError"
+- !private "simd_make_float3"
+depends-member:
+- !private ["So8ARAnchorC", "transform"]
+- !private ["So15ARAnchorCopyingP", "transform"]
+- !private ["So12ARBodyAnchorC", "transform"]
+- !private ["So27ARBodyTrackingConfigurationC", "init"]
+- !private ["So27ARBodyTrackingConfigurationC", "isSupported"]
+- !private ["So15ARConfigurationC", "init"]
+- !private ["So15ARConfigurationC", "isSupported"]
+- !private ["So17ARSessionDelegateP", "AnchorEntity"]
+- ["So17ARSessionDelegateP", "BodyTrackedEntity"]
+- !private ["So17ARSessionDelegateP", "Entity"]
+- !private ["So17ARSessionDelegateP", "Transform"]
+- ["So17ARSessionDelegateP", ""]
+- !private ["So17ARSessionDelegateP", "arView"]
+- !private ["So17ARSessionDelegateP", "character"]
+- !private ["So17ARSessionDelegateP", "characterAnchor"]
+- !private ["So17ARSessionDelegateP", "characterOffset"]
+- ["So17ARSessionDelegateP", "init"]
+- ["So17ARSessionDelegateP", "session"]
+- ["So17ARSessionDelegateP", "sessionInterruptionEnded"]
+- ["So17ARSessionDelegateP", "sessionShouldAttemptRelocalization"]
+- ["So17ARSessionDelegateP", "sessionWasInterrupted"]
+- !private ["So17ARSessionDelegateP", "set"]
+- !private ["So17ARSessionDelegateP", "simd_make_float3"]
+- !private ["So17ARSessionObserverP", "AnchorEntity"]
+- ["So17ARSessionObserverP", "BodyTrackedEntity"]
+- !private ["So17ARSessionObserverP", "Entity"]
+- !private ["So17ARSessionObserverP", "Transform"]
+- ["So17ARSessionObserverP", ""]
+- !private ["So17ARSessionObserverP", "arView"]
+- !private ["So17ARSessionObserverP", "character"]
+- !private ["So17ARSessionObserverP", "characterAnchor"]
+- !private ["So17ARSessionObserverP", "characterOffset"]
+- ["So17ARSessionObserverP", "init"]
+- ["So17ARSessionObserverP", "session"]
+- ["So17ARSessionObserverP", "sessionInterruptionEnded"]
+- ["So17ARSessionObserverP", "sessionShouldAttemptRelocalization"]
+- ["So17ARSessionObserverP", "sessionWasInterrupted"]
+- !private ["So17ARSessionObserverP", "set"]
+- !private ["So17ARSessionObserverP", "simd_make_float3"]
+- !private ["So11ARTrackableP", "transform"]
+- !private ["10RealityKit6ARViewC", "init"]
+- !private ["10RealityKit6ARViewC", "scene"]
+- !private ["10RealityKit6ARViewC", "session"]
+- !private ["10RealityKit12AnchorEntityC", "addChild"]
+- ["10RealityKit12AnchorEntityC", "init"]
+- !private ["10RealityKit12AnchorEntityC", "orientation"]
+- !private ["10RealityKit12AnchorEntityC", "position"]
+- !private ["7SwiftUI10AnimatableP", "zero"]
+- !private ["Sa", "subscript"]
+- !private ["SK", "subscript"]
+- ["5Argos15BodyTrackedViewV", "Body"]
+- !private ["5Argos15BodyTrackedViewV", "BodyTrackedViewContainer"]
+- ["5Argos15BodyTrackedViewV", "View"]
+- ["5Argos15BodyTrackedViewV", "_Default_Body"]
+- ["5Argos15BodyTrackedViewV", "_makeView"]
+- ["5Argos15BodyTrackedViewV", "_makeViewList"]
+- ["5Argos15BodyTrackedViewV", "body"]
+- ["5Argos15BodyTrackedViewV", "deinit"]
+- ["5Argos15BodyTrackedViewV", "init"]
+- !private ["5Argos24BodyTrackedViewContainerV", "ARBodyTrackingConfiguration"]
+- ["5Argos24BodyTrackedViewContainerV", "ARView"]
+- ["5Argos24BodyTrackedViewContainerV", "AnchorEntity"]
+- ["5Argos24BodyTrackedViewContainerV", "Body"]
+- ["5Argos24BodyTrackedViewContainerV", "Context"]
+- ["5Argos24BodyTrackedViewContainerV", "Coordinator"]
+- ["5Argos24BodyTrackedViewContainerV", "UIViewType"]
+- ["5Argos24BodyTrackedViewContainerV", "_Default_Body"]
+- ["5Argos24BodyTrackedViewContainerV", "_Default_Coordinator"]
+- ["5Argos24BodyTrackedViewContainerV", "_Default_UIViewType"]
+- ["5Argos24BodyTrackedViewContainerV", "_identifiedViewTree"]
+- ["5Argos24BodyTrackedViewContainerV", "_makeView"]
+- ["5Argos24BodyTrackedViewContainerV", "_makeViewList"]
+- ["5Argos24BodyTrackedViewContainerV", "_overrideLayoutTraits"]
+- ["5Argos24BodyTrackedViewContainerV", "_overrideSizeThatFits"]
+- !private ["5Argos24BodyTrackedViewContainerV", "arSessionDelegate"]
+- ["5Argos24BodyTrackedViewContainerV", "body"]
+- ["5Argos24BodyTrackedViewContainerV", "characterAnchor"]
+- ["5Argos24BodyTrackedViewContainerV", "deinit"]
+- ["5Argos24BodyTrackedViewContainerV", "dismantleUIView"]
+- !private ["5Argos24BodyTrackedViewContainerV", "edgesIgnoringSafeArea"]
+- !private ["5Argos24BodyTrackedViewContainerV", "fatalError"]
+- ["5Argos24BodyTrackedViewContainerV", "init"]
+- ["5Argos24BodyTrackedViewContainerV", "makeCoordinator"]
+- ["5Argos24BodyTrackedViewContainerV", "makeUIView"]
+- ["5Argos24BodyTrackedViewContainerV", "updateUIView"]
+- !private ["5Argos24BodyTrackedView_PreviewsV", "BodyTrackedView"]
+- ["5Argos24BodyTrackedView_PreviewsV", "Previews"]
+- ["5Argos24BodyTrackedView_PreviewsV", "View"]
+- ["5Argos24BodyTrackedView_PreviewsV", "_Default_Previews"]
+- ["5Argos24BodyTrackedView_PreviewsV", "_platform"]
+- ["5Argos24BodyTrackedView_PreviewsV", "_previews"]
+- ["5Argos24BodyTrackedView_PreviewsV", "deinit"]
+- ["5Argos24BodyTrackedView_PreviewsV", "init"]
+- ["5Argos24BodyTrackedView_PreviewsV", "platform"]
+- ["5Argos24BodyTrackedView_PreviewsV", "previews"]
+- !private ["So15CALayerDelegateP", "init"]
+- !private ["So15CALayerDelegateP", "scene"]
+- !private ["So15CALayerDelegateP", "session"]
+- !private ["So6CGRectV", "zero"]
+- !private ["s7CVarArgP", "AnchorEntity"]
+- ["s7CVarArgP", "BodyTrackedEntity"]
+- !private ["s7CVarArgP", "Entity"]
+- !private ["s7CVarArgP", "Transform"]
+- ["s7CVarArgP", ""]
+- !private ["s7CVarArgP", "arView"]
+- !private ["s7CVarArgP", "character"]
+- !private ["s7CVarArgP", "characterAnchor"]
+- !private ["s7CVarArgP", "characterOffset"]
+- ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "isSupported"]
+- !private ["s7CVarArgP", "scene"]
+- ["s7CVarArgP", "session"]
+- ["s7CVarArgP", "sessionInterruptionEnded"]
+- ["s7CVarArgP", "sessionShouldAttemptRelocalization"]
+- ["s7CVarArgP", "sessionWasInterrupted"]
+- !private ["s7CVarArgP", "set"]
+- !private ["s7CVarArgP", "simd_make_float3"]
+- !private ["s7CVarArgP", "subscript"]
+- !private ["s7CVarArgP", "transform"]
+- !private ["Sl", "subscript"]
+- !private ["10RealityKit9ComponentP", "init"]
+- !private ["10RealityKit9ComponentP", "rotation"]
+- !private ["10Foundation15ContiguousBytesP", "subscript"]
+- !private ["s28CustomDebugStringConvertibleP", "AnchorEntity"]
+- ["s28CustomDebugStringConvertibleP", "BodyTrackedEntity"]
+- !private ["s28CustomDebugStringConvertibleP", "Entity"]
+- !private ["s28CustomDebugStringConvertibleP", "Transform"]
+- ["s28CustomDebugStringConvertibleP", ""]
+- !private ["s28CustomDebugStringConvertibleP", "addChild"]
+- !private ["s28CustomDebugStringConvertibleP", "arView"]
+- !private ["s28CustomDebugStringConvertibleP", "character"]
+- !private ["s28CustomDebugStringConvertibleP", "characterAnchor"]
+- !private ["s28CustomDebugStringConvertibleP", "characterOffset"]
+- !private ["s28CustomDebugStringConvertibleP", "columns"]
+- ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "isSupported"]
+- !private ["s28CustomDebugStringConvertibleP", "loadBodyTrackedAsync"]
+- !private ["s28CustomDebugStringConvertibleP", "orientation"]
+- !private ["s28CustomDebugStringConvertibleP", "position"]
+- !private ["s28CustomDebugStringConvertibleP", "scene"]
+- ["s28CustomDebugStringConvertibleP", "session"]
+- ["s28CustomDebugStringConvertibleP", "sessionInterruptionEnded"]
+- ["s28CustomDebugStringConvertibleP", "sessionShouldAttemptRelocalization"]
+- ["s28CustomDebugStringConvertibleP", "sessionWasInterrupted"]
+- !private ["s28CustomDebugStringConvertibleP", "set"]
+- !private ["s28CustomDebugStringConvertibleP", "simd_make_float3"]
+- !private ["s28CustomDebugStringConvertibleP", "subscript"]
+- !private ["s28CustomDebugStringConvertibleP", "transform"]
+- !private ["s28CustomDebugStringConvertibleP", "zero"]
+- !private ["s17CustomReflectableP", "scene"]
+- !private ["s17CustomReflectableP", "subscript"]
+- !private ["s17CustomReflectableP", "zero"]
+- !private ["s23CustomStringConvertibleP", "AnchorEntity"]
+- ["s23CustomStringConvertibleP", "BodyTrackedEntity"]
+- !private ["s23CustomStringConvertibleP", "Entity"]
+- !private ["s23CustomStringConvertibleP", "Transform"]
+- ["s23CustomStringConvertibleP", ""]
+- !private ["s23CustomStringConvertibleP", "arView"]
+- !private ["s23CustomStringConvertibleP", "character"]
+- !private ["s23CustomStringConvertibleP", "characterAnchor"]
+- !private ["s23CustomStringConvertibleP", "characterOffset"]
+- ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "isSupported"]
+- !private ["s23CustomStringConvertibleP", "scene"]
+- ["s23CustomStringConvertibleP", "session"]
+- ["s23CustomStringConvertibleP", "sessionInterruptionEnded"]
+- ["s23CustomStringConvertibleP", "sessionShouldAttemptRelocalization"]
+- ["s23CustomStringConvertibleP", "sessionWasInterrupted"]
+- !private ["s23CustomStringConvertibleP", "set"]
+- !private ["s23CustomStringConvertibleP", "simd_make_float3"]
+- !private ["s23CustomStringConvertibleP", "subscript"]
+- !private ["s23CustomStringConvertibleP", "transform"]
+- !private ["10Foundation12DataProtocolP", "subscript"]
+- !private ["Se", "scene"]
+- !private ["Se", "subscript"]
+- !private ["Se", "zero"]
+- !private ["SE", "scene"]
+- !private ["SE", "subscript"]
+- !private ["SE", "zero"]
+- !private ["10RealityKit6EntityC", "addChild"]
+- ["10RealityKit6EntityC", "init"]
+- !private ["10RealityKit6EntityC", "loadBodyTrackedAsync"]
+- !private ["10RealityKit6EntityC", "orientation"]
+- !private ["10RealityKit6EntityC", "position"]
+- !private ["SQ", "AnchorEntity"]
+- ["SQ", "BodyTrackedEntity"]
+- !private ["SQ", "Entity"]
+- !private ["SQ", "Transform"]
+- ["SQ", ""]
+- !private ["SQ", "addAnchor"]
+- !private ["SQ", "addChild"]
+- !private ["SQ", "all"]
+- !private ["SQ", "arView"]
+- !private ["SQ", "character"]
+- !private ["SQ", "characterAnchor"]
+- !private ["SQ", "characterOffset"]
+- !private ["SQ", "columns"]
+- ["SQ", "init"]
+- !private ["SQ", "isSupported"]
+- !private ["SQ", "loadBodyTrackedAsync"]
+- !private ["SQ", "orientation"]
+- !private ["SQ", "position"]
+- !private ["SQ", "rotation"]
+- !private ["SQ", "scene"]
+- ["SQ", "session"]
+- ["SQ", "sessionInterruptionEnded"]
+- ["SQ", "sessionShouldAttemptRelocalization"]
+- ["SQ", "sessionWasInterrupted"]
+- !private ["SQ", "set"]
+- !private ["SQ", "simd_make_float3"]
+- !private ["SQ", "subscript"]
+- !private ["SQ", "transform"]
+- !private ["SQ", "zero"]
+- !private ["10RealityKit11EventSourceP", "addAnchor"]
+- !private ["10RealityKit11EventSourceP", "addChild"]
+- ["10RealityKit11EventSourceP", "init"]
+- !private ["10RealityKit11EventSourceP", "loadBodyTrackedAsync"]
+- !private ["10RealityKit11EventSourceP", "orientation"]
+- !private ["10RealityKit11EventSourceP", "position"]
+- !private ["s25ExpressibleByArrayLiteralP", "all"]
+- !private ["s25ExpressibleByArrayLiteralP", "subscript"]
+- !private ["s23ExpressibleByNilLiteralP", "scene"]
+- !private ["7SwiftUI7GestureP", "scene"]
+- !private ["10RealityKit12HasAnchoringP", "addChild"]
+- ["10RealityKit12HasAnchoringP", "init"]
+- !private ["10RealityKit12HasAnchoringP", "orientation"]
+- !private ["10RealityKit12HasAnchoringP", "position"]
+- !private ["10RealityKit12HasHierarchyP", "addChild"]
+- ["10RealityKit12HasHierarchyP", "init"]
+- !private ["10RealityKit12HasHierarchyP", "loadBodyTrackedAsync"]
+- !private ["10RealityKit12HasHierarchyP", "orientation"]
+- !private ["10RealityKit12HasHierarchyP", "position"]
+- !private ["10RealityKit18HasSynchronizationP", "addChild"]
+- ["10RealityKit18HasSynchronizationP", "init"]
+- !private ["10RealityKit18HasSynchronizationP", "loadBodyTrackedAsync"]
+- !private ["10RealityKit18HasSynchronizationP", "orientation"]
+- !private ["10RealityKit18HasSynchronizationP", "position"]
+- !private ["10RealityKit12HasTransformP", "addChild"]
+- ["10RealityKit12HasTransformP", "init"]
+- !private ["10RealityKit12HasTransformP", "loadBodyTrackedAsync"]
+- !private ["10RealityKit12HasTransformP", "orientation"]
+- !private ["10RealityKit12HasTransformP", "position"]
+- !private ["SH", "AnchorEntity"]
+- ["SH", "BodyTrackedEntity"]
+- !private ["SH", "Entity"]
+- !private ["SH", "Transform"]
+- ["SH", ""]
+- !private ["SH", "addAnchor"]
+- !private ["SH", "addChild"]
+- !private ["SH", "arView"]
+- !private ["SH", "character"]
+- !private ["SH", "characterAnchor"]
+- !private ["SH", "characterOffset"]
+- ["SH", "init"]
+- !private ["SH", "isSupported"]
+- !private ["SH", "loadBodyTrackedAsync"]
+- !private ["SH", "orientation"]
+- !private ["SH", "position"]
+- !private ["SH", "rotation"]
+- !private ["SH", "scene"]
+- ["SH", "session"]
+- ["SH", "sessionInterruptionEnded"]
+- ["SH", "sessionShouldAttemptRelocalization"]
+- ["SH", "sessionWasInterrupted"]
+- !private ["SH", "set"]
+- !private ["SH", "simd_make_float3"]
+- !private ["SH", "subscript"]
+- !private ["SH", "transform"]
+- !private ["s12IdentifiableP", "addAnchor"]
+- !private ["s12IdentifiableP", "addChild"]
+- ["s12IdentifiableP", "init"]
+- !private ["s12IdentifiableP", "loadBodyTrackedAsync"]
+- !private ["s12IdentifiableP", "orientation"]
+- !private ["s12IdentifiableP", "position"]
+- !private ["SM", "subscript"]
+- !private ["10Foundation19MutableDataProtocolP", "subscript"]
+- !private ["So8NSCodingP", "init"]
+- !private ["So8NSCodingP", "scene"]
+- !private ["So8NSCodingP", "session"]
+- !private ["So8NSCodingP", "transform"]
+- !private ["So9NSCopyingP", "init"]
+- !private ["So9NSCopyingP", "isSupported"]
+- !private ["So9NSCopyingP", "transform"]
+- ["So8NSObjectC", "ARAnchor"]
+- !private ["So8NSObjectC", "ARBodyAnchor"]
+- ["So8NSObjectC", "ARSession"]
+- ["So8NSObjectC", "ARView"]
+- ["So8NSObjectC", "AnchorEntity"]
+- !private ["So8NSObjectC", "AnyCancellable"]
+- ["So8NSObjectC", "BodyTrackedEntity"]
+- !private ["So8NSObjectC", "Entity"]
+- ["So8NSObjectC", "Float"]
+- ["So8NSObjectC", "SIMD3"]
+- !private ["So8NSObjectC", "Transform"]
+- ["So8NSObjectC", ""]
+- ["So8NSObjectC", "arView"]
+- !private ["So8NSObjectC", "character"]
+- ["So8NSObjectC", "characterAnchor"]
+- ["So8NSObjectC", "characterOffset"]
+- ["So8NSObjectC", "init"]
+- !private ["So8NSObjectC", "isSupported"]
+- !private ["So8NSObjectC", "scene"]
+- ["So8NSObjectC", "session"]
+- ["So8NSObjectC", "sessionInterruptionEnded"]
+- ["So8NSObjectC", "sessionShouldAttemptRelocalization"]
+- ["So8NSObjectC", "sessionWasInterrupted"]
+- ["So8NSObjectC", "set"]
+- !private ["So8NSObjectC", "simd_make_float3"]
+- !private ["So8NSObjectC", "transform"]
+- !private ["So8NSObjectP", "AnchorEntity"]
+- ["So8NSObjectP", "BodyTrackedEntity"]
+- !private ["So8NSObjectP", "Entity"]
+- !private ["So8NSObjectP", "Transform"]
+- ["So8NSObjectP", ""]
+- !private ["So8NSObjectP", "arView"]
+- !private ["So8NSObjectP", "character"]
+- !private ["So8NSObjectP", "characterAnchor"]
+- !private ["So8NSObjectP", "characterOffset"]
+- ["So8NSObjectP", "init"]
+- !private ["So8NSObjectP", "isSupported"]
+- !private ["So8NSObjectP", "scene"]
+- ["So8NSObjectP", "session"]
+- ["So8NSObjectP", "sessionInterruptionEnded"]
+- ["So8NSObjectP", "sessionShouldAttemptRelocalization"]
+- ["So8NSObjectP", "sessionWasInterrupted"]
+- !private ["So8NSObjectP", "set"]
+- !private ["So8NSObjectP", "simd_make_float3"]
+- !private ["So8NSObjectP", "transform"]
+- !private ["So14NSSecureCodingP", "transform"]
+- !private ["s9OptionSetP", "all"]
+- !private ["Sq", "scene"]
+- !private ["7SwiftUI15PreviewProviderP", "BodyTrackedView"]
+- ["7SwiftUI15PreviewProviderP", "Previews"]
+- ["7SwiftUI15PreviewProviderP", ""]
+- ["7SwiftUI15PreviewProviderP", "_Default_Previews"]
+- ["7SwiftUI15PreviewProviderP", "_platform"]
+- ["7SwiftUI15PreviewProviderP", "_previews"]
+- ["7SwiftUI15PreviewProviderP", "platform"]
+- ["7SwiftUI15PreviewProviderP", "previews"]
+- !private ["Sk", "subscript"]
+- !private ["Sm", "subscript"]
+- !private ["SY", "all"]
+- !private ["10RealityKit5SceneC", "addAnchor"]
+- !private ["ST", "subscript"]
+- ["5Argos15SessionDelegateC", "ARAnchor"]
+- !private ["5Argos15SessionDelegateC", "ARBodyAnchor"]
+- ["5Argos15SessionDelegateC", "ARSession"]
+- ["5Argos15SessionDelegateC", "ARView"]
+- ["5Argos15SessionDelegateC", "AnchorEntity"]
+- !private ["5Argos15SessionDelegateC", "AnyCancellable"]
+- ["5Argos15SessionDelegateC", "BodyTrackedEntity"]
+- !private ["5Argos15SessionDelegateC", "Entity"]
+- ["5Argos15SessionDelegateC", "Float"]
+- ["5Argos15SessionDelegateC", "SIMD3"]
+- !private ["5Argos15SessionDelegateC", "Transform"]
+- ["5Argos15SessionDelegateC", "arView"]
+- !private ["5Argos15SessionDelegateC", "character"]
+- ["5Argos15SessionDelegateC", "characterAnchor"]
+- ["5Argos15SessionDelegateC", "characterOffset"]
+- ["5Argos15SessionDelegateC", "deinit"]
+- ["5Argos15SessionDelegateC", "init"]
+- ["5Argos15SessionDelegateC", "session"]
+- ["5Argos15SessionDelegateC", "sessionInterruptionEnded"]
+- ["5Argos15SessionDelegateC", "sessionShouldAttemptRelocalization"]
+- ["5Argos15SessionDelegateC", "sessionWasInterrupted"]
+- ["5Argos15SessionDelegateC", "set"]
+- !private ["5Argos15SessionDelegateC", "simd_make_float3"]
+- !private ["7SwiftUI4EdgeO3SetV", "all"]
+- !private ["s10SetAlgebraP", "all"]
+- !private ["10RealityKit9TransformV", "init"]
+- !private ["10RealityKit9TransformV", "rotation"]
+- !private ["So29UIAccessibilityIdentificationP", "init"]
+- !private ["So29UIAccessibilityIdentificationP", "scene"]
+- !private ["So29UIAccessibilityIdentificationP", "session"]
+- !private ["So12UIAppearanceP", "init"]
+- !private ["So12UIAppearanceP", "scene"]
+- !private ["So12UIAppearanceP", "session"]
+- !private ["So21UIAppearanceContainerP", "init"]
+- !private ["So21UIAppearanceContainerP", "scene"]
+- !private ["So21UIAppearanceContainerP", "session"]
+- !private ["So17UICoordinateSpaceP", "init"]
+- !private ["So17UICoordinateSpaceP", "scene"]
+- !private ["So17UICoordinateSpaceP", "session"]
+- !private ["So13UIDynamicItemP", "init"]
+- !private ["So13UIDynamicItemP", "scene"]
+- !private ["So13UIDynamicItemP", "session"]
+- !private ["So18UIFocusEnvironmentP", "init"]
+- !private ["So18UIFocusEnvironmentP", "scene"]
+- !private ["So18UIFocusEnvironmentP", "session"]
+- !private ["So11UIFocusItemP", "init"]
+- !private ["So11UIFocusItemP", "scene"]
+- !private ["So11UIFocusItemP", "session"]
+- !private ["So20UIFocusItemContainerP", "init"]
+- !private ["So20UIFocusItemContainerP", "scene"]
+- !private ["So20UIFocusItemContainerP", "session"]
+- !private ["So27UIGestureRecognizerDelegateP", "init"]
+- !private ["So27UIGestureRecognizerDelegateP", "scene"]
+- !private ["So27UIGestureRecognizerDelegateP", "session"]
+- !private ["So24UILargeContentViewerItemP", "init"]
+- !private ["So24UILargeContentViewerItemP", "scene"]
+- !private ["So24UILargeContentViewerItemP", "session"]
+- !private ["So30UIPasteConfigurationSupportingP", "init"]
+- !private ["So30UIPasteConfigurationSupportingP", "scene"]
+- !private ["So30UIPasteConfigurationSupportingP", "session"]
+- !private ["So11UIResponderC", "init"]
+- !private ["So11UIResponderC", "scene"]
+- !private ["So11UIResponderC", "session"]
+- !private ["So30UIResponderStandardEditActionsP", "init"]
+- !private ["So30UIResponderStandardEditActionsP", "scene"]
+- !private ["So30UIResponderStandardEditActionsP", "session"]
+- !private ["So18UITraitEnvironmentP", "init"]
+- !private ["So18UITraitEnvironmentP", "scene"]
+- !private ["So18UITraitEnvironmentP", "session"]
+- !private ["So23UIUserActivityRestoringP", "init"]
+- !private ["So23UIUserActivityRestoringP", "scene"]
+- !private ["So23UIUserActivityRestoringP", "session"]
+- !private ["So6UIViewC", "init"]
+- !private ["So6UIViewC", "scene"]
+- !private ["So6UIViewC", "session"]
+- !private ["7SwiftUI19UIViewRepresentableP", "ARBodyTrackingConfiguration"]
+- !private ["7SwiftUI19UIViewRepresentableP", "ARView"]
+- ["7SwiftUI19UIViewRepresentableP", "AnchorEntity"]
+- ["7SwiftUI19UIViewRepresentableP", "Body"]
+- ["7SwiftUI19UIViewRepresentableP", "Context"]
+- ["7SwiftUI19UIViewRepresentableP", "Coordinator"]
+- ["7SwiftUI19UIViewRepresentableP", "UIViewType"]
+- ["7SwiftUI19UIViewRepresentableP", ""]
+- ["7SwiftUI19UIViewRepresentableP", "_Default_Body"]
+- ["7SwiftUI19UIViewRepresentableP", "_Default_Coordinator"]
+- ["7SwiftUI19UIViewRepresentableP", "_Default_UIViewType"]
+- ["7SwiftUI19UIViewRepresentableP", "_identifiedViewTree"]
+- ["7SwiftUI19UIViewRepresentableP", "_makeView"]
+- ["7SwiftUI19UIViewRepresentableP", "_makeViewList"]
+- ["7SwiftUI19UIViewRepresentableP", "_overrideLayoutTraits"]
+- ["7SwiftUI19UIViewRepresentableP", "_overrideSizeThatFits"]
+- !private ["7SwiftUI19UIViewRepresentableP", "arSessionDelegate"]
+- ["7SwiftUI19UIViewRepresentableP", "body"]
+- !private ["7SwiftUI19UIViewRepresentableP", "characterAnchor"]
+- ["7SwiftUI19UIViewRepresentableP", "dismantleUIView"]
+- !private ["7SwiftUI19UIViewRepresentableP", "edgesIgnoringSafeArea"]
+- !private ["7SwiftUI19UIViewRepresentableP", "fatalError"]
+- !private ["7SwiftUI19UIViewRepresentableP", "init"]
+- ["7SwiftUI19UIViewRepresentableP", "makeCoordinator"]
+- ["7SwiftUI19UIViewRepresentableP", "makeUIView"]
+- ["7SwiftUI19UIViewRepresentableP", "updateUIView"]
+- !private ["7SwiftUI4ViewP", "ARBodyTrackingConfiguration"]
+- !private ["7SwiftUI4ViewP", "ARView"]
+- ["7SwiftUI4ViewP", "AnchorEntity"]
+- ["7SwiftUI4ViewP", "Body"]
+- !private ["7SwiftUI4ViewP", "BodyTrackedViewContainer"]
+- ["7SwiftUI4ViewP", "Context"]
+- ["7SwiftUI4ViewP", "Coordinator"]
+- ["7SwiftUI4ViewP", "UIViewType"]
+- ["7SwiftUI4ViewP", ""]
+- ["7SwiftUI4ViewP", "_Default_Body"]
+- ["7SwiftUI4ViewP", "_Default_Coordinator"]
+- ["7SwiftUI4ViewP", "_Default_UIViewType"]
+- ["7SwiftUI4ViewP", "_identifiedViewTree"]
+- ["7SwiftUI4ViewP", "_makeView"]
+- ["7SwiftUI4ViewP", "_makeViewList"]
+- ["7SwiftUI4ViewP", "_overrideLayoutTraits"]
+- ["7SwiftUI4ViewP", "_overrideSizeThatFits"]
+- !private ["7SwiftUI4ViewP", "arSessionDelegate"]
+- ["7SwiftUI4ViewP", "body"]
+- !private ["7SwiftUI4ViewP", "characterAnchor"]
+- ["7SwiftUI4ViewP", "dismantleUIView"]
+- !private ["7SwiftUI4ViewP", "edgesIgnoringSafeArea"]
+- !private ["7SwiftUI4ViewP", "fatalError"]
+- !private ["7SwiftUI4ViewP", "init"]
+- ["7SwiftUI4ViewP", "makeCoordinator"]
+- ["7SwiftUI4ViewP", "makeUIView"]
+- !private ["7SwiftUI4ViewP", "scene"]
+- ["7SwiftUI4ViewP", "updateUIView"]
+- !private ["s14_ArrayProtocolP", "subscript"]
+- !private ["s30_CustomPlaygroundQuickLookableP", "zero"]
+- !private ["s24_DestructorSafeContainerP", "subscript"]
+- !private ["s19_HasContiguousBytesP", "subscript"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "subscript"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "AnchorEntity"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "BodyTrackedEntity"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "Entity"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "Transform"]
+- ["10Foundation27_KeyValueCodingAndObservingP", ""]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "arView"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "character"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "characterAnchor"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "characterOffset"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "isSupported"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "scene"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "session"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "sessionInterruptionEnded"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "sessionShouldAttemptRelocalization"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "sessionWasInterrupted"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "set"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "simd_make_float3"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "transform"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "AnchorEntity"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", "BodyTrackedEntity"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "Entity"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "Transform"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", ""]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "arView"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "character"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "characterAnchor"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "characterOffset"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", "init"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "isSupported"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "scene"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", "session"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", "sessionInterruptionEnded"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", "sessionShouldAttemptRelocalization"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", "sessionWasInterrupted"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "set"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "simd_make_float3"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "transform"]
+- !private ["s21_ObjectiveCBridgeableP", "scene"]
+- !private ["s21_ObjectiveCBridgeableP", "subscript"]
+- !private ["s21_ObjectiveCBridgeableP", "zero"]
+- !private ["7SwiftUI16_PreviewProviderP", "BodyTrackedView"]
+- ["7SwiftUI16_PreviewProviderP", "Previews"]
+- ["7SwiftUI16_PreviewProviderP", ""]
+- ["7SwiftUI16_PreviewProviderP", "_Default_Previews"]
+- ["7SwiftUI16_PreviewProviderP", "_platform"]
+- ["7SwiftUI16_PreviewProviderP", "_previews"]
+- ["7SwiftUI16_PreviewProviderP", "platform"]
+- ["7SwiftUI16_PreviewProviderP", "previews"]
+- !private ["s38__DefaultCustomPlaygroundQuickLookableP", "init"]
+- !private ["s38__DefaultCustomPlaygroundQuickLookableP", "scene"]
+- !private ["s38__DefaultCustomPlaygroundQuickLookableP", "session"]
+- !private ["So13simd_float4x4a", "columns"]
+depends-nominal:
+- !private "So8ARAnchorC"
+- !private "So15ARAnchorCopyingP"
+- !private "So12ARBodyAnchorC"
+- !private "So27ARBodyTrackingConfigurationC"
+- !private "So15ARConfigurationC"
+- "So17ARSessionDelegateP"
+- "So17ARSessionObserverP"
+- !private "So11ARTrackableP"
+- !private "10RealityKit6ARViewC"
+- "10RealityKit12AnchorEntityC"
+- !private "7SwiftUI10AnimatableP"
+- !private "Sa"
+- !private "SK"
+- "5Argos15BodyTrackedViewV"
+- "5Argos24BodyTrackedViewContainerV"
+- "5Argos24BodyTrackedView_PreviewsV"
+- !private "So15CALayerDelegateP"
+- !private "So6CGRectV"
+- "s7CVarArgP"
+- !private "Sl"
+- !private "10RealityKit9ComponentP"
+- !private "10Foundation15ContiguousBytesP"
+- "s28CustomDebugStringConvertibleP"
+- !private "s17CustomReflectableP"
+- "s23CustomStringConvertibleP"
+- !private "10Foundation12DataProtocolP"
+- !private "Se"
+- !private "SE"
+- "10RealityKit6EntityC"
+- "SQ"
+- "10RealityKit11EventSourceP"
+- !private "s25ExpressibleByArrayLiteralP"
+- !private "s23ExpressibleByNilLiteralP"
+- !private "7SwiftUI7GestureP"
+- "10RealityKit12HasAnchoringP"
+- "10RealityKit12HasHierarchyP"
+- "10RealityKit18HasSynchronizationP"
+- "10RealityKit12HasTransformP"
+- "SH"
+- "s12IdentifiableP"
+- !private "SM"
+- !private "10Foundation19MutableDataProtocolP"
+- !private "So8NSCodingP"
+- !private "So9NSCopyingP"
+- "So8NSObjectC"
+- "So8NSObjectP"
+- !private "So14NSSecureCodingP"
+- !private "s9OptionSetP"
+- !private "Sq"
+- "7SwiftUI15PreviewProviderP"
+- !private "Sk"
+- !private "Sm"
+- !private "SY"
+- !private "10RealityKit5SceneC"
+- !private "ST"
+- "5Argos15SessionDelegateC"
+- !private "7SwiftUI4EdgeO3SetV"
+- !private "s10SetAlgebraP"
+- !private "10RealityKit9TransformV"
+- !private "So29UIAccessibilityIdentificationP"
+- !private "So12UIAppearanceP"
+- !private "So21UIAppearanceContainerP"
+- !private "So17UICoordinateSpaceP"
+- !private "So13UIDynamicItemP"
+- !private "So18UIFocusEnvironmentP"
+- !private "So11UIFocusItemP"
+- !private "So20UIFocusItemContainerP"
+- !private "So27UIGestureRecognizerDelegateP"
+- !private "So24UILargeContentViewerItemP"
+- !private "So30UIPasteConfigurationSupportingP"
+- !private "So11UIResponderC"
+- !private "So30UIResponderStandardEditActionsP"
+- !private "So18UITraitEnvironmentP"
+- !private "So23UIUserActivityRestoringP"
+- !private "So6UIViewC"
+- "7SwiftUI19UIViewRepresentableP"
+- "7SwiftUI4ViewP"
+- !private "s14_ArrayProtocolP"
+- !private "s30_CustomPlaygroundQuickLookableP"
+- !private "s24_DestructorSafeContainerP"
+- !private "s19_HasContiguousBytesP"
+- !private "s35_HasCustomAnyHashableRepresentationP"
+- "10Foundation27_KeyValueCodingAndObservingP"
+- "10Foundation37_KeyValueCodingAndObservingPublishingP"
+- !private "s21_ObjectiveCBridgeableP"
+- "7SwiftUI16_PreviewProviderP"
+- !private "s38__DefaultCustomPlaygroundQuickLookableP"
+- !private "So13simd_float4x4a"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/ObjectiveC.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreMIDI.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/ModelIO.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreMedia.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreData.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/simd.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreImage.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/QuartzCore.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Dispatch.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Metal.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Darwin.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Foundation.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/AVFoundation.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreFoundation.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreAudio.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreGraphics.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/os.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Swift.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/UIKit.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/GLKit.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/ARKit.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/SceneKit.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/SpriteKit.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/SwiftOnoneSupport.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/SwiftUI.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Combine.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/RealityKit.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/ModelIO.framework/Headers/ModelIO.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/CoreMedia.framework/Headers/CoreMedia.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/CoreData.framework/Headers/CoreData.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/apinotes/Dispatch.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/QuickLook.framework/Headers/QuickLook.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/AVFoundation.framework/Headers/AVFoundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/CoreAudioTypes.framework/Headers/CoreAudioTypes.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/UserNotifications.framework/Headers/UserNotifications.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/apinotes/os.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/GLKit.framework/Headers/GLKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/SceneKit.framework/Headers/SceneKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/SpriteKit.framework/Headers/SpriteKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/MediaToolbox.framework/Headers/MediaToolbox.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AudioToolbox.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/MultipeerConnectivity.framework/Headers/MultipeerConnectivity.apinotes"
+interface-hash: "1f17955270d4c6d1b26601bdc62d4397"

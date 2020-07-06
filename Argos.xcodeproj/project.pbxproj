@@ -17,6 +17,8 @@
 		B02EA6DC24B33A0D00CC3023 /* ArgosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02EA6DB24B33A0D00CC3023 /* ArgosUITests.swift */; };
 		B02EA6EA24B33AFB00CC3023 /* BodyTrackedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02EA6E924B33AFB00CC3023 /* BodyTrackedView.swift */; };
 		B02EA6ED24B33CB200CC3023 /* character in Resources */ = {isa = PBXBuildFile; fileRef = B02EA6EC24B33CB200CC3023 /* character */; };
+		B02EA6EF24B3530B00CC3023 /* StageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02EA6EE24B3530B00CC3023 /* StageView.swift */; };
+		B02EA6F124B353CB00CC3023 /* DemonstrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02EA6F024B353CB00CC3023 /* DemonstrationView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,8 @@
 		B02EA6DD24B33A0D00CC3023 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B02EA6E924B33AFB00CC3023 /* BodyTrackedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyTrackedView.swift; sourceTree = "<group>"; };
 		B02EA6EC24B33CB200CC3023 /* character */ = {isa = PBXFileReference; lastKnownFileType = folder; path = character; sourceTree = "<group>"; };
+		B02EA6EE24B3530B00CC3023 /* StageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StageView.swift; sourceTree = "<group>"; };
+		B02EA6F024B353CB00CC3023 /* DemonstrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemonstrationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +109,8 @@
 			children = (
 				B02EA6B924B33A0B00CC3023 /* AppDelegate.swift */,
 				B02EA6E924B33AFB00CC3023 /* BodyTrackedView.swift */,
+				B02EA6EE24B3530B00CC3023 /* StageView.swift */,
+				B02EA6F024B353CB00CC3023 /* DemonstrationView.swift */,
 				B02EA6BB24B33A0B00CC3023 /* ContentView.swift */,
 				B02EA6BD24B33A0C00CC3023 /* Experience.rcproject */,
 				B02EA6BF24B33A0D00CC3023 /* Assets.xcassets */,
@@ -274,6 +280,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B02EA6F124B353CB00CC3023 /* DemonstrationView.swift in Sources */,
+				B02EA6EF24B3530B00CC3023 /* StageView.swift in Sources */,
 				B02EA6BC24B33A0B00CC3023 /* ContentView.swift in Sources */,
 				B02EA6BA24B33A0B00CC3023 /* AppDelegate.swift in Sources */,
 				B02EA6BE24B33A0C00CC3023 /* Experience.rcproject in Sources */,
