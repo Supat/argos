@@ -10,14 +10,41 @@ provides-member:
 - ["5Argos18StageView_PreviewsV", ""]
 provides-dynamic-lookup:
 depends-top-level:
+- !private "BodyTrackedView"
+- !private "DemonstrationView"
+- "FloatLiteralType"
+- !private "HStack"
+- !private "IntegerLiteralType"
 - "PreviewProvider"
 - "StageView"
 - "StageView_Previews"
-- !private "StringLiteralType"
-- !private "Text"
+- !private "VStack"
 - "View"
 depends-member:
-- !private ["SQ", "init"]
+- !private ["s18AdditiveArithmeticP", "infinity"]
+- !private ["SB", "infinity"]
+- !private ["5Argos15BodyTrackedViewV", "deinit"]
+- !private ["5Argos15BodyTrackedViewV", "init"]
+- !private ["12CoreGraphics7CGFloatV", "infinity"]
+- !private ["s7CVarArgP", "infinity"]
+- !private ["SL", "infinity"]
+- !private ["s28CustomDebugStringConvertibleP", "infinity"]
+- !private ["s17CustomReflectableP", "infinity"]
+- !private ["s23CustomStringConvertibleP", "infinity"]
+- !private ["Se", "infinity"]
+- !private ["5Argos17DemonstrationViewV", "deinit"]
+- !private ["5Argos17DemonstrationViewV", "init"]
+- !private ["SE", "infinity"]
+- !private ["SQ", "infinity"]
+- !private ["s25ExpressibleByFloatLiteralP", "infinity"]
+- !private ["s27ExpressibleByIntegerLiteralP", "infinity"]
+- !private ["s23ExpressibleByNilLiteralP", "infinity"]
+- !private ["SF", "infinity"]
+- !private ["7SwiftUI7GestureP", "infinity"]
+- !private ["7SwiftUI6HStackV", "init"]
+- !private ["SH", "infinity"]
+- !private ["Sj", "infinity"]
+- !private ["Sq", "infinity"]
 - ["7SwiftUI15PreviewProviderP", "Previews"]
 - !private ["7SwiftUI15PreviewProviderP", "StageView"]
 - ["7SwiftUI15PreviewProviderP", ""]
@@ -26,8 +53,12 @@ depends-member:
 - ["7SwiftUI15PreviewProviderP", "_previews"]
 - ["7SwiftUI15PreviewProviderP", "platform"]
 - ["7SwiftUI15PreviewProviderP", "previews"]
+- !private ["s13SignedNumericP", "infinity"]
 - ["5Argos9StageViewV", "Body"]
-- !private ["5Argos9StageViewV", "Text"]
+- !private ["5Argos9StageViewV", "BodyTrackedView"]
+- !private ["5Argos9StageViewV", "DemonstrationView"]
+- !private ["5Argos9StageViewV", "HStack"]
+- !private ["5Argos9StageViewV", "VStack"]
 - ["5Argos9StageViewV", "View"]
 - ["5Argos9StageViewV", "_Default_Body"]
 - ["5Argos9StageViewV", "_makeView"]
@@ -45,15 +76,28 @@ depends-member:
 - ["5Argos18StageView_PreviewsV", "init"]
 - ["5Argos18StageView_PreviewsV", "platform"]
 - ["5Argos18StageView_PreviewsV", "previews"]
-- !private ["7SwiftUI4TextV", "init"]
+- !private ["Sx", "infinity"]
+- !private ["7SwiftUI6VStackV", "frame"]
+- !private ["7SwiftUI6VStackV", "init"]
+- !private ["7SwiftUI16VectorArithmeticP", "infinity"]
 - ["7SwiftUI4ViewP", "Body"]
-- !private ["7SwiftUI4ViewP", "Text"]
+- !private ["7SwiftUI4ViewP", "BodyTrackedView"]
+- !private ["7SwiftUI4ViewP", "DemonstrationView"]
+- !private ["7SwiftUI4ViewP", "HStack"]
+- !private ["7SwiftUI4ViewP", "VStack"]
 - ["7SwiftUI4ViewP", ""]
 - ["7SwiftUI4ViewP", "_Default_Body"]
 - ["7SwiftUI4ViewP", "_makeView"]
 - ["7SwiftUI4ViewP", "_makeViewList"]
 - ["7SwiftUI4ViewP", "body"]
+- !private ["7SwiftUI4ViewP", "frame"]
+- !private ["7SwiftUI4ViewP", "infinity"]
 - !private ["7SwiftUI4ViewP", "init"]
+- !private ["7SwiftUI11ViewBuilderV", "buildBlock"]
+- !private ["s15_CVarArgAlignedP", "infinity"]
+- !private ["s22_CVarArgPassedAsDoubleP", "infinity"]
+- !private ["7SwiftUI18_FormatSpecifiableP", "infinity"]
+- !private ["s21_ObjectiveCBridgeableP", "infinity"]
 - ["7SwiftUI16_PreviewProviderP", "Previews"]
 - !private ["7SwiftUI16_PreviewProviderP", "StageView"]
 - ["7SwiftUI16_PreviewProviderP", ""]
@@ -63,12 +107,41 @@ depends-member:
 - ["7SwiftUI16_PreviewProviderP", "platform"]
 - ["7SwiftUI16_PreviewProviderP", "previews"]
 depends-nominal:
+- !private "s18AdditiveArithmeticP"
+- !private "SB"
+- !private "5Argos15BodyTrackedViewV"
+- !private "12CoreGraphics7CGFloatV"
+- !private "s7CVarArgP"
+- !private "SL"
+- !private "s28CustomDebugStringConvertibleP"
+- !private "s17CustomReflectableP"
+- !private "s23CustomStringConvertibleP"
+- !private "Se"
+- !private "5Argos17DemonstrationViewV"
+- !private "SE"
 - !private "SQ"
+- !private "s25ExpressibleByFloatLiteralP"
+- !private "s27ExpressibleByIntegerLiteralP"
+- !private "s23ExpressibleByNilLiteralP"
+- !private "SF"
+- !private "7SwiftUI7GestureP"
+- !private "7SwiftUI6HStackV"
+- !private "SH"
+- !private "Sj"
+- !private "Sq"
 - "7SwiftUI15PreviewProviderP"
+- !private "s13SignedNumericP"
 - "5Argos9StageViewV"
 - "5Argos18StageView_PreviewsV"
-- !private "7SwiftUI4TextV"
+- !private "Sx"
+- !private "7SwiftUI6VStackV"
+- !private "7SwiftUI16VectorArithmeticP"
 - "7SwiftUI4ViewP"
+- !private "7SwiftUI11ViewBuilderV"
+- !private "s15_CVarArgAlignedP"
+- !private "s22_CVarArgPassedAsDoubleP"
+- !private "7SwiftUI18_FormatSpecifiableP"
+- !private "s21_ObjectiveCBridgeableP"
 - "7SwiftUI16_PreviewProviderP"
 depends-dynamic-lookup:
 depends-external:

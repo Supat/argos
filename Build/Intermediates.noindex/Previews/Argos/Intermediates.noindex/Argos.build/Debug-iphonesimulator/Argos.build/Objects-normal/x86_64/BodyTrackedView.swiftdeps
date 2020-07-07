@@ -50,9 +50,11 @@ depends-top-level:
 - "SIMD3"
 - "SessionDelegate"
 - !private "StringLiteralType"
+- !private "Text"
 - !private "Transform"
 - "UIViewRepresentable"
 - "View"
+- !private "ZStack"
 - "arSessionDelegate"
 - !private "fatalError"
 - !private "simd_make_float3"
@@ -100,16 +102,23 @@ depends-member:
 - !private ["10RealityKit6ARViewC", "init"]
 - !private ["10RealityKit6ARViewC", "scene"]
 - !private ["10RealityKit6ARViewC", "session"]
+- !private ["s18AdditiveArithmeticP", "trailing"]
+- !private ["7SwiftUI9AlignmentV", "bottomTrailing"]
+- !private ["7SwiftUI9AlignmentV", "topTrailing"]
 - !private ["10RealityKit12AnchorEntityC", "addChild"]
-- ["10RealityKit12AnchorEntityC", "init"]
+- !private ["10RealityKit12AnchorEntityC", "init"]
 - !private ["10RealityKit12AnchorEntityC", "orientation"]
 - !private ["10RealityKit12AnchorEntityC", "position"]
+- !private ["7SwiftUI10AnimatableP", "trailing"]
 - !private ["7SwiftUI10AnimatableP", "zero"]
 - !private ["Sa", "subscript"]
 - !private ["SK", "subscript"]
+- !private ["SB", "trailing"]
 - ["5Argos15BodyTrackedViewV", "Body"]
 - !private ["5Argos15BodyTrackedViewV", "BodyTrackedViewContainer"]
+- !private ["5Argos15BodyTrackedViewV", "Text"]
 - ["5Argos15BodyTrackedViewV", "View"]
+- !private ["5Argos15BodyTrackedViewV", "ZStack"]
 - ["5Argos15BodyTrackedViewV", "_Default_Body"]
 - ["5Argos15BodyTrackedViewV", "_makeView"]
 - ["5Argos15BodyTrackedViewV", "_makeViewList"]
@@ -118,7 +127,6 @@ depends-member:
 - ["5Argos15BodyTrackedViewV", "init"]
 - !private ["5Argos24BodyTrackedViewContainerV", "ARBodyTrackingConfiguration"]
 - ["5Argos24BodyTrackedViewContainerV", "ARView"]
-- ["5Argos24BodyTrackedViewContainerV", "AnchorEntity"]
 - ["5Argos24BodyTrackedViewContainerV", "Body"]
 - ["5Argos24BodyTrackedViewContainerV", "Context"]
 - ["5Argos24BodyTrackedViewContainerV", "Coordinator"]
@@ -133,7 +141,6 @@ depends-member:
 - ["5Argos24BodyTrackedViewContainerV", "_overrideSizeThatFits"]
 - !private ["5Argos24BodyTrackedViewContainerV", "arSessionDelegate"]
 - ["5Argos24BodyTrackedViewContainerV", "body"]
-- ["5Argos24BodyTrackedViewContainerV", "characterAnchor"]
 - ["5Argos24BodyTrackedViewContainerV", "deinit"]
 - ["5Argos24BodyTrackedViewContainerV", "dismantleUIView"]
 - !private ["5Argos24BodyTrackedViewContainerV", "edgesIgnoringSafeArea"]
@@ -155,6 +162,7 @@ depends-member:
 - !private ["So15CALayerDelegateP", "init"]
 - !private ["So15CALayerDelegateP", "scene"]
 - !private ["So15CALayerDelegateP", "session"]
+- !private ["12CoreGraphics7CGFloatV", "trailing"]
 - !private ["So6CGRectV", "zero"]
 - !private ["s7CVarArgP", "AnchorEntity"]
 - ["s7CVarArgP", "BodyTrackedEntity"]
@@ -175,8 +183,10 @@ depends-member:
 - !private ["s7CVarArgP", "set"]
 - !private ["s7CVarArgP", "simd_make_float3"]
 - !private ["s7CVarArgP", "subscript"]
+- !private ["s7CVarArgP", "trailing"]
 - !private ["s7CVarArgP", "transform"]
 - !private ["Sl", "subscript"]
+- !private ["SL", "trailing"]
 - !private ["10RealityKit9ComponentP", "init"]
 - !private ["10RealityKit9ComponentP", "rotation"]
 - !private ["10Foundation15ContiguousBytesP", "subscript"]
@@ -208,6 +218,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "zero"]
 - !private ["s17CustomReflectableP", "scene"]
 - !private ["s17CustomReflectableP", "subscript"]
+- !private ["s17CustomReflectableP", "trailing"]
 - !private ["s17CustomReflectableP", "zero"]
 - !private ["s23CustomStringConvertibleP", "AnchorEntity"]
 - ["s23CustomStringConvertibleP", "BodyTrackedEntity"]
@@ -228,16 +239,20 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "set"]
 - !private ["s23CustomStringConvertibleP", "simd_make_float3"]
 - !private ["s23CustomStringConvertibleP", "subscript"]
+- !private ["s23CustomStringConvertibleP", "trailing"]
 - !private ["s23CustomStringConvertibleP", "transform"]
 - !private ["10Foundation12DataProtocolP", "subscript"]
 - !private ["Se", "scene"]
 - !private ["Se", "subscript"]
+- !private ["Se", "trailing"]
 - !private ["Se", "zero"]
+- !private ["7SwiftUI10EdgeInsetsV", "trailing"]
 - !private ["SE", "scene"]
 - !private ["SE", "subscript"]
+- !private ["SE", "trailing"]
 - !private ["SE", "zero"]
 - !private ["10RealityKit6EntityC", "addChild"]
-- ["10RealityKit6EntityC", "init"]
+- !private ["10RealityKit6EntityC", "init"]
 - !private ["10RealityKit6EntityC", "loadBodyTrackedAsync"]
 - !private ["10RealityKit6EntityC", "orientation"]
 - !private ["10RealityKit6EntityC", "position"]
@@ -250,6 +265,7 @@ depends-member:
 - !private ["SQ", "addChild"]
 - !private ["SQ", "all"]
 - !private ["SQ", "arView"]
+- !private ["SQ", "bottomTrailing"]
 - !private ["SQ", "character"]
 - !private ["SQ", "characterAnchor"]
 - !private ["SQ", "characterOffset"]
@@ -258,6 +274,7 @@ depends-member:
 - !private ["SQ", "isSupported"]
 - !private ["SQ", "loadBodyTrackedAsync"]
 - !private ["SQ", "orientation"]
+- !private ["SQ", "padding"]
 - !private ["SQ", "position"]
 - !private ["SQ", "rotation"]
 - !private ["SQ", "scene"]
@@ -268,34 +285,40 @@ depends-member:
 - !private ["SQ", "set"]
 - !private ["SQ", "simd_make_float3"]
 - !private ["SQ", "subscript"]
+- !private ["SQ", "topTrailing"]
+- !private ["SQ", "trailing"]
 - !private ["SQ", "transform"]
 - !private ["SQ", "zero"]
 - !private ["10RealityKit11EventSourceP", "addAnchor"]
 - !private ["10RealityKit11EventSourceP", "addChild"]
-- ["10RealityKit11EventSourceP", "init"]
+- !private ["10RealityKit11EventSourceP", "init"]
 - !private ["10RealityKit11EventSourceP", "loadBodyTrackedAsync"]
 - !private ["10RealityKit11EventSourceP", "orientation"]
 - !private ["10RealityKit11EventSourceP", "position"]
 - !private ["s25ExpressibleByArrayLiteralP", "all"]
 - !private ["s25ExpressibleByArrayLiteralP", "subscript"]
+- !private ["s25ExpressibleByArrayLiteralP", "trailing"]
+- !private ["s25ExpressibleByFloatLiteralP", "trailing"]
+- !private ["s27ExpressibleByIntegerLiteralP", "trailing"]
 - !private ["s23ExpressibleByNilLiteralP", "scene"]
+- !private ["SF", "trailing"]
 - !private ["7SwiftUI7GestureP", "scene"]
 - !private ["10RealityKit12HasAnchoringP", "addChild"]
-- ["10RealityKit12HasAnchoringP", "init"]
+- !private ["10RealityKit12HasAnchoringP", "init"]
 - !private ["10RealityKit12HasAnchoringP", "orientation"]
 - !private ["10RealityKit12HasAnchoringP", "position"]
 - !private ["10RealityKit12HasHierarchyP", "addChild"]
-- ["10RealityKit12HasHierarchyP", "init"]
+- !private ["10RealityKit12HasHierarchyP", "init"]
 - !private ["10RealityKit12HasHierarchyP", "loadBodyTrackedAsync"]
 - !private ["10RealityKit12HasHierarchyP", "orientation"]
 - !private ["10RealityKit12HasHierarchyP", "position"]
 - !private ["10RealityKit18HasSynchronizationP", "addChild"]
-- ["10RealityKit18HasSynchronizationP", "init"]
+- !private ["10RealityKit18HasSynchronizationP", "init"]
 - !private ["10RealityKit18HasSynchronizationP", "loadBodyTrackedAsync"]
 - !private ["10RealityKit18HasSynchronizationP", "orientation"]
 - !private ["10RealityKit18HasSynchronizationP", "position"]
 - !private ["10RealityKit12HasTransformP", "addChild"]
-- ["10RealityKit12HasTransformP", "init"]
+- !private ["10RealityKit12HasTransformP", "init"]
 - !private ["10RealityKit12HasTransformP", "loadBodyTrackedAsync"]
 - !private ["10RealityKit12HasTransformP", "orientation"]
 - !private ["10RealityKit12HasTransformP", "position"]
@@ -324,10 +347,11 @@ depends-member:
 - !private ["SH", "set"]
 - !private ["SH", "simd_make_float3"]
 - !private ["SH", "subscript"]
+- !private ["SH", "trailing"]
 - !private ["SH", "transform"]
 - !private ["s12IdentifiableP", "addAnchor"]
 - !private ["s12IdentifiableP", "addChild"]
-- ["s12IdentifiableP", "init"]
+- !private ["s12IdentifiableP", "init"]
 - !private ["s12IdentifiableP", "loadBodyTrackedAsync"]
 - !private ["s12IdentifiableP", "orientation"]
 - !private ["s12IdentifiableP", "position"]
@@ -386,7 +410,9 @@ depends-member:
 - !private ["So8NSObjectP", "simd_make_float3"]
 - !private ["So8NSObjectP", "transform"]
 - !private ["So14NSSecureCodingP", "transform"]
+- !private ["Sj", "trailing"]
 - !private ["s9OptionSetP", "all"]
+- !private ["s9OptionSetP", "trailing"]
 - !private ["Sq", "scene"]
 - !private ["7SwiftUI15PreviewProviderP", "BodyTrackedView"]
 - ["7SwiftUI15PreviewProviderP", "Previews"]
@@ -399,6 +425,7 @@ depends-member:
 - !private ["Sk", "subscript"]
 - !private ["Sm", "subscript"]
 - !private ["SY", "all"]
+- !private ["SY", "trailing"]
 - !private ["10RealityKit5SceneC", "addAnchor"]
 - !private ["ST", "subscript"]
 - ["5Argos15SessionDelegateC", "ARAnchor"]
@@ -425,7 +452,13 @@ depends-member:
 - ["5Argos15SessionDelegateC", "set"]
 - !private ["5Argos15SessionDelegateC", "simd_make_float3"]
 - !private ["7SwiftUI4EdgeO3SetV", "all"]
+- !private ["7SwiftUI4EdgeO3SetV", "trailing"]
 - !private ["s10SetAlgebraP", "all"]
+- !private ["s10SetAlgebraP", "trailing"]
+- !private ["s13SignedNumericP", "trailing"]
+- !private ["Sx", "trailing"]
+- !private ["7SwiftUI4TextV", "init"]
+- !private ["7SwiftUI4TextV", "padding"]
 - !private ["10RealityKit9TransformV", "init"]
 - !private ["10RealityKit9TransformV", "rotation"]
 - !private ["So29UIAccessibilityIdentificationP", "init"]
@@ -478,7 +511,6 @@ depends-member:
 - !private ["So6UIViewC", "session"]
 - !private ["7SwiftUI19UIViewRepresentableP", "ARBodyTrackingConfiguration"]
 - !private ["7SwiftUI19UIViewRepresentableP", "ARView"]
-- ["7SwiftUI19UIViewRepresentableP", "AnchorEntity"]
 - ["7SwiftUI19UIViewRepresentableP", "Body"]
 - ["7SwiftUI19UIViewRepresentableP", "Context"]
 - ["7SwiftUI19UIViewRepresentableP", "Coordinator"]
@@ -494,7 +526,6 @@ depends-member:
 - ["7SwiftUI19UIViewRepresentableP", "_overrideSizeThatFits"]
 - !private ["7SwiftUI19UIViewRepresentableP", "arSessionDelegate"]
 - ["7SwiftUI19UIViewRepresentableP", "body"]
-- !private ["7SwiftUI19UIViewRepresentableP", "characterAnchor"]
 - ["7SwiftUI19UIViewRepresentableP", "dismantleUIView"]
 - !private ["7SwiftUI19UIViewRepresentableP", "edgesIgnoringSafeArea"]
 - !private ["7SwiftUI19UIViewRepresentableP", "fatalError"]
@@ -502,14 +533,16 @@ depends-member:
 - ["7SwiftUI19UIViewRepresentableP", "makeCoordinator"]
 - ["7SwiftUI19UIViewRepresentableP", "makeUIView"]
 - ["7SwiftUI19UIViewRepresentableP", "updateUIView"]
+- !private ["7SwiftUI16VectorArithmeticP", "trailing"]
 - !private ["7SwiftUI4ViewP", "ARBodyTrackingConfiguration"]
 - !private ["7SwiftUI4ViewP", "ARView"]
-- ["7SwiftUI4ViewP", "AnchorEntity"]
 - ["7SwiftUI4ViewP", "Body"]
 - !private ["7SwiftUI4ViewP", "BodyTrackedViewContainer"]
 - ["7SwiftUI4ViewP", "Context"]
 - ["7SwiftUI4ViewP", "Coordinator"]
+- !private ["7SwiftUI4ViewP", "Text"]
 - ["7SwiftUI4ViewP", "UIViewType"]
+- !private ["7SwiftUI4ViewP", "ZStack"]
 - ["7SwiftUI4ViewP", ""]
 - ["7SwiftUI4ViewP", "_Default_Body"]
 - ["7SwiftUI4ViewP", "_Default_Coordinator"]
@@ -521,18 +554,23 @@ depends-member:
 - ["7SwiftUI4ViewP", "_overrideSizeThatFits"]
 - !private ["7SwiftUI4ViewP", "arSessionDelegate"]
 - ["7SwiftUI4ViewP", "body"]
-- !private ["7SwiftUI4ViewP", "characterAnchor"]
 - ["7SwiftUI4ViewP", "dismantleUIView"]
 - !private ["7SwiftUI4ViewP", "edgesIgnoringSafeArea"]
 - !private ["7SwiftUI4ViewP", "fatalError"]
 - !private ["7SwiftUI4ViewP", "init"]
 - ["7SwiftUI4ViewP", "makeCoordinator"]
 - ["7SwiftUI4ViewP", "makeUIView"]
+- !private ["7SwiftUI4ViewP", "padding"]
 - !private ["7SwiftUI4ViewP", "scene"]
 - ["7SwiftUI4ViewP", "updateUIView"]
+- !private ["7SwiftUI11ViewBuilderV", "buildBlock"]
+- !private ["7SwiftUI6ZStackV", "init"]
 - !private ["s14_ArrayProtocolP", "subscript"]
+- !private ["s15_CVarArgAlignedP", "trailing"]
+- !private ["s22_CVarArgPassedAsDoubleP", "trailing"]
 - !private ["s30_CustomPlaygroundQuickLookableP", "zero"]
 - !private ["s24_DestructorSafeContainerP", "subscript"]
+- !private ["7SwiftUI18_FormatSpecifiableP", "trailing"]
 - !private ["s19_HasContiguousBytesP", "subscript"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "subscript"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "AnchorEntity"]
@@ -575,6 +613,7 @@ depends-member:
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "transform"]
 - !private ["s21_ObjectiveCBridgeableP", "scene"]
 - !private ["s21_ObjectiveCBridgeableP", "subscript"]
+- !private ["s21_ObjectiveCBridgeableP", "trailing"]
 - !private ["s21_ObjectiveCBridgeableP", "zero"]
 - !private ["7SwiftUI16_PreviewProviderP", "BodyTrackedView"]
 - ["7SwiftUI16_PreviewProviderP", "Previews"]
@@ -584,6 +623,7 @@ depends-member:
 - ["7SwiftUI16_PreviewProviderP", "_previews"]
 - ["7SwiftUI16_PreviewProviderP", "platform"]
 - ["7SwiftUI16_PreviewProviderP", "previews"]
+- !private ["7SwiftUI11_VectorMathP", "trailing"]
 - !private ["s38__DefaultCustomPlaygroundQuickLookableP", "init"]
 - !private ["s38__DefaultCustomPlaygroundQuickLookableP", "scene"]
 - !private ["s38__DefaultCustomPlaygroundQuickLookableP", "session"]
@@ -598,17 +638,22 @@ depends-nominal:
 - "So17ARSessionObserverP"
 - !private "So11ARTrackableP"
 - !private "10RealityKit6ARViewC"
-- "10RealityKit12AnchorEntityC"
+- !private "s18AdditiveArithmeticP"
+- !private "7SwiftUI9AlignmentV"
+- !private "10RealityKit12AnchorEntityC"
 - !private "7SwiftUI10AnimatableP"
 - !private "Sa"
 - !private "SK"
+- !private "SB"
 - "5Argos15BodyTrackedViewV"
 - "5Argos24BodyTrackedViewContainerV"
 - "5Argos24BodyTrackedView_PreviewsV"
 - !private "So15CALayerDelegateP"
+- !private "12CoreGraphics7CGFloatV"
 - !private "So6CGRectV"
 - "s7CVarArgP"
 - !private "Sl"
+- !private "SL"
 - !private "10RealityKit9ComponentP"
 - !private "10Foundation15ContiguousBytesP"
 - "s28CustomDebugStringConvertibleP"
@@ -616,19 +661,23 @@ depends-nominal:
 - "s23CustomStringConvertibleP"
 - !private "10Foundation12DataProtocolP"
 - !private "Se"
+- !private "7SwiftUI10EdgeInsetsV"
 - !private "SE"
-- "10RealityKit6EntityC"
+- !private "10RealityKit6EntityC"
 - "SQ"
-- "10RealityKit11EventSourceP"
+- !private "10RealityKit11EventSourceP"
 - !private "s25ExpressibleByArrayLiteralP"
+- !private "s25ExpressibleByFloatLiteralP"
+- !private "s27ExpressibleByIntegerLiteralP"
 - !private "s23ExpressibleByNilLiteralP"
+- !private "SF"
 - !private "7SwiftUI7GestureP"
-- "10RealityKit12HasAnchoringP"
-- "10RealityKit12HasHierarchyP"
-- "10RealityKit18HasSynchronizationP"
-- "10RealityKit12HasTransformP"
+- !private "10RealityKit12HasAnchoringP"
+- !private "10RealityKit12HasHierarchyP"
+- !private "10RealityKit18HasSynchronizationP"
+- !private "10RealityKit12HasTransformP"
 - "SH"
-- "s12IdentifiableP"
+- !private "s12IdentifiableP"
 - !private "SM"
 - !private "10Foundation19MutableDataProtocolP"
 - !private "So8NSCodingP"
@@ -636,6 +685,7 @@ depends-nominal:
 - "So8NSObjectC"
 - "So8NSObjectP"
 - !private "So14NSSecureCodingP"
+- !private "Sj"
 - !private "s9OptionSetP"
 - !private "Sq"
 - "7SwiftUI15PreviewProviderP"
@@ -647,6 +697,9 @@ depends-nominal:
 - "5Argos15SessionDelegateC"
 - !private "7SwiftUI4EdgeO3SetV"
 - !private "s10SetAlgebraP"
+- !private "s13SignedNumericP"
+- !private "Sx"
+- !private "7SwiftUI4TextV"
 - !private "10RealityKit9TransformV"
 - !private "So29UIAccessibilityIdentificationP"
 - !private "So12UIAppearanceP"
@@ -665,16 +718,23 @@ depends-nominal:
 - !private "So23UIUserActivityRestoringP"
 - !private "So6UIViewC"
 - "7SwiftUI19UIViewRepresentableP"
+- !private "7SwiftUI16VectorArithmeticP"
 - "7SwiftUI4ViewP"
+- !private "7SwiftUI11ViewBuilderV"
+- !private "7SwiftUI6ZStackV"
 - !private "s14_ArrayProtocolP"
+- !private "s15_CVarArgAlignedP"
+- !private "s22_CVarArgPassedAsDoubleP"
 - !private "s30_CustomPlaygroundQuickLookableP"
 - !private "s24_DestructorSafeContainerP"
+- !private "7SwiftUI18_FormatSpecifiableP"
 - !private "s19_HasContiguousBytesP"
 - !private "s35_HasCustomAnyHashableRepresentationP"
 - "10Foundation27_KeyValueCodingAndObservingP"
 - "10Foundation37_KeyValueCodingAndObservingPublishingP"
 - !private "s21_ObjectiveCBridgeableP"
 - "7SwiftUI16_PreviewProviderP"
+- !private "7SwiftUI11_VectorMathP"
 - !private "s38__DefaultCustomPlaygroundQuickLookableP"
 - !private "So13simd_float4x4a"
 depends-dynamic-lookup:
@@ -732,4 +792,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AudioToolbox.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk/System/Library/Frameworks/MultipeerConnectivity.framework/Headers/MultipeerConnectivity.apinotes"
-interface-hash: "1f17955270d4c6d1b26601bdc62d4397"
+interface-hash: "1a3ad0d9b0e7028ff5fb89b384e8966e"

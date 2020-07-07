@@ -10,11 +10,15 @@ provides-member:
 - ["5Argos18StageView_PreviewsV", ""]
 provides-dynamic-lookup:
 depends-top-level:
+- !private "Binding"
 - !private "BodyTrackedView"
+- !private "BooleanLiteralType"
 - !private "DemonstrationView"
+- !private "Environment"
 - "FloatLiteralType"
 - !private "HStack"
 - !private "IntegerLiteralType"
+- !private "PresentationMode"
 - "PreviewProvider"
 - "StageView"
 - "StageView_Previews"
@@ -42,6 +46,7 @@ depends-member:
 - !private ["SF", "infinity"]
 - !private ["7SwiftUI7GestureP", "infinity"]
 - !private ["7SwiftUI6HStackV", "init"]
+- !private ["7SwiftUI6HStackV", "navigationBarHidden"]
 - !private ["SH", "infinity"]
 - !private ["Sj", "infinity"]
 - !private ["Sq", "infinity"]
@@ -54,10 +59,13 @@ depends-member:
 - ["7SwiftUI15PreviewProviderP", "platform"]
 - ["7SwiftUI15PreviewProviderP", "previews"]
 - !private ["s13SignedNumericP", "infinity"]
+- !private ["5Argos9StageViewV", "Binding"]
 - ["5Argos9StageViewV", "Body"]
 - !private ["5Argos9StageViewV", "BodyTrackedView"]
 - !private ["5Argos9StageViewV", "DemonstrationView"]
+- !private ["5Argos9StageViewV", "Environment"]
 - !private ["5Argos9StageViewV", "HStack"]
+- !private ["5Argos9StageViewV", "PresentationMode"]
 - !private ["5Argos9StageViewV", "VStack"]
 - ["5Argos9StageViewV", "View"]
 - ["5Argos9StageViewV", "_Default_Body"]
@@ -83,6 +91,7 @@ depends-member:
 - ["7SwiftUI4ViewP", "Body"]
 - !private ["7SwiftUI4ViewP", "BodyTrackedView"]
 - !private ["7SwiftUI4ViewP", "DemonstrationView"]
+- !private ["7SwiftUI4ViewP", "Environment"]
 - !private ["7SwiftUI4ViewP", "HStack"]
 - !private ["7SwiftUI4ViewP", "VStack"]
 - ["7SwiftUI4ViewP", ""]
@@ -93,6 +102,8 @@ depends-member:
 - !private ["7SwiftUI4ViewP", "frame"]
 - !private ["7SwiftUI4ViewP", "infinity"]
 - !private ["7SwiftUI4ViewP", "init"]
+- !private ["7SwiftUI4ViewP", "navigationBarBackButtonHidden"]
+- !private ["7SwiftUI4ViewP", "navigationBarHidden"]
 - !private ["7SwiftUI11ViewBuilderV", "buildBlock"]
 - !private ["s15_CVarArgAlignedP", "infinity"]
 - !private ["s22_CVarArgPassedAsDoubleP", "infinity"]
@@ -198,4 +209,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.5.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AudioToolbox.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.5.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.5.sdk/System/Library/Frameworks/MultipeerConnectivity.framework/Headers/MultipeerConnectivity.apinotes"
-interface-hash: "ec5089905c2b46cb563ce4678c1690b4"
+interface-hash: "292b5fa140312bb2f3ed0531713966b8"

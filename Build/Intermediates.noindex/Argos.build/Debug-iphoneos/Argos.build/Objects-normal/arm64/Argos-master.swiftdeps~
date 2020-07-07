@@ -1,11 +1,13 @@
 version: "Apple Swift version 5.2.4 (swiftlang-1103.0.32.9 clang-1103.0.32.53)"
 options: "cec03be6fae380ce6b1e1bd8502de326"
-build_time: [1594041716, 479659000]
+build_time: [1594119659, 457655000]
 inputs:
-  "/Users/Sui/Documents/Xcode Projects/Argos/Argos/StageSelectionView.swift": [1594041430, 150527829]
-  "/Users/Sui/Documents/Xcode Projects/Argos/Argos/DemonstrationView.swift": [1594041311, 531680776]
-  "/Users/Sui/Documents/Xcode Projects/Argos/Argos/StageView.swift": [1594039751, 514824788]
+  "/Users/Sui/Documents/Xcode Projects/Argos/Argos/StageSelection/StageSelectionView.swift": [1594107816, 543725030]
+  "/Users/Sui/Documents/Xcode Projects/Argos/Argos/Stage/DemonstrationView.swift": [1594041311, 531680776]
+  "/Users/Sui/Documents/Xcode Projects/Argos/Argos/Stage/StageView.swift": [1594107624, 943921169]
   "/Users/Sui/Documents/Xcode Projects/Argos/Argos/ContentView.swift": [1594032779, 985643999]
-  "/Users/Sui/Documents/Xcode Projects/Argos/Argos/AppDelegate.swift": [1594039442, 972630251]
-  "/Users/Sui/Documents/Xcode Projects/Argos/Argos/BodyTrackedView.swift": [1594041716, 405147110]
-  "/Users/Sui/Documents/Xcode Projects/Argos/Build/Intermediates.noindex/Argos.build/Debug-iphoneos/Argos.build/DerivedSources/RCProjectGenerated/Experience/Experience.swift": [1594039373, 597805951]
+  "/Users/Sui/Documents/Xcode Projects/Argos/Argos/AppDelegate.swift": [1594101772, 200911606]
+  "/Users/Sui/Documents/Xcode Projects/Argos/Argos/StageSelection/ActionCategoryRow.swift": [1594119659, 377569906]
+  "/Users/Sui/Documents/Xcode Projects/Argos/Argos/Stage/BodyTrackedView.swift": [1594041716, 405147110]
+  "/Users/Sui/Documents/Xcode Projects/Argos/Argos/StageSelection/StartActionView.swift": [1594108915, 574494525]
+  "/Users/Sui/Documents/Xcode Projects/Argos/Build/Intermediates.noindex/Argos.build/Debug-iphoneos/Argos.build/DerivedSources/RCProjectGenerated/Experience/Experience.swift": [1594102021, 303372063]

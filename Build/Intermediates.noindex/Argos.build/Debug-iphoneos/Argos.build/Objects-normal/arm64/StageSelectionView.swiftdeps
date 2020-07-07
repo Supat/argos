@@ -1,23 +1,67 @@
 ### Swift dependencies file v0 ###
 provides-top-level:
 - "StageSelectionView"
+- "InstructionView"
 - "StageSelectionView_Previews"
 provides-nominal:
 - "5Argos18StageSelectionViewV"
+- "5Argos15InstructionViewV"
 - "5Argos27StageSelectionView_PreviewsV"
 provides-member:
 - ["5Argos18StageSelectionViewV", ""]
+- ["5Argos15InstructionViewV", ""]
 - ["5Argos27StageSelectionView_PreviewsV", ""]
 provides-dynamic-lookup:
 depends-top-level:
+- !private "ActionCategoryRow"
+- "InstructionView"
+- !private "List"
+- !private "NavigationView"
 - "PreviewProvider"
 - "StageSelectionView"
 - "StageSelectionView_Previews"
 - !private "StringLiteralType"
 - !private "Text"
+- !private "VStack"
 - "View"
 depends-member:
+- !private ["5Argos17ActionCategoryRowV", "deinit"]
+- !private ["5Argos17ActionCategoryRowV", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "body"]
+- !private ["s28CustomDebugStringConvertibleP", "largeTitle"]
+- !private ["s17CustomReflectableP", "body"]
+- !private ["s17CustomReflectableP", "largeTitle"]
+- !private ["Se", "body"]
+- !private ["Se", "largeTitle"]
+- !private ["SE", "body"]
+- !private ["SE", "largeTitle"]
+- !private ["SQ", "body"]
+- !private ["SQ", "font"]
 - !private ["SQ", "init"]
+- !private ["SQ", "largeTitle"]
+- !private ["s23ExpressibleByNilLiteralP", "body"]
+- !private ["s23ExpressibleByNilLiteralP", "largeTitle"]
+- !private ["7SwiftUI4FontV", "body"]
+- !private ["7SwiftUI4FontV", "largeTitle"]
+- !private ["7SwiftUI7GestureP", "body"]
+- !private ["7SwiftUI7GestureP", "largeTitle"]
+- !private ["SH", "body"]
+- !private ["SH", "largeTitle"]
+- ["5Argos15InstructionViewV", "Body"]
+- !private ["5Argos15InstructionViewV", "Text"]
+- !private ["5Argos15InstructionViewV", "VStack"]
+- ["5Argos15InstructionViewV", "View"]
+- ["5Argos15InstructionViewV", "_Default_Body"]
+- ["5Argos15InstructionViewV", "_makeView"]
+- ["5Argos15InstructionViewV", "_makeViewList"]
+- ["5Argos15InstructionViewV", "body"]
+- ["5Argos15InstructionViewV", "deinit"]
+- ["5Argos15InstructionViewV", "init"]
+- !private ["7SwiftUI4ListV", "init"]
+- !private ["7SwiftUI4ListV", "navigationBarTitle"]
+- !private ["7SwiftUI14NavigationViewV", "init"]
+- !private ["Sq", "body"]
+- !private ["Sq", "largeTitle"]
 - ["7SwiftUI15PreviewProviderP", "Previews"]
 - !private ["7SwiftUI15PreviewProviderP", "StageSelectionView"]
 - ["7SwiftUI15PreviewProviderP", ""]
@@ -26,8 +70,11 @@ depends-member:
 - ["7SwiftUI15PreviewProviderP", "_previews"]
 - ["7SwiftUI15PreviewProviderP", "platform"]
 - ["7SwiftUI15PreviewProviderP", "previews"]
+- !private ["5Argos18StageSelectionViewV", "ActionCategoryRow"]
 - ["5Argos18StageSelectionViewV", "Body"]
-- !private ["5Argos18StageSelectionViewV", "Text"]
+- !private ["5Argos18StageSelectionViewV", "InstructionView"]
+- !private ["5Argos18StageSelectionViewV", "List"]
+- !private ["5Argos18StageSelectionViewV", "NavigationView"]
 - ["5Argos18StageSelectionViewV", "View"]
 - ["5Argos18StageSelectionViewV", "_Default_Body"]
 - ["5Argos18StageSelectionViewV", "_makeView"]
@@ -45,15 +92,28 @@ depends-member:
 - ["5Argos27StageSelectionView_PreviewsV", "init"]
 - ["5Argos27StageSelectionView_PreviewsV", "platform"]
 - ["5Argos27StageSelectionView_PreviewsV", "previews"]
+- !private ["7SwiftUI4TextV", "font"]
 - !private ["7SwiftUI4TextV", "init"]
+- !private ["7SwiftUI6VStackV", "init"]
+- !private ["7SwiftUI4ViewP", "ActionCategoryRow"]
 - ["7SwiftUI4ViewP", "Body"]
+- !private ["7SwiftUI4ViewP", "InstructionView"]
+- !private ["7SwiftUI4ViewP", "List"]
+- !private ["7SwiftUI4ViewP", "NavigationView"]
 - !private ["7SwiftUI4ViewP", "Text"]
+- !private ["7SwiftUI4ViewP", "VStack"]
 - ["7SwiftUI4ViewP", ""]
 - ["7SwiftUI4ViewP", "_Default_Body"]
 - ["7SwiftUI4ViewP", "_makeView"]
 - ["7SwiftUI4ViewP", "_makeViewList"]
 - ["7SwiftUI4ViewP", "body"]
+- !private ["7SwiftUI4ViewP", "font"]
 - !private ["7SwiftUI4ViewP", "init"]
+- !private ["7SwiftUI4ViewP", "largeTitle"]
+- !private ["7SwiftUI4ViewP", "navigationBarTitle"]
+- !private ["7SwiftUI11ViewBuilderV", "buildBlock"]
+- !private ["s21_ObjectiveCBridgeableP", "body"]
+- !private ["s21_ObjectiveCBridgeableP", "largeTitle"]
 - ["7SwiftUI16_PreviewProviderP", "Previews"]
 - !private ["7SwiftUI16_PreviewProviderP", "StageSelectionView"]
 - ["7SwiftUI16_PreviewProviderP", ""]
@@ -63,12 +123,28 @@ depends-member:
 - ["7SwiftUI16_PreviewProviderP", "platform"]
 - ["7SwiftUI16_PreviewProviderP", "previews"]
 depends-nominal:
+- !private "5Argos17ActionCategoryRowV"
+- !private "s28CustomDebugStringConvertibleP"
+- !private "s17CustomReflectableP"
+- !private "Se"
+- !private "SE"
 - !private "SQ"
+- !private "s23ExpressibleByNilLiteralP"
+- !private "7SwiftUI4FontV"
+- !private "7SwiftUI7GestureP"
+- !private "SH"
+- "5Argos15InstructionViewV"
+- !private "7SwiftUI4ListV"
+- !private "7SwiftUI14NavigationViewV"
+- !private "Sq"
 - "7SwiftUI15PreviewProviderP"
 - "5Argos18StageSelectionViewV"
 - "5Argos27StageSelectionView_PreviewsV"
 - !private "7SwiftUI4TextV"
+- !private "7SwiftUI6VStackV"
 - "7SwiftUI4ViewP"
+- !private "7SwiftUI11ViewBuilderV"
+- !private "s21_ObjectiveCBridgeableP"
 - "7SwiftUI16_PreviewProviderP"
 depends-dynamic-lookup:
 depends-external:
@@ -125,4 +201,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.5.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AudioToolbox.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.5.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.5.sdk/System/Library/Frameworks/MultipeerConnectivity.framework/Headers/MultipeerConnectivity.apinotes"
-interface-hash: "da2b53b14dbedd8c5597fddc07920ebe"
+interface-hash: "19a705ee58301c095a5ab7dce20c41c6"

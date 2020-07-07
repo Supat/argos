@@ -17,7 +17,7 @@ depends-top-level:
 - "AssignmentPrecedence"
 - "Bool"
 - !private "BooleanLiteralType"
-- !private "StageView"
+- !private "StageSelectionView"
 - "UIApplication"
 - "UIApplicationDelegate"
 - !private "UIHostingController"
@@ -26,7 +26,7 @@ depends-top-level:
 - "UIWindow"
 depends-member:
 - ["5Argos11AppDelegateC", "Bool"]
-- !private ["5Argos11AppDelegateC", "StageView"]
+- !private ["5Argos11AppDelegateC", "StageSelectionView"]
 - ["5Argos11AppDelegateC", "UIApplication"]
 - !private ["5Argos11AppDelegateC", "UIHostingController"]
 - !private ["5Argos11AppDelegateC", "UIScreen"]
@@ -50,7 +50,7 @@ depends-member:
 - !private ["So15CALayerDelegateP", "makeKeyAndVisible"]
 - !private ["So15CALayerDelegateP", "rootViewController"]
 - ["s7CVarArgP", "LaunchOptionsKey"]
-- !private ["s7CVarArgP", "StageView"]
+- !private ["s7CVarArgP", "StageSelectionView"]
 - !private ["s7CVarArgP", "UIHostingController"]
 - !private ["s7CVarArgP", "UIScreen"]
 - !private ["s7CVarArgP", "UIWindow"]
@@ -74,7 +74,7 @@ depends-member:
 - !private ["s7CVarArgP", "rootViewController"]
 - ["s7CVarArgP", "window"]
 - ["s28CustomDebugStringConvertibleP", "LaunchOptionsKey"]
-- !private ["s28CustomDebugStringConvertibleP", "StageView"]
+- !private ["s28CustomDebugStringConvertibleP", "StageSelectionView"]
 - !private ["s28CustomDebugStringConvertibleP", "UIHostingController"]
 - !private ["s28CustomDebugStringConvertibleP", "UIScreen"]
 - !private ["s28CustomDebugStringConvertibleP", "UIWindow"]
@@ -98,7 +98,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "rootViewController"]
 - ["s28CustomDebugStringConvertibleP", "window"]
 - ["s23CustomStringConvertibleP", "LaunchOptionsKey"]
-- !private ["s23CustomStringConvertibleP", "StageView"]
+- !private ["s23CustomStringConvertibleP", "StageSelectionView"]
 - !private ["s23CustomStringConvertibleP", "UIHostingController"]
 - !private ["s23CustomStringConvertibleP", "UIScreen"]
 - !private ["s23CustomStringConvertibleP", "UIWindow"]
@@ -122,7 +122,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "rootViewController"]
 - ["s23CustomStringConvertibleP", "window"]
 - ["SQ", "LaunchOptionsKey"]
-- !private ["SQ", "StageView"]
+- !private ["SQ", "StageSelectionView"]
 - !private ["SQ", "UIHostingController"]
 - !private ["SQ", "UIScreen"]
 - !private ["SQ", "UIWindow"]
@@ -146,7 +146,7 @@ depends-member:
 - !private ["SQ", "rootViewController"]
 - ["SQ", "window"]
 - ["SH", "LaunchOptionsKey"]
-- !private ["SH", "StageView"]
+- !private ["SH", "StageSelectionView"]
 - !private ["SH", "UIHostingController"]
 - !private ["SH", "UIScreen"]
 - !private ["SH", "UIWindow"]
@@ -175,7 +175,7 @@ depends-member:
 - !private ["So26NSExtensionRequestHandlingP", "init"]
 - ["So8NSObjectC", "Bool"]
 - ["So8NSObjectC", "LaunchOptionsKey"]
-- !private ["So8NSObjectC", "StageView"]
+- !private ["So8NSObjectC", "StageSelectionView"]
 - ["So8NSObjectC", "UIApplication"]
 - !private ["So8NSObjectC", "UIHostingController"]
 - !private ["So8NSObjectC", "UIScreen"]
@@ -199,7 +199,7 @@ depends-member:
 - !private ["So8NSObjectC", "rootViewController"]
 - ["So8NSObjectC", "window"]
 - ["So8NSObjectP", "LaunchOptionsKey"]
-- !private ["So8NSObjectP", "StageView"]
+- !private ["So8NSObjectP", "StageSelectionView"]
 - !private ["So8NSObjectP", "UIHostingController"]
 - !private ["So8NSObjectP", "UIScreen"]
 - !private ["So8NSObjectP", "UIWindow"]
@@ -222,8 +222,8 @@ depends-member:
 - !private ["So8NSObjectP", "makeKeyAndVisible"]
 - !private ["So8NSObjectP", "rootViewController"]
 - ["So8NSObjectP", "window"]
-- !private ["5Argos9StageViewV", "deinit"]
-- !private ["5Argos9StageViewV", "init"]
+- !private ["5Argos18StageSelectionViewV", "deinit"]
+- !private ["5Argos18StageSelectionViewV", "init"]
 - !private ["So29UIAccessibilityIdentificationP", "init"]
 - !private ["So29UIAccessibilityIdentificationP", "makeKeyAndVisible"]
 - !private ["So29UIAccessibilityIdentificationP", "rootViewController"]
@@ -234,7 +234,7 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "makeKeyAndVisible"]
 - !private ["So21UIAppearanceContainerP", "rootViewController"]
 - ["So13UIApplicationC", "LaunchOptionsKey"]
-- !private ["So21UIApplicationDelegateP", "StageView"]
+- !private ["So21UIApplicationDelegateP", "StageSelectionView"]
 - !private ["So21UIApplicationDelegateP", "UIHostingController"]
 - !private ["So21UIApplicationDelegateP", "UIScreen"]
 - !private ["So21UIApplicationDelegateP", "UIWindow"]
@@ -273,7 +273,7 @@ depends-member:
 - !private ["So24UILargeContentViewerItemP", "makeKeyAndVisible"]
 - !private ["So24UILargeContentViewerItemP", "rootViewController"]
 - ["So30UIPasteConfigurationSupportingP", "LaunchOptionsKey"]
-- !private ["So30UIPasteConfigurationSupportingP", "StageView"]
+- !private ["So30UIPasteConfigurationSupportingP", "StageSelectionView"]
 - !private ["So30UIPasteConfigurationSupportingP", "UIHostingController"]
 - !private ["So30UIPasteConfigurationSupportingP", "UIScreen"]
 - !private ["So30UIPasteConfigurationSupportingP", "UIWindow"]
@@ -296,7 +296,7 @@ depends-member:
 - ["So30UIPasteConfigurationSupportingP", "window"]
 - ["So11UIResponderC", "Bool"]
 - ["So11UIResponderC", "LaunchOptionsKey"]
-- !private ["So11UIResponderC", "StageView"]
+- !private ["So11UIResponderC", "StageSelectionView"]
 - ["So11UIResponderC", "UIApplication"]
 - !private ["So11UIResponderC", "UIHostingController"]
 - !private ["So11UIResponderC", "UIScreen"]
@@ -319,7 +319,7 @@ depends-member:
 - !private ["So11UIResponderC", "rootViewController"]
 - ["So11UIResponderC", "window"]
 - ["So30UIResponderStandardEditActionsP", "LaunchOptionsKey"]
-- !private ["So30UIResponderStandardEditActionsP", "StageView"]
+- !private ["So30UIResponderStandardEditActionsP", "StageSelectionView"]
 - !private ["So30UIResponderStandardEditActionsP", "UIHostingController"]
 - !private ["So30UIResponderStandardEditActionsP", "UIScreen"]
 - !private ["So30UIResponderStandardEditActionsP", "UIWindow"]
@@ -349,7 +349,7 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "makeKeyAndVisible"]
 - !private ["So18UITraitEnvironmentP", "rootViewController"]
 - ["So23UIUserActivityRestoringP", "LaunchOptionsKey"]
-- !private ["So23UIUserActivityRestoringP", "StageView"]
+- !private ["So23UIUserActivityRestoringP", "StageSelectionView"]
 - !private ["So23UIUserActivityRestoringP", "UIHostingController"]
 - !private ["So23UIUserActivityRestoringP", "UIScreen"]
 - !private ["So23UIUserActivityRestoringP", "UIWindow"]
@@ -379,7 +379,7 @@ depends-member:
 - !private ["So8UIWindowC", "rootViewController"]
 - !private ["7SwiftUI4ViewP", "init"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "LaunchOptionsKey"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "StageView"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "StageSelectionView"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIHostingController"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIScreen"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIWindow"]
@@ -403,7 +403,7 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "rootViewController"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "window"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", "LaunchOptionsKey"]
-- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "StageView"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "StageSelectionView"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "UIHostingController"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "UIScreen"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "UIWindow"]
@@ -442,7 +442,7 @@ depends-nominal:
 - !private "So26NSExtensionRequestHandlingP"
 - "So8NSObjectC"
 - "So8NSObjectP"
-- !private "5Argos9StageViewV"
+- !private "5Argos18StageSelectionViewV"
 - !private "So29UIAccessibilityIdentificationP"
 - !private "So12UIAppearanceP"
 - !private "So21UIAppearanceContainerP"
