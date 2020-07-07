@@ -1,9 +1,0 @@
-version: "Apple Swift version 5.2.4 (swiftlang-1103.0.32.9 clang-1103.0.32.53)"
-options: "719453a63885a460c1e8a47619fd5984"
-build_time: [1594039305, 80262000]
-inputs:
-  "/Users/Sui/Documents/Xcode Projects/Argos/Argos/StageView.swift": [1594039178, 626048644]
-  "/Users/Sui/Documents/Xcode Projects/Argos/Argos/ContentView.swift": [1594032779, 985643999]
-  "/Users/Sui/Documents/Xcode Projects/Argos/Argos/AppDelegate.swift": [1594033288, 446545425]
-  "/Users/Sui/Documents/Xcode Projects/Argos/Argos/BodyTrackedView.swift": !dirty [1594038281, 290368617]
-  "/Users/Sui/Documents/Xcode Projects/Argos/Build/Intermediates.noindex/Previews/Argos/Intermediates.noindex/Argos.build/Debug-iphonesimulator/Argos.build/DerivedSources/RCProjectGenerated/Experience/Experience.swift": [1594039233, 14886112]

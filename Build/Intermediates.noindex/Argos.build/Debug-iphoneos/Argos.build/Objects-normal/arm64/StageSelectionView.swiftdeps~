@@ -16,6 +16,8 @@ depends-top-level:
 - !private "ActionCategoryRow"
 - "InstructionView"
 - !private "List"
+- !private "NavigationView"
+- "ObservedObject"
 - "PreviewProvider"
 - "StageSelectionView"
 - "StageSelectionView_Previews"
@@ -23,6 +25,7 @@ depends-top-level:
 - !private "Text"
 - !private "VStack"
 - "View"
+- "ViewRouter"
 depends-member:
 - !private ["5Argos17ActionCategoryRowV", "deinit"]
 - !private ["5Argos17ActionCategoryRowV", "init"]
@@ -32,6 +35,7 @@ depends-member:
 - !private ["s17CustomReflectableP", "largeTitle"]
 - !private ["Se", "body"]
 - !private ["Se", "largeTitle"]
+- ["7SwiftUI15DynamicPropertyP", "init"]
 - !private ["SE", "body"]
 - !private ["SE", "largeTitle"]
 - !private ["SQ", "body"]
@@ -57,31 +61,42 @@ depends-member:
 - ["5Argos15InstructionViewV", "deinit"]
 - ["5Argos15InstructionViewV", "init"]
 - !private ["7SwiftUI4ListV", "init"]
+- !private ["7SwiftUI4ListV", "navigationBarTitle"]
+- !private ["7SwiftUI14NavigationViewV", "init"]
+- !private ["7Combine16ObservableObjectP", "init"]
+- ["7SwiftUI14ObservedObjectV", "init"]
 - !private ["Sq", "body"]
 - !private ["Sq", "largeTitle"]
 - ["7SwiftUI15PreviewProviderP", "Previews"]
 - !private ["7SwiftUI15PreviewProviderP", "StageSelectionView"]
+- !private ["7SwiftUI15PreviewProviderP", "ViewRouter"]
 - ["7SwiftUI15PreviewProviderP", ""]
 - ["7SwiftUI15PreviewProviderP", "_Default_Previews"]
 - ["7SwiftUI15PreviewProviderP", "_platform"]
 - ["7SwiftUI15PreviewProviderP", "_previews"]
 - ["7SwiftUI15PreviewProviderP", "platform"]
 - ["7SwiftUI15PreviewProviderP", "previews"]
+- ["5Argos18StageSelectionViewV", "$viewRouter"]
 - !private ["5Argos18StageSelectionViewV", "ActionCategoryRow"]
 - ["5Argos18StageSelectionViewV", "Body"]
 - !private ["5Argos18StageSelectionViewV", "InstructionView"]
 - !private ["5Argos18StageSelectionViewV", "List"]
-- !private ["5Argos18StageSelectionViewV", "VStack"]
+- !private ["5Argos18StageSelectionViewV", "NavigationView"]
+- ["5Argos18StageSelectionViewV", "ObservedObject"]
 - ["5Argos18StageSelectionViewV", "View"]
+- ["5Argos18StageSelectionViewV", "ViewRouter"]
 - ["5Argos18StageSelectionViewV", "_Default_Body"]
 - ["5Argos18StageSelectionViewV", "_makeView"]
 - ["5Argos18StageSelectionViewV", "_makeViewList"]
+- !private ["5Argos18StageSelectionViewV", "_viewRouter"]
 - ["5Argos18StageSelectionViewV", "body"]
 - ["5Argos18StageSelectionViewV", "deinit"]
 - ["5Argos18StageSelectionViewV", "init"]
+- ["5Argos18StageSelectionViewV", "viewRouter"]
 - ["5Argos27StageSelectionView_PreviewsV", "Previews"]
 - !private ["5Argos27StageSelectionView_PreviewsV", "StageSelectionView"]
 - ["5Argos27StageSelectionView_PreviewsV", "View"]
+- !private ["5Argos27StageSelectionView_PreviewsV", "ViewRouter"]
 - ["5Argos27StageSelectionView_PreviewsV", "_Default_Previews"]
 - ["5Argos27StageSelectionView_PreviewsV", "_platform"]
 - ["5Argos27StageSelectionView_PreviewsV", "_previews"]
@@ -96,6 +111,8 @@ depends-member:
 - ["7SwiftUI4ViewP", "Body"]
 - !private ["7SwiftUI4ViewP", "InstructionView"]
 - !private ["7SwiftUI4ViewP", "List"]
+- !private ["7SwiftUI4ViewP", "NavigationView"]
+- ["7SwiftUI4ViewP", "ObservedObject"]
 - !private ["7SwiftUI4ViewP", "Text"]
 - !private ["7SwiftUI4ViewP", "VStack"]
 - ["7SwiftUI4ViewP", ""]
@@ -106,11 +123,15 @@ depends-member:
 - !private ["7SwiftUI4ViewP", "font"]
 - !private ["7SwiftUI4ViewP", "init"]
 - !private ["7SwiftUI4ViewP", "largeTitle"]
+- !private ["7SwiftUI4ViewP", "navigationBarTitle"]
 - !private ["7SwiftUI11ViewBuilderV", "buildBlock"]
+- ["5Argos10ViewRouterC", "deinit"]
+- !private ["5Argos10ViewRouterC", "init"]
 - !private ["s21_ObjectiveCBridgeableP", "body"]
 - !private ["s21_ObjectiveCBridgeableP", "largeTitle"]
 - ["7SwiftUI16_PreviewProviderP", "Previews"]
 - !private ["7SwiftUI16_PreviewProviderP", "StageSelectionView"]
+- !private ["7SwiftUI16_PreviewProviderP", "ViewRouter"]
 - ["7SwiftUI16_PreviewProviderP", ""]
 - ["7SwiftUI16_PreviewProviderP", "_Default_Previews"]
 - ["7SwiftUI16_PreviewProviderP", "_platform"]
@@ -122,6 +143,7 @@ depends-nominal:
 - !private "s28CustomDebugStringConvertibleP"
 - !private "s17CustomReflectableP"
 - !private "Se"
+- "7SwiftUI15DynamicPropertyP"
 - !private "SE"
 - !private "SQ"
 - !private "s23ExpressibleByNilLiteralP"
@@ -130,6 +152,9 @@ depends-nominal:
 - !private "SH"
 - "5Argos15InstructionViewV"
 - !private "7SwiftUI4ListV"
+- !private "7SwiftUI14NavigationViewV"
+- !private "7Combine16ObservableObjectP"
+- "7SwiftUI14ObservedObjectV"
 - !private "Sq"
 - "7SwiftUI15PreviewProviderP"
 - "5Argos18StageSelectionViewV"
@@ -138,6 +163,7 @@ depends-nominal:
 - !private "7SwiftUI6VStackV"
 - "7SwiftUI4ViewP"
 - !private "7SwiftUI11ViewBuilderV"
+- "5Argos10ViewRouterC"
 - !private "s21_ObjectiveCBridgeableP"
 - "7SwiftUI16_PreviewProviderP"
 depends-dynamic-lookup:
@@ -195,4 +221,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.5.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AudioToolbox.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.5.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.5.sdk/System/Library/Frameworks/MultipeerConnectivity.framework/Headers/MultipeerConnectivity.apinotes"
-interface-hash: "19a705ee58301c095a5ab7dce20c41c6"
+interface-hash: "e02b09e16ab0fb3f85820a51ac8511de"

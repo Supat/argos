@@ -12,7 +12,6 @@ provides-dynamic-lookup:
 depends-top-level:
 - !private "Button"
 - "PreviewProvider"
-- !private "StageView"
 - "StartActionView"
 - "StartActionView_Previews"
 - !private "StringLiteralType"
@@ -42,10 +41,8 @@ depends-member:
 - ["7SwiftUI15PreviewProviderP", "_previews"]
 - ["7SwiftUI15PreviewProviderP", "platform"]
 - ["7SwiftUI15PreviewProviderP", "previews"]
-- !private ["5Argos9StageViewV", "init"]
 - ["5Argos15StartActionViewV", "Body"]
 - !private ["5Argos15StartActionViewV", "Button"]
-- !private ["5Argos15StartActionViewV", "StageView"]
 - !private ["5Argos15StartActionViewV", "Text"]
 - !private ["5Argos15StartActionViewV", "VStack"]
 - ["5Argos15StartActionViewV", "View"]
@@ -71,7 +68,6 @@ depends-member:
 - !private ["7SwiftUI6VStackV", "init"]
 - ["7SwiftUI4ViewP", "Body"]
 - !private ["7SwiftUI4ViewP", "Button"]
-- !private ["7SwiftUI4ViewP", "StageView"]
 - !private ["7SwiftUI4ViewP", "Text"]
 - !private ["7SwiftUI4ViewP", "VStack"]
 - ["7SwiftUI4ViewP", ""]
@@ -106,7 +102,6 @@ depends-nominal:
 - !private "SH"
 - !private "Sq"
 - "7SwiftUI15PreviewProviderP"
-- !private "5Argos9StageViewV"
 - "5Argos15StartActionViewV"
 - "5Argos24StartActionView_PreviewsV"
 - !private "7SwiftUI4TextV"

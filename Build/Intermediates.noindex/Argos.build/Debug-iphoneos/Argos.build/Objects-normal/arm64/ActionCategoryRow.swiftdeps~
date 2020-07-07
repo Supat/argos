@@ -18,7 +18,7 @@ depends-top-level:
 - "ActionCategoryRow_Previews"
 - !private "BooleanLiteralType"
 - !private "Color"
-- "FloatLiteralType"
+- !private "FloatLiteralType"
 - !private "HStack"
 - !private "Image"
 - !private "IntegerLiteralType"

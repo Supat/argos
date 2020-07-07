@@ -9,6 +9,9 @@
 import SwiftUI
 
 struct StartActionView: View {
+    
+    @ObservedObject var viewRouter: ViewRouter;
+    
     var body: some View {
         VStack {
             Text("Action Type")
@@ -17,6 +20,7 @@ struct StartActionView: View {
             Text("Are you ready to start?");
             Button(action: {
                 print("Start button is pressed");
+                self.viewRouter.currentPage = "stagePage";
             }) {
                 Text("Start");
             }
@@ -26,6 +30,6 @@ struct StartActionView: View {
 
 struct StartActionView_Previews: PreviewProvider {
     static var previews: some View {
-        StartActionView()
+        StartActionView(viewRouter: ViewRouter())
     }
 }

@@ -23,6 +23,7 @@
 		B02EA6F624B4488300CC3023 /* ActionCategoryRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02EA6F524B4488300CC3023 /* ActionCategoryRow.swift */; };
 		B02EA6F924B461F800CC3023 /* StartActionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02EA6F824B461F800CC3023 /* StartActionView.swift */; };
 		B02EA6FB24B4946000CC3023 /* ParentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02EA6FA24B4946000CC3023 /* ParentView.swift */; };
+		B02EA6FD24B495F000CC3023 /* ViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02EA6FC24B495F000CC3023 /* ViewRouter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,7 @@
 		B02EA6F524B4488300CC3023 /* ActionCategoryRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionCategoryRow.swift; sourceTree = "<group>"; };
 		B02EA6F824B461F800CC3023 /* StartActionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartActionView.swift; sourceTree = "<group>"; };
 		B02EA6FA24B4946000CC3023 /* ParentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentView.swift; sourceTree = "<group>"; };
+		B02EA6FC24B495F000CC3023 /* ViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewRouter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +119,7 @@
 			children = (
 				B02EA6B924B33A0B00CC3023 /* AppDelegate.swift */,
 				B02EA6FA24B4946000CC3023 /* ParentView.swift */,
+				B02EA6FC24B495F000CC3023 /* ViewRouter.swift */,
 				B02EA6F724B44E9F00CC3023 /* StageSelection */,
 				B02EA6F424B35D4B00CC3023 /* Stage */,
 				B02EA6BB24B33A0B00CC3023 /* ContentView.swift */,
@@ -159,8 +162,8 @@
 		B02EA6F424B35D4B00CC3023 /* Stage */ = {
 			isa = PBXGroup;
 			children = (
-				B02EA6E924B33AFB00CC3023 /* BodyTrackedView.swift */,
 				B02EA6EE24B3530B00CC3023 /* StageView.swift */,
+				B02EA6E924B33AFB00CC3023 /* BodyTrackedView.swift */,
 				B02EA6F024B353CB00CC3023 /* DemonstrationView.swift */,
 			);
 			path = Stage;
@@ -170,8 +173,8 @@
 			isa = PBXGroup;
 			children = (
 				B02EA6F224B35BD600CC3023 /* StageSelectionView.swift */,
-				B02EA6F824B461F800CC3023 /* StartActionView.swift */,
 				B02EA6F524B4488300CC3023 /* ActionCategoryRow.swift */,
+				B02EA6F824B461F800CC3023 /* StartActionView.swift */,
 			);
 			path = StageSelection;
 			sourceTree = "<group>";
@@ -315,6 +318,7 @@
 				B02EA6FB24B4946000CC3023 /* ParentView.swift in Sources */,
 				B02EA6BA24B33A0B00CC3023 /* AppDelegate.swift in Sources */,
 				B02EA6BE24B33A0C00CC3023 /* Experience.rcproject in Sources */,
+				B02EA6FD24B495F000CC3023 /* ViewRouter.swift in Sources */,
 				B02EA6F624B4488300CC3023 /* ActionCategoryRow.swift in Sources */,
 				B02EA6EA24B33AFB00CC3023 /* BodyTrackedView.swift in Sources */,
 				B02EA6F924B461F800CC3023 /* StartActionView.swift in Sources */,

@@ -9,14 +9,17 @@
 import SwiftUI
 
 struct StageSelectionView: View {
+    
+    @ObservedObject var viewRouter: ViewRouter;
+    
     var body: some View {
         NavigationView {
             List {
-                ActionCategoryRow();
-                ActionCategoryRow();
-                ActionCategoryRow();
-                ActionCategoryRow();
-                ActionCategoryRow();
+                ActionCategoryRow(viewRouter: viewRouter);
+                ActionCategoryRow(viewRouter: viewRouter);
+                ActionCategoryRow(viewRouter: viewRouter);
+                ActionCategoryRow(viewRouter: viewRouter);
+                ActionCategoryRow(viewRouter: viewRouter);
             }
             .navigationBarTitle("Select Action");
             
@@ -39,6 +42,6 @@ struct InstructionView: View {
 
 struct StageSelectionView_Previews: PreviewProvider {
     static var previews: some View {
-        StageSelectionView()
+        StageSelectionView(viewRouter: ViewRouter())
     }
 }

@@ -9,6 +9,9 @@
 import SwiftUI
 
 struct ActionCategoryRow: View {
+    
+    @ObservedObject var viewRouter: ViewRouter;
+    
     var body: some View {
         VStack(alignment: .leading) {
             Text("Action Type")
@@ -19,22 +22,22 @@ struct ActionCategoryRow: View {
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack(alignment: .top, spacing: 0) {
                     NavigationLink(
-                        destination: StartActionView()
+                        destination: StartActionView(viewRouter: viewRouter)
                     ) {
                         ActionCategoryItem();
                     }
                     NavigationLink(
-                        destination: StartActionView()
+                        destination: StartActionView(viewRouter: viewRouter)
                     ) {
                         ActionCategoryItem();
                     }
                     NavigationLink(
-                        destination: StartActionView()
+                        destination: StartActionView(viewRouter: viewRouter)
                     ) {
                         ActionCategoryItem();
                     }
                     NavigationLink(
-                        destination: StartActionView()
+                        destination: StartActionView(viewRouter: viewRouter)
                     ) {
                         ActionCategoryItem();
                     }
@@ -64,6 +67,6 @@ struct ActionCategoryItem: View {
 
 struct ActionCategoryRow_Previews: PreviewProvider {
     static var previews: some View {
-        ActionCategoryRow()
+        ActionCategoryRow(viewRouter: ViewRouter())
     }
 }

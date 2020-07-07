@@ -23,6 +23,7 @@ depends-top-level:
 - !private "Image"
 - !private "IntegerLiteralType"
 - !private "NavigationLink"
+- "ObservedObject"
 - "PreviewProvider"
 - !private "ScrollView"
 - !private "StartActionView"
@@ -30,6 +31,7 @@ depends-top-level:
 - !private "Text"
 - !private "VStack"
 - "View"
+- "ViewRouter"
 depends-member:
 - ["5Argos18ActionCategoryItemV", "Body"]
 - !private ["5Argos18ActionCategoryItemV", "Color"]
@@ -43,24 +45,30 @@ depends-member:
 - ["5Argos18ActionCategoryItemV", "body"]
 - ["5Argos18ActionCategoryItemV", "deinit"]
 - ["5Argos18ActionCategoryItemV", "init"]
+- ["5Argos17ActionCategoryRowV", "$viewRouter"]
 - !private ["5Argos17ActionCategoryRowV", "ActionCategoryItem"]
 - ["5Argos17ActionCategoryRowV", "Body"]
 - !private ["5Argos17ActionCategoryRowV", "HStack"]
 - !private ["5Argos17ActionCategoryRowV", "NavigationLink"]
+- ["5Argos17ActionCategoryRowV", "ObservedObject"]
 - !private ["5Argos17ActionCategoryRowV", "ScrollView"]
 - !private ["5Argos17ActionCategoryRowV", "StartActionView"]
 - !private ["5Argos17ActionCategoryRowV", "Text"]
 - !private ["5Argos17ActionCategoryRowV", "VStack"]
 - ["5Argos17ActionCategoryRowV", "View"]
+- ["5Argos17ActionCategoryRowV", "ViewRouter"]
 - ["5Argos17ActionCategoryRowV", "_Default_Body"]
 - ["5Argos17ActionCategoryRowV", "_makeView"]
 - ["5Argos17ActionCategoryRowV", "_makeViewList"]
+- !private ["5Argos17ActionCategoryRowV", "_viewRouter"]
 - ["5Argos17ActionCategoryRowV", "body"]
 - ["5Argos17ActionCategoryRowV", "deinit"]
 - ["5Argos17ActionCategoryRowV", "init"]
+- ["5Argos17ActionCategoryRowV", "viewRouter"]
 - !private ["5Argos26ActionCategoryRow_PreviewsV", "ActionCategoryRow"]
 - ["5Argos26ActionCategoryRow_PreviewsV", "Previews"]
 - ["5Argos26ActionCategoryRow_PreviewsV", "View"]
+- !private ["5Argos26ActionCategoryRow_PreviewsV", "ViewRouter"]
 - ["5Argos26ActionCategoryRow_PreviewsV", "_Default_Previews"]
 - ["5Argos26ActionCategoryRow_PreviewsV", "_platform"]
 - ["5Argos26ActionCategoryRow_PreviewsV", "_previews"]
@@ -84,6 +92,7 @@ depends-member:
 - !private ["Se", "headline"]
 - !private ["Se", "original"]
 - !private ["Se", "primary"]
+- ["7SwiftUI15DynamicPropertyP", "init"]
 - !private ["SE", "caption"]
 - !private ["SE", "headline"]
 - !private ["SE", "original"]
@@ -128,6 +137,8 @@ depends-member:
 - !private ["7SwiftUI5ImageV", "renderingMode"]
 - !private ["7SwiftUI5ImageV", "resizable"]
 - !private ["7SwiftUI14NavigationLinkV", "init"]
+- !private ["7Combine16ObservableObjectP", "init"]
+- ["7SwiftUI14ObservedObjectV", "init"]
 - !private ["s9OptionSetP", "horizontal"]
 - !private ["s9OptionSetP", "leading"]
 - !private ["s9OptionSetP", "top"]
@@ -137,6 +148,7 @@ depends-member:
 - !private ["Sq", "primary"]
 - !private ["7SwiftUI15PreviewProviderP", "ActionCategoryRow"]
 - ["7SwiftUI15PreviewProviderP", "Previews"]
+- !private ["7SwiftUI15PreviewProviderP", "ViewRouter"]
 - ["7SwiftUI15PreviewProviderP", ""]
 - ["7SwiftUI15PreviewProviderP", "_Default_Previews"]
 - ["7SwiftUI15PreviewProviderP", "_platform"]
@@ -172,6 +184,7 @@ depends-member:
 - !private ["7SwiftUI4ViewP", "HStack"]
 - !private ["7SwiftUI4ViewP", "Image"]
 - !private ["7SwiftUI4ViewP", "NavigationLink"]
+- ["7SwiftUI4ViewP", "ObservedObject"]
 - !private ["7SwiftUI4ViewP", "ScrollView"]
 - !private ["7SwiftUI4ViewP", "StartActionView"]
 - !private ["7SwiftUI4ViewP", "Text"]
@@ -195,13 +208,17 @@ depends-member:
 - !private ["7SwiftUI4ViewP", "primary"]
 - !private ["7SwiftUI4ViewP", "renderingMode"]
 - !private ["7SwiftUI4ViewP", "resizable"]
+- !private ["7SwiftUI4ViewP", "viewRouter"]
 - !private ["7SwiftUI11ViewBuilderV", "buildBlock"]
+- ["5Argos10ViewRouterC", "deinit"]
+- !private ["5Argos10ViewRouterC", "init"]
 - !private ["s21_ObjectiveCBridgeableP", "caption"]
 - !private ["s21_ObjectiveCBridgeableP", "headline"]
 - !private ["s21_ObjectiveCBridgeableP", "original"]
 - !private ["s21_ObjectiveCBridgeableP", "primary"]
 - !private ["7SwiftUI16_PreviewProviderP", "ActionCategoryRow"]
 - ["7SwiftUI16_PreviewProviderP", "Previews"]
+- !private ["7SwiftUI16_PreviewProviderP", "ViewRouter"]
 - ["7SwiftUI16_PreviewProviderP", ""]
 - ["7SwiftUI16_PreviewProviderP", "_Default_Previews"]
 - ["7SwiftUI16_PreviewProviderP", "_platform"]
@@ -217,6 +234,7 @@ depends-nominal:
 - !private "s17CustomReflectableP"
 - !private "s23CustomStringConvertibleP"
 - !private "Se"
+- "7SwiftUI15DynamicPropertyP"
 - !private "SE"
 - !private "SQ"
 - !private "s25ExpressibleByArrayLiteralP"
@@ -228,6 +246,8 @@ depends-nominal:
 - !private "7SwiftUI19HorizontalAlignmentV"
 - !private "7SwiftUI5ImageV"
 - !private "7SwiftUI14NavigationLinkV"
+- !private "7Combine16ObservableObjectP"
+- "7SwiftUI14ObservedObjectV"
 - !private "s9OptionSetP"
 - !private "Sq"
 - "7SwiftUI15PreviewProviderP"
@@ -244,6 +264,7 @@ depends-nominal:
 - !private "7SwiftUI17VerticalAlignmentV"
 - "7SwiftUI4ViewP"
 - !private "7SwiftUI11ViewBuilderV"
+- "5Argos10ViewRouterC"
 - !private "s21_ObjectiveCBridgeableP"
 - "7SwiftUI16_PreviewProviderP"
 depends-dynamic-lookup:
@@ -301,4 +322,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.5.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AudioToolbox.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.5.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.5.sdk/System/Library/Frameworks/MultipeerConnectivity.framework/Headers/MultipeerConnectivity.apinotes"
-interface-hash: "a4d57c5a0bf25399525f0fc2c7c107df"
+interface-hash: "78ca55e2816215d15a5e0329337af879"

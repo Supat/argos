@@ -9,13 +9,22 @@
 import SwiftUI
 
 struct ParentView: View {
+    
+    @ObservedObject var viewRouter: ViewRouter;
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            if viewRouter.currentPage == "selectionPage" {
+                StageSelectionView(viewRouter: viewRouter);
+            } else if viewRouter.currentPage == "stagePage" {
+                StageView();
+            }
+        }
     }
 }
 
 struct ParentView_Previews: PreviewProvider {
     static var previews: some View {
-        ParentView()
+        ParentView(viewRouter: ViewRouter())
     }
 }
