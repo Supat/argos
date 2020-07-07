@@ -17,7 +17,7 @@ struct ParentView: View {
             if viewRouter.currentPage == "selectionPage" {
                 StageSelectionView(viewRouter: viewRouter);
             } else if viewRouter.currentPage == "stagePage" {
-                StageView();
+                StageView(viewRouter: viewRouter);
             }
         }
     }

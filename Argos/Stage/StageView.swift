@@ -9,23 +9,35 @@
 import SwiftUI
 
 struct StageView: View {
+    
+    @ObservedObject var viewRouter: ViewRouter;
+    
     var body: some View {
-        HStack {
-            VStack {
-                BodyTrackedView()
+        ZStack(alignment: .topLeading) {
+            HStack {
+                VStack {
+                    BodyTrackedView()
+                }
+                    .frame(minWidth: 0, maxWidth: .infinity);
+                
+                VStack {
+                    DemonstrationView()
+                }
+                    .frame(minWidth: 0, maxWidth: .infinity);
             }
-                .frame(minWidth: 0, maxWidth: .infinity);
             
-            VStack {
-                DemonstrationView()
+            Button(action: {
+                self.viewRouter.currentPage = "selectionPage";
+            }) {
+                Text("Back");
             }
-                .frame(minWidth: 0, maxWidth: .infinity);
+                .padding(.leading);
         }
     }
 }
 
 struct StageView_Previews: PreviewProvider {
     static var previews: some View {
-        StageView()
+        StageView(viewRouter: ViewRouter())
     }
 }

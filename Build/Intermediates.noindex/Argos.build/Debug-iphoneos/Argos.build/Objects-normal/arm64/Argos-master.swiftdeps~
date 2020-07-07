@@ -1,12 +1,12 @@
 version: "Apple Swift version 5.2.4 (swiftlang-1103.0.32.9 clang-1103.0.32.53)"
 options: "cec03be6fae380ce6b1e1bd8502de326"
-build_time: [1594122509, 388658000]
+build_time: [1594123063, 835750000]
 inputs:
-  "/Users/Sui/Documents/Xcode Projects/Argos/Argos/StageSelection/StageSelectionView.swift": !private [1594122301, 295108482]
+  "/Users/Sui/Documents/Xcode Projects/Argos/Argos/StageSelection/StageSelectionView.swift": [1594122529, 47937376]
   "/Users/Sui/Documents/Xcode Projects/Argos/Argos/Stage/DemonstrationView.swift": [1594041311, 531680776]
-  "/Users/Sui/Documents/Xcode Projects/Argos/Argos/Stage/StageView.swift": [1594107624, 943921169]
+  "/Users/Sui/Documents/Xcode Projects/Argos/Argos/Stage/StageView.swift": [1594123063, 753621568]
   "/Users/Sui/Documents/Xcode Projects/Argos/Argos/ContentView.swift": [1594032779, 985643999]
-  "/Users/Sui/Documents/Xcode Projects/Argos/Argos/ParentView.swift": [1594122301, 282178814]
+  "/Users/Sui/Documents/Xcode Projects/Argos/Argos/ParentView.swift": [1594122788, 979124090]
   "/Users/Sui/Documents/Xcode Projects/Argos/Argos/AppDelegate.swift": [1594122153, 495167504]
   "/Users/Sui/Documents/Xcode Projects/Argos/Argos/ViewRouter.swift": [1594122041, 750560006]
   "/Users/Sui/Documents/Xcode Projects/Argos/Argos/StageSelection/ActionCategoryRow.swift": [1594122508, 840059724]
