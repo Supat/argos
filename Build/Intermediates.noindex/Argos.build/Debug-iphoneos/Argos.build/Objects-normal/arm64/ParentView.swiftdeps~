@@ -18,9 +18,11 @@ depends-top-level:
 - !private "StageSelectionView"
 - !private "StageView"
 - !private "StringLiteralType"
+- !private "Text"
 - !private "VStack"
 - "View"
 - "ViewRouter"
+- !private "ZStack"
 depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "none"]
 - !private ["s28CustomDebugStringConvertibleP", "some"]
@@ -31,6 +33,7 @@ depends-member:
 - ["7SwiftUI15DynamicPropertyP", "init"]
 - !private ["SE", "none"]
 - !private ["SE", "some"]
+- !private ["SQ", "init"]
 - !private ["SQ", "none"]
 - !private ["SQ", "some"]
 - !private ["s23ExpressibleByNilLiteralP", "none"]
@@ -49,9 +52,11 @@ depends-member:
 - ["5Argos10ParentViewV", "ObservedObject"]
 - !private ["5Argos10ParentViewV", "StageSelectionView"]
 - !private ["5Argos10ParentViewV", "StageView"]
+- !private ["5Argos10ParentViewV", "Text"]
 - !private ["5Argos10ParentViewV", "VStack"]
 - ["5Argos10ParentViewV", "View"]
 - ["5Argos10ParentViewV", "ViewRouter"]
+- !private ["5Argos10ParentViewV", "ZStack"]
 - ["5Argos10ParentViewV", "_Default_Body"]
 - ["5Argos10ParentViewV", "_makeView"]
 - ["5Argos10ParentViewV", "_makeViewList"]
@@ -84,12 +89,15 @@ depends-member:
 - !private ["5Argos18StageSelectionViewV", "init"]
 - !private ["5Argos9StageViewV", "deinit"]
 - !private ["5Argos9StageViewV", "init"]
+- !private ["7SwiftUI4TextV", "init"]
 - !private ["7SwiftUI6VStackV", "init"]
 - ["7SwiftUI4ViewP", "Body"]
 - ["7SwiftUI4ViewP", "ObservedObject"]
 - !private ["7SwiftUI4ViewP", "StageSelectionView"]
 - !private ["7SwiftUI4ViewP", "StageView"]
+- !private ["7SwiftUI4ViewP", "Text"]
 - !private ["7SwiftUI4ViewP", "VStack"]
+- !private ["7SwiftUI4ViewP", "ZStack"]
 - ["7SwiftUI4ViewP", ""]
 - ["7SwiftUI4ViewP", "_Default_Body"]
 - ["7SwiftUI4ViewP", "_makeView"]
@@ -105,6 +113,7 @@ depends-member:
 - !private ["5Argos10ViewRouterC", "currentPage"]
 - ["5Argos10ViewRouterC", "deinit"]
 - !private ["5Argos10ViewRouterC", "init"]
+- !private ["7SwiftUI6ZStackV", "init"]
 - !private ["s21_ObjectiveCBridgeableP", "none"]
 - !private ["s21_ObjectiveCBridgeableP", "some"]
 - !private ["7SwiftUI16_PreviewProviderP", "ParentView"]
@@ -134,10 +143,12 @@ depends-nominal:
 - "7SwiftUI15PreviewProviderP"
 - !private "5Argos18StageSelectionViewV"
 - !private "5Argos9StageViewV"
+- !private "7SwiftUI4TextV"
 - !private "7SwiftUI6VStackV"
 - "7SwiftUI4ViewP"
 - !private "7SwiftUI11ViewBuilderV"
 - "5Argos10ViewRouterC"
+- !private "7SwiftUI6ZStackV"
 - !private "s21_ObjectiveCBridgeableP"
 - "7SwiftUI16_PreviewProviderP"
 depends-dynamic-lookup:

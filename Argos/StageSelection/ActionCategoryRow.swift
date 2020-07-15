@@ -57,7 +57,7 @@ struct ActionCategoryItem: View {
                 .background(Color.gray)
                 .cornerRadius(10)
                 
-            Text("Difficulty")
+            Text("Difficulty Level")
                 .foregroundColor(.primary)
                 .font(.caption);
         }

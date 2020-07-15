@@ -14,8 +14,16 @@ struct StartActionView: View {
     
     var body: some View {
         VStack {
-            Text("Action Type")
+            Text("Action Type at Difficulty Level")
                 .font(.headline);
+            
+            Spacer()
+                .frame(height: 50);
+            
+            Text("Detail instruction for this session appears here");
+            
+            Spacer()
+                .frame(height: 50);
             
             Text("Are you ready to start?");
             Button(action: {

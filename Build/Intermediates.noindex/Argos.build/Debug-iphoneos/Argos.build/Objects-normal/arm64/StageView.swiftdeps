@@ -13,7 +13,9 @@ depends-top-level:
 - !private "AssignmentPrecedence"
 - !private "BodyTrackedView"
 - !private "Button"
+- !private "Color"
 - !private "DemonstrationView"
+- !private "ExternalSignalView"
 - "FloatLiteralType"
 - !private "HStack"
 - !private "IntegerLiteralType"
@@ -30,6 +32,7 @@ depends-top-level:
 depends-member:
 - !private ["s18AdditiveArithmeticP", "infinity"]
 - !private ["s18AdditiveArithmeticP", "leading"]
+- !private ["7SwiftUI9AlignmentV", "bottom"]
 - !private ["7SwiftUI9AlignmentV", "topLeading"]
 - !private ["7SwiftUI10AnimatableP", "leading"]
 - !private ["SB", "infinity"]
@@ -42,11 +45,13 @@ depends-member:
 - !private ["12CoreGraphics7CGFloatV", "leading"]
 - !private ["s7CVarArgP", "infinity"]
 - !private ["s7CVarArgP", "leading"]
+- !private ["7SwiftUI5ColorV", "gray"]
 - !private ["SL", "infinity"]
 - !private ["SL", "leading"]
 - !private ["s28CustomDebugStringConvertibleP", "infinity"]
 - !private ["s17CustomReflectableP", "infinity"]
 - !private ["s17CustomReflectableP", "leading"]
+- !private ["s23CustomStringConvertibleP", "gray"]
 - !private ["s23CustomStringConvertibleP", "infinity"]
 - !private ["s23CustomStringConvertibleP", "leading"]
 - !private ["Se", "infinity"]
@@ -57,20 +62,27 @@ depends-member:
 - !private ["7SwiftUI10EdgeInsetsV", "leading"]
 - !private ["SE", "infinity"]
 - !private ["SE", "leading"]
+- !private ["SQ", "all"]
+- !private ["SQ", "bottom"]
+- !private ["SQ", "gray"]
 - !private ["SQ", "infinity"]
 - !private ["SQ", "init"]
 - !private ["SQ", "leading"]
 - !private ["SQ", "topLeading"]
+- !private ["s25ExpressibleByArrayLiteralP", "all"]
 - !private ["s25ExpressibleByArrayLiteralP", "leading"]
 - !private ["s25ExpressibleByFloatLiteralP", "infinity"]
 - !private ["s25ExpressibleByFloatLiteralP", "leading"]
 - !private ["s27ExpressibleByIntegerLiteralP", "infinity"]
 - !private ["s27ExpressibleByIntegerLiteralP", "leading"]
 - !private ["s23ExpressibleByNilLiteralP", "infinity"]
+- !private ["5Argos18ExternalSignalViewV", "deinit"]
+- !private ["5Argos18ExternalSignalViewV", "init"]
 - !private ["SF", "infinity"]
 - !private ["SF", "leading"]
 - !private ["7SwiftUI7GestureP", "infinity"]
 - !private ["7SwiftUI6HStackV", "init"]
+- !private ["SH", "gray"]
 - !private ["SH", "infinity"]
 - !private ["SH", "leading"]
 - !private ["Sj", "infinity"]
@@ -78,6 +90,7 @@ depends-member:
 - !private ["7Combine16ObservableObjectP", "currentPage"]
 - !private ["7Combine16ObservableObjectP", "init"]
 - ["7SwiftUI14ObservedObjectV", "init"]
+- !private ["s9OptionSetP", "all"]
 - !private ["s9OptionSetP", "leading"]
 - !private ["Sq", "infinity"]
 - ["7SwiftUI15PreviewProviderP", "Previews"]
@@ -89,16 +102,22 @@ depends-member:
 - ["7SwiftUI15PreviewProviderP", "_previews"]
 - ["7SwiftUI15PreviewProviderP", "platform"]
 - ["7SwiftUI15PreviewProviderP", "previews"]
+- !private ["SY", "all"]
 - !private ["SY", "leading"]
+- !private ["7SwiftUI4EdgeO3SetV", "all"]
 - !private ["7SwiftUI4EdgeO3SetV", "leading"]
+- !private ["s10SetAlgebraP", "all"]
 - !private ["s10SetAlgebraP", "leading"]
+- !private ["7SwiftUI10ShapeStyleP", "gray"]
 - !private ["s13SignedNumericP", "infinity"]
 - !private ["s13SignedNumericP", "leading"]
 - ["5Argos9StageViewV", "$viewRouter"]
 - ["5Argos9StageViewV", "Body"]
 - !private ["5Argos9StageViewV", "BodyTrackedView"]
 - !private ["5Argos9StageViewV", "Button"]
+- !private ["5Argos9StageViewV", "Color"]
 - !private ["5Argos9StageViewV", "DemonstrationView"]
+- !private ["5Argos9StageViewV", "ExternalSignalView"]
 - !private ["5Argos9StageViewV", "HStack"]
 - ["5Argos9StageViewV", "ObservedObject"]
 - !private ["5Argos9StageViewV", "Text"]
@@ -135,7 +154,9 @@ depends-member:
 - ["7SwiftUI4ViewP", "Body"]
 - !private ["7SwiftUI4ViewP", "BodyTrackedView"]
 - !private ["7SwiftUI4ViewP", "Button"]
+- !private ["7SwiftUI4ViewP", "Color"]
 - !private ["7SwiftUI4ViewP", "DemonstrationView"]
+- !private ["7SwiftUI4ViewP", "ExternalSignalView"]
 - !private ["7SwiftUI4ViewP", "HStack"]
 - ["7SwiftUI4ViewP", "ObservedObject"]
 - !private ["7SwiftUI4ViewP", "Text"]
@@ -145,8 +166,11 @@ depends-member:
 - ["7SwiftUI4ViewP", "_Default_Body"]
 - ["7SwiftUI4ViewP", "_makeView"]
 - ["7SwiftUI4ViewP", "_makeViewList"]
+- !private ["7SwiftUI4ViewP", "background"]
 - ["7SwiftUI4ViewP", "body"]
+- !private ["7SwiftUI4ViewP", "edgesIgnoringSafeArea"]
 - !private ["7SwiftUI4ViewP", "frame"]
+- !private ["7SwiftUI4ViewP", "gray"]
 - !private ["7SwiftUI4ViewP", "infinity"]
 - !private ["7SwiftUI4ViewP", "init"]
 - !private ["7SwiftUI4ViewP", "padding"]
@@ -155,6 +179,7 @@ depends-member:
 - !private ["5Argos10ViewRouterC", "currentPage"]
 - ["5Argos10ViewRouterC", "deinit"]
 - !private ["5Argos10ViewRouterC", "init"]
+- !private ["7SwiftUI6ZStackV", "edgesIgnoringSafeArea"]
 - !private ["7SwiftUI6ZStackV", "init"]
 - !private ["s15_CVarArgAlignedP", "infinity"]
 - !private ["s15_CVarArgAlignedP", "leading"]
@@ -183,6 +208,7 @@ depends-nominal:
 - !private "7SwiftUI6ButtonV"
 - !private "12CoreGraphics7CGFloatV"
 - !private "s7CVarArgP"
+- !private "7SwiftUI5ColorV"
 - !private "SL"
 - !private "s28CustomDebugStringConvertibleP"
 - !private "s17CustomReflectableP"
@@ -197,6 +223,7 @@ depends-nominal:
 - !private "s25ExpressibleByFloatLiteralP"
 - !private "s27ExpressibleByIntegerLiteralP"
 - !private "s23ExpressibleByNilLiteralP"
+- !private "5Argos18ExternalSignalViewV"
 - !private "SF"
 - !private "7SwiftUI7GestureP"
 - !private "7SwiftUI6HStackV"
@@ -210,6 +237,7 @@ depends-nominal:
 - !private "SY"
 - !private "7SwiftUI4EdgeO3SetV"
 - !private "s10SetAlgebraP"
+- !private "7SwiftUI10ShapeStyleP"
 - !private "s13SignedNumericP"
 - "5Argos9StageViewV"
 - "5Argos18StageView_PreviewsV"

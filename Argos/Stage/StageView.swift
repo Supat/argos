@@ -13,26 +13,35 @@ struct StageView: View {
     @ObservedObject var viewRouter: ViewRouter;
     
     var body: some View {
-        ZStack(alignment: .topLeading) {
-            HStack {
-                VStack {
-                    BodyTrackedView()
+        ZStack(alignment: .bottom) {
+            ZStack(alignment: .topLeading) {
+                HStack {
+                    VStack {
+                        BodyTrackedView();
+                    }
+                        .frame(minWidth: 0, maxWidth: .infinity);
+                    
+                    VStack {
+                        DemonstrationView();
+                    }
+                        .frame(minWidth: 0, maxWidth: .infinity);
                 }
-                    .frame(minWidth: 0, maxWidth: .infinity);
                 
-                VStack {
-                    DemonstrationView()
+                Button(action: {
+                    self.viewRouter.currentPage = "selectionPage";
+                }) {
+                    Text("Back");
                 }
-                    .frame(minWidth: 0, maxWidth: .infinity);
+                    .padding(.leading);
             }
-            
-            Button(action: {
-                self.viewRouter.currentPage = "selectionPage";
-            }) {
-                Text("Back");
+            VStack {
+                ExternalSignalView();
             }
-                .padding(.leading);
+                .frame(maxHeight: 240)
+                .frame(maxWidth: .infinity)
+                .background(Color.gray);
         }
+            .edgesIgnoringSafeArea(.all)
     }
 }
 

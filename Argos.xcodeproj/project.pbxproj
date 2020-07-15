@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B013ECD324B5BF4000BC1A53 /* ModalGraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B013ECD224B5BF4000BC1A53 /* ModalGraphView.swift */; };
+		B013ECD624BEA86B00BC1A53 /* ExternalSignalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B013ECD524BEA86B00BC1A53 /* ExternalSignalView.swift */; };
 		B02EA6BA24B33A0B00CC3023 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02EA6B924B33A0B00CC3023 /* AppDelegate.swift */; };
 		B02EA6BC24B33A0B00CC3023 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02EA6BB24B33A0B00CC3023 /* ContentView.swift */; };
 		B02EA6BE24B33A0C00CC3023 /* Experience.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = B02EA6BD24B33A0C00CC3023 /* Experience.rcproject */; };
@@ -44,6 +46,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B013ECD224B5BF4000BC1A53 /* ModalGraphView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalGraphView.swift; sourceTree = "<group>"; };
+		B013ECD524BEA86B00BC1A53 /* ExternalSignalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExternalSignalView.swift; sourceTree = "<group>"; };
 		B02EA6B624B33A0B00CC3023 /* Argos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Argos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B02EA6B924B33A0B00CC3023 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B02EA6BB24B33A0B00CC3023 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -94,9 +98,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B013ECD424BEA82000BC1A53 /* ExternalSignal */ = {
+			isa = PBXGroup;
+			children = (
+				B013ECD524BEA86B00BC1A53 /* ExternalSignalView.swift */,
+			);
+			path = ExternalSignal;
+			sourceTree = "<group>";
+		};
 		B02EA6AD24B33A0B00CC3023 = {
 			isa = PBXGroup;
 			children = (
+				B013ECD224B5BF4000BC1A53 /* ModalGraphView.swift */,
 				B02EA6B824B33A0B00CC3023 /* Argos */,
 				B02EA6CF24B33A0D00CC3023 /* ArgosTests */,
 				B02EA6DA24B33A0D00CC3023 /* ArgosUITests */,
@@ -117,6 +130,7 @@
 		B02EA6B824B33A0B00CC3023 /* Argos */ = {
 			isa = PBXGroup;
 			children = (
+				B013ECD424BEA82000BC1A53 /* ExternalSignal */,
 				B02EA6B924B33A0B00CC3023 /* AppDelegate.swift */,
 				B02EA6FA24B4946000CC3023 /* ParentView.swift */,
 				B02EA6FC24B495F000CC3023 /* ViewRouter.swift */,
@@ -316,11 +330,13 @@
 				B02EA6EF24B3530B00CC3023 /* StageView.swift in Sources */,
 				B02EA6BC24B33A0B00CC3023 /* ContentView.swift in Sources */,
 				B02EA6FB24B4946000CC3023 /* ParentView.swift in Sources */,
+				B013ECD324B5BF4000BC1A53 /* ModalGraphView.swift in Sources */,
 				B02EA6BA24B33A0B00CC3023 /* AppDelegate.swift in Sources */,
 				B02EA6BE24B33A0C00CC3023 /* Experience.rcproject in Sources */,
 				B02EA6FD24B495F000CC3023 /* ViewRouter.swift in Sources */,
 				B02EA6F624B4488300CC3023 /* ActionCategoryRow.swift in Sources */,
 				B02EA6EA24B33AFB00CC3023 /* BodyTrackedView.swift in Sources */,
+				B013ECD624BEA86B00BC1A53 /* ExternalSignalView.swift in Sources */,
 				B02EA6F924B461F800CC3023 /* StartActionView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

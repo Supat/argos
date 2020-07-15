@@ -13,11 +13,13 @@ struct ParentView: View {
     @ObservedObject var viewRouter: ViewRouter;
     
     var body: some View {
-        VStack {
-            if viewRouter.currentPage == "selectionPage" {
-                StageSelectionView(viewRouter: viewRouter);
-            } else if viewRouter.currentPage == "stagePage" {
-                StageView(viewRouter: viewRouter);
+        ZStack {
+            VStack {
+                if viewRouter.currentPage == "selectionPage" {
+                    StageSelectionView(viewRouter: viewRouter);
+                } else if viewRouter.currentPage == "stagePage" {
+                    StageView(viewRouter: viewRouter);
+                }
             }
         }
     }
