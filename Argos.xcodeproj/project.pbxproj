@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		B013ECD324B5BF4000BC1A53 /* ModalGraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B013ECD224B5BF4000BC1A53 /* ModalGraphView.swift */; };
 		B013ECD624BEA86B00BC1A53 /* ExternalSignalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B013ECD524BEA86B00BC1A53 /* ExternalSignalView.swift */; };
+		B013ECD924BEDF2000BC1A53 /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B013ECD824BEDF2000BC1A53 /* PlayerView.swift */; };
+		B013ECDB24C1799E00BC1A53 /* VideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B013ECDA24C1799E00BC1A53 /* VideoView.swift */; };
 		B02EA6BA24B33A0B00CC3023 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02EA6B924B33A0B00CC3023 /* AppDelegate.swift */; };
 		B02EA6BC24B33A0B00CC3023 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02EA6BB24B33A0B00CC3023 /* ContentView.swift */; };
 		B02EA6BE24B33A0C00CC3023 /* Experience.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = B02EA6BD24B33A0C00CC3023 /* Experience.rcproject */; };
@@ -48,6 +50,8 @@
 /* Begin PBXFileReference section */
 		B013ECD224B5BF4000BC1A53 /* ModalGraphView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalGraphView.swift; sourceTree = "<group>"; };
 		B013ECD524BEA86B00BC1A53 /* ExternalSignalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExternalSignalView.swift; sourceTree = "<group>"; };
+		B013ECD824BEDF2000BC1A53 /* PlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
+		B013ECDA24C1799E00BC1A53 /* VideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoView.swift; sourceTree = "<group>"; };
 		B02EA6B624B33A0B00CC3023 /* Argos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Argos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B02EA6B924B33A0B00CC3023 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B02EA6BB24B33A0B00CC3023 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -106,6 +110,15 @@
 			path = ExternalSignal;
 			sourceTree = "<group>";
 		};
+		B013ECD724BEDEE400BC1A53 /* VideoPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				B013ECD824BEDF2000BC1A53 /* PlayerView.swift */,
+				B013ECDA24C1799E00BC1A53 /* VideoView.swift */,
+			);
+			path = VideoPlayer;
+			sourceTree = "<group>";
+		};
 		B02EA6AD24B33A0B00CC3023 = {
 			isa = PBXGroup;
 			children = (
@@ -130,6 +143,7 @@
 		B02EA6B824B33A0B00CC3023 /* Argos */ = {
 			isa = PBXGroup;
 			children = (
+				B013ECD724BEDEE400BC1A53 /* VideoPlayer */,
 				B013ECD424BEA82000BC1A53 /* ExternalSignal */,
 				B02EA6B924B33A0B00CC3023 /* AppDelegate.swift */,
 				B02EA6FA24B4946000CC3023 /* ParentView.swift */,
@@ -331,9 +345,11 @@
 				B02EA6BC24B33A0B00CC3023 /* ContentView.swift in Sources */,
 				B02EA6FB24B4946000CC3023 /* ParentView.swift in Sources */,
 				B013ECD324B5BF4000BC1A53 /* ModalGraphView.swift in Sources */,
+				B013ECDB24C1799E00BC1A53 /* VideoView.swift in Sources */,
 				B02EA6BA24B33A0B00CC3023 /* AppDelegate.swift in Sources */,
 				B02EA6BE24B33A0C00CC3023 /* Experience.rcproject in Sources */,
 				B02EA6FD24B495F000CC3023 /* ViewRouter.swift in Sources */,
+				B013ECD924BEDF2000BC1A53 /* PlayerView.swift in Sources */,
 				B02EA6F624B4488300CC3023 /* ActionCategoryRow.swift in Sources */,
 				B02EA6EA24B33AFB00CC3023 /* BodyTrackedView.swift in Sources */,
 				B013ECD624BEA86B00BC1A53 /* ExternalSignalView.swift in Sources */,

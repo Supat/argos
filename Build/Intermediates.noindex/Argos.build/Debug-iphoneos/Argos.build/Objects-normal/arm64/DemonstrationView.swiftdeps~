@@ -1,260 +1,94 @@
 ### Swift dependencies file v0 ###
 provides-top-level:
-- "StageView"
-- "StageView_Previews"
+- "DemonstrationView"
+- "DemonstrationView_Previews"
 provides-nominal:
-- "5Argos9StageViewV"
-- "5Argos18StageView_PreviewsV"
+- "5Argos17DemonstrationViewV"
+- "5Argos26DemonstrationView_PreviewsV"
 provides-member:
-- ["5Argos9StageViewV", ""]
-- ["5Argos18StageView_PreviewsV", ""]
+- ["5Argos17DemonstrationViewV", ""]
+- ["5Argos26DemonstrationView_PreviewsV", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- !private "AssignmentPrecedence"
-- !private "BodyTrackedView"
-- !private "Button"
-- !private "Color"
-- !private "DemonstrationView"
-- !private "ExternalSignalView"
-- "FloatLiteralType"
-- !private "HStack"
-- !private "IntegerLiteralType"
-- "ObservedObject"
+- "DemonstrationView"
+- "DemonstrationView_Previews"
+- !private "FloatLiteralType"
+- !private "Image"
 - "PreviewProvider"
-- "StageView"
-- "StageView_Previews"
 - !private "StringLiteralType"
 - !private "Text"
 - !private "VStack"
 - "View"
-- "ViewRouter"
-- !private "ZStack"
 depends-member:
-- !private ["s18AdditiveArithmeticP", "infinity"]
-- !private ["s18AdditiveArithmeticP", "leading"]
-- !private ["7SwiftUI9AlignmentV", "bottom"]
-- !private ["7SwiftUI9AlignmentV", "topLeading"]
-- !private ["7SwiftUI10AnimatableP", "leading"]
-- !private ["SB", "infinity"]
-- !private ["SB", "leading"]
-- !private ["5Argos15BodyTrackedViewV", "deinit"]
-- !private ["5Argos15BodyTrackedViewV", "init"]
-- !private ["7SwiftUI6ButtonV", "init"]
-- !private ["7SwiftUI6ButtonV", "padding"]
-- !private ["12CoreGraphics7CGFloatV", "infinity"]
-- !private ["12CoreGraphics7CGFloatV", "leading"]
-- !private ["s7CVarArgP", "infinity"]
-- !private ["s7CVarArgP", "leading"]
-- !private ["7SwiftUI5ColorV", "gray"]
-- !private ["SL", "infinity"]
-- !private ["SL", "leading"]
-- !private ["s28CustomDebugStringConvertibleP", "infinity"]
-- !private ["s17CustomReflectableP", "infinity"]
-- !private ["s17CustomReflectableP", "leading"]
-- !private ["s23CustomStringConvertibleP", "gray"]
-- !private ["s23CustomStringConvertibleP", "infinity"]
-- !private ["s23CustomStringConvertibleP", "leading"]
-- !private ["Se", "infinity"]
-- !private ["Se", "leading"]
-- !private ["5Argos17DemonstrationViewV", "deinit"]
-- !private ["5Argos17DemonstrationViewV", "init"]
-- ["7SwiftUI15DynamicPropertyP", "init"]
-- !private ["7SwiftUI10EdgeInsetsV", "leading"]
-- !private ["SE", "infinity"]
-- !private ["SE", "leading"]
-- !private ["SQ", "all"]
-- !private ["SQ", "bottom"]
-- !private ["SQ", "gray"]
-- !private ["SQ", "infinity"]
+- ["5Argos17DemonstrationViewV", "Body"]
+- !private ["5Argos17DemonstrationViewV", "Image"]
+- !private ["5Argos17DemonstrationViewV", "Text"]
+- !private ["5Argos17DemonstrationViewV", "VStack"]
+- ["5Argos17DemonstrationViewV", "View"]
+- ["5Argos17DemonstrationViewV", "_Default_Body"]
+- ["5Argos17DemonstrationViewV", "_makeView"]
+- ["5Argos17DemonstrationViewV", "_makeViewList"]
+- ["5Argos17DemonstrationViewV", "body"]
+- ["5Argos17DemonstrationViewV", "deinit"]
+- ["5Argos17DemonstrationViewV", "init"]
+- !private ["5Argos26DemonstrationView_PreviewsV", "DemonstrationView"]
+- ["5Argos26DemonstrationView_PreviewsV", "Previews"]
+- ["5Argos26DemonstrationView_PreviewsV", "View"]
+- ["5Argos26DemonstrationView_PreviewsV", "_Default_Previews"]
+- ["5Argos26DemonstrationView_PreviewsV", "_platform"]
+- ["5Argos26DemonstrationView_PreviewsV", "_previews"]
+- ["5Argos26DemonstrationView_PreviewsV", "deinit"]
+- ["5Argos26DemonstrationView_PreviewsV", "init"]
+- ["5Argos26DemonstrationView_PreviewsV", "platform"]
+- ["5Argos26DemonstrationView_PreviewsV", "previews"]
+- !private ["SQ", "frame"]
 - !private ["SQ", "init"]
-- !private ["SQ", "leading"]
-- !private ["SQ", "topLeading"]
-- !private ["s25ExpressibleByArrayLiteralP", "all"]
-- !private ["s25ExpressibleByArrayLiteralP", "leading"]
-- !private ["s25ExpressibleByFloatLiteralP", "infinity"]
-- !private ["s25ExpressibleByFloatLiteralP", "leading"]
-- !private ["s27ExpressibleByIntegerLiteralP", "infinity"]
-- !private ["s27ExpressibleByIntegerLiteralP", "leading"]
-- !private ["s23ExpressibleByNilLiteralP", "infinity"]
-- !private ["5Argos18ExternalSignalViewV", "deinit"]
-- !private ["5Argos18ExternalSignalViewV", "init"]
-- !private ["SF", "infinity"]
-- !private ["SF", "leading"]
-- !private ["7SwiftUI7GestureP", "infinity"]
-- !private ["7SwiftUI6HStackV", "init"]
-- !private ["SH", "gray"]
-- !private ["SH", "infinity"]
-- !private ["SH", "leading"]
-- !private ["Sj", "infinity"]
-- !private ["Sj", "leading"]
-- !private ["7Combine16ObservableObjectP", "currentPage"]
-- !private ["7Combine16ObservableObjectP", "init"]
-- ["7SwiftUI14ObservedObjectV", "init"]
-- !private ["s9OptionSetP", "all"]
-- !private ["s9OptionSetP", "leading"]
-- !private ["Sq", "infinity"]
+- !private ["SQ", "resizable"]
+- !private ["7SwiftUI5ImageV", "frame"]
+- !private ["7SwiftUI5ImageV", "init"]
+- !private ["7SwiftUI5ImageV", "resizable"]
+- !private ["7SwiftUI15PreviewProviderP", "DemonstrationView"]
 - ["7SwiftUI15PreviewProviderP", "Previews"]
-- !private ["7SwiftUI15PreviewProviderP", "StageView"]
-- !private ["7SwiftUI15PreviewProviderP", "ViewRouter"]
 - ["7SwiftUI15PreviewProviderP", ""]
 - ["7SwiftUI15PreviewProviderP", "_Default_Previews"]
 - ["7SwiftUI15PreviewProviderP", "_platform"]
 - ["7SwiftUI15PreviewProviderP", "_previews"]
 - ["7SwiftUI15PreviewProviderP", "platform"]
 - ["7SwiftUI15PreviewProviderP", "previews"]
-- !private ["SY", "all"]
-- !private ["SY", "leading"]
-- !private ["7SwiftUI4EdgeO3SetV", "all"]
-- !private ["7SwiftUI4EdgeO3SetV", "leading"]
-- !private ["s10SetAlgebraP", "all"]
-- !private ["s10SetAlgebraP", "leading"]
-- !private ["7SwiftUI10ShapeStyleP", "gray"]
-- !private ["s13SignedNumericP", "infinity"]
-- !private ["s13SignedNumericP", "leading"]
-- ["5Argos9StageViewV", "$viewRouter"]
-- ["5Argos9StageViewV", "Body"]
-- !private ["5Argos9StageViewV", "BodyTrackedView"]
-- !private ["5Argos9StageViewV", "Button"]
-- !private ["5Argos9StageViewV", "Color"]
-- !private ["5Argos9StageViewV", "DemonstrationView"]
-- !private ["5Argos9StageViewV", "ExternalSignalView"]
-- !private ["5Argos9StageViewV", "HStack"]
-- ["5Argos9StageViewV", "ObservedObject"]
-- !private ["5Argos9StageViewV", "Text"]
-- !private ["5Argos9StageViewV", "VStack"]
-- ["5Argos9StageViewV", "View"]
-- ["5Argos9StageViewV", "ViewRouter"]
-- !private ["5Argos9StageViewV", "ZStack"]
-- ["5Argos9StageViewV", "_Default_Body"]
-- ["5Argos9StageViewV", "_makeView"]
-- ["5Argos9StageViewV", "_makeViewList"]
-- !private ["5Argos9StageViewV", "_viewRouter"]
-- ["5Argos9StageViewV", "body"]
-- ["5Argos9StageViewV", "deinit"]
-- ["5Argos9StageViewV", "init"]
-- ["5Argos9StageViewV", "viewRouter"]
-- ["5Argos18StageView_PreviewsV", "Previews"]
-- !private ["5Argos18StageView_PreviewsV", "StageView"]
-- ["5Argos18StageView_PreviewsV", "View"]
-- !private ["5Argos18StageView_PreviewsV", "ViewRouter"]
-- ["5Argos18StageView_PreviewsV", "_Default_Previews"]
-- ["5Argos18StageView_PreviewsV", "_platform"]
-- ["5Argos18StageView_PreviewsV", "_previews"]
-- ["5Argos18StageView_PreviewsV", "deinit"]
-- ["5Argos18StageView_PreviewsV", "init"]
-- ["5Argos18StageView_PreviewsV", "platform"]
-- ["5Argos18StageView_PreviewsV", "previews"]
-- !private ["Sx", "infinity"]
-- !private ["Sx", "leading"]
 - !private ["7SwiftUI4TextV", "init"]
-- !private ["7SwiftUI6VStackV", "frame"]
 - !private ["7SwiftUI6VStackV", "init"]
-- !private ["7SwiftUI16VectorArithmeticP", "infinity"]
-- !private ["7SwiftUI16VectorArithmeticP", "leading"]
 - ["7SwiftUI4ViewP", "Body"]
-- !private ["7SwiftUI4ViewP", "BodyTrackedView"]
-- !private ["7SwiftUI4ViewP", "Button"]
-- !private ["7SwiftUI4ViewP", "Color"]
-- !private ["7SwiftUI4ViewP", "DemonstrationView"]
-- !private ["7SwiftUI4ViewP", "ExternalSignalView"]
-- !private ["7SwiftUI4ViewP", "HStack"]
-- ["7SwiftUI4ViewP", "ObservedObject"]
+- !private ["7SwiftUI4ViewP", "Image"]
 - !private ["7SwiftUI4ViewP", "Text"]
 - !private ["7SwiftUI4ViewP", "VStack"]
-- !private ["7SwiftUI4ViewP", "ZStack"]
 - ["7SwiftUI4ViewP", ""]
 - ["7SwiftUI4ViewP", "_Default_Body"]
 - ["7SwiftUI4ViewP", "_makeView"]
 - ["7SwiftUI4ViewP", "_makeViewList"]
-- !private ["7SwiftUI4ViewP", "background"]
 - ["7SwiftUI4ViewP", "body"]
-- !private ["7SwiftUI4ViewP", "edgesIgnoringSafeArea"]
 - !private ["7SwiftUI4ViewP", "frame"]
-- !private ["7SwiftUI4ViewP", "gray"]
-- !private ["7SwiftUI4ViewP", "infinity"]
 - !private ["7SwiftUI4ViewP", "init"]
-- !private ["7SwiftUI4ViewP", "padding"]
-- !private ["7SwiftUI4ViewP", "viewRouter"]
+- !private ["7SwiftUI4ViewP", "resizable"]
 - !private ["7SwiftUI11ViewBuilderV", "buildBlock"]
-- !private ["5Argos10ViewRouterC", "currentPage"]
-- ["5Argos10ViewRouterC", "deinit"]
-- !private ["5Argos10ViewRouterC", "init"]
-- !private ["7SwiftUI6ZStackV", "edgesIgnoringSafeArea"]
-- !private ["7SwiftUI6ZStackV", "init"]
-- !private ["s15_CVarArgAlignedP", "infinity"]
-- !private ["s15_CVarArgAlignedP", "leading"]
-- !private ["s22_CVarArgPassedAsDoubleP", "infinity"]
-- !private ["s22_CVarArgPassedAsDoubleP", "leading"]
-- !private ["7SwiftUI18_FormatSpecifiableP", "infinity"]
-- !private ["7SwiftUI18_FormatSpecifiableP", "leading"]
-- !private ["s21_ObjectiveCBridgeableP", "infinity"]
-- !private ["s21_ObjectiveCBridgeableP", "leading"]
+- !private ["7SwiftUI16_PreviewProviderP", "DemonstrationView"]
 - ["7SwiftUI16_PreviewProviderP", "Previews"]
-- !private ["7SwiftUI16_PreviewProviderP", "StageView"]
-- !private ["7SwiftUI16_PreviewProviderP", "ViewRouter"]
 - ["7SwiftUI16_PreviewProviderP", ""]
 - ["7SwiftUI16_PreviewProviderP", "_Default_Previews"]
 - ["7SwiftUI16_PreviewProviderP", "_platform"]
 - ["7SwiftUI16_PreviewProviderP", "_previews"]
 - ["7SwiftUI16_PreviewProviderP", "platform"]
 - ["7SwiftUI16_PreviewProviderP", "previews"]
-- !private ["7SwiftUI11_VectorMathP", "leading"]
 depends-nominal:
-- !private "s18AdditiveArithmeticP"
-- !private "7SwiftUI9AlignmentV"
-- !private "7SwiftUI10AnimatableP"
-- !private "SB"
-- !private "5Argos15BodyTrackedViewV"
-- !private "7SwiftUI6ButtonV"
-- !private "12CoreGraphics7CGFloatV"
-- !private "s7CVarArgP"
-- !private "7SwiftUI5ColorV"
-- !private "SL"
-- !private "s28CustomDebugStringConvertibleP"
-- !private "s17CustomReflectableP"
-- !private "s23CustomStringConvertibleP"
-- !private "Se"
-- !private "5Argos17DemonstrationViewV"
-- "7SwiftUI15DynamicPropertyP"
-- !private "7SwiftUI10EdgeInsetsV"
-- !private "SE"
+- "5Argos17DemonstrationViewV"
+- "5Argos26DemonstrationView_PreviewsV"
 - !private "SQ"
-- !private "s25ExpressibleByArrayLiteralP"
-- !private "s25ExpressibleByFloatLiteralP"
-- !private "s27ExpressibleByIntegerLiteralP"
-- !private "s23ExpressibleByNilLiteralP"
-- !private "5Argos18ExternalSignalViewV"
-- !private "SF"
-- !private "7SwiftUI7GestureP"
-- !private "7SwiftUI6HStackV"
-- !private "SH"
-- !private "Sj"
-- !private "7Combine16ObservableObjectP"
-- "7SwiftUI14ObservedObjectV"
-- !private "s9OptionSetP"
-- !private "Sq"
+- !private "7SwiftUI5ImageV"
 - "7SwiftUI15PreviewProviderP"
-- !private "SY"
-- !private "7SwiftUI4EdgeO3SetV"
-- !private "s10SetAlgebraP"
-- !private "7SwiftUI10ShapeStyleP"
-- !private "s13SignedNumericP"
-- "5Argos9StageViewV"
-- "5Argos18StageView_PreviewsV"
-- !private "Sx"
 - !private "7SwiftUI4TextV"
 - !private "7SwiftUI6VStackV"
-- !private "7SwiftUI16VectorArithmeticP"
 - "7SwiftUI4ViewP"
 - !private "7SwiftUI11ViewBuilderV"
-- "5Argos10ViewRouterC"
-- !private "7SwiftUI6ZStackV"
-- !private "s15_CVarArgAlignedP"
-- !private "s22_CVarArgPassedAsDoubleP"
-- !private "7SwiftUI18_FormatSpecifiableP"
-- !private "s21_ObjectiveCBridgeableP"
 - "7SwiftUI16_PreviewProviderP"
-- !private "7SwiftUI11_VectorMathP"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/ObjectiveC.swiftmodule/arm64.swiftmodule"
@@ -303,7 +137,6 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/apinotes/os.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.5.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.5.sdk/System/Library/Frameworks/GLKit.framework/Headers/GLKit.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.5.sdk/System/Library/Frameworks/AVKit.framework/Headers/AVKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.5.sdk/System/Library/Frameworks/SceneKit.framework/Headers/SceneKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.5.sdk/System/Library/Frameworks/SpriteKit.framework/Headers/SpriteKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.5.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
@@ -311,4 +144,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.5.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AudioToolbox.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.5.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.5.sdk/System/Library/Frameworks/MultipeerConnectivity.framework/Headers/MultipeerConnectivity.apinotes"
-interface-hash: "959878dd03ffe48a586f311707313ee8"
+interface-hash: "40204af6d896415ec2664d2b8c2be126"

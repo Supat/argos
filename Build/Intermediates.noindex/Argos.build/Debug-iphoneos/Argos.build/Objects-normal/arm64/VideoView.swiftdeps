@@ -1,260 +1,161 @@
 ### Swift dependencies file v0 ###
 provides-top-level:
-- "StageView"
-- "StageView_Previews"
+- "VideoView"
 provides-nominal:
-- "5Argos9StageViewV"
-- "5Argos18StageView_PreviewsV"
+- "5Argos9VideoViewV"
 provides-member:
-- ["5Argos9StageViewV", ""]
-- ["5Argos18StageView_PreviewsV", ""]
+- ["5Argos9VideoViewV", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- !private "AssignmentPrecedence"
-- !private "BodyTrackedView"
-- !private "Button"
-- !private "Color"
-- !private "DemonstrationView"
-- !private "ExternalSignalView"
-- "FloatLiteralType"
-- !private "HStack"
+- !private "??"
+- "Context"
+- "Double"
+- !private "FloatLiteralType"
 - !private "IntegerLiteralType"
-- "ObservedObject"
-- "PreviewProvider"
-- "StageView"
-- "StageView_Previews"
-- !private "StringLiteralType"
-- !private "Text"
-- !private "VStack"
-- "View"
-- "ViewRouter"
-- !private "ZStack"
+- !private "PlayerView"
+- "UIView"
+- "UIViewRepresentable"
+- "URL"
+- "VideoView"
 depends-member:
-- !private ["s18AdditiveArithmeticP", "infinity"]
-- !private ["s18AdditiveArithmeticP", "leading"]
-- !private ["7SwiftUI9AlignmentV", "bottom"]
-- !private ["7SwiftUI9AlignmentV", "topLeading"]
-- !private ["7SwiftUI10AnimatableP", "leading"]
-- !private ["SB", "infinity"]
-- !private ["SB", "leading"]
-- !private ["5Argos15BodyTrackedViewV", "deinit"]
-- !private ["5Argos15BodyTrackedViewV", "init"]
-- !private ["7SwiftUI6ButtonV", "init"]
-- !private ["7SwiftUI6ButtonV", "padding"]
-- !private ["12CoreGraphics7CGFloatV", "infinity"]
-- !private ["12CoreGraphics7CGFloatV", "leading"]
-- !private ["s7CVarArgP", "infinity"]
-- !private ["s7CVarArgP", "leading"]
-- !private ["7SwiftUI5ColorV", "gray"]
-- !private ["SL", "infinity"]
-- !private ["SL", "leading"]
-- !private ["s28CustomDebugStringConvertibleP", "infinity"]
-- !private ["s17CustomReflectableP", "infinity"]
-- !private ["s17CustomReflectableP", "leading"]
-- !private ["s23CustomStringConvertibleP", "gray"]
-- !private ["s23CustomStringConvertibleP", "infinity"]
-- !private ["s23CustomStringConvertibleP", "leading"]
-- !private ["Se", "infinity"]
-- !private ["Se", "leading"]
-- !private ["5Argos17DemonstrationViewV", "deinit"]
-- !private ["5Argos17DemonstrationViewV", "init"]
-- ["7SwiftUI15DynamicPropertyP", "init"]
-- !private ["7SwiftUI10EdgeInsetsV", "leading"]
-- !private ["SE", "infinity"]
-- !private ["SE", "leading"]
-- !private ["SQ", "all"]
-- !private ["SQ", "bottom"]
-- !private ["SQ", "gray"]
-- !private ["SQ", "infinity"]
+- !private ["7SwiftUI10AnimatableP", "zero"]
+- !private ["So15CALayerDelegateP", "init"]
+- !private ["So6CGRectV", "zero"]
+- !private ["s7CVarArgP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "zero"]
+- !private ["s17CustomReflectableP", "zero"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["Se", "zero"]
+- !private ["SE", "zero"]
 - !private ["SQ", "init"]
-- !private ["SQ", "leading"]
-- !private ["SQ", "topLeading"]
-- !private ["s25ExpressibleByArrayLiteralP", "all"]
-- !private ["s25ExpressibleByArrayLiteralP", "leading"]
-- !private ["s25ExpressibleByFloatLiteralP", "infinity"]
-- !private ["s25ExpressibleByFloatLiteralP", "leading"]
-- !private ["s27ExpressibleByIntegerLiteralP", "infinity"]
-- !private ["s27ExpressibleByIntegerLiteralP", "leading"]
-- !private ["s23ExpressibleByNilLiteralP", "infinity"]
-- !private ["5Argos18ExternalSignalViewV", "deinit"]
-- !private ["5Argos18ExternalSignalViewV", "init"]
-- !private ["SF", "infinity"]
-- !private ["SF", "leading"]
-- !private ["7SwiftUI7GestureP", "infinity"]
-- !private ["7SwiftUI6HStackV", "init"]
-- !private ["SH", "gray"]
-- !private ["SH", "infinity"]
-- !private ["SH", "leading"]
-- !private ["Sj", "infinity"]
-- !private ["Sj", "leading"]
-- !private ["7Combine16ObservableObjectP", "currentPage"]
-- !private ["7Combine16ObservableObjectP", "init"]
-- ["7SwiftUI14ObservedObjectV", "init"]
-- !private ["s9OptionSetP", "all"]
-- !private ["s9OptionSetP", "leading"]
-- !private ["Sq", "infinity"]
-- ["7SwiftUI15PreviewProviderP", "Previews"]
-- !private ["7SwiftUI15PreviewProviderP", "StageView"]
-- !private ["7SwiftUI15PreviewProviderP", "ViewRouter"]
-- ["7SwiftUI15PreviewProviderP", ""]
-- ["7SwiftUI15PreviewProviderP", "_Default_Previews"]
-- ["7SwiftUI15PreviewProviderP", "_platform"]
-- ["7SwiftUI15PreviewProviderP", "_previews"]
-- ["7SwiftUI15PreviewProviderP", "platform"]
-- ["7SwiftUI15PreviewProviderP", "previews"]
-- !private ["SY", "all"]
-- !private ["SY", "leading"]
-- !private ["7SwiftUI4EdgeO3SetV", "all"]
-- !private ["7SwiftUI4EdgeO3SetV", "leading"]
-- !private ["s10SetAlgebraP", "all"]
-- !private ["s10SetAlgebraP", "leading"]
-- !private ["7SwiftUI10ShapeStyleP", "gray"]
-- !private ["s13SignedNumericP", "infinity"]
-- !private ["s13SignedNumericP", "leading"]
-- ["5Argos9StageViewV", "$viewRouter"]
-- ["5Argos9StageViewV", "Body"]
-- !private ["5Argos9StageViewV", "BodyTrackedView"]
-- !private ["5Argos9StageViewV", "Button"]
-- !private ["5Argos9StageViewV", "Color"]
-- !private ["5Argos9StageViewV", "DemonstrationView"]
-- !private ["5Argos9StageViewV", "ExternalSignalView"]
-- !private ["5Argos9StageViewV", "HStack"]
-- ["5Argos9StageViewV", "ObservedObject"]
-- !private ["5Argos9StageViewV", "Text"]
-- !private ["5Argos9StageViewV", "VStack"]
-- ["5Argos9StageViewV", "View"]
-- ["5Argos9StageViewV", "ViewRouter"]
-- !private ["5Argos9StageViewV", "ZStack"]
-- ["5Argos9StageViewV", "_Default_Body"]
-- ["5Argos9StageViewV", "_makeView"]
-- ["5Argos9StageViewV", "_makeViewList"]
-- !private ["5Argos9StageViewV", "_viewRouter"]
-- ["5Argos9StageViewV", "body"]
-- ["5Argos9StageViewV", "deinit"]
-- ["5Argos9StageViewV", "init"]
-- ["5Argos9StageViewV", "viewRouter"]
-- ["5Argos18StageView_PreviewsV", "Previews"]
-- !private ["5Argos18StageView_PreviewsV", "StageView"]
-- ["5Argos18StageView_PreviewsV", "View"]
-- !private ["5Argos18StageView_PreviewsV", "ViewRouter"]
-- ["5Argos18StageView_PreviewsV", "_Default_Previews"]
-- ["5Argos18StageView_PreviewsV", "_platform"]
-- ["5Argos18StageView_PreviewsV", "_previews"]
-- ["5Argos18StageView_PreviewsV", "deinit"]
-- ["5Argos18StageView_PreviewsV", "init"]
-- ["5Argos18StageView_PreviewsV", "platform"]
-- ["5Argos18StageView_PreviewsV", "previews"]
-- !private ["Sx", "infinity"]
-- !private ["Sx", "leading"]
-- !private ["7SwiftUI4TextV", "init"]
-- !private ["7SwiftUI6VStackV", "frame"]
-- !private ["7SwiftUI6VStackV", "init"]
-- !private ["7SwiftUI16VectorArithmeticP", "infinity"]
-- !private ["7SwiftUI16VectorArithmeticP", "leading"]
+- !private ["SQ", "zero"]
+- !private ["SH", "init"]
+- !private ["So8NSCodingP", "init"]
+- !private ["So8NSObjectP", "init"]
+- !private ["5Argos10PlayerViewC", "deinit"]
+- !private ["5Argos10PlayerViewC", "init"]
+- !private ["So29UIAccessibilityIdentificationP", "init"]
+- !private ["So12UIAppearanceP", "init"]
+- !private ["So21UIAppearanceContainerP", "init"]
+- !private ["So17UICoordinateSpaceP", "init"]
+- !private ["So13UIDynamicItemP", "init"]
+- !private ["So18UIFocusEnvironmentP", "init"]
+- !private ["So11UIFocusItemP", "init"]
+- !private ["So20UIFocusItemContainerP", "init"]
+- !private ["So24UILargeContentViewerItemP", "init"]
+- !private ["So30UIPasteConfigurationSupportingP", "init"]
+- !private ["So30UIResponderStandardEditActionsP", "init"]
+- !private ["So18UITraitEnvironmentP", "init"]
+- !private ["So23UIUserActivityRestoringP", "init"]
+- ["7SwiftUI19UIViewRepresentableP", "Body"]
+- ["7SwiftUI19UIViewRepresentableP", "Context"]
+- ["7SwiftUI19UIViewRepresentableP", "Coordinator"]
+- !private ["7SwiftUI19UIViewRepresentableP", "PlayerView"]
+- ["7SwiftUI19UIViewRepresentableP", "UIViewType"]
+- ["7SwiftUI19UIViewRepresentableP", ""]
+- ["7SwiftUI19UIViewRepresentableP", "_Default_Body"]
+- ["7SwiftUI19UIViewRepresentableP", "_Default_Coordinator"]
+- ["7SwiftUI19UIViewRepresentableP", "_Default_UIViewType"]
+- ["7SwiftUI19UIViewRepresentableP", "_identifiedViewTree"]
+- ["7SwiftUI19UIViewRepresentableP", "_makeView"]
+- ["7SwiftUI19UIViewRepresentableP", "_makeViewList"]
+- ["7SwiftUI19UIViewRepresentableP", "_overrideLayoutTraits"]
+- ["7SwiftUI19UIViewRepresentableP", "_overrideSizeThatFits"]
+- ["7SwiftUI19UIViewRepresentableP", "body"]
+- ["7SwiftUI19UIViewRepresentableP", "dismantleUIView"]
+- ["7SwiftUI19UIViewRepresentableP", "makeCoordinator"]
+- ["7SwiftUI19UIViewRepresentableP", "makeUIView"]
+- !private ["7SwiftUI19UIViewRepresentableP", "previewLength"]
+- ["7SwiftUI19UIViewRepresentableP", "updateUIView"]
+- !private ["7SwiftUI19UIViewRepresentableP", "videoURL"]
+- ["5Argos9VideoViewV", "Body"]
+- ["5Argos9VideoViewV", "Context"]
+- ["5Argos9VideoViewV", "Coordinator"]
+- ["5Argos9VideoViewV", "Double"]
+- !private ["5Argos9VideoViewV", "PlayerView"]
+- ["5Argos9VideoViewV", "UIView"]
+- ["5Argos9VideoViewV", "UIViewType"]
+- ["5Argos9VideoViewV", "URL"]
+- ["5Argos9VideoViewV", "_Default_Body"]
+- ["5Argos9VideoViewV", "_Default_Coordinator"]
+- ["5Argos9VideoViewV", "_Default_UIViewType"]
+- ["5Argos9VideoViewV", "_identifiedViewTree"]
+- ["5Argos9VideoViewV", "_makeView"]
+- ["5Argos9VideoViewV", "_makeViewList"]
+- ["5Argos9VideoViewV", "_overrideLayoutTraits"]
+- ["5Argos9VideoViewV", "_overrideSizeThatFits"]
+- ["5Argos9VideoViewV", "body"]
+- ["5Argos9VideoViewV", "deinit"]
+- ["5Argos9VideoViewV", "dismantleUIView"]
+- ["5Argos9VideoViewV", "init"]
+- ["5Argos9VideoViewV", "makeCoordinator"]
+- ["5Argos9VideoViewV", "makeUIView"]
+- ["5Argos9VideoViewV", "previewLength"]
+- ["5Argos9VideoViewV", "updateUIView"]
+- ["5Argos9VideoViewV", "videoURL"]
 - ["7SwiftUI4ViewP", "Body"]
-- !private ["7SwiftUI4ViewP", "BodyTrackedView"]
-- !private ["7SwiftUI4ViewP", "Button"]
-- !private ["7SwiftUI4ViewP", "Color"]
-- !private ["7SwiftUI4ViewP", "DemonstrationView"]
-- !private ["7SwiftUI4ViewP", "ExternalSignalView"]
-- !private ["7SwiftUI4ViewP", "HStack"]
-- ["7SwiftUI4ViewP", "ObservedObject"]
-- !private ["7SwiftUI4ViewP", "Text"]
-- !private ["7SwiftUI4ViewP", "VStack"]
-- !private ["7SwiftUI4ViewP", "ZStack"]
+- ["7SwiftUI4ViewP", "Context"]
+- ["7SwiftUI4ViewP", "Coordinator"]
+- !private ["7SwiftUI4ViewP", "PlayerView"]
+- ["7SwiftUI4ViewP", "UIViewType"]
 - ["7SwiftUI4ViewP", ""]
 - ["7SwiftUI4ViewP", "_Default_Body"]
+- ["7SwiftUI4ViewP", "_Default_Coordinator"]
+- ["7SwiftUI4ViewP", "_Default_UIViewType"]
+- ["7SwiftUI4ViewP", "_identifiedViewTree"]
 - ["7SwiftUI4ViewP", "_makeView"]
 - ["7SwiftUI4ViewP", "_makeViewList"]
-- !private ["7SwiftUI4ViewP", "background"]
+- ["7SwiftUI4ViewP", "_overrideLayoutTraits"]
+- ["7SwiftUI4ViewP", "_overrideSizeThatFits"]
 - ["7SwiftUI4ViewP", "body"]
-- !private ["7SwiftUI4ViewP", "edgesIgnoringSafeArea"]
-- !private ["7SwiftUI4ViewP", "frame"]
-- !private ["7SwiftUI4ViewP", "gray"]
-- !private ["7SwiftUI4ViewP", "infinity"]
-- !private ["7SwiftUI4ViewP", "init"]
-- !private ["7SwiftUI4ViewP", "padding"]
-- !private ["7SwiftUI4ViewP", "viewRouter"]
-- !private ["7SwiftUI11ViewBuilderV", "buildBlock"]
-- !private ["5Argos10ViewRouterC", "currentPage"]
-- ["5Argos10ViewRouterC", "deinit"]
-- !private ["5Argos10ViewRouterC", "init"]
-- !private ["7SwiftUI6ZStackV", "edgesIgnoringSafeArea"]
-- !private ["7SwiftUI6ZStackV", "init"]
-- !private ["s15_CVarArgAlignedP", "infinity"]
-- !private ["s15_CVarArgAlignedP", "leading"]
-- !private ["s22_CVarArgPassedAsDoubleP", "infinity"]
-- !private ["s22_CVarArgPassedAsDoubleP", "leading"]
-- !private ["7SwiftUI18_FormatSpecifiableP", "infinity"]
-- !private ["7SwiftUI18_FormatSpecifiableP", "leading"]
-- !private ["s21_ObjectiveCBridgeableP", "infinity"]
-- !private ["s21_ObjectiveCBridgeableP", "leading"]
-- ["7SwiftUI16_PreviewProviderP", "Previews"]
-- !private ["7SwiftUI16_PreviewProviderP", "StageView"]
-- !private ["7SwiftUI16_PreviewProviderP", "ViewRouter"]
-- ["7SwiftUI16_PreviewProviderP", ""]
-- ["7SwiftUI16_PreviewProviderP", "_Default_Previews"]
-- ["7SwiftUI16_PreviewProviderP", "_platform"]
-- ["7SwiftUI16_PreviewProviderP", "_previews"]
-- ["7SwiftUI16_PreviewProviderP", "platform"]
-- ["7SwiftUI16_PreviewProviderP", "previews"]
-- !private ["7SwiftUI11_VectorMathP", "leading"]
+- ["7SwiftUI4ViewP", "dismantleUIView"]
+- ["7SwiftUI4ViewP", "makeCoordinator"]
+- ["7SwiftUI4ViewP", "makeUIView"]
+- !private ["7SwiftUI4ViewP", "previewLength"]
+- ["7SwiftUI4ViewP", "updateUIView"]
+- !private ["7SwiftUI4ViewP", "videoURL"]
+- !private ["s30_CustomPlaygroundQuickLookableP", "zero"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "zero"]
+- !private ["s38__DefaultCustomPlaygroundQuickLookableP", "init"]
 depends-nominal:
-- !private "s18AdditiveArithmeticP"
-- !private "7SwiftUI9AlignmentV"
 - !private "7SwiftUI10AnimatableP"
-- !private "SB"
-- !private "5Argos15BodyTrackedViewV"
-- !private "7SwiftUI6ButtonV"
-- !private "12CoreGraphics7CGFloatV"
+- !private "So15CALayerDelegateP"
+- !private "So6CGRectV"
 - !private "s7CVarArgP"
-- !private "7SwiftUI5ColorV"
-- !private "SL"
 - !private "s28CustomDebugStringConvertibleP"
 - !private "s17CustomReflectableP"
 - !private "s23CustomStringConvertibleP"
 - !private "Se"
-- !private "5Argos17DemonstrationViewV"
-- "7SwiftUI15DynamicPropertyP"
-- !private "7SwiftUI10EdgeInsetsV"
 - !private "SE"
 - !private "SQ"
-- !private "s25ExpressibleByArrayLiteralP"
-- !private "s25ExpressibleByFloatLiteralP"
-- !private "s27ExpressibleByIntegerLiteralP"
-- !private "s23ExpressibleByNilLiteralP"
-- !private "5Argos18ExternalSignalViewV"
-- !private "SF"
-- !private "7SwiftUI7GestureP"
-- !private "7SwiftUI6HStackV"
 - !private "SH"
-- !private "Sj"
-- !private "7Combine16ObservableObjectP"
-- "7SwiftUI14ObservedObjectV"
-- !private "s9OptionSetP"
-- !private "Sq"
-- "7SwiftUI15PreviewProviderP"
-- !private "SY"
-- !private "7SwiftUI4EdgeO3SetV"
-- !private "s10SetAlgebraP"
-- !private "7SwiftUI10ShapeStyleP"
-- !private "s13SignedNumericP"
-- "5Argos9StageViewV"
-- "5Argos18StageView_PreviewsV"
-- !private "Sx"
-- !private "7SwiftUI4TextV"
-- !private "7SwiftUI6VStackV"
-- !private "7SwiftUI16VectorArithmeticP"
+- !private "So8NSCodingP"
+- !private "So8NSObjectP"
+- !private "5Argos10PlayerViewC"
+- !private "So29UIAccessibilityIdentificationP"
+- !private "So12UIAppearanceP"
+- !private "So21UIAppearanceContainerP"
+- !private "So17UICoordinateSpaceP"
+- !private "So13UIDynamicItemP"
+- !private "So18UIFocusEnvironmentP"
+- !private "So11UIFocusItemP"
+- !private "So20UIFocusItemContainerP"
+- !private "So24UILargeContentViewerItemP"
+- !private "So30UIPasteConfigurationSupportingP"
+- !private "So30UIResponderStandardEditActionsP"
+- !private "So18UITraitEnvironmentP"
+- !private "So23UIUserActivityRestoringP"
+- "7SwiftUI19UIViewRepresentableP"
+- "5Argos9VideoViewV"
 - "7SwiftUI4ViewP"
-- !private "7SwiftUI11ViewBuilderV"
-- "5Argos10ViewRouterC"
-- !private "7SwiftUI6ZStackV"
-- !private "s15_CVarArgAlignedP"
-- !private "s22_CVarArgPassedAsDoubleP"
-- !private "7SwiftUI18_FormatSpecifiableP"
+- !private "s30_CustomPlaygroundQuickLookableP"
+- !private "10Foundation27_KeyValueCodingAndObservingP"
+- !private "10Foundation37_KeyValueCodingAndObservingPublishingP"
 - !private "s21_ObjectiveCBridgeableP"
-- "7SwiftUI16_PreviewProviderP"
-- !private "7SwiftUI11_VectorMathP"
+- !private "s38__DefaultCustomPlaygroundQuickLookableP"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/ObjectiveC.swiftmodule/arm64.swiftmodule"
@@ -311,4 +212,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.5.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AudioToolbox.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.5.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.5.sdk/System/Library/Frameworks/MultipeerConnectivity.framework/Headers/MultipeerConnectivity.apinotes"
-interface-hash: "959878dd03ffe48a586f311707313ee8"
+interface-hash: "036f105725356338ec9eb85a59b8a238"
