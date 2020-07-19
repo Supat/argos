@@ -4,6 +4,10 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>Assets.car</key>
+		<data>
+		HlO+/VlJVmKIu/8GY/EK+TNP5to=
+		</data>
 		<key>Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<data>
 		ETWCgh6e1ZQdy+ODUx5yRqG3lws=
@@ -22,7 +26,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		eeS9YxG/19b7hjZgOCS90gjy01s=
+		7Ml9EEryXoOXBiTCqFbqIU2bb9U=
 		</data>
 		<key>PkgInfo</key>
 		<data>
@@ -39,6 +43,13 @@
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>Assets.car</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			GRJJdQTyp47AaRnnG/M8zviV7XiD/kWFecUZqTEJCx0=
+			</data>
+		</dict>
 		<key>Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<dict>
 			<key>hash2</key>

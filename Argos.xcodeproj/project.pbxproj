@@ -28,6 +28,7 @@
 		B02EA6F924B461F800CC3023 /* StartActionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02EA6F824B461F800CC3023 /* StartActionView.swift */; };
 		B02EA6FB24B4946000CC3023 /* ParentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02EA6FA24B4946000CC3023 /* ParentView.swift */; };
 		B02EA6FD24B495F000CC3023 /* ViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02EA6FC24B495F000CC3023 /* ViewRouter.swift */; };
+		B0D0B9E324C445280094FB77 /* sample_video_1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = B0D0B9E224C445280094FB77 /* sample_video_1.mp4 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +76,7 @@
 		B02EA6F824B461F800CC3023 /* StartActionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartActionView.swift; sourceTree = "<group>"; };
 		B02EA6FA24B4946000CC3023 /* ParentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentView.swift; sourceTree = "<group>"; };
 		B02EA6FC24B495F000CC3023 /* ViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewRouter.swift; sourceTree = "<group>"; };
+		B0D0B9E224C445280094FB77 /* sample_video_1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = sample_video_1.mp4; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +124,7 @@
 		B02EA6AD24B33A0B00CC3023 = {
 			isa = PBXGroup;
 			children = (
+				B0D0B9E224C445280094FB77 /* sample_video_1.mp4 */,
 				B013ECD224B5BF4000BC1A53 /* ModalGraphView.swift */,
 				B02EA6B824B33A0B00CC3023 /* Argos */,
 				B02EA6CF24B33A0D00CC3023 /* ArgosTests */,
@@ -311,6 +314,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B0D0B9E324C445280094FB77 /* sample_video_1.mp4 in Resources */,
 				B02EA6C624B33A0D00CC3023 /* LaunchScreen.storyboard in Resources */,
 				B02EA6C324B33A0D00CC3023 /* Preview Assets.xcassets in Resources */,
 				B02EA6ED24B33CB200CC3023 /* character in Resources */,

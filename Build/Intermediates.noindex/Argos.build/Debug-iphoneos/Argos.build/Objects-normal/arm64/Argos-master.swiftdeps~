@@ -1,14 +1,14 @@
 version: "Apple Swift version 5.2.4 (swiftlang-1103.0.32.9 clang-1103.0.32.53)"
 options: "cec03be6fae380ce6b1e1bd8502de326"
-build_time: [1594966559, 754890000]
+build_time: [1595134732, 138051000]
 inputs:
   "/Users/Sui/Documents/Xcode Projects/Argos/Argos/StageSelection/StageSelectionView.swift": [1594122529, 47937376]
-  "/Users/Sui/Documents/Xcode Projects/Argos/Argos/Stage/DemonstrationView.swift": [1594041311, 531680776]
+  "/Users/Sui/Documents/Xcode Projects/Argos/Argos/Stage/DemonstrationView.swift": [1595134732, 43941569]
   "/Users/Sui/Documents/Xcode Projects/Argos/Argos/Stage/StageView.swift": [1594783707, 39121810]
   "/Users/Sui/Documents/Xcode Projects/Argos/Argos/ContentView.swift": [1594032779, 985643999]
   "/Users/Sui/Documents/Xcode Projects/Argos/Argos/ParentView.swift": [1594197617, 783564429]
   "/Users/Sui/Documents/Xcode Projects/Argos/ModalGraphView.swift": [1594197951, 604270903]
-  "/Users/Sui/Documents/Xcode Projects/Argos/Argos/VideoPlayer/VideoView.swift": [9223372036, 854775807]
+  "/Users/Sui/Documents/Xcode Projects/Argos/Argos/VideoPlayer/VideoView.swift": [1594966760, 220503129]
   "/Users/Sui/Documents/Xcode Projects/Argos/Argos/AppDelegate.swift": [1594122153, 495167504]
   "/Users/Sui/Documents/Xcode Projects/Argos/Argos/ViewRouter.swift": [1594122041, 750560006]
   "/Users/Sui/Documents/Xcode Projects/Argos/Argos/VideoPlayer/PlayerView.swift": [1594966529, 940447832]

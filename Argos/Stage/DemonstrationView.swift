@@ -10,11 +10,12 @@ import SwiftUI
 
 struct DemonstrationView: View {
     
-    @State var maxHeight:CGFloat = 200
+    @State var maxHeight:CGFloat = 640
+    let videoURL: URL? = Bundle.main.url(forResource: "sample_video_1", withExtension: "mp4");
     
     var body: some View {
         VStack {
-            VideoView(videoURL: URL(string: "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/TearsOfSteel.mp4")!, previewLength: 60)
+            VideoView(videoURL: videoURL!, previewLength: 60)
                 .cornerRadius(15)
                 .frame(width: nil, height: maxHeight, alignment: .center)
                 .shadow(color: Color.black.opacity(0.7), radius: 30, x: 0, y: 2)
