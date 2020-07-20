@@ -17,9 +17,9 @@ struct StageView: View {
             ZStack(alignment: .topLeading) {
                 HStack {
                     VStack {
-                        BodyTrackedView();
+                        VisionActivityTrackView();
                     }
-                        .frame(minWidth: 0, maxWidth: .infinity);
+                        .frame(minWidth: 0, maxWidth: .infinity)
                     
                     VStack {
                         DemonstrationView();
@@ -41,7 +41,7 @@ struct StageView: View {
                 .frame(maxWidth: .infinity)
                 .background(Color.gray);
         }
-            .edgesIgnoringSafeArea(.all)
+        .edgesIgnoringSafeArea(.bottom)
     }
 }
 

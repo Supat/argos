@@ -16,8 +16,8 @@ depends-top-level:
 - "AssignmentPrecedence"
 - !private "BooleanLiteralType"
 - "CGRect"
-- !private "CMTime"
-- !private "CMTimeScale"
+- "CMTime"
+- "CMTimeScale"
 - "Double"
 - !private "FloatLiteralType"
 - !private "IntegerLiteralType"
@@ -27,6 +27,10 @@ depends-top-level:
 - !private "UIColor"
 - "UIView"
 - "URL"
+- !private "bounds"
+- !private "layer"
+- !private "playerLayer"
+- !private "previewTimer"
 depends-member:
 - !private ["So19AVLayerVideoGravitya", "resizeAspectFill"]
 - !private ["So8AVPlayerC", "init"]
@@ -38,31 +42,40 @@ depends-member:
 - ["So13AVPlayerLayerC", "init"]
 - !private ["So13AVPlayerLayerC", "player"]
 - !private ["So13AVPlayerLayerC", "videoGravity"]
+- ["SK", ""]
+- ["So7CALayerC", ""]
 - !private ["So7CALayerC", "addSublayer"]
 - !private ["So7CALayerC", "backgroundColor"]
 - !private ["So7CALayerC", "frame"]
 - ["So7CALayerC", "init"]
 - !private ["So7CALayerC", "player"]
+- ["So7CALayerC", "playerLayerWithPlayer"]
 - !private ["So7CALayerC", "videoGravity"]
 - !private ["So15CALayerDelegateP", "AVPlayer"]
 - ["So15CALayerDelegateP", "AVPlayerLayer"]
+- ["So15CALayerDelegateP", "CGRect"]
 - !private ["So15CALayerDelegateP", "CMTime"]
 - !private ["So15CALayerDelegateP", "CMTimeScale"]
-- !private ["So15CALayerDelegateP", "Timer"]
+- ["So15CALayerDelegateP", "Double"]
+- ["So15CALayerDelegateP", "NSCoder"]
+- ["So15CALayerDelegateP", "Timer"]
 - !private ["So15CALayerDelegateP", "UIColor"]
+- ["So15CALayerDelegateP", "URL"]
 - ["So15CALayerDelegateP", ""]
 - !private ["So15CALayerDelegateP", "bounds"]
-- !private ["So15CALayerDelegateP", "init"]
+- ["So15CALayerDelegateP", "init"]
 - !private ["So15CALayerDelegateP", "layer"]
-- !private ["So15CALayerDelegateP", "layoutSubviews"]
-- !private ["So15CALayerDelegateP", "playerLayer"]
-- !private ["So15CALayerDelegateP", "previewLength"]
-- !private ["So15CALayerDelegateP", "previewTimer"]
+- ["So15CALayerDelegateP", "layoutSubviews"]
+- ["So15CALayerDelegateP", "playerLayer"]
+- ["So15CALayerDelegateP", "previewLength"]
+- ["So15CALayerDelegateP", "previewTimer"]
+- !private ["So13CAMediaTimingP", ""]
 - !private ["So13CAMediaTimingP", "addSublayer"]
 - !private ["So13CAMediaTimingP", "backgroundColor"]
 - !private ["So13CAMediaTimingP", "frame"]
 - ["So13CAMediaTimingP", "init"]
 - !private ["So13CAMediaTimingP", "player"]
+- ["So13CAMediaTimingP", "playerLayerWithPlayer"]
 - !private ["So13CAMediaTimingP", "videoGravity"]
 - !private ["So6CMTimea", "init"]
 - !private ["s7CVarArgP", "AVPlayer"]
@@ -90,6 +103,8 @@ depends-member:
 - !private ["s7CVarArgP", "seek"]
 - !private ["s7CVarArgP", "videoGravity"]
 - !private ["s7CVarArgP", "volume"]
+- ["Sl", ""]
+- ["SL", ""]
 - !private ["SL", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "AVPlayer"]
 - ["s28CustomDebugStringConvertibleP", "AVPlayerLayer"]
@@ -167,6 +182,10 @@ depends-member:
 - !private ["SQ", "seek"]
 - !private ["SQ", "videoGravity"]
 - !private ["SQ", "volume"]
+- ["s43ExpressibleByExtendedGraphemeClusterLiteralP", ""]
+- ["s32ExpressibleByStringInterpolationP", ""]
+- ["s26ExpressibleByStringLiteralP", ""]
+- ["s33ExpressibleByUnicodeScalarLiteralP", ""]
 - !private ["SH", "AVPlayer"]
 - ["SH", "AVPlayerLayer"]
 - !private ["SH", "CMTime"]
@@ -193,12 +212,17 @@ depends-member:
 - !private ["SH", "seek"]
 - !private ["SH", "videoGravity"]
 - !private ["SH", "volume"]
+- ["s25LosslessStringConvertibleP", ""]
 - !private ["So8NSCodingP", "AVPlayer"]
 - ["So8NSCodingP", "AVPlayerLayer"]
+- ["So8NSCodingP", "CGRect"]
 - !private ["So8NSCodingP", "CMTime"]
 - !private ["So8NSCodingP", "CMTimeScale"]
-- !private ["So8NSCodingP", "Timer"]
+- ["So8NSCodingP", "Double"]
+- ["So8NSCodingP", "NSCoder"]
+- ["So8NSCodingP", "Timer"]
 - !private ["So8NSCodingP", "UIColor"]
+- ["So8NSCodingP", "URL"]
 - ["So8NSCodingP", ""]
 - !private ["So8NSCodingP", "addSublayer"]
 - !private ["So8NSCodingP", "backgroundColor"]
@@ -208,11 +232,12 @@ depends-member:
 - !private ["So8NSCodingP", "frame"]
 - ["So8NSCodingP", "init"]
 - !private ["So8NSCodingP", "layer"]
-- !private ["So8NSCodingP", "layoutSubviews"]
+- ["So8NSCodingP", "layoutSubviews"]
 - !private ["So8NSCodingP", "player"]
-- !private ["So8NSCodingP", "playerLayer"]
-- !private ["So8NSCodingP", "previewLength"]
-- !private ["So8NSCodingP", "previewTimer"]
+- ["So8NSCodingP", "playerLayer"]
+- ["So8NSCodingP", "playerLayerWithPlayer"]
+- ["So8NSCodingP", "previewLength"]
+- ["So8NSCodingP", "previewTimer"]
 - !private ["So8NSCodingP", "videoGravity"]
 - !private ["So9NSCopyingP", "black"]
 - !private ["So9NSCopyingP", "cgColor"]
@@ -230,6 +255,7 @@ depends-member:
 - ["So8NSObjectC", "Timer"]
 - !private ["So8NSObjectC", "UIColor"]
 - ["So8NSObjectC", "URL"]
+- ["So8NSObjectC", ""]
 - !private ["So8NSObjectC", "addSublayer"]
 - !private ["So8NSObjectC", "backgroundColor"]
 - !private ["So8NSObjectC", "black"]
@@ -237,23 +263,33 @@ depends-member:
 - !private ["So8NSObjectC", "cgColor"]
 - !private ["So8NSObjectC", "frame"]
 - ["So8NSObjectC", "init"]
-- !private ["So8NSObjectC", "layer"]
+- ["So8NSObjectC", "layer"]
 - ["So8NSObjectC", "layoutSubviews"]
 - !private ["So8NSObjectC", "play"]
 - !private ["So8NSObjectC", "player"]
 - ["So8NSObjectC", "playerLayer"]
+- ["So8NSObjectC", "playerLayerWithPlayer"]
+- !private ["So8NSObjectC", "playerWithPlayerItem"]
+- !private ["So8NSObjectC", "playerWithURL"]
 - ["So8NSObjectC", "previewLength"]
 - ["So8NSObjectC", "previewTimer"]
 - !private ["So8NSObjectC", "scheduledTimer"]
+- !private ["So8NSObjectC", "scheduledTimerWithTimeInterval"]
 - !private ["So8NSObjectC", "seek"]
+- !private ["So8NSObjectC", "seekToDate"]
+- !private ["So8NSObjectC", "seekToTime"]
 - !private ["So8NSObjectC", "videoGravity"]
 - !private ["So8NSObjectC", "volume"]
 - !private ["So8NSObjectP", "AVPlayer"]
 - ["So8NSObjectP", "AVPlayerLayer"]
+- ["So8NSObjectP", "CGRect"]
 - !private ["So8NSObjectP", "CMTime"]
 - !private ["So8NSObjectP", "CMTimeScale"]
-- !private ["So8NSObjectP", "Timer"]
+- ["So8NSObjectP", "Double"]
+- ["So8NSObjectP", "NSCoder"]
+- ["So8NSObjectP", "Timer"]
 - !private ["So8NSObjectP", "UIColor"]
+- ["So8NSObjectP", "URL"]
 - ["So8NSObjectP", ""]
 - !private ["So8NSObjectP", "addSublayer"]
 - !private ["So8NSObjectP", "backgroundColor"]
@@ -262,17 +298,24 @@ depends-member:
 - !private ["So8NSObjectP", "cgColor"]
 - !private ["So8NSObjectP", "frame"]
 - ["So8NSObjectP", "init"]
-- !private ["So8NSObjectP", "layer"]
-- !private ["So8NSObjectP", "layoutSubviews"]
+- ["So8NSObjectP", "layer"]
+- ["So8NSObjectP", "layoutSubviews"]
 - !private ["So8NSObjectP", "play"]
 - !private ["So8NSObjectP", "player"]
-- !private ["So8NSObjectP", "playerLayer"]
-- !private ["So8NSObjectP", "previewLength"]
-- !private ["So8NSObjectP", "previewTimer"]
+- ["So8NSObjectP", "playerLayer"]
+- ["So8NSObjectP", "playerLayerWithPlayer"]
+- !private ["So8NSObjectP", "playerWithPlayerItem"]
+- !private ["So8NSObjectP", "playerWithURL"]
+- ["So8NSObjectP", "previewLength"]
+- ["So8NSObjectP", "previewTimer"]
 - !private ["So8NSObjectP", "scheduledTimer"]
+- !private ["So8NSObjectP", "scheduledTimerWithTimeInterval"]
 - !private ["So8NSObjectP", "seek"]
+- !private ["So8NSObjectP", "seekToDate"]
+- !private ["So8NSObjectP", "seekToTime"]
 - !private ["So8NSObjectP", "videoGravity"]
 - !private ["So8NSObjectP", "volume"]
+- !private ["So14NSSecureCodingP", ""]
 - !private ["So14NSSecureCodingP", "addSublayer"]
 - !private ["So14NSSecureCodingP", "backgroundColor"]
 - !private ["So14NSSecureCodingP", "black"]
@@ -280,6 +323,7 @@ depends-member:
 - !private ["So14NSSecureCodingP", "frame"]
 - ["So14NSSecureCodingP", "init"]
 - !private ["So14NSSecureCodingP", "player"]
+- ["So14NSSecureCodingP", "playerLayerWithPlayer"]
 - !private ["So14NSSecureCodingP", "videoGravity"]
 - !private ["5Argos10PlayerViewC", "AVPlayer"]
 - ["5Argos10PlayerViewC", "AVPlayerLayer"]
@@ -291,6 +335,7 @@ depends-member:
 - ["5Argos10PlayerViewC", "Timer"]
 - !private ["5Argos10PlayerViewC", "UIColor"]
 - ["5Argos10PlayerViewC", "URL"]
+- ["5Argos10PlayerViewC", ""]
 - !private ["5Argos10PlayerViewC", "bounds"]
 - ["5Argos10PlayerViewC", "deinit"]
 - ["5Argos10PlayerViewC", "init"]
@@ -299,150 +344,194 @@ depends-member:
 - !private ["5Argos10PlayerViewC", "playerLayer"]
 - ["5Argos10PlayerViewC", "previewLength"]
 - !private ["5Argos10PlayerViewC", "previewTimer"]
+- !private ["SY", ""]
 - !private ["SY", "resizeAspectFill"]
+- ["ST", ""]
+- ["s16TextOutputStreamP", ""]
+- ["s20TextOutputStreamableP", ""]
 - !private ["So7NSTimerC", "scheduledTimer"]
 - !private ["So29UIAccessibilityIdentificationP", "AVPlayer"]
 - ["So29UIAccessibilityIdentificationP", "AVPlayerLayer"]
+- ["So29UIAccessibilityIdentificationP", "CGRect"]
 - !private ["So29UIAccessibilityIdentificationP", "CMTime"]
 - !private ["So29UIAccessibilityIdentificationP", "CMTimeScale"]
-- !private ["So29UIAccessibilityIdentificationP", "Timer"]
+- ["So29UIAccessibilityIdentificationP", "Double"]
+- ["So29UIAccessibilityIdentificationP", "NSCoder"]
+- ["So29UIAccessibilityIdentificationP", "Timer"]
 - !private ["So29UIAccessibilityIdentificationP", "UIColor"]
+- ["So29UIAccessibilityIdentificationP", "URL"]
 - ["So29UIAccessibilityIdentificationP", ""]
 - !private ["So29UIAccessibilityIdentificationP", "bounds"]
-- !private ["So29UIAccessibilityIdentificationP", "init"]
+- ["So29UIAccessibilityIdentificationP", "init"]
 - !private ["So29UIAccessibilityIdentificationP", "layer"]
-- !private ["So29UIAccessibilityIdentificationP", "layoutSubviews"]
-- !private ["So29UIAccessibilityIdentificationP", "playerLayer"]
-- !private ["So29UIAccessibilityIdentificationP", "previewLength"]
-- !private ["So29UIAccessibilityIdentificationP", "previewTimer"]
+- ["So29UIAccessibilityIdentificationP", "layoutSubviews"]
+- ["So29UIAccessibilityIdentificationP", "playerLayer"]
+- ["So29UIAccessibilityIdentificationP", "previewLength"]
+- ["So29UIAccessibilityIdentificationP", "previewTimer"]
 - !private ["So12UIAppearanceP", "AVPlayer"]
 - ["So12UIAppearanceP", "AVPlayerLayer"]
+- ["So12UIAppearanceP", "CGRect"]
 - !private ["So12UIAppearanceP", "CMTime"]
 - !private ["So12UIAppearanceP", "CMTimeScale"]
-- !private ["So12UIAppearanceP", "Timer"]
+- ["So12UIAppearanceP", "Double"]
+- ["So12UIAppearanceP", "NSCoder"]
+- ["So12UIAppearanceP", "Timer"]
 - !private ["So12UIAppearanceP", "UIColor"]
+- ["So12UIAppearanceP", "URL"]
 - ["So12UIAppearanceP", ""]
 - !private ["So12UIAppearanceP", "bounds"]
-- !private ["So12UIAppearanceP", "init"]
+- ["So12UIAppearanceP", "init"]
 - !private ["So12UIAppearanceP", "layer"]
-- !private ["So12UIAppearanceP", "layoutSubviews"]
-- !private ["So12UIAppearanceP", "playerLayer"]
-- !private ["So12UIAppearanceP", "previewLength"]
-- !private ["So12UIAppearanceP", "previewTimer"]
+- ["So12UIAppearanceP", "layoutSubviews"]
+- ["So12UIAppearanceP", "playerLayer"]
+- ["So12UIAppearanceP", "previewLength"]
+- ["So12UIAppearanceP", "previewTimer"]
 - !private ["So21UIAppearanceContainerP", "AVPlayer"]
 - ["So21UIAppearanceContainerP", "AVPlayerLayer"]
+- ["So21UIAppearanceContainerP", "CGRect"]
 - !private ["So21UIAppearanceContainerP", "CMTime"]
 - !private ["So21UIAppearanceContainerP", "CMTimeScale"]
-- !private ["So21UIAppearanceContainerP", "Timer"]
+- ["So21UIAppearanceContainerP", "Double"]
+- ["So21UIAppearanceContainerP", "NSCoder"]
+- ["So21UIAppearanceContainerP", "Timer"]
 - !private ["So21UIAppearanceContainerP", "UIColor"]
+- ["So21UIAppearanceContainerP", "URL"]
 - ["So21UIAppearanceContainerP", ""]
 - !private ["So21UIAppearanceContainerP", "bounds"]
-- !private ["So21UIAppearanceContainerP", "init"]
+- ["So21UIAppearanceContainerP", "init"]
 - !private ["So21UIAppearanceContainerP", "layer"]
-- !private ["So21UIAppearanceContainerP", "layoutSubviews"]
-- !private ["So21UIAppearanceContainerP", "playerLayer"]
-- !private ["So21UIAppearanceContainerP", "previewLength"]
-- !private ["So21UIAppearanceContainerP", "previewTimer"]
+- ["So21UIAppearanceContainerP", "layoutSubviews"]
+- ["So21UIAppearanceContainerP", "playerLayer"]
+- ["So21UIAppearanceContainerP", "previewLength"]
+- ["So21UIAppearanceContainerP", "previewTimer"]
 - !private ["So7UIColorC", "black"]
 - !private ["So7UIColorC", "cgColor"]
 - !private ["So17UICoordinateSpaceP", "AVPlayer"]
 - ["So17UICoordinateSpaceP", "AVPlayerLayer"]
+- ["So17UICoordinateSpaceP", "CGRect"]
 - !private ["So17UICoordinateSpaceP", "CMTime"]
 - !private ["So17UICoordinateSpaceP", "CMTimeScale"]
-- !private ["So17UICoordinateSpaceP", "Timer"]
+- ["So17UICoordinateSpaceP", "Double"]
+- ["So17UICoordinateSpaceP", "NSCoder"]
+- ["So17UICoordinateSpaceP", "Timer"]
 - !private ["So17UICoordinateSpaceP", "UIColor"]
+- ["So17UICoordinateSpaceP", "URL"]
 - ["So17UICoordinateSpaceP", ""]
 - !private ["So17UICoordinateSpaceP", "bounds"]
-- !private ["So17UICoordinateSpaceP", "init"]
+- ["So17UICoordinateSpaceP", "init"]
 - !private ["So17UICoordinateSpaceP", "layer"]
-- !private ["So17UICoordinateSpaceP", "layoutSubviews"]
-- !private ["So17UICoordinateSpaceP", "playerLayer"]
-- !private ["So17UICoordinateSpaceP", "previewLength"]
-- !private ["So17UICoordinateSpaceP", "previewTimer"]
+- ["So17UICoordinateSpaceP", "layoutSubviews"]
+- ["So17UICoordinateSpaceP", "playerLayer"]
+- ["So17UICoordinateSpaceP", "previewLength"]
+- ["So17UICoordinateSpaceP", "previewTimer"]
 - !private ["So13UIDynamicItemP", "AVPlayer"]
 - ["So13UIDynamicItemP", "AVPlayerLayer"]
+- ["So13UIDynamicItemP", "CGRect"]
 - !private ["So13UIDynamicItemP", "CMTime"]
 - !private ["So13UIDynamicItemP", "CMTimeScale"]
-- !private ["So13UIDynamicItemP", "Timer"]
+- ["So13UIDynamicItemP", "Double"]
+- ["So13UIDynamicItemP", "NSCoder"]
+- ["So13UIDynamicItemP", "Timer"]
 - !private ["So13UIDynamicItemP", "UIColor"]
+- ["So13UIDynamicItemP", "URL"]
 - ["So13UIDynamicItemP", ""]
 - !private ["So13UIDynamicItemP", "bounds"]
-- !private ["So13UIDynamicItemP", "init"]
+- ["So13UIDynamicItemP", "init"]
 - !private ["So13UIDynamicItemP", "layer"]
-- !private ["So13UIDynamicItemP", "layoutSubviews"]
-- !private ["So13UIDynamicItemP", "playerLayer"]
-- !private ["So13UIDynamicItemP", "previewLength"]
-- !private ["So13UIDynamicItemP", "previewTimer"]
+- ["So13UIDynamicItemP", "layoutSubviews"]
+- ["So13UIDynamicItemP", "playerLayer"]
+- ["So13UIDynamicItemP", "previewLength"]
+- ["So13UIDynamicItemP", "previewTimer"]
 - !private ["So18UIFocusEnvironmentP", "AVPlayer"]
 - ["So18UIFocusEnvironmentP", "AVPlayerLayer"]
+- ["So18UIFocusEnvironmentP", "CGRect"]
 - !private ["So18UIFocusEnvironmentP", "CMTime"]
 - !private ["So18UIFocusEnvironmentP", "CMTimeScale"]
-- !private ["So18UIFocusEnvironmentP", "Timer"]
+- ["So18UIFocusEnvironmentP", "Double"]
+- ["So18UIFocusEnvironmentP", "NSCoder"]
+- ["So18UIFocusEnvironmentP", "Timer"]
 - !private ["So18UIFocusEnvironmentP", "UIColor"]
+- ["So18UIFocusEnvironmentP", "URL"]
 - ["So18UIFocusEnvironmentP", ""]
 - !private ["So18UIFocusEnvironmentP", "bounds"]
-- !private ["So18UIFocusEnvironmentP", "init"]
+- ["So18UIFocusEnvironmentP", "init"]
 - !private ["So18UIFocusEnvironmentP", "layer"]
-- !private ["So18UIFocusEnvironmentP", "layoutSubviews"]
-- !private ["So18UIFocusEnvironmentP", "playerLayer"]
-- !private ["So18UIFocusEnvironmentP", "previewLength"]
-- !private ["So18UIFocusEnvironmentP", "previewTimer"]
+- ["So18UIFocusEnvironmentP", "layoutSubviews"]
+- ["So18UIFocusEnvironmentP", "playerLayer"]
+- ["So18UIFocusEnvironmentP", "previewLength"]
+- ["So18UIFocusEnvironmentP", "previewTimer"]
 - !private ["So11UIFocusItemP", "AVPlayer"]
 - ["So11UIFocusItemP", "AVPlayerLayer"]
+- ["So11UIFocusItemP", "CGRect"]
 - !private ["So11UIFocusItemP", "CMTime"]
 - !private ["So11UIFocusItemP", "CMTimeScale"]
-- !private ["So11UIFocusItemP", "Timer"]
+- ["So11UIFocusItemP", "Double"]
+- ["So11UIFocusItemP", "NSCoder"]
+- ["So11UIFocusItemP", "Timer"]
 - !private ["So11UIFocusItemP", "UIColor"]
+- ["So11UIFocusItemP", "URL"]
 - ["So11UIFocusItemP", ""]
 - !private ["So11UIFocusItemP", "bounds"]
-- !private ["So11UIFocusItemP", "init"]
+- ["So11UIFocusItemP", "init"]
 - !private ["So11UIFocusItemP", "layer"]
-- !private ["So11UIFocusItemP", "layoutSubviews"]
-- !private ["So11UIFocusItemP", "playerLayer"]
-- !private ["So11UIFocusItemP", "previewLength"]
-- !private ["So11UIFocusItemP", "previewTimer"]
+- ["So11UIFocusItemP", "layoutSubviews"]
+- ["So11UIFocusItemP", "playerLayer"]
+- ["So11UIFocusItemP", "previewLength"]
+- ["So11UIFocusItemP", "previewTimer"]
 - !private ["So20UIFocusItemContainerP", "AVPlayer"]
 - ["So20UIFocusItemContainerP", "AVPlayerLayer"]
+- ["So20UIFocusItemContainerP", "CGRect"]
 - !private ["So20UIFocusItemContainerP", "CMTime"]
 - !private ["So20UIFocusItemContainerP", "CMTimeScale"]
-- !private ["So20UIFocusItemContainerP", "Timer"]
+- ["So20UIFocusItemContainerP", "Double"]
+- ["So20UIFocusItemContainerP", "NSCoder"]
+- ["So20UIFocusItemContainerP", "Timer"]
 - !private ["So20UIFocusItemContainerP", "UIColor"]
+- ["So20UIFocusItemContainerP", "URL"]
 - ["So20UIFocusItemContainerP", ""]
 - !private ["So20UIFocusItemContainerP", "bounds"]
-- !private ["So20UIFocusItemContainerP", "init"]
+- ["So20UIFocusItemContainerP", "init"]
 - !private ["So20UIFocusItemContainerP", "layer"]
-- !private ["So20UIFocusItemContainerP", "layoutSubviews"]
-- !private ["So20UIFocusItemContainerP", "playerLayer"]
-- !private ["So20UIFocusItemContainerP", "previewLength"]
-- !private ["So20UIFocusItemContainerP", "previewTimer"]
+- ["So20UIFocusItemContainerP", "layoutSubviews"]
+- ["So20UIFocusItemContainerP", "playerLayer"]
+- ["So20UIFocusItemContainerP", "previewLength"]
+- ["So20UIFocusItemContainerP", "previewTimer"]
 - !private ["So24UILargeContentViewerItemP", "AVPlayer"]
 - ["So24UILargeContentViewerItemP", "AVPlayerLayer"]
+- ["So24UILargeContentViewerItemP", "CGRect"]
 - !private ["So24UILargeContentViewerItemP", "CMTime"]
 - !private ["So24UILargeContentViewerItemP", "CMTimeScale"]
-- !private ["So24UILargeContentViewerItemP", "Timer"]
+- ["So24UILargeContentViewerItemP", "Double"]
+- ["So24UILargeContentViewerItemP", "NSCoder"]
+- ["So24UILargeContentViewerItemP", "Timer"]
 - !private ["So24UILargeContentViewerItemP", "UIColor"]
+- ["So24UILargeContentViewerItemP", "URL"]
 - ["So24UILargeContentViewerItemP", ""]
 - !private ["So24UILargeContentViewerItemP", "bounds"]
-- !private ["So24UILargeContentViewerItemP", "init"]
+- ["So24UILargeContentViewerItemP", "init"]
 - !private ["So24UILargeContentViewerItemP", "layer"]
-- !private ["So24UILargeContentViewerItemP", "layoutSubviews"]
-- !private ["So24UILargeContentViewerItemP", "playerLayer"]
-- !private ["So24UILargeContentViewerItemP", "previewLength"]
-- !private ["So24UILargeContentViewerItemP", "previewTimer"]
+- ["So24UILargeContentViewerItemP", "layoutSubviews"]
+- ["So24UILargeContentViewerItemP", "playerLayer"]
+- ["So24UILargeContentViewerItemP", "previewLength"]
+- ["So24UILargeContentViewerItemP", "previewTimer"]
 - !private ["So30UIPasteConfigurationSupportingP", "AVPlayer"]
 - ["So30UIPasteConfigurationSupportingP", "AVPlayerLayer"]
+- ["So30UIPasteConfigurationSupportingP", "CGRect"]
 - !private ["So30UIPasteConfigurationSupportingP", "CMTime"]
 - !private ["So30UIPasteConfigurationSupportingP", "CMTimeScale"]
-- !private ["So30UIPasteConfigurationSupportingP", "Timer"]
+- ["So30UIPasteConfigurationSupportingP", "Double"]
+- ["So30UIPasteConfigurationSupportingP", "NSCoder"]
+- ["So30UIPasteConfigurationSupportingP", "Timer"]
 - !private ["So30UIPasteConfigurationSupportingP", "UIColor"]
+- ["So30UIPasteConfigurationSupportingP", "URL"]
 - ["So30UIPasteConfigurationSupportingP", ""]
 - !private ["So30UIPasteConfigurationSupportingP", "bounds"]
-- !private ["So30UIPasteConfigurationSupportingP", "init"]
+- ["So30UIPasteConfigurationSupportingP", "init"]
 - !private ["So30UIPasteConfigurationSupportingP", "layer"]
-- !private ["So30UIPasteConfigurationSupportingP", "layoutSubviews"]
-- !private ["So30UIPasteConfigurationSupportingP", "playerLayer"]
-- !private ["So30UIPasteConfigurationSupportingP", "previewLength"]
-- !private ["So30UIPasteConfigurationSupportingP", "previewTimer"]
+- ["So30UIPasteConfigurationSupportingP", "layoutSubviews"]
+- ["So30UIPasteConfigurationSupportingP", "playerLayer"]
+- ["So30UIPasteConfigurationSupportingP", "previewLength"]
+- ["So30UIPasteConfigurationSupportingP", "previewTimer"]
 - !private ["So11UIResponderC", "AVPlayer"]
 - ["So11UIResponderC", "AVPlayerLayer"]
 - ["So11UIResponderC", "CGRect"]
@@ -453,6 +542,7 @@ depends-member:
 - ["So11UIResponderC", "Timer"]
 - !private ["So11UIResponderC", "UIColor"]
 - ["So11UIResponderC", "URL"]
+- ["So11UIResponderC", ""]
 - !private ["So11UIResponderC", "bounds"]
 - ["So11UIResponderC", "init"]
 - !private ["So11UIResponderC", "layer"]
@@ -462,46 +552,58 @@ depends-member:
 - ["So11UIResponderC", "previewTimer"]
 - !private ["So30UIResponderStandardEditActionsP", "AVPlayer"]
 - ["So30UIResponderStandardEditActionsP", "AVPlayerLayer"]
+- ["So30UIResponderStandardEditActionsP", "CGRect"]
 - !private ["So30UIResponderStandardEditActionsP", "CMTime"]
 - !private ["So30UIResponderStandardEditActionsP", "CMTimeScale"]
-- !private ["So30UIResponderStandardEditActionsP", "Timer"]
+- ["So30UIResponderStandardEditActionsP", "Double"]
+- ["So30UIResponderStandardEditActionsP", "NSCoder"]
+- ["So30UIResponderStandardEditActionsP", "Timer"]
 - !private ["So30UIResponderStandardEditActionsP", "UIColor"]
+- ["So30UIResponderStandardEditActionsP", "URL"]
 - ["So30UIResponderStandardEditActionsP", ""]
 - !private ["So30UIResponderStandardEditActionsP", "bounds"]
-- !private ["So30UIResponderStandardEditActionsP", "init"]
+- ["So30UIResponderStandardEditActionsP", "init"]
 - !private ["So30UIResponderStandardEditActionsP", "layer"]
-- !private ["So30UIResponderStandardEditActionsP", "layoutSubviews"]
-- !private ["So30UIResponderStandardEditActionsP", "playerLayer"]
-- !private ["So30UIResponderStandardEditActionsP", "previewLength"]
-- !private ["So30UIResponderStandardEditActionsP", "previewTimer"]
+- ["So30UIResponderStandardEditActionsP", "layoutSubviews"]
+- ["So30UIResponderStandardEditActionsP", "playerLayer"]
+- ["So30UIResponderStandardEditActionsP", "previewLength"]
+- ["So30UIResponderStandardEditActionsP", "previewTimer"]
 - !private ["So18UITraitEnvironmentP", "AVPlayer"]
 - ["So18UITraitEnvironmentP", "AVPlayerLayer"]
+- ["So18UITraitEnvironmentP", "CGRect"]
 - !private ["So18UITraitEnvironmentP", "CMTime"]
 - !private ["So18UITraitEnvironmentP", "CMTimeScale"]
-- !private ["So18UITraitEnvironmentP", "Timer"]
+- ["So18UITraitEnvironmentP", "Double"]
+- ["So18UITraitEnvironmentP", "NSCoder"]
+- ["So18UITraitEnvironmentP", "Timer"]
 - !private ["So18UITraitEnvironmentP", "UIColor"]
+- ["So18UITraitEnvironmentP", "URL"]
 - ["So18UITraitEnvironmentP", ""]
 - !private ["So18UITraitEnvironmentP", "bounds"]
-- !private ["So18UITraitEnvironmentP", "init"]
+- ["So18UITraitEnvironmentP", "init"]
 - !private ["So18UITraitEnvironmentP", "layer"]
-- !private ["So18UITraitEnvironmentP", "layoutSubviews"]
-- !private ["So18UITraitEnvironmentP", "playerLayer"]
-- !private ["So18UITraitEnvironmentP", "previewLength"]
-- !private ["So18UITraitEnvironmentP", "previewTimer"]
+- ["So18UITraitEnvironmentP", "layoutSubviews"]
+- ["So18UITraitEnvironmentP", "playerLayer"]
+- ["So18UITraitEnvironmentP", "previewLength"]
+- ["So18UITraitEnvironmentP", "previewTimer"]
 - !private ["So23UIUserActivityRestoringP", "AVPlayer"]
 - ["So23UIUserActivityRestoringP", "AVPlayerLayer"]
+- ["So23UIUserActivityRestoringP", "CGRect"]
 - !private ["So23UIUserActivityRestoringP", "CMTime"]
 - !private ["So23UIUserActivityRestoringP", "CMTimeScale"]
-- !private ["So23UIUserActivityRestoringP", "Timer"]
+- ["So23UIUserActivityRestoringP", "Double"]
+- ["So23UIUserActivityRestoringP", "NSCoder"]
+- ["So23UIUserActivityRestoringP", "Timer"]
 - !private ["So23UIUserActivityRestoringP", "UIColor"]
+- ["So23UIUserActivityRestoringP", "URL"]
 - ["So23UIUserActivityRestoringP", ""]
 - !private ["So23UIUserActivityRestoringP", "bounds"]
-- !private ["So23UIUserActivityRestoringP", "init"]
+- ["So23UIUserActivityRestoringP", "init"]
 - !private ["So23UIUserActivityRestoringP", "layer"]
-- !private ["So23UIUserActivityRestoringP", "layoutSubviews"]
-- !private ["So23UIUserActivityRestoringP", "playerLayer"]
-- !private ["So23UIUserActivityRestoringP", "previewLength"]
-- !private ["So23UIUserActivityRestoringP", "previewTimer"]
+- ["So23UIUserActivityRestoringP", "layoutSubviews"]
+- ["So23UIUserActivityRestoringP", "playerLayer"]
+- ["So23UIUserActivityRestoringP", "previewLength"]
+- ["So23UIUserActivityRestoringP", "previewTimer"]
 - !private ["So6UIViewC", "AVPlayer"]
 - ["So6UIViewC", "AVPlayerLayer"]
 - ["So6UIViewC", "CGRect"]
@@ -520,8 +622,14 @@ depends-member:
 - ["So6UIViewC", "playerLayer"]
 - ["So6UIViewC", "previewLength"]
 - ["So6UIViewC", "previewTimer"]
+- !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "init"]
+- ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", ""]
+- ["s35_ExpressibleByBuiltinIntegerLiteralP", "init"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", ""]
 - !private ["s26_ExpressibleByColorLiteralP", "black"]
 - !private ["s26_ExpressibleByColorLiteralP", "cgColor"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", ""]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "resizeAspectFill"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "AVPlayer"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "AVPlayerLayer"]
@@ -594,16 +702,23 @@ depends-nominal:
 - !private "So19AVLayerVideoGravitya"
 - !private "So8AVPlayerC"
 - "So13AVPlayerLayerC"
+- "SK"
 - "So7CALayerC"
 - "So15CALayerDelegateP"
 - "So13CAMediaTimingP"
 - !private "So6CMTimea"
 - "s7CVarArgP"
-- !private "SL"
+- "Sl"
+- "SL"
 - "s28CustomDebugStringConvertibleP"
 - "s23CustomStringConvertibleP"
 - "SQ"
+- "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- "s32ExpressibleByStringInterpolationP"
+- "s26ExpressibleByStringLiteralP"
+- "s33ExpressibleByUnicodeScalarLiteralP"
 - "SH"
+- "s25LosslessStringConvertibleP"
 - "So8NSCodingP"
 - !private "So9NSCopyingP"
 - !private "So21NSItemProviderReadingP"
@@ -613,6 +728,9 @@ depends-nominal:
 - "So14NSSecureCodingP"
 - "5Argos10PlayerViewC"
 - !private "SY"
+- "ST"
+- "s16TextOutputStreamP"
+- "s20TextOutputStreamableP"
 - !private "So7NSTimerC"
 - "So29UIAccessibilityIdentificationP"
 - "So12UIAppearanceP"
@@ -630,6 +748,11 @@ depends-nominal:
 - "So18UITraitEnvironmentP"
 - "So23UIUserActivityRestoringP"
 - "So6UIViewC"
+- !private "s35_ExpressibleByBuiltinBooleanLiteralP"
+- "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- "s35_ExpressibleByBuiltinIntegerLiteralP"
+- !private "s34_ExpressibleByBuiltinStringLiteralP"
+- "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
 - !private "s26_ExpressibleByColorLiteralP"
 - !private "s35_HasCustomAnyHashableRepresentationP"
 - "10Foundation27_KeyValueCodingAndObservingP"
@@ -639,58 +762,74 @@ depends-nominal:
 - "s38__DefaultCustomPlaygroundQuickLookableP"
 depends-dynamic-lookup:
 depends-external:
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/ObjectiveC.swiftmodule/arm64.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/CoreMIDI.swiftmodule/arm64.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/ModelIO.swiftmodule/arm64.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/CoreMedia.swiftmodule/arm64.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/CoreData.swiftmodule/arm64.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/simd.swiftmodule/arm64.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/CoreImage.swiftmodule/arm64.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/QuartzCore.swiftmodule/arm64.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/Dispatch.swiftmodule/arm64.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/Metal.swiftmodule/arm64.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/Darwin.swiftmodule/arm64.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/Foundation.swiftmodule/arm64.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/AVFoundation.swiftmodule/arm64.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/CoreFoundation.swiftmodule/arm64.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/CoreAudio.swiftmodule/arm64.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/CoreGraphics.swiftmodule/arm64.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/os.swiftmodule/arm64.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/Swift.swiftmodule/arm64.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/UIKit.swiftmodule/arm64.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/GLKit.swiftmodule/arm64.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/ARKit.swiftmodule/arm64.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/SceneKit.swiftmodule/arm64.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/SpriteKit.swiftmodule/arm64.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/SwiftOnoneSupport.swiftmodule/arm64.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/SwiftUI.swiftmodule/arm64-apple-ios.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/Combine.swiftmodule/arm64-apple-ios.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/RealityKit.swiftmodule/arm64-apple-ios.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.5.sdk/usr/include/objc/ObjectiveC.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.5.sdk/System/Library/Frameworks/ModelIO.framework/Headers/ModelIO.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.5.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.5.sdk/System/Library/Frameworks/CoreMedia.framework/Headers/CoreMedia.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.5.sdk/System/Library/Frameworks/CoreData.framework/Headers/CoreData.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.5.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.5.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/apinotes/Dispatch.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.5.sdk/System/Library/Frameworks/QuickLook.framework/Headers/QuickLook.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.5.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.5.sdk/usr/include/Darwin.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.5.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.5.sdk/System/Library/Frameworks/AVFoundation.framework/Headers/AVFoundation.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.5.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.5.sdk/System/Library/Frameworks/CoreAudioTypes.framework/Headers/CoreAudioTypes.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.5.sdk/System/Library/Frameworks/UserNotifications.framework/Headers/UserNotifications.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/apinotes/os.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.5.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.5.sdk/System/Library/Frameworks/GLKit.framework/Headers/GLKit.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.5.sdk/System/Library/Frameworks/AVKit.framework/Headers/AVKit.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.5.sdk/System/Library/Frameworks/SceneKit.framework/Headers/SceneKit.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.5.sdk/System/Library/Frameworks/SpriteKit.framework/Headers/SpriteKit.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.5.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.5.sdk/System/Library/Frameworks/MediaToolbox.framework/Headers/MediaToolbox.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.5.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AudioToolbox.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.5.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.5.sdk/System/Library/Frameworks/MultipeerConnectivity.framework/Headers/MultipeerConnectivity.apinotes"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/ObjectiveC.swiftmodule/arm64-apple-ios.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/CoreMIDI.swiftmodule/arm64-apple-ios.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/SwiftUI.swiftmodule/arm64-apple-ios.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/_AVKit_SwiftUI.swiftmodule/arm64-apple-ios.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/CoreML.swiftmodule/arm64-apple-ios.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/ModelIO.swiftmodule/arm64-apple-ios.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/CoreMedia.swiftmodule/arm64-apple-ios.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/CoreData.swiftmodule/arm64-apple-ios.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/simd.swiftmodule/arm64-apple-ios.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/CoreImage.swiftmodule/arm64-apple-ios.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/Combine.swiftmodule/arm64-apple-ios.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/QuartzCore.swiftmodule/arm64-apple-ios.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/Dispatch.swiftmodule/arm64-apple-ios.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/Metal.swiftmodule/arm64-apple-ios.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/Darwin.swiftmodule/arm64-apple-ios.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/Vision.swiftmodule/arm64-apple-ios.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/CoreLocation.swiftmodule/arm64-apple-ios.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/Foundation.swiftmodule/arm64-apple-ios.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/AVFoundation.swiftmodule/arm64-apple-ios.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/CoreFoundation.swiftmodule/arm64-apple-ios.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/CoreAudio.swiftmodule/arm64-apple-ios.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/CoreGraphics.swiftmodule/arm64-apple-ios.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/os.swiftmodule/arm64-apple-ios.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/UniformTypeIdentifiers.swiftmodule/arm64-apple-ios.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/Swift.swiftmodule/arm64-apple-ios.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/UIKit.swiftmodule/arm64-apple-ios.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/GLKit.swiftmodule/arm64-apple-ios.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/ARKit.swiftmodule/arm64-apple-ios.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/CloudKit.swiftmodule/arm64-apple-ios.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/SceneKit.swiftmodule/arm64-apple-ios.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/SpriteKit.swiftmodule/arm64-apple-ios.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/RealityKit.swiftmodule/arm64-apple-ios.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/SwiftOnoneSupport.swiftmodule/arm64-apple-ios.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/DeveloperToolsSupport.swiftmodule/arm64-apple-ios.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/usr/include/mach-o/dyld.modulemap"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/usr/include/mach-o/compact_unwind_encoding.modulemap"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/CoreML.framework/Headers/CoreML.apinotes"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/ModelIO.framework/Headers/ModelIO.apinotes"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/CoreMedia.framework/Headers/CoreMedia.apinotes"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/CoreData.framework/Headers/CoreData.apinotes"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/apinotes/Dispatch.apinotes"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/QuickLook.framework/Headers/QuickLook.apinotes"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Vision.framework/Headers/Vision.apinotes"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/CoreLocation.framework/Headers/CoreLocation.apinotes"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/AVFoundation.framework/Headers/AVFoundation.apinotes"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/AuthenticationServices.framework/Headers/AuthenticationServices.apinotes"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/CoreAudioTypes.framework/Headers/CoreAudioTypes.apinotes"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/UserNotifications.framework/Headers/UserNotifications.apinotes"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/apinotes/os.apinotes"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/UniformTypeIdentifiers.framework/Headers/UniformTypeIdentifiers.apinotes"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/GLKit.framework/Headers/GLKit.apinotes"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/AVKit.framework/Headers/AVKit.apinotes"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/CloudKit.framework/Headers/CloudKit.apinotes"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/SceneKit.framework/Headers/SceneKit.apinotes"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/StoreKit.framework/Headers/StoreKit.apinotes"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/SpriteKit.framework/Headers/SpriteKit.apinotes"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/MediaToolbox.framework/Headers/MediaToolbox.apinotes"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AudioToolbox.apinotes"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/MultipeerConnectivity.framework/Headers/MultipeerConnectivity.apinotes"
 interface-hash: "210ff7d392c9b73f9fc10cb8400d6477"

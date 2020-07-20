@@ -6,11 +6,11 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		HlO+/VlJVmKIu/8GY/EK+TNP5to=
+		uIXBADmG+6GIeahZCMhx87tE5t4=
 		</data>
 		<key>Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<data>
-		ETWCgh6e1ZQdy+ODUx5yRqG3lws=
+		UZ+nWjd2u/+Wyc4zLXITUZnX7A8=
 		</data>
 		<key>Base.lproj/LaunchScreen.storyboardc/Info.plist</key>
 		<data>
@@ -18,15 +18,15 @@
 		</data>
 		<key>Base.lproj/LaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib</key>
 		<data>
-		PcIwbbO+nE3lIptN2JYRkDQznU4=
+		wT0Qg8TfEc4EHtbmCbc5VEhv/a0=
 		</data>
 		<key>Experience.reality</key>
 		<data>
-		drbRZrAZGvti3M+xmelU/OS8D+Q=
+		gUxahNzAJfFUTRlaZJ3Tu7RHFN4=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		7Ml9EEryXoOXBiTCqFbqIU2bb9U=
+		X69CvAEdH4fny/b8p/j38dy9FYc=
 		</data>
 		<key>PkgInfo</key>
 		<data>
@@ -40,6 +40,10 @@
 		<data>
 		5dgLDmZhHT/3KrLoHeB/85vaHwQ=
 		</data>
+		<key>sample_video_1.mp4</key>
+		<data>
+		DNK4ywnCGGvY7TtRGyuWjt85xVM=
+		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
@@ -47,14 +51,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			GRJJdQTyp47AaRnnG/M8zviV7XiD/kWFecUZqTEJCx0=
+			owsev+Bhe/hHf1j2g5/slW0lJjfV6IbwNgztIdjZZr8=
 			</data>
 		</dict>
 		<key>Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			u+EuJDUXkURlWaZr1qq/Lt2rwcLEgWLlgDGymCgFwb8=
+			8ipvGzk3Rh3eNqqvhVLRgZJTGuPwLUkQsMKk2Wf2s3I=
 			</data>
 		</dict>
 		<key>Base.lproj/LaunchScreen.storyboardc/Info.plist</key>
@@ -68,14 +72,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			sgzIQn/Rw4UcgvmcKyVR2ajgoIfoi8839S/BlB4BPPo=
+			aMnywU1HDkaA/C7AyKYql8qKSLD4mDNQJzikVTBY9qs=
 			</data>
 		</dict>
 		<key>Experience.reality</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			rAk9gvTj0X6kF/JtE+k13BpGlPViVbIdJbzYTNu28NA=
+			8qw6iEPh5IsNu9z+8Dpp1hSDie84iUL2oddLbXOvoOw=
 			</data>
 		</dict>
 		<key>character/robot.usdz</key>
@@ -90,6 +94,13 @@
 			<key>hash2</key>
 			<data>
 			r1xxxwcGZQcRxN8KPL1gHB5i1yQOQJGaOGAxmxVzjno=
+			</data>
+		</dict>
+		<key>sample_video_1.mp4</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			hR3GhWHh2qst86v3P3DwQANN8EizuAOoQcAYEP0l4I0=
 			</data>
 		</dict>
 	</dict>

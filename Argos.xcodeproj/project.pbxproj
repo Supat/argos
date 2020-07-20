@@ -29,6 +29,8 @@
 		B02EA6FB24B4946000CC3023 /* ParentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02EA6FA24B4946000CC3023 /* ParentView.swift */; };
 		B02EA6FD24B495F000CC3023 /* ViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02EA6FC24B495F000CC3023 /* ViewRouter.swift */; };
 		B0D0B9E324C445280094FB77 /* sample_video_1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = B0D0B9E224C445280094FB77 /* sample_video_1.mp4 */; };
+		B0DAA14324C559DE00DDE7B8 /* VisionActivityTrackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0DAA14224C559DE00DDE7B8 /* VisionActivityTrackView.swift */; };
+		B0DAA14524C5713300DDE7B8 /* ActivityCameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0DAA14424C5713300DDE7B8 /* ActivityCameraViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +79,8 @@
 		B02EA6FA24B4946000CC3023 /* ParentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentView.swift; sourceTree = "<group>"; };
 		B02EA6FC24B495F000CC3023 /* ViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewRouter.swift; sourceTree = "<group>"; };
 		B0D0B9E224C445280094FB77 /* sample_video_1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = sample_video_1.mp4; sourceTree = "<group>"; };
+		B0DAA14224C559DE00DDE7B8 /* VisionActivityTrackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisionActivityTrackView.swift; sourceTree = "<group>"; };
+		B0DAA14424C5713300DDE7B8 /* ActivityCameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityCameraViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -195,6 +199,8 @@
 			children = (
 				B02EA6EE24B3530B00CC3023 /* StageView.swift */,
 				B02EA6E924B33AFB00CC3023 /* BodyTrackedView.swift */,
+				B0DAA14224C559DE00DDE7B8 /* VisionActivityTrackView.swift */,
+				B0DAA14424C5713300DDE7B8 /* ActivityCameraViewController.swift */,
 				B02EA6F024B353CB00CC3023 /* DemonstrationView.swift */,
 			);
 			path = Stage;
@@ -348,12 +354,14 @@
 				B02EA6EF24B3530B00CC3023 /* StageView.swift in Sources */,
 				B02EA6BC24B33A0B00CC3023 /* ContentView.swift in Sources */,
 				B02EA6FB24B4946000CC3023 /* ParentView.swift in Sources */,
+				B0DAA14524C5713300DDE7B8 /* ActivityCameraViewController.swift in Sources */,
 				B013ECD324B5BF4000BC1A53 /* ModalGraphView.swift in Sources */,
 				B013ECDB24C1799E00BC1A53 /* VideoView.swift in Sources */,
 				B02EA6BA24B33A0B00CC3023 /* AppDelegate.swift in Sources */,
 				B02EA6BE24B33A0C00CC3023 /* Experience.rcproject in Sources */,
 				B02EA6FD24B495F000CC3023 /* ViewRouter.swift in Sources */,
 				B013ECD924BEDF2000BC1A53 /* PlayerView.swift in Sources */,
+				B0DAA14324C559DE00DDE7B8 /* VisionActivityTrackView.swift in Sources */,
 				B02EA6F624B4488300CC3023 /* ActionCategoryRow.swift in Sources */,
 				B02EA6EA24B33AFB00CC3023 /* BodyTrackedView.swift in Sources */,
 				B013ECD624BEA86B00BC1A53 /* ExternalSignalView.swift in Sources */,
@@ -454,7 +462,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -508,7 +516,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
