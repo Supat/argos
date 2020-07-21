@@ -1,15 +1,19 @@
 ### Swift dependencies file v0 ###
 provides-top-level:
+- "ActivityCameraViewDelegate"
 - "ActivityCameraViewController"
 provides-nominal:
+- "5Argos26ActivityCameraViewDelegateP"
 - "5Argos28ActivityCameraViewControllerC"
 provides-member:
+- ["5Argos26ActivityCameraViewDelegateP", ""]
 - ["5Argos28ActivityCameraViewControllerC", ""]
 provides-dynamic-lookup:
 - "bodyPoseDetectionMinConfidence"
 - "captureOutput"
 - "captureSession"
 - "humanBodyPoseRequest"
+- "outputDelegate"
 - "posesWindow"
 - "predictor"
 - "previewLayer"
@@ -31,6 +35,8 @@ depends-top-level:
 - "AVCaptureVideoDataOutputSampleBufferDelegate"
 - "AVCaptureVideoPreviewLayer"
 - "ActivityCameraViewController"
+- "ActivityCameraViewDelegate"
+- "AnyObject"
 - !private "Array"
 - "AssignmentPrecedence"
 - "Bool"
@@ -39,6 +45,7 @@ depends-top-level:
 - "CastingPrecedence"
 - !private "Dictionary"
 - !private "DispatchQueue"
+- "Double"
 - "FloatLiteralType"
 - !private "IntegerLiteralType"
 - "MLMultiArray"
@@ -107,6 +114,7 @@ depends-member:
 - ["So44AVCaptureVideoDataOutputSampleBufferDelegateP", "init"]
 - !private ["So44AVCaptureVideoDataOutputSampleBufferDelegateP", "kCVPixelBufferPixelFormatTypeKey"]
 - !private ["So44AVCaptureVideoDataOutputSampleBufferDelegateP", "kCVPixelFormatType_32BGRA"]
+- ["So44AVCaptureVideoDataOutputSampleBufferDelegateP", "outputDelegate"]
 - ["So44AVCaptureVideoDataOutputSampleBufferDelegateP", "posesWindow"]
 - ["So44AVCaptureVideoDataOutputSampleBufferDelegateP", "predictor"]
 - ["So44AVCaptureVideoDataOutputSampleBufferDelegateP", "previewLayer"]
@@ -133,6 +141,7 @@ depends-member:
 - ["5Argos28ActivityCameraViewControllerC", "AVCaptureSession"]
 - ["5Argos28ActivityCameraViewControllerC", "AVCaptureVideoDataOutput"]
 - ["5Argos28ActivityCameraViewControllerC", "AVCaptureVideoPreviewLayer"]
+- ["5Argos28ActivityCameraViewControllerC", "ActivityCameraViewDelegate"]
 - ["5Argos28ActivityCameraViewControllerC", "Bool"]
 - ["5Argos28ActivityCameraViewControllerC", "CMSampleBuffer"]
 - !private ["5Argos28ActivityCameraViewControllerC", "DispatchQueue"]
@@ -156,6 +165,7 @@ depends-member:
 - ["5Argos28ActivityCameraViewControllerC", "init"]
 - !private ["5Argos28ActivityCameraViewControllerC", "kCVPixelBufferPixelFormatTypeKey"]
 - !private ["5Argos28ActivityCameraViewControllerC", "kCVPixelFormatType_32BGRA"]
+- ["5Argos28ActivityCameraViewControllerC", "outputDelegate"]
 - !private ["5Argos28ActivityCameraViewControllerC", "posesWindow"]
 - !private ["5Argos28ActivityCameraViewControllerC", "predictor"]
 - ["5Argos28ActivityCameraViewControllerC", "previewLayer"]
@@ -166,6 +176,9 @@ depends-member:
 - ["5Argos28ActivityCameraViewControllerC", "viewDidLoad"]
 - ["5Argos28ActivityCameraViewControllerC", "viewWillAppear"]
 - ["5Argos28ActivityCameraViewControllerC", "viewWillDisappear"]
+- ["5Argos26ActivityCameraViewDelegateP", "Double"]
+- ["5Argos26ActivityCameraViewDelegateP", "String"]
+- ["5Argos26ActivityCameraViewDelegateP", "didRecognizeActivity"]
 - !private ["Sa", "append"]
 - !private ["Sa", "count"]
 - !private ["Sa", "map"]
@@ -229,7 +242,6 @@ depends-member:
 - !private ["s7CVarArgP", "canAddInput"]
 - ["s7CVarArgP", "captureOutput"]
 - !private ["s7CVarArgP", "captureSession"]
-- !private ["s7CVarArgP", "confidence"]
 - !private ["s7CVarArgP", "connection"]
 - !private ["s7CVarArgP", "count"]
 - !private ["s7CVarArgP", "current"]
@@ -244,6 +256,7 @@ depends-member:
 - !private ["s7CVarArgP", "layer"]
 - !private ["s7CVarArgP", "map"]
 - !private ["s7CVarArgP", "orientation"]
+- !private ["s7CVarArgP", "outputDelegate"]
 - !private ["s7CVarArgP", "perform"]
 - !private ["s7CVarArgP", "posesWindow"]
 - !private ["s7CVarArgP", "predictor"]
@@ -301,7 +314,6 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "canAddInput"]
 - ["s28CustomDebugStringConvertibleP", "captureOutput"]
 - !private ["s28CustomDebugStringConvertibleP", "captureSession"]
-- !private ["s28CustomDebugStringConvertibleP", "confidence"]
 - !private ["s28CustomDebugStringConvertibleP", "connection"]
 - !private ["s28CustomDebugStringConvertibleP", "count"]
 - !private ["s28CustomDebugStringConvertibleP", "current"]
@@ -316,6 +328,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "layer"]
 - !private ["s28CustomDebugStringConvertibleP", "map"]
 - !private ["s28CustomDebugStringConvertibleP", "orientation"]
+- !private ["s28CustomDebugStringConvertibleP", "outputDelegate"]
 - !private ["s28CustomDebugStringConvertibleP", "perform"]
 - !private ["s28CustomDebugStringConvertibleP", "posesWindow"]
 - !private ["s28CustomDebugStringConvertibleP", "predictor"]
@@ -374,7 +387,6 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "canAddInput"]
 - ["s23CustomStringConvertibleP", "captureOutput"]
 - !private ["s23CustomStringConvertibleP", "captureSession"]
-- !private ["s23CustomStringConvertibleP", "confidence"]
 - !private ["s23CustomStringConvertibleP", "connection"]
 - !private ["s23CustomStringConvertibleP", "count"]
 - !private ["s23CustomStringConvertibleP", "current"]
@@ -389,6 +401,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "layer"]
 - !private ["s23CustomStringConvertibleP", "map"]
 - !private ["s23CustomStringConvertibleP", "orientation"]
+- !private ["s23CustomStringConvertibleP", "outputDelegate"]
 - !private ["s23CustomStringConvertibleP", "perform"]
 - !private ["s23CustomStringConvertibleP", "posesWindow"]
 - !private ["s23CustomStringConvertibleP", "predictor"]
@@ -474,7 +487,6 @@ depends-member:
 - !private ["SQ", "canAddInput"]
 - ["SQ", "captureOutput"]
 - !private ["SQ", "captureSession"]
-- !private ["SQ", "confidence"]
 - !private ["SQ", "connection"]
 - !private ["SQ", "count"]
 - !private ["SQ", "current"]
@@ -493,6 +505,7 @@ depends-member:
 - !private ["SQ", "layer"]
 - !private ["SQ", "map"]
 - !private ["SQ", "orientation"]
+- !private ["SQ", "outputDelegate"]
 - !private ["SQ", "perform"]
 - ["SQ", "portrait"]
 - !private ["SQ", "posesWindow"]
@@ -578,7 +591,6 @@ depends-member:
 - !private ["SH", "canAddInput"]
 - ["SH", "captureOutput"]
 - !private ["SH", "captureSession"]
-- !private ["SH", "confidence"]
 - !private ["SH", "connection"]
 - !private ["SH", "count"]
 - !private ["SH", "current"]
@@ -597,6 +609,7 @@ depends-member:
 - !private ["SH", "layer"]
 - !private ["SH", "map"]
 - !private ["SH", "orientation"]
+- !private ["SH", "outputDelegate"]
 - !private ["SH", "perform"]
 - ["SH", "portrait"]
 - !private ["SH", "posesWindow"]
@@ -648,6 +661,7 @@ depends-member:
 - ["So8NSCodingP", "AVCaptureSession"]
 - ["So8NSCodingP", "AVCaptureVideoDataOutput"]
 - ["So8NSCodingP", "AVCaptureVideoPreviewLayer"]
+- ["So8NSCodingP", "ActivityCameraViewDelegate"]
 - ["So8NSCodingP", "Bool"]
 - ["So8NSCodingP", "CMSampleBuffer"]
 - !private ["So8NSCodingP", "DispatchQueue"]
@@ -668,7 +682,6 @@ depends-member:
 - !private ["So8NSCodingP", "bounds"]
 - ["So8NSCodingP", "captureOutput"]
 - ["So8NSCodingP", "captureSession"]
-- !private ["So8NSCodingP", "confidence"]
 - !private ["So8NSCodingP", "connection"]
 - ["So8NSCodingP", "deinit"]
 - !private ["So8NSCodingP", "frame"]
@@ -695,6 +708,7 @@ depends-member:
 - !private ["So8NSCodingP", "numberWithUnsignedLong"]
 - !private ["So8NSCodingP", "numberWithUnsignedLongLong"]
 - !private ["So8NSCodingP", "numberWithUnsignedShort"]
+- ["So8NSCodingP", "outputDelegate"]
 - ["So8NSCodingP", "posesWindow"]
 - ["So8NSCodingP", "predictor"]
 - ["So8NSCodingP", "previewLayer"]
@@ -706,7 +720,6 @@ depends-member:
 - ["So8NSCodingP", "viewDidLoad"]
 - ["So8NSCodingP", "viewWillAppear"]
 - ["So8NSCodingP", "viewWillDisappear"]
-- !private ["So9NSCopyingP", "confidence"]
 - ["So9NSCopyingP", "init"]
 - !private ["So9NSCopyingP", "keypointsMultiArray"]
 - !private ["So9NSCopyingP", "numberWithBool"]
@@ -732,6 +745,7 @@ depends-member:
 - ["So26NSExtensionRequestHandlingP", "AVCaptureSession"]
 - ["So26NSExtensionRequestHandlingP", "AVCaptureVideoDataOutput"]
 - ["So26NSExtensionRequestHandlingP", "AVCaptureVideoPreviewLayer"]
+- ["So26NSExtensionRequestHandlingP", "ActivityCameraViewDelegate"]
 - ["So26NSExtensionRequestHandlingP", "Bool"]
 - ["So26NSExtensionRequestHandlingP", "CMSampleBuffer"]
 - !private ["So26NSExtensionRequestHandlingP", "DispatchQueue"]
@@ -755,6 +769,7 @@ depends-member:
 - ["So26NSExtensionRequestHandlingP", "init"]
 - !private ["So26NSExtensionRequestHandlingP", "kCVPixelBufferPixelFormatTypeKey"]
 - !private ["So26NSExtensionRequestHandlingP", "kCVPixelFormatType_32BGRA"]
+- ["So26NSExtensionRequestHandlingP", "outputDelegate"]
 - ["So26NSExtensionRequestHandlingP", "posesWindow"]
 - ["So26NSExtensionRequestHandlingP", "predictor"]
 - ["So26NSExtensionRequestHandlingP", "previewLayer"]
@@ -774,6 +789,7 @@ depends-member:
 - ["So8NSObjectC", "AVCaptureSession"]
 - ["So8NSObjectC", "AVCaptureVideoDataOutput"]
 - ["So8NSObjectC", "AVCaptureVideoPreviewLayer"]
+- ["So8NSObjectC", "ActivityCameraViewDelegate"]
 - ["So8NSObjectC", "Bool"]
 - ["So8NSObjectC", "CMSampleBuffer"]
 - !private ["So8NSObjectC", "DispatchQueue"]
@@ -799,7 +815,6 @@ depends-member:
 - !private ["So8NSObjectC", "canAddInput"]
 - ["So8NSObjectC", "captureOutput"]
 - ["So8NSObjectC", "captureSession"]
-- !private ["So8NSObjectC", "confidence"]
 - !private ["So8NSObjectC", "connection"]
 - !private ["So8NSObjectC", "current"]
 - !private ["So8NSObjectC", "default"]
@@ -834,6 +849,7 @@ depends-member:
 - !private ["So8NSObjectC", "numberWithUnsignedLongLong"]
 - !private ["So8NSObjectC", "numberWithUnsignedShort"]
 - !private ["So8NSObjectC", "orientation"]
+- ["So8NSObjectC", "outputDelegate"]
 - !private ["So8NSObjectC", "perform"]
 - !private ["So8NSObjectC", "performRequests"]
 - ["So8NSObjectC", "posesWindow"]
@@ -884,6 +900,7 @@ depends-member:
 - ["So8NSObjectP", "AVCaptureSession"]
 - ["So8NSObjectP", "AVCaptureVideoDataOutput"]
 - ["So8NSObjectP", "AVCaptureVideoPreviewLayer"]
+- ["So8NSObjectP", "ActivityCameraViewDelegate"]
 - ["So8NSObjectP", "Bool"]
 - ["So8NSObjectP", "CMSampleBuffer"]
 - !private ["So8NSObjectP", "DispatchQueue"]
@@ -909,7 +926,6 @@ depends-member:
 - !private ["So8NSObjectP", "canAddInput"]
 - ["So8NSObjectP", "captureOutput"]
 - ["So8NSObjectP", "captureSession"]
-- !private ["So8NSObjectP", "confidence"]
 - !private ["So8NSObjectP", "connection"]
 - !private ["So8NSObjectP", "current"]
 - !private ["So8NSObjectP", "default"]
@@ -945,6 +961,7 @@ depends-member:
 - !private ["So8NSObjectP", "numberWithUnsignedLongLong"]
 - !private ["So8NSObjectP", "numberWithUnsignedShort"]
 - !private ["So8NSObjectP", "orientation"]
+- ["So8NSObjectP", "outputDelegate"]
 - !private ["So8NSObjectP", "perform"]
 - !private ["So8NSObjectP", "performRequests"]
 - ["So8NSObjectP", "posesWindow"]
@@ -991,7 +1008,6 @@ depends-member:
 - !private ["So14NSSecureCodingP", ""]
 - !private ["So14NSSecureCodingP", "addSublayer"]
 - !private ["So14NSSecureCodingP", "bounds"]
-- !private ["So14NSSecureCodingP", "confidence"]
 - !private ["So14NSSecureCodingP", "connection"]
 - !private ["So14NSSecureCodingP", "frame"]
 - !private ["So14NSSecureCodingP", "init"]
@@ -1095,6 +1111,7 @@ depends-member:
 - ["So21UIAppearanceContainerP", "AVCaptureSession"]
 - ["So21UIAppearanceContainerP", "AVCaptureVideoDataOutput"]
 - ["So21UIAppearanceContainerP", "AVCaptureVideoPreviewLayer"]
+- ["So21UIAppearanceContainerP", "ActivityCameraViewDelegate"]
 - ["So21UIAppearanceContainerP", "Bool"]
 - ["So21UIAppearanceContainerP", "CMSampleBuffer"]
 - !private ["So21UIAppearanceContainerP", "DispatchQueue"]
@@ -1120,6 +1137,7 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "kCVPixelBufferPixelFormatTypeKey"]
 - !private ["So21UIAppearanceContainerP", "kCVPixelFormatType_32BGRA"]
 - !private ["So21UIAppearanceContainerP", "layer"]
+- ["So21UIAppearanceContainerP", "outputDelegate"]
 - ["So21UIAppearanceContainerP", "posesWindow"]
 - ["So21UIAppearanceContainerP", "predictor"]
 - ["So21UIAppearanceContainerP", "previewLayer"]
@@ -1137,6 +1155,7 @@ depends-member:
 - ["So18UIContentContainerP", "AVCaptureSession"]
 - ["So18UIContentContainerP", "AVCaptureVideoDataOutput"]
 - ["So18UIContentContainerP", "AVCaptureVideoPreviewLayer"]
+- ["So18UIContentContainerP", "ActivityCameraViewDelegate"]
 - ["So18UIContentContainerP", "Bool"]
 - ["So18UIContentContainerP", "CMSampleBuffer"]
 - !private ["So18UIContentContainerP", "DispatchQueue"]
@@ -1160,6 +1179,7 @@ depends-member:
 - ["So18UIContentContainerP", "init"]
 - !private ["So18UIContentContainerP", "kCVPixelBufferPixelFormatTypeKey"]
 - !private ["So18UIContentContainerP", "kCVPixelFormatType_32BGRA"]
+- ["So18UIContentContainerP", "outputDelegate"]
 - ["So18UIContentContainerP", "posesWindow"]
 - ["So18UIContentContainerP", "predictor"]
 - ["So18UIContentContainerP", "previewLayer"]
@@ -1186,6 +1206,7 @@ depends-member:
 - ["So18UIFocusEnvironmentP", "AVCaptureSession"]
 - ["So18UIFocusEnvironmentP", "AVCaptureVideoDataOutput"]
 - ["So18UIFocusEnvironmentP", "AVCaptureVideoPreviewLayer"]
+- ["So18UIFocusEnvironmentP", "ActivityCameraViewDelegate"]
 - ["So18UIFocusEnvironmentP", "Bool"]
 - ["So18UIFocusEnvironmentP", "CMSampleBuffer"]
 - !private ["So18UIFocusEnvironmentP", "DispatchQueue"]
@@ -1211,6 +1232,7 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "kCVPixelBufferPixelFormatTypeKey"]
 - !private ["So18UIFocusEnvironmentP", "kCVPixelFormatType_32BGRA"]
 - !private ["So18UIFocusEnvironmentP", "layer"]
+- ["So18UIFocusEnvironmentP", "outputDelegate"]
 - ["So18UIFocusEnvironmentP", "posesWindow"]
 - ["So18UIFocusEnvironmentP", "predictor"]
 - ["So18UIFocusEnvironmentP", "previewLayer"]
@@ -1234,6 +1256,7 @@ depends-member:
 - ["So30UIPasteConfigurationSupportingP", "AVCaptureSession"]
 - ["So30UIPasteConfigurationSupportingP", "AVCaptureVideoDataOutput"]
 - ["So30UIPasteConfigurationSupportingP", "AVCaptureVideoPreviewLayer"]
+- ["So30UIPasteConfigurationSupportingP", "ActivityCameraViewDelegate"]
 - ["So30UIPasteConfigurationSupportingP", "Bool"]
 - ["So30UIPasteConfigurationSupportingP", "CMSampleBuffer"]
 - !private ["So30UIPasteConfigurationSupportingP", "DispatchQueue"]
@@ -1260,6 +1283,7 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "kCVPixelBufferPixelFormatTypeKey"]
 - !private ["So30UIPasteConfigurationSupportingP", "kCVPixelFormatType_32BGRA"]
 - !private ["So30UIPasteConfigurationSupportingP", "layer"]
+- ["So30UIPasteConfigurationSupportingP", "outputDelegate"]
 - ["So30UIPasteConfigurationSupportingP", "posesWindow"]
 - ["So30UIPasteConfigurationSupportingP", "predictor"]
 - ["So30UIPasteConfigurationSupportingP", "previewLayer"]
@@ -1277,6 +1301,7 @@ depends-member:
 - ["So11UIResponderC", "AVCaptureSession"]
 - ["So11UIResponderC", "AVCaptureVideoDataOutput"]
 - ["So11UIResponderC", "AVCaptureVideoPreviewLayer"]
+- ["So11UIResponderC", "ActivityCameraViewDelegate"]
 - ["So11UIResponderC", "Bool"]
 - ["So11UIResponderC", "CMSampleBuffer"]
 - !private ["So11UIResponderC", "DispatchQueue"]
@@ -1302,6 +1327,7 @@ depends-member:
 - !private ["So11UIResponderC", "kCVPixelBufferPixelFormatTypeKey"]
 - !private ["So11UIResponderC", "kCVPixelFormatType_32BGRA"]
 - !private ["So11UIResponderC", "layer"]
+- ["So11UIResponderC", "outputDelegate"]
 - ["So11UIResponderC", "posesWindow"]
 - ["So11UIResponderC", "predictor"]
 - ["So11UIResponderC", "previewLayer"]
@@ -1319,6 +1345,7 @@ depends-member:
 - ["So30UIResponderStandardEditActionsP", "AVCaptureSession"]
 - ["So30UIResponderStandardEditActionsP", "AVCaptureVideoDataOutput"]
 - ["So30UIResponderStandardEditActionsP", "AVCaptureVideoPreviewLayer"]
+- ["So30UIResponderStandardEditActionsP", "ActivityCameraViewDelegate"]
 - ["So30UIResponderStandardEditActionsP", "Bool"]
 - ["So30UIResponderStandardEditActionsP", "CMSampleBuffer"]
 - !private ["So30UIResponderStandardEditActionsP", "DispatchQueue"]
@@ -1345,6 +1372,7 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "kCVPixelBufferPixelFormatTypeKey"]
 - !private ["So30UIResponderStandardEditActionsP", "kCVPixelFormatType_32BGRA"]
 - !private ["So30UIResponderStandardEditActionsP", "layer"]
+- ["So30UIResponderStandardEditActionsP", "outputDelegate"]
 - ["So30UIResponderStandardEditActionsP", "posesWindow"]
 - ["So30UIResponderStandardEditActionsP", "predictor"]
 - ["So30UIResponderStandardEditActionsP", "previewLayer"]
@@ -1362,6 +1390,7 @@ depends-member:
 - ["So16UIStateRestoringP", "AVCaptureSession"]
 - ["So16UIStateRestoringP", "AVCaptureVideoDataOutput"]
 - ["So16UIStateRestoringP", "AVCaptureVideoPreviewLayer"]
+- ["So16UIStateRestoringP", "ActivityCameraViewDelegate"]
 - ["So16UIStateRestoringP", "Bool"]
 - ["So16UIStateRestoringP", "CMSampleBuffer"]
 - !private ["So16UIStateRestoringP", "DispatchQueue"]
@@ -1385,6 +1414,7 @@ depends-member:
 - ["So16UIStateRestoringP", "init"]
 - !private ["So16UIStateRestoringP", "kCVPixelBufferPixelFormatTypeKey"]
 - !private ["So16UIStateRestoringP", "kCVPixelFormatType_32BGRA"]
+- ["So16UIStateRestoringP", "outputDelegate"]
 - ["So16UIStateRestoringP", "posesWindow"]
 - ["So16UIStateRestoringP", "predictor"]
 - ["So16UIStateRestoringP", "previewLayer"]
@@ -1402,6 +1432,7 @@ depends-member:
 - ["So18UITraitEnvironmentP", "AVCaptureSession"]
 - ["So18UITraitEnvironmentP", "AVCaptureVideoDataOutput"]
 - ["So18UITraitEnvironmentP", "AVCaptureVideoPreviewLayer"]
+- ["So18UITraitEnvironmentP", "ActivityCameraViewDelegate"]
 - ["So18UITraitEnvironmentP", "Bool"]
 - ["So18UITraitEnvironmentP", "CMSampleBuffer"]
 - !private ["So18UITraitEnvironmentP", "DispatchQueue"]
@@ -1427,6 +1458,7 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "kCVPixelBufferPixelFormatTypeKey"]
 - !private ["So18UITraitEnvironmentP", "kCVPixelFormatType_32BGRA"]
 - !private ["So18UITraitEnvironmentP", "layer"]
+- ["So18UITraitEnvironmentP", "outputDelegate"]
 - ["So18UITraitEnvironmentP", "posesWindow"]
 - ["So18UITraitEnvironmentP", "predictor"]
 - ["So18UITraitEnvironmentP", "previewLayer"]
@@ -1444,6 +1476,7 @@ depends-member:
 - ["So23UIUserActivityRestoringP", "AVCaptureSession"]
 - ["So23UIUserActivityRestoringP", "AVCaptureVideoDataOutput"]
 - ["So23UIUserActivityRestoringP", "AVCaptureVideoPreviewLayer"]
+- ["So23UIUserActivityRestoringP", "ActivityCameraViewDelegate"]
 - ["So23UIUserActivityRestoringP", "Bool"]
 - ["So23UIUserActivityRestoringP", "CMSampleBuffer"]
 - !private ["So23UIUserActivityRestoringP", "DispatchQueue"]
@@ -1470,6 +1503,7 @@ depends-member:
 - !private ["So23UIUserActivityRestoringP", "kCVPixelBufferPixelFormatTypeKey"]
 - !private ["So23UIUserActivityRestoringP", "kCVPixelFormatType_32BGRA"]
 - !private ["So23UIUserActivityRestoringP", "layer"]
+- ["So23UIUserActivityRestoringP", "outputDelegate"]
 - ["So23UIUserActivityRestoringP", "posesWindow"]
 - ["So23UIUserActivityRestoringP", "predictor"]
 - ["So23UIUserActivityRestoringP", "previewLayer"]
@@ -1489,6 +1523,7 @@ depends-member:
 - ["So16UIViewControllerC", "AVCaptureSession"]
 - ["So16UIViewControllerC", "AVCaptureVideoDataOutput"]
 - ["So16UIViewControllerC", "AVCaptureVideoPreviewLayer"]
+- ["So16UIViewControllerC", "ActivityCameraViewDelegate"]
 - ["So16UIViewControllerC", "Bool"]
 - ["So16UIViewControllerC", "CMSampleBuffer"]
 - !private ["So16UIViewControllerC", "DispatchQueue"]
@@ -1511,6 +1546,7 @@ depends-member:
 - ["So16UIViewControllerC", "init"]
 - !private ["So16UIViewControllerC", "kCVPixelBufferPixelFormatTypeKey"]
 - !private ["So16UIViewControllerC", "kCVPixelFormatType_32BGRA"]
+- ["So16UIViewControllerC", "outputDelegate"]
 - ["So16UIViewControllerC", "posesWindow"]
 - ["So16UIViewControllerC", "predictor"]
 - ["So16UIViewControllerC", "previewLayer"]
@@ -1529,14 +1565,11 @@ depends-member:
 - !private ["So21VNImageRequestHandlerC", "init"]
 - !private ["So21VNImageRequestHandlerC", "perform"]
 - ["So13VNObservationC", ""]
-- !private ["So13VNObservationC", "confidence"]
 - !private ["So13VNObservationC", "keypointsMultiArray"]
-- !private ["So29VNRecognizedPointsObservationC", "confidence"]
 - !private ["So29VNRecognizedPointsObservationC", "keypointsMultiArray"]
 - ["So9VNRequestC", ""]
 - ["So9VNRequestC", "init"]
 - !private ["So9VNRequestC", "results"]
-- !private ["So26VNRequestRevisionProvidingP", "confidence"]
 - !private ["So26VNRequestRevisionProvidingP", "keypointsMultiArray"]
 - !private ["7SwiftUI4ViewP", "addInput"]
 - !private ["7SwiftUI4ViewP", "addOutput"]
@@ -1602,7 +1635,6 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "canAddInput"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "captureOutput"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "captureSession"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "confidence"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "connection"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "current"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "default"]
@@ -1615,6 +1647,7 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "keypointsMultiArray"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "layer"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "orientation"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "outputDelegate"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "perform"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "posesWindow"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "predictor"]
@@ -1654,7 +1687,6 @@ depends-member:
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "canAddInput"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", "captureOutput"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "captureSession"]
-- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "confidence"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "connection"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "current"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "default"]
@@ -1667,6 +1699,7 @@ depends-member:
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "keypointsMultiArray"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "layer"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "orientation"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "outputDelegate"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "perform"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "posesWindow"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "predictor"]
@@ -1726,6 +1759,7 @@ depends-nominal:
 - !private "So19AVLayerVideoGravitya"
 - !private "So11AVMediaTypea"
 - "5Argos28ActivityCameraViewControllerC"
+- "5Argos26ActivityCameraViewDelegateP"
 - !private "Sa"
 - "SK"
 - "So7CALayerC"
@@ -1901,4 +1935,4 @@ depends-external:
 - "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AudioToolbox.apinotes"
 - "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
 - "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/MultipeerConnectivity.framework/Headers/MultipeerConnectivity.apinotes"
-interface-hash: "ce6954c34a86ba0a7944d6870bec0350"
+interface-hash: "8b33d2ae4063e5de8847b94f276ce46d"

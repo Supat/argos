@@ -6,72 +6,190 @@ provides-top-level:
 provides-nominal:
 - "5Argos23VisionActivityTrackViewV"
 - "5Argos27ActivityCameraRepresentableV"
+- "5Argos27ActivityCameraRepresentableV11CoordinatorC"
 - "5Argos32VisionActivityTrackView_PreviewsV"
 provides-member:
 - ["5Argos23VisionActivityTrackViewV", ""]
 - ["5Argos27ActivityCameraRepresentableV", ""]
+- ["5Argos27ActivityCameraRepresentableV11CoordinatorC", ""]
 - ["5Argos32VisionActivityTrackView_PreviewsV", ""]
 provides-dynamic-lookup:
+- "didRecognizeActivity"
+- "parent"
 depends-top-level:
+- "$confidence"
+- "$label"
 - "ActivityCameraRepresentable"
 - "ActivityCameraViewController"
+- "ActivityCameraViewDelegate"
+- "AssignmentPrecedence"
+- "Binding"
 - "Context"
+- "Coordinator"
+- "Double"
+- "FloatLiteralType"
+- "HStack"
+- "IntegerLiteralType"
+- "NSObject"
 - "PreviewProvider"
+- "Spacer"
+- "State"
+- "String"
+- "StringLiteralType"
+- "Text"
 - "UIViewControllerRepresentable"
+- "UIViewControllerRepresentableContext"
 - "UIViewControllerType"
+- "VStack"
 - "View"
 - "VisionActivityTrackView"
 - "VisionActivityTrackView_Previews"
+- !private "ZStack"
+- "confidence"
+- "label"
+- !private "parent"
 depends-member:
 - !private ["So44AVCaptureVideoDataOutputSampleBufferDelegateP", "init"]
+- !private ["So44AVCaptureVideoDataOutputSampleBufferDelegateP", "outputDelegate"]
+- ["5Argos27ActivityCameraRepresentableV", "$confidence"]
+- ["5Argos27ActivityCameraRepresentableV", "$label"]
+- ["5Argos27ActivityCameraRepresentableV", "ActivityCameraRepresentable"]
 - ["5Argos27ActivityCameraRepresentableV", "ActivityCameraViewController"]
+- ["5Argos27ActivityCameraRepresentableV", "ActivityCameraViewDelegate"]
+- ["5Argos27ActivityCameraRepresentableV", "Binding"]
 - ["5Argos27ActivityCameraRepresentableV", "Body"]
 - ["5Argos27ActivityCameraRepresentableV", "Context"]
 - ["5Argos27ActivityCameraRepresentableV", "Coordinator"]
 - ["5Argos27ActivityCameraRepresentableV", "Default_Body"]
-- ["5Argos27ActivityCameraRepresentableV", "Default_Coordinator"]
 - ["5Argos27ActivityCameraRepresentableV", "Default_UIViewControllerType"]
+- ["5Argos27ActivityCameraRepresentableV", "Double"]
+- ["5Argos27ActivityCameraRepresentableV", "NSObject"]
+- ["5Argos27ActivityCameraRepresentableV", "String"]
+- ["5Argos27ActivityCameraRepresentableV", "UIViewControllerRepresentableContext"]
 - ["5Argos27ActivityCameraRepresentableV", "UIViewControllerType"]
 - ["5Argos27ActivityCameraRepresentableV", ""]
 - ["5Argos27ActivityCameraRepresentableV", "_Default_Body"]
-- ["5Argos27ActivityCameraRepresentableV", "_Default_Coordinator"]
 - ["5Argos27ActivityCameraRepresentableV", "_Default_UIViewControllerType"]
+- !private ["5Argos27ActivityCameraRepresentableV", "_confidence"]
 - ["5Argos27ActivityCameraRepresentableV", "_identifiedViewTree"]
+- !private ["5Argos27ActivityCameraRepresentableV", "_label"]
 - ["5Argos27ActivityCameraRepresentableV", "_makeView"]
 - ["5Argos27ActivityCameraRepresentableV", "_makeViewList"]
 - ["5Argos27ActivityCameraRepresentableV", "_viewListCount"]
 - ["5Argos27ActivityCameraRepresentableV", "body"]
+- ["5Argos27ActivityCameraRepresentableV", "confidence"]
 - ["5Argos27ActivityCameraRepresentableV", "dismantleUIViewController"]
 - ["5Argos27ActivityCameraRepresentableV", "init"]
+- ["5Argos27ActivityCameraRepresentableV", "label"]
 - ["5Argos27ActivityCameraRepresentableV", "makeCoordinator"]
 - ["5Argos27ActivityCameraRepresentableV", "makeUIViewController"]
+- !private ["5Argos27ActivityCameraRepresentableV", "parent"]
 - ["5Argos27ActivityCameraRepresentableV", "updateUIViewController"]
 - !private ["5Argos28ActivityCameraViewControllerC", ""]
 - !private ["5Argos28ActivityCameraViewControllerC", "init"]
+- !private ["5Argos28ActivityCameraViewControllerC", "outputDelegate"]
+- ["5Argos26ActivityCameraViewDelegateP", ""]
+- ["5Argos26ActivityCameraViewDelegateP", "didRecognizeActivity"]
+- !private ["5Argos26ActivityCameraViewDelegateP", "init"]
+- !private ["5Argos26ActivityCameraViewDelegateP", "parent"]
+- !private ["s18AdditiveArithmeticP", ""]
+- !private ["s18AdditiveArithmeticP", "top"]
 - ["7SwiftUI10AnimatableP", ""]
+- !private ["7SwiftUI10AnimatableP", "top"]
 - ["SK", ""]
+- !private ["SB", "top"]
+- ["7SwiftUI7BindingV", "init"]
+- ["7SwiftUI7BindingV", "projectedValue"]
+- ["7SwiftUI7BindingV", "subscript"]
+- ["7SwiftUI7BindingV", "wrappedValue"]
+- !private ["12CoreGraphics7CGFloatV", "top"]
+- ["s7CVarArgP", ""]
+- ["s7CVarArgP", "didRecognizeActivity"]
 - !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "outputDelegate"]
+- !private ["s7CVarArgP", "parent"]
+- !private ["s7CVarArgP", "top"]
 - ["Sl", ""]
 - ["SL", ""]
+- !private ["SL", "top"]
+- ["5Argos27ActivityCameraRepresentableV11CoordinatorC", "ActivityCameraRepresentable"]
+- ["5Argos27ActivityCameraRepresentableV11CoordinatorC", "Double"]
+- ["5Argos27ActivityCameraRepresentableV11CoordinatorC", "String"]
+- ["5Argos27ActivityCameraRepresentableV11CoordinatorC", ""]
+- ["5Argos27ActivityCameraRepresentableV11CoordinatorC", "deinit"]
+- ["5Argos27ActivityCameraRepresentableV11CoordinatorC", "didRecognizeActivity"]
+- ["5Argos27ActivityCameraRepresentableV11CoordinatorC", "init"]
+- ["5Argos27ActivityCameraRepresentableV11CoordinatorC", "parent"]
+- ["s28CustomDebugStringConvertibleP", ""]
+- ["s28CustomDebugStringConvertibleP", "didRecognizeActivity"]
 - !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "outputDelegate"]
+- !private ["s28CustomDebugStringConvertibleP", "parent"]
+- !private ["s17CustomReflectableP", "top"]
 - ["s23CustomStringConvertibleP", ""]
+- ["s23CustomStringConvertibleP", "didRecognizeActivity"]
 - !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "outputDelegate"]
+- !private ["s23CustomStringConvertibleP", "parent"]
+- !private ["s23CustomStringConvertibleP", "top"]
+- !private ["Se", "top"]
+- ["7SwiftUI15DynamicPropertyP", "init"]
+- ["7SwiftUI15DynamicPropertyP", "wrappedValue"]
+- !private ["7SwiftUI10EdgeInsetsV", "top"]
+- !private ["SE", "top"]
 - ["SQ", ""]
+- ["SQ", "didRecognizeActivity"]
 - !private ["SQ", "init"]
+- !private ["SQ", "outputDelegate"]
+- !private ["SQ", "parent"]
+- !private ["SQ", "top"]
+- !private ["s25ExpressibleByArrayLiteralP", ""]
+- !private ["s25ExpressibleByArrayLiteralP", "top"]
 - ["s43ExpressibleByExtendedGraphemeClusterLiteralP", ""]
+- !private ["s25ExpressibleByFloatLiteralP", ""]
+- !private ["s25ExpressibleByFloatLiteralP", "top"]
+- !private ["s27ExpressibleByIntegerLiteralP", ""]
+- !private ["s27ExpressibleByIntegerLiteralP", "top"]
+- !private ["s32ExpressibleByStringInterpolationP", "StringInterpolation"]
 - ["s32ExpressibleByStringInterpolationP", ""]
+- !private ["s32ExpressibleByStringInterpolationP", "init"]
 - ["s26ExpressibleByStringLiteralP", ""]
 - ["s33ExpressibleByUnicodeScalarLiteralP", ""]
+- !private ["SF", ""]
+- !private ["SF", "top"]
+- !private ["7SwiftUI6HStackV", "init"]
+- !private ["7SwiftUI6HStackV", "padding"]
 - ["SH", ""]
+- ["SH", "didRecognizeActivity"]
 - !private ["SH", "init"]
+- !private ["SH", "outputDelegate"]
+- !private ["SH", "parent"]
+- !private ["SH", "top"]
 - ["s25LosslessStringConvertibleP", ""]
 - ["So8NSCodingP", ""]
 - !private ["So8NSCodingP", "init"]
+- !private ["So8NSCodingP", "outputDelegate"]
 - !private ["So26NSExtensionRequestHandlingP", "init"]
+- !private ["So26NSExtensionRequestHandlingP", "outputDelegate"]
+- ["So8NSObjectC", "ActivityCameraRepresentable"]
+- ["So8NSObjectC", "Double"]
+- ["So8NSObjectC", "String"]
 - ["So8NSObjectC", ""]
-- !private ["So8NSObjectC", "init"]
+- ["So8NSObjectC", "didRecognizeActivity"]
+- ["So8NSObjectC", "init"]
+- !private ["So8NSObjectC", "outputDelegate"]
+- ["So8NSObjectC", "parent"]
+- ["So8NSObjectP", "ActivityCameraRepresentable"]
+- ["So8NSObjectP", "Double"]
+- ["So8NSObjectP", "String"]
 - ["So8NSObjectP", ""]
-- !private ["So8NSObjectP", "init"]
+- ["So8NSObjectP", "didRecognizeActivity"]
+- ["So8NSObjectP", "init"]
+- !private ["So8NSObjectP", "outputDelegate"]
+- ["So8NSObjectP", "parent"]
+- !private ["Sj", ""]
+- !private ["Sj", "top"]
+- !private ["s9OptionSetP", "top"]
 - ["7SwiftUI15PreviewProviderP", "Default_Previews"]
 - ["7SwiftUI15PreviewProviderP", "Previews"]
 - !private ["7SwiftUI15PreviewProviderP", "VisionActivityTrackView"]
@@ -81,82 +199,144 @@ depends-member:
 - ["7SwiftUI15PreviewProviderP", "_previews"]
 - ["7SwiftUI15PreviewProviderP", "platform"]
 - ["7SwiftUI15PreviewProviderP", "previews"]
+- !private ["SY", ""]
+- !private ["SY", "top"]
 - ["ST", ""]
+- !private ["7SwiftUI4EdgeO3SetV", "top"]
+- !private ["s10SetAlgebraP", ""]
+- !private ["s10SetAlgebraP", "top"]
+- !private ["s13SignedNumericP", ""]
+- !private ["s13SignedNumericP", "top"]
+- !private ["7SwiftUI6SpacerV", "init"]
+- ["7SwiftUI5StateV", "init"]
+- ["7SwiftUI5StateV", "projectedValue"]
+- ["7SwiftUI5StateV", "subscript"]
+- ["7SwiftUI5StateV", "wrappedValue"]
+- !private ["Sx", ""]
+- !private ["Sx", "top"]
+- !private ["7SwiftUI18LocalizedStringKeyV0D13InterpolationV", "appendInterpolation"]
+- !private ["7SwiftUI18LocalizedStringKeyV0D13InterpolationV", "appendLiteral"]
+- !private ["s27StringInterpolationProtocolP", "appendInterpolation"]
+- !private ["s27StringInterpolationProtocolP", "appendLiteral"]
+- !private ["s27StringInterpolationProtocolP", "init"]
+- !private ["7SwiftUI4TextV", "init"]
 - ["s16TextOutputStreamP", ""]
 - ["s20TextOutputStreamableP", ""]
 - !private ["So21UIAppearanceContainerP", "init"]
+- !private ["So21UIAppearanceContainerP", "outputDelegate"]
 - !private ["So18UIContentContainerP", "init"]
+- !private ["So18UIContentContainerP", "outputDelegate"]
 - !private ["So18UIFocusEnvironmentP", "init"]
+- !private ["So18UIFocusEnvironmentP", "outputDelegate"]
 - !private ["So30UIPasteConfigurationSupportingP", "init"]
+- !private ["So30UIPasteConfigurationSupportingP", "outputDelegate"]
 - ["So11UIResponderC", ""]
 - !private ["So11UIResponderC", "init"]
+- !private ["So11UIResponderC", "outputDelegate"]
 - !private ["So30UIResponderStandardEditActionsP", "init"]
+- !private ["So30UIResponderStandardEditActionsP", "outputDelegate"]
 - !private ["So16UIStateRestoringP", "init"]
+- !private ["So16UIStateRestoringP", "outputDelegate"]
 - !private ["So18UITraitEnvironmentP", "init"]
+- !private ["So18UITraitEnvironmentP", "outputDelegate"]
 - !private ["So23UIUserActivityRestoringP", "init"]
+- !private ["So23UIUserActivityRestoringP", "outputDelegate"]
 - ["So16UIViewControllerC", ""]
 - !private ["So16UIViewControllerC", "init"]
+- !private ["So16UIViewControllerC", "outputDelegate"]
 - !private ["7SwiftUI29UIViewControllerRepresentableP", "ActivityCameraViewController"]
+- ["7SwiftUI29UIViewControllerRepresentableP", "ActivityCameraViewDelegate"]
+- ["7SwiftUI29UIViewControllerRepresentableP", "Binding"]
 - ["7SwiftUI29UIViewControllerRepresentableP", "Body"]
 - ["7SwiftUI29UIViewControllerRepresentableP", "Context"]
 - ["7SwiftUI29UIViewControllerRepresentableP", "Coordinator"]
 - ["7SwiftUI29UIViewControllerRepresentableP", "Default_Body"]
-- ["7SwiftUI29UIViewControllerRepresentableP", "Default_Coordinator"]
 - ["7SwiftUI29UIViewControllerRepresentableP", "Default_UIViewControllerType"]
+- ["7SwiftUI29UIViewControllerRepresentableP", "NSObject"]
 - ["7SwiftUI29UIViewControllerRepresentableP", "UIViewControllerType"]
 - ["7SwiftUI29UIViewControllerRepresentableP", ""]
 - ["7SwiftUI29UIViewControllerRepresentableP", "_Default_Body"]
-- ["7SwiftUI29UIViewControllerRepresentableP", "_Default_Coordinator"]
 - ["7SwiftUI29UIViewControllerRepresentableP", "_Default_UIViewControllerType"]
 - ["7SwiftUI29UIViewControllerRepresentableP", "_identifiedViewTree"]
 - ["7SwiftUI29UIViewControllerRepresentableP", "_makeView"]
 - ["7SwiftUI29UIViewControllerRepresentableP", "_makeViewList"]
 - ["7SwiftUI29UIViewControllerRepresentableP", "_viewListCount"]
 - ["7SwiftUI29UIViewControllerRepresentableP", "body"]
+- !private ["7SwiftUI29UIViewControllerRepresentableP", "confidence"]
 - ["7SwiftUI29UIViewControllerRepresentableP", "dismantleUIViewController"]
 - !private ["7SwiftUI29UIViewControllerRepresentableP", "init"]
+- !private ["7SwiftUI29UIViewControllerRepresentableP", "label"]
 - ["7SwiftUI29UIViewControllerRepresentableP", "makeCoordinator"]
 - ["7SwiftUI29UIViewControllerRepresentableP", "makeUIViewController"]
+- !private ["7SwiftUI29UIViewControllerRepresentableP", "parent"]
 - ["7SwiftUI29UIViewControllerRepresentableP", "updateUIViewController"]
+- !private ["7SwiftUI36UIViewControllerRepresentableContextV", "coordinator"]
+- !private ["7SwiftUI6VStackV", "init"]
+- !private ["7SwiftUI16VectorArithmeticP", "top"]
+- !private ["7SwiftUI4ViewP", "$confidence"]
+- !private ["7SwiftUI4ViewP", "$label"]
 - !private ["7SwiftUI4ViewP", "ActivityCameraRepresentable"]
 - !private ["7SwiftUI4ViewP", "ActivityCameraViewController"]
+- ["7SwiftUI4ViewP", "ActivityCameraViewDelegate"]
+- ["7SwiftUI4ViewP", "Binding"]
 - ["7SwiftUI4ViewP", "Body"]
 - ["7SwiftUI4ViewP", "Context"]
 - ["7SwiftUI4ViewP", "Coordinator"]
 - ["7SwiftUI4ViewP", "Default_Body"]
-- ["7SwiftUI4ViewP", "Default_Coordinator"]
 - ["7SwiftUI4ViewP", "Default_UIViewControllerType"]
+- !private ["7SwiftUI4ViewP", "HStack"]
+- ["7SwiftUI4ViewP", "NSObject"]
+- !private ["7SwiftUI4ViewP", "Spacer"]
+- ["7SwiftUI4ViewP", "State"]
+- !private ["7SwiftUI4ViewP", "Text"]
 - ["7SwiftUI4ViewP", "UIViewControllerType"]
+- !private ["7SwiftUI4ViewP", "VStack"]
+- !private ["7SwiftUI4ViewP", "ZStack"]
 - ["7SwiftUI4ViewP", ""]
 - ["7SwiftUI4ViewP", "_Default_Body"]
-- ["7SwiftUI4ViewP", "_Default_Coordinator"]
 - ["7SwiftUI4ViewP", "_Default_UIViewControllerType"]
 - ["7SwiftUI4ViewP", "_identifiedViewTree"]
 - ["7SwiftUI4ViewP", "_makeView"]
 - ["7SwiftUI4ViewP", "_makeViewList"]
 - ["7SwiftUI4ViewP", "_viewListCount"]
 - ["7SwiftUI4ViewP", "body"]
+- !private ["7SwiftUI4ViewP", "confidence"]
 - ["7SwiftUI4ViewP", "dismantleUIViewController"]
 - !private ["7SwiftUI4ViewP", "init"]
+- !private ["7SwiftUI4ViewP", "label"]
 - ["7SwiftUI4ViewP", "makeCoordinator"]
 - ["7SwiftUI4ViewP", "makeUIViewController"]
+- !private ["7SwiftUI4ViewP", "padding"]
+- !private ["7SwiftUI4ViewP", "parent"]
 - ["7SwiftUI4ViewP", "updateUIViewController"]
 - !private ["7SwiftUI11ViewBuilderV", "buildBlock"]
 - !private ["7SwiftUI11ViewBuilderV", "buildExpression"]
 - !private ["7SwiftUI11ViewBuilderV", "buildFinalResult"]
 - !private ["7SwiftUI11ViewBuilderV", "buildIf"]
 - !private ["7SwiftUI11ViewBuilderV", "buildOptional"]
+- !private ["5Argos23VisionActivityTrackViewV", "$confidence"]
+- !private ["5Argos23VisionActivityTrackViewV", "$label"]
 - !private ["5Argos23VisionActivityTrackViewV", "ActivityCameraRepresentable"]
 - ["5Argos23VisionActivityTrackViewV", "Body"]
 - ["5Argos23VisionActivityTrackViewV", "Default_Body"]
+- !private ["5Argos23VisionActivityTrackViewV", "HStack"]
+- !private ["5Argos23VisionActivityTrackViewV", "Spacer"]
+- ["5Argos23VisionActivityTrackViewV", "State"]
+- !private ["5Argos23VisionActivityTrackViewV", "Text"]
+- !private ["5Argos23VisionActivityTrackViewV", "VStack"]
 - ["5Argos23VisionActivityTrackViewV", "View"]
+- !private ["5Argos23VisionActivityTrackViewV", "ZStack"]
 - ["5Argos23VisionActivityTrackViewV", ""]
 - ["5Argos23VisionActivityTrackViewV", "_Default_Body"]
+- !private ["5Argos23VisionActivityTrackViewV", "_confidence"]
+- !private ["5Argos23VisionActivityTrackViewV", "_label"]
 - ["5Argos23VisionActivityTrackViewV", "_makeView"]
 - ["5Argos23VisionActivityTrackViewV", "_makeViewList"]
 - ["5Argos23VisionActivityTrackViewV", "_viewListCount"]
 - ["5Argos23VisionActivityTrackViewV", "body"]
+- !private ["5Argos23VisionActivityTrackViewV", "confidence"]
 - ["5Argos23VisionActivityTrackViewV", "init"]
+- !private ["5Argos23VisionActivityTrackViewV", "label"]
 - ["5Argos32VisionActivityTrackView_PreviewsV", "Default_Previews"]
 - ["5Argos32VisionActivityTrackView_PreviewsV", "Previews"]
 - ["5Argos32VisionActivityTrackView_PreviewsV", "View"]
@@ -168,10 +348,26 @@ depends-member:
 - ["5Argos32VisionActivityTrackView_PreviewsV", "init"]
 - ["5Argos32VisionActivityTrackView_PreviewsV", "platform"]
 - ["5Argos32VisionActivityTrackView_PreviewsV", "previews"]
+- !private ["7SwiftUI6ZStackV", "init"]
+- !private ["s15_CVarArgAlignedP", "top"]
+- !private ["s22_CVarArgPassedAsDoubleP", "top"]
 - ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", ""]
+- ["s33_ExpressibleByBuiltinFloatLiteralP", "init"]
+- !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "init"]
+- ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
 - ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", ""]
+- !private ["7SwiftUI18_FormatSpecifiableP", "top"]
+- ["10Foundation27_KeyValueCodingAndObservingP", ""]
+- ["10Foundation27_KeyValueCodingAndObservingP", "didRecognizeActivity"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "outputDelegate"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "parent"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", ""]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", "didRecognizeActivity"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "init"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "outputDelegate"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "parent"]
+- !private ["s21_ObjectiveCBridgeableP", "top"]
 - ["7SwiftUI16_PreviewProviderP", "Default_Previews"]
 - ["7SwiftUI16_PreviewProviderP", "Previews"]
 - !private ["7SwiftUI16_PreviewProviderP", "VisionActivityTrackView"]
@@ -181,30 +377,59 @@ depends-member:
 - ["7SwiftUI16_PreviewProviderP", "_previews"]
 - ["7SwiftUI16_PreviewProviderP", "platform"]
 - ["7SwiftUI16_PreviewProviderP", "previews"]
+- !private ["7SwiftUI11_VectorMathP", "top"]
 depends-nominal:
 - !private "So44AVCaptureVideoDataOutputSampleBufferDelegateP"
 - "5Argos27ActivityCameraRepresentableV"
 - !private "5Argos28ActivityCameraViewControllerC"
+- "5Argos26ActivityCameraViewDelegateP"
+- !private "s18AdditiveArithmeticP"
 - "7SwiftUI10AnimatableP"
 - "SK"
-- !private "s7CVarArgP"
+- !private "SB"
+- "7SwiftUI7BindingV"
+- !private "12CoreGraphics7CGFloatV"
+- "s7CVarArgP"
 - "Sl"
 - "SL"
-- !private "s28CustomDebugStringConvertibleP"
+- "5Argos27ActivityCameraRepresentableV11CoordinatorC"
+- "s28CustomDebugStringConvertibleP"
+- !private "s17CustomReflectableP"
 - "s23CustomStringConvertibleP"
+- !private "Se"
+- "7SwiftUI15DynamicPropertyP"
+- !private "7SwiftUI10EdgeInsetsV"
+- !private "SE"
 - "SQ"
+- !private "s25ExpressibleByArrayLiteralP"
 - "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- !private "s25ExpressibleByFloatLiteralP"
+- !private "s27ExpressibleByIntegerLiteralP"
 - "s32ExpressibleByStringInterpolationP"
 - "s26ExpressibleByStringLiteralP"
 - "s33ExpressibleByUnicodeScalarLiteralP"
+- !private "SF"
+- !private "7SwiftUI6HStackV"
 - "SH"
 - "s25LosslessStringConvertibleP"
 - "So8NSCodingP"
 - !private "So26NSExtensionRequestHandlingP"
 - "So8NSObjectC"
 - "So8NSObjectP"
+- !private "Sj"
+- !private "s9OptionSetP"
 - "7SwiftUI15PreviewProviderP"
+- !private "SY"
 - "ST"
+- !private "7SwiftUI4EdgeO3SetV"
+- !private "s10SetAlgebraP"
+- !private "s13SignedNumericP"
+- !private "7SwiftUI6SpacerV"
+- "7SwiftUI5StateV"
+- !private "Sx"
+- !private "7SwiftUI18LocalizedStringKeyV0D13InterpolationV"
+- !private "s27StringInterpolationProtocolP"
+- !private "7SwiftUI4TextV"
 - "s16TextOutputStreamP"
 - "s20TextOutputStreamableP"
 - !private "So21UIAppearanceContainerP"
@@ -218,15 +443,27 @@ depends-nominal:
 - !private "So23UIUserActivityRestoringP"
 - "So16UIViewControllerC"
 - "7SwiftUI29UIViewControllerRepresentableP"
+- !private "7SwiftUI36UIViewControllerRepresentableContextV"
+- !private "7SwiftUI6VStackV"
+- !private "7SwiftUI16VectorArithmeticP"
 - "7SwiftUI4ViewP"
 - !private "7SwiftUI11ViewBuilderV"
 - "5Argos23VisionActivityTrackViewV"
 - "5Argos32VisionActivityTrackView_PreviewsV"
+- !private "7SwiftUI6ZStackV"
+- !private "s15_CVarArgAlignedP"
+- !private "s22_CVarArgPassedAsDoubleP"
 - "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- "s33_ExpressibleByBuiltinFloatLiteralP"
+- !private "s35_ExpressibleByBuiltinIntegerLiteralP"
+- "s34_ExpressibleByBuiltinStringLiteralP"
 - "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
-- !private "10Foundation27_KeyValueCodingAndObservingP"
-- !private "10Foundation37_KeyValueCodingAndObservingPublishingP"
+- !private "7SwiftUI18_FormatSpecifiableP"
+- "10Foundation27_KeyValueCodingAndObservingP"
+- "10Foundation37_KeyValueCodingAndObservingPublishingP"
+- !private "s21_ObjectiveCBridgeableP"
 - "7SwiftUI16_PreviewProviderP"
+- !private "7SwiftUI11_VectorMathP"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/ObjectiveC.swiftmodule/arm64-apple-ios.swiftmodule"
@@ -299,4 +536,4 @@ depends-external:
 - "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AudioToolbox.apinotes"
 - "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
 - "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/MultipeerConnectivity.framework/Headers/MultipeerConnectivity.apinotes"
-interface-hash: "b7ff393a0a6cff2ede2850b75ad514ba"
+interface-hash: "4e405b5c70500b5f9dce27bce59123d4"

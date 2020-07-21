@@ -10,7 +10,13 @@ import AVFoundation
 import UIKit
 import Vision
 
+protocol ActivityCameraViewDelegate: AnyObject {
+    func didRecognizeActivity(_ label: String, withConfidence confidence:Double);
+}
+
 class ActivityCameraViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDelegate {
+    
+    weak var outputDelegate: ActivityCameraViewDelegate?;
     
     var captureSession: AVCaptureSession!;
     var previewLayer: AVCaptureVideoPreviewLayer!;
@@ -125,9 +131,10 @@ class ActivityCameraViewController: UIViewController, AVCaptureVideoDataOutputSa
                         
                         posesWindow.removeFirst(60);
                         
-                        print(predictions.label);
-                        print(predictions.labelProbabilities[predictions.label]!);
+                        //print(predictions.label);
+                        //print(predictions.labelProbabilities[predictions.label]!);
                         
+                        self.outputDelegate?.didRecognizeActivity(predictions.label, withConfidence: predictions.labelProbabilities[predictions.label]!);
                         //print("After \(posesWindow.count)");
                     }
                 } else {

@@ -11,16 +11,37 @@ import SwiftUI
 
 struct VisionActivityTrackView: View {
     
+    @State private var label = "Not Available";
+    @State private var confidence = 0.0;
+    
     var body: some View {
         //Text("Vision Activity Track");
-        ActivityCameraRepresentable();
+        ZStack {
+            ActivityCameraRepresentable(label: $label, confidence: $confidence);
+            VStack {
+                HStack {
+                    Text(label);
+                    Text("with confidence \(confidence)");
+                }
+                    .padding(.top)
+                Spacer()
+            }
+        }
     }
 }
 
 struct ActivityCameraRepresentable: UIViewControllerRepresentable {
     
-    func makeUIViewController(context: Context) -> ActivityCameraViewController {
+    @Binding var label: String;
+    @Binding var confidence: Double;
+    
+    func makeCoordinator() -> Coordinator {
+        Coordinator(self);
+    }
+    
+    func makeUIViewController(context: UIViewControllerRepresentableContext<ActivityCameraRepresentable>) -> ActivityCameraViewController {
         let controller = ActivityCameraViewController();
+        controller.outputDelegate = context.coordinator;
         return controller;
     }
     
@@ -28,7 +49,18 @@ struct ActivityCameraRepresentable: UIViewControllerRepresentable {
         
     }
     
-    
+    class Coordinator: NSObject, ActivityCameraViewDelegate {
+        var parent: ActivityCameraRepresentable;
+        
+        init(_ activityCameraRepresentable: ActivityCameraRepresentable) {
+            self.parent = activityCameraRepresentable;
+        }
+        
+        func didRecognizeActivity(_ label: String, withConfidence confidence: Double) {
+            parent.label = label;
+            parent.confidence = confidence;
+        }
+    }
 }
 
 struct VisionActivityTrackView_Previews: PreviewProvider {

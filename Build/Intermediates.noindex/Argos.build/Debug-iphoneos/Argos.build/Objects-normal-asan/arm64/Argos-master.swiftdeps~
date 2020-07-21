@@ -1,19 +1,19 @@
 version: "Apple Swift version 5.3 (swiftlang-1200.0.16.13 clang-1200.0.22.25)"
 options: "f8d0a71ac609120da457fc71bbfab04d"
-build_time: [1595317305, 726774000]
+build_time: [1595322999, 408024000]
 inputs:
   "/Users/Sui/Documents/Xcode Projects/Argos/Argos/StageSelection/StageSelectionView.swift": [1594122529, 47937376]
   "/Users/Sui/Documents/Xcode Projects/Argos/Argos/Stage/DemonstrationView.swift": [1595149578, 357728059]
   "/Users/Sui/Documents/Xcode Projects/Argos/Argos/Stage/StageView.swift": [1595222301, 552965567]
   "/Users/Sui/Documents/Xcode Projects/Argos/Argos/ContentView.swift": [1594032779, 985643999]
   "/Users/Sui/Documents/Xcode Projects/Argos/Argos/ParentView.swift": [1594197617, 783564429]
-  "/Users/Sui/Documents/Xcode Projects/Argos/Argos/Stage/ActivityCameraViewController.swift": [1595317305, 631532761]
+  "/Users/Sui/Documents/Xcode Projects/Argos/Argos/Stage/ActivityCameraViewController.swift": [1595320010, 295771486]
   "/Users/Sui/Documents/Xcode Projects/Argos/ModalGraphView.swift": [1594197951, 604270903]
   "/Users/Sui/Documents/Xcode Projects/Argos/Argos/VideoPlayer/VideoView.swift": [1594966760, 220503129]
   "/Users/Sui/Documents/Xcode Projects/Argos/Argos/AppDelegate.swift": [1594122153, 495167504]
   "/Users/Sui/Documents/Xcode Projects/Argos/Argos/ViewRouter.swift": [1594122041, 750560006]
   "/Users/Sui/Documents/Xcode Projects/Argos/Argos/VideoPlayer/PlayerView.swift": [1594966529, 940447832]
-  "/Users/Sui/Documents/Xcode Projects/Argos/Argos/Stage/VisionActivityTrackView.swift": [1595227354, 877298735]
+  "/Users/Sui/Documents/Xcode Projects/Argos/Argos/Stage/VisionActivityTrackView.swift": [1595322999, 322628902]
   "/Users/Sui/Documents/Xcode Projects/Argos/Argos/StageSelection/ActionCategoryRow.swift": [1594174774, 987144934]
   "/Users/Sui/Documents/Xcode Projects/Argos/Argos/Stage/BodyTrackedView.swift": [1594041716, 405147110]
   "/Users/Sui/Documents/Xcode Projects/Argos/Argos/ExternalSignal/ExternalSignalView.swift": [1594785171, 538542240]
