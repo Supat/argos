@@ -24,6 +24,7 @@ struct VisionActivityTrackView: View {
                     Text("with confidence \(confidence)");
                 }
                     .padding(.top)
+                    .background(Color.white);
                 Spacer()
             }
         }

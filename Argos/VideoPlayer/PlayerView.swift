@@ -22,9 +22,11 @@ class PlayerView: UIView {
         self.previewLength = previewLength;
         super.init(frame: frame);
         
+        /*
         let player = AVPlayer(url: url);
         player.volume = 0;
         player.play();
+         */
         
         let options = [AVURLAssetAllowsCellularAccessKey: false];
         let asset = AVURLAsset(url: url, options: options);
@@ -32,15 +34,18 @@ class PlayerView: UIView {
         
         queuePlayer = AVQueuePlayer(playerItem: playerItem);
         playerLooper = AVPlayerLooper(player: queuePlayer, templateItem: playerItem);
+        queuePlayer.volume = 0;
         queuePlayer.play();
         
         playerLayer.player = queuePlayer;
         playerLayer.videoGravity = .resizeAspectFill;
         playerLayer.backgroundColor = UIColor.black.cgColor;
         
+        /*
         previewTimer = Timer.scheduledTimer(withTimeInterval: previewLength, repeats: true, block: { (timer) in
             player.seek(to: CMTime(seconds: 0, preferredTimescale: CMTimeScale(1)));
         })
+         */
         
         layer.addSublayer(playerLayer);
     }

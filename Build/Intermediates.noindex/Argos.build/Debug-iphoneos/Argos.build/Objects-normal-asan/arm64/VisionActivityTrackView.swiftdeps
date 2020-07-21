@@ -24,6 +24,7 @@ depends-top-level:
 - "ActivityCameraViewDelegate"
 - "AssignmentPrecedence"
 - "Binding"
+- "Color"
 - "Context"
 - "Coordinator"
 - "Double"
@@ -110,6 +111,7 @@ depends-member:
 - !private ["s7CVarArgP", "parent"]
 - !private ["s7CVarArgP", "top"]
 - ["Sl", ""]
+- !private ["7SwiftUI5ColorV", "white"]
 - ["SL", ""]
 - !private ["SL", "top"]
 - ["5Argos27ActivityCameraRepresentableV11CoordinatorC", "ActivityCameraRepresentable"]
@@ -132,6 +134,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "outputDelegate"]
 - !private ["s23CustomStringConvertibleP", "parent"]
 - !private ["s23CustomStringConvertibleP", "top"]
+- !private ["s23CustomStringConvertibleP", "white"]
 - !private ["Se", "top"]
 - ["7SwiftUI15DynamicPropertyP", "init"]
 - ["7SwiftUI15DynamicPropertyP", "wrappedValue"]
@@ -143,6 +146,7 @@ depends-member:
 - !private ["SQ", "outputDelegate"]
 - !private ["SQ", "parent"]
 - !private ["SQ", "top"]
+- !private ["SQ", "white"]
 - !private ["s25ExpressibleByArrayLiteralP", ""]
 - !private ["s25ExpressibleByArrayLiteralP", "top"]
 - ["s43ExpressibleByExtendedGraphemeClusterLiteralP", ""]
@@ -165,6 +169,7 @@ depends-member:
 - !private ["SH", "outputDelegate"]
 - !private ["SH", "parent"]
 - !private ["SH", "top"]
+- !private ["SH", "white"]
 - ["s25LosslessStringConvertibleP", ""]
 - ["So8NSCodingP", ""]
 - !private ["So8NSCodingP", "init"]
@@ -205,6 +210,7 @@ depends-member:
 - !private ["7SwiftUI4EdgeO3SetV", "top"]
 - !private ["s10SetAlgebraP", ""]
 - !private ["s10SetAlgebraP", "top"]
+- !private ["7SwiftUI10ShapeStyleP", "white"]
 - !private ["s13SignedNumericP", ""]
 - !private ["s13SignedNumericP", "top"]
 - !private ["7SwiftUI6SpacerV", "init"]
@@ -280,6 +286,7 @@ depends-member:
 - ["7SwiftUI4ViewP", "ActivityCameraViewDelegate"]
 - ["7SwiftUI4ViewP", "Binding"]
 - ["7SwiftUI4ViewP", "Body"]
+- !private ["7SwiftUI4ViewP", "Color"]
 - ["7SwiftUI4ViewP", "Context"]
 - ["7SwiftUI4ViewP", "Coordinator"]
 - ["7SwiftUI4ViewP", "Default_Body"]
@@ -299,6 +306,7 @@ depends-member:
 - ["7SwiftUI4ViewP", "_makeView"]
 - ["7SwiftUI4ViewP", "_makeViewList"]
 - ["7SwiftUI4ViewP", "_viewListCount"]
+- !private ["7SwiftUI4ViewP", "background"]
 - ["7SwiftUI4ViewP", "body"]
 - !private ["7SwiftUI4ViewP", "confidence"]
 - ["7SwiftUI4ViewP", "dismantleUIViewController"]
@@ -309,6 +317,7 @@ depends-member:
 - !private ["7SwiftUI4ViewP", "padding"]
 - !private ["7SwiftUI4ViewP", "parent"]
 - ["7SwiftUI4ViewP", "updateUIViewController"]
+- !private ["7SwiftUI4ViewP", "white"]
 - !private ["7SwiftUI11ViewBuilderV", "buildBlock"]
 - !private ["7SwiftUI11ViewBuilderV", "buildExpression"]
 - !private ["7SwiftUI11ViewBuilderV", "buildFinalResult"]
@@ -318,6 +327,7 @@ depends-member:
 - !private ["5Argos23VisionActivityTrackViewV", "$label"]
 - !private ["5Argos23VisionActivityTrackViewV", "ActivityCameraRepresentable"]
 - ["5Argos23VisionActivityTrackViewV", "Body"]
+- !private ["5Argos23VisionActivityTrackViewV", "Color"]
 - ["5Argos23VisionActivityTrackViewV", "Default_Body"]
 - !private ["5Argos23VisionActivityTrackViewV", "HStack"]
 - !private ["5Argos23VisionActivityTrackViewV", "Spacer"]
@@ -391,6 +401,7 @@ depends-nominal:
 - !private "12CoreGraphics7CGFloatV"
 - "s7CVarArgP"
 - "Sl"
+- !private "7SwiftUI5ColorV"
 - "SL"
 - "5Argos27ActivityCameraRepresentableV11CoordinatorC"
 - "s28CustomDebugStringConvertibleP"
@@ -423,6 +434,7 @@ depends-nominal:
 - "ST"
 - !private "7SwiftUI4EdgeO3SetV"
 - !private "s10SetAlgebraP"
+- !private "7SwiftUI10ShapeStyleP"
 - !private "s13SignedNumericP"
 - !private "7SwiftUI6SpacerV"
 - "7SwiftUI5StateV"
