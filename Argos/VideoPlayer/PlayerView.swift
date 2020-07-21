@@ -15,6 +15,8 @@ class PlayerView: UIView {
     private let playerLayer = AVPlayerLayer();
     private var previewTimer:Timer?
     var previewLength:Double
+    var playerLooper: AVPlayerLooper!;
+    var queuePlayer: AVQueuePlayer!;
     
     init(frame: CGRect, url: URL, previewLength:Double) {
         self.previewLength = previewLength;
@@ -24,7 +26,15 @@ class PlayerView: UIView {
         player.volume = 0;
         player.play();
         
-        playerLayer.player = player;
+        let options = [AVURLAssetAllowsCellularAccessKey: false];
+        let asset = AVURLAsset(url: url, options: options);
+        let playerItem = AVPlayerItem(asset: asset);
+        
+        queuePlayer = AVQueuePlayer(playerItem: playerItem);
+        playerLooper = AVPlayerLooper(player: queuePlayer, templateItem: playerItem);
+        queuePlayer.play();
+        
+        playerLayer.player = queuePlayer;
         playerLayer.videoGravity = .resizeAspectFill;
         playerLayer.backgroundColor = UIColor.black.cgColor;
         
