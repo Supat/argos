@@ -1,0 +1,521 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "TestActionClassifierInput"
+- "TestActionClassifierOutput"
+- "TestActionClassifier"
+provides-nominal:
+- "5Argos25TestActionClassifierInputC"
+- "5Argos26TestActionClassifierOutputC"
+- "5Argos20TestActionClassifierC"
+provides-member:
+- ["5Argos25TestActionClassifierInputC", ""]
+- ["5Argos26TestActionClassifierOutputC", ""]
+- ["5Argos20TestActionClassifierC", ""]
+provides-dynamic-lookup:
+- "$__lazy_storage_$_label"
+- "$__lazy_storage_$_labelProbabilities"
+- "featureNames"
+- "featureValue"
+- "label"
+- "labelProbabilities"
+- "load"
+- "model"
+- "poses"
+- "prediction"
+- "predictions"
+- "provider"
+- "urlOfModelInThisBundle"
+depends-top-level:
+- !private "..<"
+- !private "=="
+- "AnyHashable"
+- !private "Array"
+- "AssignmentPrecedence"
+- !private "Bundle"
+- "CastingPrecedence"
+- !private "Dictionary"
+- "Double"
+- "Error"
+- !private "FloatLiteralType"
+- !private "IntegerLiteralType"
+- !private "MLArrayBatchProvider"
+- !private "MLDictionaryFeatureProvider"
+- "MLFeatureProvider"
+- "MLFeatureValue"
+- "MLModel"
+- "MLModelConfiguration"
+- "MLMultiArray"
+- "MLPredictionOptions"
+- "NSNumber"
+- "Result"
+- "Set"
+- "String"
+- "StringLiteralType"
+- "TestActionClassifier"
+- "TestActionClassifierInput"
+- "TestActionClassifierOutput"
+- "URL"
+- "Void"
+- "fatalError"
+- !private "model"
+- !private "poses"
+- "self"
+- !private "type"
+depends-member:
+- !private ["Sa", "append"]
+- !private ["Sa", "count"]
+- !private ["Sa", "reserveCapacity"]
+- ["SK", ""]
+- !private ["SK", "append"]
+- !private ["SK", "count"]
+- !private ["SK", "reserveCapacity"]
+- !private ["So8NSBundleC", "init"]
+- !private ["So8NSBundleC", "url"]
+- !private ["8CloudKit21CKRecordValueProtocolP", "append"]
+- !private ["8CloudKit21CKRecordValueProtocolP", "count"]
+- !private ["8CloudKit21CKRecordValueProtocolP", "reserveCapacity"]
+- !private ["s7CVarArgP", "__loadContents"]
+- !private ["s7CVarArgP", "_loadContents"]
+- !private ["s7CVarArgP", "append"]
+- !private ["s7CVarArgP", "count"]
+- ["s7CVarArgP", "dictionaryValue"]
+- !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "prediction"]
+- !private ["s7CVarArgP", "predictions"]
+- !private ["s7CVarArgP", "reserveCapacity"]
+- ["s7CVarArgP", "stringValue"]
+- !private ["s7CVarArgP", "url"]
+- ["Sl", ""]
+- !private ["Sl", "append"]
+- !private ["Sl", "count"]
+- !private ["Sl", "reserveCapacity"]
+- ["SL", ""]
+- !private ["10Foundation15ContiguousBytesP", "append"]
+- !private ["10Foundation15ContiguousBytesP", "count"]
+- !private ["10Foundation15ContiguousBytesP", "reserveCapacity"]
+- !private ["s28CustomDebugStringConvertibleP", "__loadContents"]
+- !private ["s28CustomDebugStringConvertibleP", "_loadContents"]
+- !private ["s28CustomDebugStringConvertibleP", "append"]
+- !private ["s28CustomDebugStringConvertibleP", "count"]
+- ["s28CustomDebugStringConvertibleP", "dictionaryValue"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "prediction"]
+- !private ["s28CustomDebugStringConvertibleP", "predictions"]
+- !private ["s28CustomDebugStringConvertibleP", "reserveCapacity"]
+- ["s28CustomDebugStringConvertibleP", "stringValue"]
+- !private ["s28CustomDebugStringConvertibleP", "url"]
+- !private ["s17CustomReflectableP", "append"]
+- !private ["s17CustomReflectableP", "count"]
+- !private ["s17CustomReflectableP", "reserveCapacity"]
+- ["s23CustomStringConvertibleP", ""]
+- !private ["s23CustomStringConvertibleP", "__loadContents"]
+- !private ["s23CustomStringConvertibleP", "_loadContents"]
+- !private ["s23CustomStringConvertibleP", "append"]
+- !private ["s23CustomStringConvertibleP", "count"]
+- ["s23CustomStringConvertibleP", "dictionaryValue"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "prediction"]
+- !private ["s23CustomStringConvertibleP", "predictions"]
+- !private ["s23CustomStringConvertibleP", "reserveCapacity"]
+- ["s23CustomStringConvertibleP", "stringValue"]
+- !private ["s23CustomStringConvertibleP", "url"]
+- !private ["10Foundation12DataProtocolP", ""]
+- !private ["10Foundation12DataProtocolP", "append"]
+- !private ["10Foundation12DataProtocolP", "count"]
+- !private ["10Foundation12DataProtocolP", "reserveCapacity"]
+- !private ["Se", "append"]
+- !private ["Se", "count"]
+- !private ["Se", "reserveCapacity"]
+- !private ["SE", "append"]
+- !private ["SE", "count"]
+- !private ["SE", "reserveCapacity"]
+- ["SQ", ""]
+- !private ["SQ", "__loadContents"]
+- !private ["SQ", "_loadContents"]
+- !private ["SQ", "append"]
+- !private ["SQ", "count"]
+- ["SQ", "dictionaryValue"]
+- !private ["SQ", "failure"]
+- !private ["SQ", "init"]
+- !private ["SQ", "prediction"]
+- !private ["SQ", "predictions"]
+- !private ["SQ", "reserveCapacity"]
+- ["SQ", "stringValue"]
+- !private ["SQ", "success"]
+- !private ["SQ", "url"]
+- !private ["s25ExpressibleByArrayLiteralP", ""]
+- !private ["s25ExpressibleByArrayLiteralP", "append"]
+- !private ["s25ExpressibleByArrayLiteralP", "count"]
+- !private ["s25ExpressibleByArrayLiteralP", "init"]
+- !private ["s25ExpressibleByArrayLiteralP", "reserveCapacity"]
+- !private ["s30ExpressibleByDictionaryLiteralP", "Key"]
+- !private ["s30ExpressibleByDictionaryLiteralP", "Value"]
+- !private ["s30ExpressibleByDictionaryLiteralP", "init"]
+- ["s43ExpressibleByExtendedGraphemeClusterLiteralP", ""]
+- ["s32ExpressibleByStringInterpolationP", ""]
+- ["s26ExpressibleByStringLiteralP", ""]
+- ["s33ExpressibleByUnicodeScalarLiteralP", ""]
+- ["SH", ""]
+- !private ["SH", "__loadContents"]
+- !private ["SH", "_loadContents"]
+- !private ["SH", "append"]
+- !private ["SH", "count"]
+- ["SH", "dictionaryValue"]
+- !private ["SH", "failure"]
+- !private ["SH", "init"]
+- !private ["SH", "prediction"]
+- !private ["SH", "predictions"]
+- !private ["SH", "reserveCapacity"]
+- ["SH", "stringValue"]
+- !private ["SH", "success"]
+- !private ["SH", "url"]
+- ["s25LosslessStringConvertibleP", ""]
+- !private ["So20MLArrayBatchProviderC", "init"]
+- !private ["So15MLBatchProviderP", "count"]
+- !private ["So15MLBatchProviderP", "features"]
+- !private ["So15MLBatchProviderP", "init"]
+- !private ["So27MLDictionaryFeatureProviderC", "init"]
+- ["So17MLFeatureProviderP", "$__lazy_storage_$_label"]
+- ["So17MLFeatureProviderP", "$__lazy_storage_$_labelProbabilities"]
+- !private ["So17MLFeatureProviderP", "MLDictionaryFeatureProvider"]
+- !private ["So17MLFeatureProviderP", "MLFeatureValue"]
+- ["So17MLFeatureProviderP", ""]
+- ["So17MLFeatureProviderP", "featureNames"]
+- ["So17MLFeatureProviderP", "featureValue"]
+- ["So17MLFeatureProviderP", "featureValueForName"]
+- ["So17MLFeatureProviderP", "init"]
+- ["So17MLFeatureProviderP", "label"]
+- ["So17MLFeatureProviderP", "labelProbabilities"]
+- ["So17MLFeatureProviderP", "poses"]
+- ["So17MLFeatureProviderP", "provider"]
+- ["So17MLFeatureProviderP", "self"]
+- ["So14MLFeatureValueC", "dictionaryValue"]
+- !private ["So14MLFeatureValueC", "init"]
+- ["So14MLFeatureValueC", "stringValue"]
+- !private ["So7MLModelC", "__loadContents"]
+- !private ["So7MLModelC", "_loadContents"]
+- !private ["So7MLModelC", "init"]
+- !private ["So7MLModelC", "prediction"]
+- !private ["So7MLModelC", "predictions"]
+- !private ["So20MLModelConfigurationC", "init"]
+- !private ["So19MLPredictionOptionsC", "init"]
+- !private ["SM", ""]
+- !private ["SM", "append"]
+- !private ["SM", "count"]
+- !private ["SM", "reserveCapacity"]
+- !private ["10Foundation19MutableDataProtocolP", "append"]
+- !private ["10Foundation19MutableDataProtocolP", "count"]
+- !private ["10Foundation19MutableDataProtocolP", "reserveCapacity"]
+- ["So8NSCodingP", ""]
+- ["So8NSCodingP", "dictionaryValue"]
+- !private ["So8NSCodingP", "init"]
+- ["So8NSCodingP", "stringValue"]
+- ["So9NSCopyingP", "dictionaryValue"]
+- !private ["So9NSCopyingP", "init"]
+- ["So9NSCopyingP", "stringValue"]
+- !private ["So17NSFastEnumerationP", "init"]
+- !private ["So8NSObjectC", "URLForAuxiliaryExecutable"]
+- !private ["So8NSObjectC", "URLForResource"]
+- ["So8NSObjectC", ""]
+- !private ["So8NSObjectC", "__loadContents"]
+- !private ["So8NSObjectC", "__loadContentsOfURL"]
+- !private ["So8NSObjectC", "_loadContents"]
+- !private ["So8NSObjectC", "bundleForClass"]
+- !private ["So8NSObjectC", "bundleWithIdentifier"]
+- !private ["So8NSObjectC", "bundleWithPath"]
+- !private ["So8NSObjectC", "bundleWithURL"]
+- ["So8NSObjectC", "dictionaryValue"]
+- !private ["So8NSObjectC", "featureValueWithCGImage"]
+- !private ["So8NSObjectC", "featureValueWithDictionary"]
+- !private ["So8NSObjectC", "featureValueWithDouble"]
+- !private ["So8NSObjectC", "featureValueWithImageAtURL"]
+- !private ["So8NSObjectC", "featureValueWithInt64"]
+- !private ["So8NSObjectC", "featureValueWithMultiArray"]
+- !private ["So8NSObjectC", "featureValueWithPixelBuffer"]
+- !private ["So8NSObjectC", "featureValueWithSequence"]
+- !private ["So8NSObjectC", "featureValueWithString"]
+- !private ["So8NSObjectC", "init"]
+- !private ["So8NSObjectC", "modelWithContentsOfURL"]
+- !private ["So8NSObjectC", "prediction"]
+- !private ["So8NSObjectC", "predictionFromFeatures"]
+- !private ["So8NSObjectC", "predictions"]
+- !private ["So8NSObjectC", "predictionsFromBatch"]
+- ["So8NSObjectC", "stringValue"]
+- !private ["So8NSObjectC", "undefinedFeatureValueWithType"]
+- !private ["So8NSObjectC", "url"]
+- !private ["So8NSObjectP", "URLForAuxiliaryExecutable"]
+- !private ["So8NSObjectP", "URLForResource"]
+- ["So8NSObjectP", ""]
+- !private ["So8NSObjectP", "__loadContents"]
+- !private ["So8NSObjectP", "__loadContentsOfURL"]
+- !private ["So8NSObjectP", "_loadContents"]
+- !private ["So8NSObjectP", "bundleForClass"]
+- !private ["So8NSObjectP", "bundleWithIdentifier"]
+- !private ["So8NSObjectP", "bundleWithPath"]
+- !private ["So8NSObjectP", "bundleWithURL"]
+- ["So8NSObjectP", "dictionaryValue"]
+- !private ["So8NSObjectP", "featureValueWithCGImage"]
+- !private ["So8NSObjectP", "featureValueWithDictionary"]
+- !private ["So8NSObjectP", "featureValueWithDouble"]
+- !private ["So8NSObjectP", "featureValueWithImageAtURL"]
+- !private ["So8NSObjectP", "featureValueWithInt64"]
+- !private ["So8NSObjectP", "featureValueWithMultiArray"]
+- !private ["So8NSObjectP", "featureValueWithPixelBuffer"]
+- !private ["So8NSObjectP", "featureValueWithSequence"]
+- !private ["So8NSObjectP", "featureValueWithString"]
+- !private ["So8NSObjectP", "init"]
+- !private ["So8NSObjectP", "modelWithContentsOfURL"]
+- !private ["So8NSObjectP", "prediction"]
+- !private ["So8NSObjectP", "predictionFromFeatures"]
+- !private ["So8NSObjectP", "predictions"]
+- !private ["So8NSObjectP", "predictionsFromBatch"]
+- ["So8NSObjectP", "stringValue"]
+- !private ["So8NSObjectP", "undefinedFeatureValueWithType"]
+- !private ["So8NSObjectP", "url"]
+- ["So14NSSecureCodingP", "dictionaryValue"]
+- !private ["So14NSSecureCodingP", "init"]
+- ["So14NSSecureCodingP", "stringValue"]
+- !private ["Sk", ""]
+- !private ["Sk", "append"]
+- !private ["Sk", "count"]
+- !private ["Sk", "reserveCapacity"]
+- !private ["Sm", ""]
+- !private ["Sm", "append"]
+- !private ["Sm", "count"]
+- !private ["Sm", "reserveCapacity"]
+- !private ["s6ResultO", "failure"]
+- !private ["s6ResultO", "success"]
+- !private ["ST", "Element"]
+- !private ["ST", "Iterator"]
+- ["ST", ""]
+- !private ["ST", "append"]
+- !private ["ST", "count"]
+- !private ["ST", "makeIterator"]
+- !private ["ST", "reserveCapacity"]
+- !private ["5Argos20TestActionClassifierC", "Bundle"]
+- ["5Argos20TestActionClassifierC", "Error"]
+- !private ["5Argos20TestActionClassifierC", "MLArrayBatchProvider"]
+- ["5Argos20TestActionClassifierC", "MLModel"]
+- ["5Argos20TestActionClassifierC", "MLModelConfiguration"]
+- ["5Argos20TestActionClassifierC", "MLMultiArray"]
+- ["5Argos20TestActionClassifierC", "MLPredictionOptions"]
+- ["5Argos20TestActionClassifierC", "Result"]
+- ["5Argos20TestActionClassifierC", "TestActionClassifier"]
+- ["5Argos20TestActionClassifierC", "TestActionClassifierInput"]
+- ["5Argos20TestActionClassifierC", "TestActionClassifierOutput"]
+- ["5Argos20TestActionClassifierC", "URL"]
+- ["5Argos20TestActionClassifierC", "Void"]
+- ["5Argos20TestActionClassifierC", "deinit"]
+- !private ["5Argos20TestActionClassifierC", "fatalError"]
+- ["5Argos20TestActionClassifierC", "init"]
+- ["5Argos20TestActionClassifierC", "load"]
+- ["5Argos20TestActionClassifierC", "model"]
+- ["5Argos20TestActionClassifierC", "prediction"]
+- ["5Argos20TestActionClassifierC", "predictions"]
+- !private ["5Argos20TestActionClassifierC", "type"]
+- ["5Argos20TestActionClassifierC", "urlOfModelInThisBundle"]
+- ["5Argos25TestActionClassifierInputC", "MLFeatureValue"]
+- ["5Argos25TestActionClassifierInputC", "MLMultiArray"]
+- ["5Argos25TestActionClassifierInputC", "Set"]
+- ["5Argos25TestActionClassifierInputC", "String"]
+- !private ["5Argos25TestActionClassifierInputC", ""]
+- ["5Argos25TestActionClassifierInputC", "deinit"]
+- ["5Argos25TestActionClassifierInputC", "featureNames"]
+- ["5Argos25TestActionClassifierInputC", "featureValue"]
+- ["5Argos25TestActionClassifierInputC", "featureValueForName"]
+- ["5Argos25TestActionClassifierInputC", "init"]
+- ["5Argos25TestActionClassifierInputC", "poses"]
+- !private ["5Argos26TestActionClassifierOutputC", "$__lazy_storage_$_label"]
+- !private ["5Argos26TestActionClassifierOutputC", "$__lazy_storage_$_labelProbabilities"]
+- !private ["5Argos26TestActionClassifierOutputC", "AnyHashable"]
+- ["5Argos26TestActionClassifierOutputC", "Double"]
+- !private ["5Argos26TestActionClassifierOutputC", "MLDictionaryFeatureProvider"]
+- ["5Argos26TestActionClassifierOutputC", "MLFeatureProvider"]
+- ["5Argos26TestActionClassifierOutputC", "MLFeatureValue"]
+- !private ["5Argos26TestActionClassifierOutputC", "NSNumber"]
+- ["5Argos26TestActionClassifierOutputC", "Set"]
+- ["5Argos26TestActionClassifierOutputC", "String"]
+- ["5Argos26TestActionClassifierOutputC", "deinit"]
+- ["5Argos26TestActionClassifierOutputC", "featureNames"]
+- ["5Argos26TestActionClassifierOutputC", "featureValue"]
+- ["5Argos26TestActionClassifierOutputC", "featureValueForName"]
+- ["5Argos26TestActionClassifierOutputC", "init"]
+- ["5Argos26TestActionClassifierOutputC", "label"]
+- ["5Argos26TestActionClassifierOutputC", "labelProbabilities"]
+- ["5Argos26TestActionClassifierOutputC", "provider"]
+- ["5Argos26TestActionClassifierOutputC", "self"]
+- ["s16TextOutputStreamP", ""]
+- ["s20TextOutputStreamableP", ""]
+- !private ["s14_ArrayProtocolP", "append"]
+- !private ["s14_ArrayProtocolP", "count"]
+- !private ["s14_ArrayProtocolP", "reserveCapacity"]
+- !private ["s24_DestructorSafeContainerP", "append"]
+- !private ["s24_DestructorSafeContainerP", "count"]
+- !private ["s24_DestructorSafeContainerP", "reserveCapacity"]
+- ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", ""]
+- !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "init"]
+- ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", ""]
+- !private ["s19_HasContiguousBytesP", "append"]
+- !private ["s19_HasContiguousBytesP", "count"]
+- !private ["s19_HasContiguousBytesP", "reserveCapacity"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "append"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "count"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "reserveCapacity"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "__loadContents"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "_loadContents"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "dictionaryValue"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "prediction"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "predictions"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "stringValue"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "url"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "__loadContents"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "_loadContents"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", "dictionaryValue"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "init"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "prediction"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "predictions"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", "stringValue"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "url"]
+- ["s21_ObjectiveCBridgeableP", "_ObjectiveCType"]
+- ["s21_ObjectiveCBridgeableP", "_bridgeToObjectiveC"]
+- ["s21_ObjectiveCBridgeableP", "_conditionallyBridgeFromObjectiveC"]
+- ["s21_ObjectiveCBridgeableP", "_forceBridgeFromObjectiveC"]
+- ["s21_ObjectiveCBridgeableP", "_unconditionallyBridgeFromObjectiveC"]
+- !private ["s21_ObjectiveCBridgeableP", "append"]
+- !private ["s21_ObjectiveCBridgeableP", "count"]
+- !private ["s21_ObjectiveCBridgeableP", "reserveCapacity"]
+depends-nominal:
+- !private "Sa"
+- "SK"
+- !private "So8NSBundleC"
+- !private "8CloudKit21CKRecordValueProtocolP"
+- "s7CVarArgP"
+- "Sl"
+- "SL"
+- !private "10Foundation15ContiguousBytesP"
+- "s28CustomDebugStringConvertibleP"
+- !private "s17CustomReflectableP"
+- "s23CustomStringConvertibleP"
+- !private "10Foundation12DataProtocolP"
+- !private "Se"
+- !private "SE"
+- "SQ"
+- !private "s25ExpressibleByArrayLiteralP"
+- !private "s30ExpressibleByDictionaryLiteralP"
+- "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- "s32ExpressibleByStringInterpolationP"
+- "s26ExpressibleByStringLiteralP"
+- "s33ExpressibleByUnicodeScalarLiteralP"
+- "SH"
+- "s25LosslessStringConvertibleP"
+- !private "So20MLArrayBatchProviderC"
+- !private "So15MLBatchProviderP"
+- !private "So27MLDictionaryFeatureProviderC"
+- "So17MLFeatureProviderP"
+- "So14MLFeatureValueC"
+- !private "So7MLModelC"
+- !private "So20MLModelConfigurationC"
+- !private "So19MLPredictionOptionsC"
+- !private "SM"
+- !private "10Foundation19MutableDataProtocolP"
+- "So8NSCodingP"
+- "So9NSCopyingP"
+- !private "So17NSFastEnumerationP"
+- "So8NSObjectC"
+- "So8NSObjectP"
+- "So14NSSecureCodingP"
+- !private "Sk"
+- !private "Sm"
+- !private "s6ResultO"
+- "ST"
+- "5Argos20TestActionClassifierC"
+- "5Argos25TestActionClassifierInputC"
+- "5Argos26TestActionClassifierOutputC"
+- "s16TextOutputStreamP"
+- "s20TextOutputStreamableP"
+- !private "s14_ArrayProtocolP"
+- !private "s24_DestructorSafeContainerP"
+- "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- !private "s35_ExpressibleByBuiltinIntegerLiteralP"
+- "s34_ExpressibleByBuiltinStringLiteralP"
+- "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- !private "s19_HasContiguousBytesP"
+- !private "s35_HasCustomAnyHashableRepresentationP"
+- "10Foundation27_KeyValueCodingAndObservingP"
+- "10Foundation37_KeyValueCodingAndObservingPublishingP"
+- "s21_ObjectiveCBridgeableP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/ObjectiveC.swiftmodule/arm64-apple-ios.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/CoreMIDI.swiftmodule/arm64-apple-ios.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/SwiftUI.swiftmodule/arm64-apple-ios.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/_AVKit_SwiftUI.swiftmodule/arm64-apple-ios.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/CoreML.swiftmodule/arm64-apple-ios.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/ModelIO.swiftmodule/arm64-apple-ios.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/CoreMedia.swiftmodule/arm64-apple-ios.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/CoreData.swiftmodule/arm64-apple-ios.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/simd.swiftmodule/arm64-apple-ios.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/CoreImage.swiftmodule/arm64-apple-ios.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/Combine.swiftmodule/arm64-apple-ios.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/QuartzCore.swiftmodule/arm64-apple-ios.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/Dispatch.swiftmodule/arm64-apple-ios.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/Metal.swiftmodule/arm64-apple-ios.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/Darwin.swiftmodule/arm64-apple-ios.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/Vision.swiftmodule/arm64-apple-ios.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/CoreLocation.swiftmodule/arm64-apple-ios.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/Foundation.swiftmodule/arm64-apple-ios.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/AVFoundation.swiftmodule/arm64-apple-ios.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/CoreFoundation.swiftmodule/arm64-apple-ios.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/CoreAudio.swiftmodule/arm64-apple-ios.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/CoreGraphics.swiftmodule/arm64-apple-ios.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/os.swiftmodule/arm64-apple-ios.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/UniformTypeIdentifiers.swiftmodule/arm64-apple-ios.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/Swift.swiftmodule/arm64-apple-ios.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/UIKit.swiftmodule/arm64-apple-ios.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/GLKit.swiftmodule/arm64-apple-ios.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/ARKit.swiftmodule/arm64-apple-ios.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/CloudKit.swiftmodule/arm64-apple-ios.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/SceneKit.swiftmodule/arm64-apple-ios.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/SpriteKit.swiftmodule/arm64-apple-ios.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/RealityKit.swiftmodule/arm64-apple-ios.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/SwiftOnoneSupport.swiftmodule/arm64-apple-ios.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/DeveloperToolsSupport.swiftmodule/arm64-apple-ios.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/usr/include/mach-o/dyld.modulemap"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/usr/include/mach-o/compact_unwind_encoding.modulemap"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/CoreML.framework/Headers/CoreML.apinotes"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/ModelIO.framework/Headers/ModelIO.apinotes"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/CoreMedia.framework/Headers/CoreMedia.apinotes"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/CoreData.framework/Headers/CoreData.apinotes"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/apinotes/Dispatch.apinotes"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/QuickLook.framework/Headers/QuickLook.apinotes"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Vision.framework/Headers/Vision.apinotes"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/CoreLocation.framework/Headers/CoreLocation.apinotes"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/AVFoundation.framework/Headers/AVFoundation.apinotes"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/AuthenticationServices.framework/Headers/AuthenticationServices.apinotes"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/CoreAudioTypes.framework/Headers/CoreAudioTypes.apinotes"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/UserNotifications.framework/Headers/UserNotifications.apinotes"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/apinotes/os.apinotes"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/UniformTypeIdentifiers.framework/Headers/UniformTypeIdentifiers.apinotes"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/GLKit.framework/Headers/GLKit.apinotes"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/AVKit.framework/Headers/AVKit.apinotes"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/CloudKit.framework/Headers/CloudKit.apinotes"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/SceneKit.framework/Headers/SceneKit.apinotes"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/StoreKit.framework/Headers/StoreKit.apinotes"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/SpriteKit.framework/Headers/SpriteKit.apinotes"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/MediaToolbox.framework/Headers/MediaToolbox.apinotes"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AudioToolbox.apinotes"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/MultipeerConnectivity.framework/Headers/MultipeerConnectivity.apinotes"
+interface-hash: "f90b573e88ae0aab6b873387d58e7662"

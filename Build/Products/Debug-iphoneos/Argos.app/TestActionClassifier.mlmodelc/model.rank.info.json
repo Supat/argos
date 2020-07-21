@@ -1,0 +1,8 @@
+{
+  "encode_squeeze0" : 3,
+  "encode_reshape0" : 3,
+  "stgcn_action_batch_norm_1" : 5,
+  "encode_expand_dims0" : 5,
+  "decode_gather0" : 1,
+  "decode_expand_dims0" : 2
+}

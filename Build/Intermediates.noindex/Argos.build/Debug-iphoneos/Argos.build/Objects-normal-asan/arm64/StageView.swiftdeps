@@ -1,0 +1,453 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "StageView"
+- "StageView_Previews"
+provides-nominal:
+- "5Argos9StageViewV"
+- "5Argos18StageView_PreviewsV"
+provides-member:
+- ["5Argos9StageViewV", ""]
+- ["5Argos18StageView_PreviewsV", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- !private "AssignmentPrecedence"
+- "Button"
+- "Color"
+- "DemonstrationView"
+- "ExternalSignalView"
+- "FloatLiteralType"
+- "HStack"
+- !private "IntegerLiteralType"
+- "ObservedObject"
+- "PreviewProvider"
+- "StageView"
+- "StageView_Previews"
+- !private "StringLiteralType"
+- "Text"
+- "VStack"
+- "View"
+- "ViewRouter"
+- "VisionActivityTrackView"
+- "ZStack"
+depends-member:
+- !private ["s18AdditiveArithmeticP", ""]
+- !private ["s18AdditiveArithmeticP", "infinity"]
+- !private ["s18AdditiveArithmeticP", "leading"]
+- !private ["7SwiftUI9AlignmentV", "bottom"]
+- !private ["7SwiftUI9AlignmentV", "topLeading"]
+- ["7SwiftUI10AnimatableP", ""]
+- !private ["7SwiftUI10AnimatableP", "leading"]
+- ["SK", ""]
+- !private ["SB", "infinity"]
+- !private ["SB", "init"]
+- !private ["SB", "isTotallyOrdered"]
+- !private ["SB", "leading"]
+- !private ["SB", "radix"]
+- !private ["7SwiftUI6ButtonV", "init"]
+- !private ["7SwiftUI6ButtonV", "padding"]
+- !private ["12CoreGraphics7CGFloatV", "infinity"]
+- !private ["12CoreGraphics7CGFloatV", "leading"]
+- !private ["s7CVarArgP", ""]
+- !private ["s7CVarArgP", "infinity"]
+- !private ["s7CVarArgP", "leading"]
+- ["Sl", ""]
+- !private ["7SwiftUI5ColorV", "gray"]
+- ["SL", ""]
+- !private ["SL", "infinity"]
+- !private ["SL", "leading"]
+- !private ["s28CustomDebugStringConvertibleP", "infinity"]
+- !private ["s17CustomReflectableP", "infinity"]
+- !private ["s17CustomReflectableP", "leading"]
+- ["s23CustomStringConvertibleP", ""]
+- !private ["s23CustomStringConvertibleP", "gray"]
+- !private ["s23CustomStringConvertibleP", "infinity"]
+- !private ["s23CustomStringConvertibleP", "leading"]
+- !private ["Se", "infinity"]
+- !private ["Se", "leading"]
+- !private ["5Argos17DemonstrationViewV", ""]
+- !private ["5Argos17DemonstrationViewV", "init"]
+- ["7SwiftUI15DynamicPropertyP", "init"]
+- !private ["7SwiftUI10EdgeInsetsV", "leading"]
+- !private ["SE", "infinity"]
+- !private ["SE", "leading"]
+- ["SQ", ""]
+- !private ["SQ", "bottom"]
+- !private ["SQ", "gray"]
+- !private ["SQ", "infinity"]
+- !private ["SQ", "init"]
+- !private ["SQ", "leading"]
+- !private ["SQ", "topLeading"]
+- !private ["s25ExpressibleByArrayLiteralP", ""]
+- !private ["s25ExpressibleByArrayLiteralP", "bottom"]
+- !private ["s25ExpressibleByArrayLiteralP", "leading"]
+- ["s43ExpressibleByExtendedGraphemeClusterLiteralP", ""]
+- !private ["s25ExpressibleByFloatLiteralP", ""]
+- !private ["s25ExpressibleByFloatLiteralP", "infinity"]
+- !private ["s25ExpressibleByFloatLiteralP", "leading"]
+- !private ["s27ExpressibleByIntegerLiteralP", "IntegerLiteralType"]
+- !private ["s27ExpressibleByIntegerLiteralP", ""]
+- !private ["s27ExpressibleByIntegerLiteralP", "infinity"]
+- !private ["s27ExpressibleByIntegerLiteralP", "init"]
+- !private ["s27ExpressibleByIntegerLiteralP", "leading"]
+- !private ["s23ExpressibleByNilLiteralP", "infinity"]
+- ["s32ExpressibleByStringInterpolationP", ""]
+- !private ["s26ExpressibleByStringLiteralP", "StringLiteralType"]
+- ["s26ExpressibleByStringLiteralP", ""]
+- !private ["s26ExpressibleByStringLiteralP", "init"]
+- ["s33ExpressibleByUnicodeScalarLiteralP", ""]
+- !private ["5Argos18ExternalSignalViewV", ""]
+- !private ["5Argos18ExternalSignalViewV", "init"]
+- !private ["SF", "*"]
+- !private ["SF", "*="]
+- !private ["SF", "+"]
+- !private ["SF", "+="]
+- !private ["SF", "-"]
+- !private ["SF", "-="]
+- !private ["SF", "/"]
+- !private ["SF", "/="]
+- !private ["SF", ""]
+- !private ["SF", "addProduct"]
+- !private ["SF", "addingProduct"]
+- !private ["SF", "exponent"]
+- !private ["SF", "floatingPointClass"]
+- !private ["SF", "formRemainder"]
+- !private ["SF", "formSquareRoot"]
+- !private ["SF", "formTruncatingRemainder"]
+- !private ["SF", "greatestFiniteMagnitude"]
+- !private ["SF", "infinity"]
+- !private ["SF", "init"]
+- !private ["SF", "isCanonical"]
+- !private ["SF", "isEqual"]
+- !private ["SF", "isFinite"]
+- !private ["SF", "isInfinite"]
+- !private ["SF", "isLess"]
+- !private ["SF", "isLessThanOrEqualTo"]
+- !private ["SF", "isNaN"]
+- !private ["SF", "isNormal"]
+- !private ["SF", "isSignalingNaN"]
+- !private ["SF", "isSubnormal"]
+- !private ["SF", "isTotallyOrdered"]
+- !private ["SF", "isZero"]
+- !private ["SF", "leading"]
+- !private ["SF", "leastNonzeroMagnitude"]
+- !private ["SF", "leastNormalMagnitude"]
+- !private ["SF", "maximum"]
+- !private ["SF", "maximumMagnitude"]
+- !private ["SF", "minimum"]
+- !private ["SF", "minimumMagnitude"]
+- !private ["SF", "nan"]
+- !private ["SF", "negate"]
+- !private ["SF", "nextDown"]
+- !private ["SF", "nextUp"]
+- !private ["SF", "pi"]
+- !private ["SF", "radix"]
+- !private ["SF", "remainder"]
+- !private ["SF", "round"]
+- !private ["SF", "rounded"]
+- !private ["SF", "sign"]
+- !private ["SF", "signalingNaN"]
+- !private ["SF", "significand"]
+- !private ["SF", "squareRoot"]
+- !private ["SF", "truncatingRemainder"]
+- !private ["SF", "ulp"]
+- !private ["SF", "ulpOfOne"]
+- !private ["7SwiftUI7GestureP", "infinity"]
+- !private ["7SwiftUI6HStackV", "init"]
+- ["SH", ""]
+- !private ["SH", "gray"]
+- !private ["SH", "infinity"]
+- !private ["SH", "leading"]
+- ["s25LosslessStringConvertibleP", ""]
+- ["So8NSCodingP", ""]
+- !private ["Sj", ""]
+- !private ["Sj", "infinity"]
+- !private ["Sj", "leading"]
+- !private ["7Combine16ObservableObjectP", "currentPage"]
+- !private ["7Combine16ObservableObjectP", "init"]
+- ["7SwiftUI14ObservedObjectV", "init"]
+- ["7SwiftUI14ObservedObjectV", "projectedValue"]
+- ["7SwiftUI14ObservedObjectV", "subscript"]
+- ["7SwiftUI14ObservedObjectV", "wrappedValue"]
+- !private ["s9OptionSetP", "bottom"]
+- !private ["s9OptionSetP", "leading"]
+- !private ["Sq", "infinity"]
+- ["7SwiftUI15PreviewProviderP", "Default_Previews"]
+- ["7SwiftUI15PreviewProviderP", "Previews"]
+- !private ["7SwiftUI15PreviewProviderP", "StageView"]
+- !private ["7SwiftUI15PreviewProviderP", "ViewRouter"]
+- ["7SwiftUI15PreviewProviderP", ""]
+- ["7SwiftUI15PreviewProviderP", "_Default_Previews"]
+- ["7SwiftUI15PreviewProviderP", "_platform"]
+- ["7SwiftUI15PreviewProviderP", "_previews"]
+- ["7SwiftUI15PreviewProviderP", "platform"]
+- ["7SwiftUI15PreviewProviderP", "previews"]
+- !private ["SY", ""]
+- !private ["SY", "bottom"]
+- !private ["SY", "leading"]
+- ["ST", ""]
+- !private ["7SwiftUI4EdgeO3SetV", "bottom"]
+- !private ["7SwiftUI4EdgeO3SetV", "leading"]
+- !private ["s10SetAlgebraP", ""]
+- !private ["s10SetAlgebraP", "bottom"]
+- !private ["s10SetAlgebraP", "leading"]
+- !private ["7SwiftUI10ShapeStyleP", "gray"]
+- !private ["s13SignedNumericP", "-"]
+- !private ["s13SignedNumericP", ""]
+- !private ["s13SignedNumericP", "infinity"]
+- !private ["s13SignedNumericP", "leading"]
+- ["5Argos9StageViewV", "$viewRouter"]
+- ["5Argos9StageViewV", "Body"]
+- !private ["5Argos9StageViewV", "Button"]
+- !private ["5Argos9StageViewV", "Color"]
+- ["5Argos9StageViewV", "Default_Body"]
+- !private ["5Argos9StageViewV", "DemonstrationView"]
+- !private ["5Argos9StageViewV", "ExternalSignalView"]
+- !private ["5Argos9StageViewV", "HStack"]
+- ["5Argos9StageViewV", "ObservedObject"]
+- !private ["5Argos9StageViewV", "Text"]
+- !private ["5Argos9StageViewV", "VStack"]
+- ["5Argos9StageViewV", "View"]
+- ["5Argos9StageViewV", "ViewRouter"]
+- !private ["5Argos9StageViewV", "VisionActivityTrackView"]
+- !private ["5Argos9StageViewV", "ZStack"]
+- ["5Argos9StageViewV", ""]
+- ["5Argos9StageViewV", "_Default_Body"]
+- ["5Argos9StageViewV", "_makeView"]
+- ["5Argos9StageViewV", "_makeViewList"]
+- ["5Argos9StageViewV", "_viewListCount"]
+- !private ["5Argos9StageViewV", "_viewRouter"]
+- ["5Argos9StageViewV", "body"]
+- ["5Argos9StageViewV", "init"]
+- ["5Argos9StageViewV", "viewRouter"]
+- ["5Argos18StageView_PreviewsV", "Default_Previews"]
+- ["5Argos18StageView_PreviewsV", "Previews"]
+- !private ["5Argos18StageView_PreviewsV", "StageView"]
+- ["5Argos18StageView_PreviewsV", "View"]
+- !private ["5Argos18StageView_PreviewsV", "ViewRouter"]
+- ["5Argos18StageView_PreviewsV", ""]
+- ["5Argos18StageView_PreviewsV", "_Default_Previews"]
+- ["5Argos18StageView_PreviewsV", "_platform"]
+- ["5Argos18StageView_PreviewsV", "_previews"]
+- ["5Argos18StageView_PreviewsV", "init"]
+- ["5Argos18StageView_PreviewsV", "platform"]
+- ["5Argos18StageView_PreviewsV", "previews"]
+- !private ["7SwiftUI5StateV", "init"]
+- !private ["7SwiftUI5StateV", "projectedValue"]
+- !private ["7SwiftUI5StateV", "subscript"]
+- !private ["7SwiftUI5StateV", "wrappedValue"]
+- !private ["Sx", ""]
+- !private ["Sx", "infinity"]
+- !private ["Sx", "leading"]
+- !private ["7SwiftUI4TextV", "init"]
+- ["s16TextOutputStreamP", ""]
+- ["s20TextOutputStreamableP", ""]
+- !private ["7SwiftUI6VStackV", "frame"]
+- !private ["7SwiftUI6VStackV", "init"]
+- !private ["7SwiftUI16VectorArithmeticP", "infinity"]
+- !private ["7SwiftUI16VectorArithmeticP", "leading"]
+- ["7SwiftUI4ViewP", "Body"]
+- !private ["7SwiftUI4ViewP", "Button"]
+- !private ["7SwiftUI4ViewP", "Color"]
+- ["7SwiftUI4ViewP", "Default_Body"]
+- !private ["7SwiftUI4ViewP", "DemonstrationView"]
+- !private ["7SwiftUI4ViewP", "ExternalSignalView"]
+- !private ["7SwiftUI4ViewP", "HStack"]
+- ["7SwiftUI4ViewP", "ObservedObject"]
+- !private ["7SwiftUI4ViewP", "Text"]
+- !private ["7SwiftUI4ViewP", "VStack"]
+- !private ["7SwiftUI4ViewP", "VisionActivityTrackView"]
+- !private ["7SwiftUI4ViewP", "ZStack"]
+- ["7SwiftUI4ViewP", ""]
+- ["7SwiftUI4ViewP", "_Default_Body"]
+- ["7SwiftUI4ViewP", "_makeView"]
+- ["7SwiftUI4ViewP", "_makeViewList"]
+- ["7SwiftUI4ViewP", "_viewListCount"]
+- !private ["7SwiftUI4ViewP", "background"]
+- ["7SwiftUI4ViewP", "body"]
+- !private ["7SwiftUI4ViewP", "edgesIgnoringSafeArea"]
+- !private ["7SwiftUI4ViewP", "frame"]
+- !private ["7SwiftUI4ViewP", "gray"]
+- !private ["7SwiftUI4ViewP", "infinity"]
+- !private ["7SwiftUI4ViewP", "init"]
+- !private ["7SwiftUI4ViewP", "padding"]
+- !private ["7SwiftUI4ViewP", "viewRouter"]
+- !private ["7SwiftUI11ViewBuilderV", "buildBlock"]
+- !private ["7SwiftUI11ViewBuilderV", "buildExpression"]
+- !private ["7SwiftUI11ViewBuilderV", "buildFinalResult"]
+- !private ["7SwiftUI11ViewBuilderV", "buildIf"]
+- !private ["7SwiftUI11ViewBuilderV", "buildOptional"]
+- ["5Argos10ViewRouterC", ""]
+- !private ["5Argos10ViewRouterC", "currentPage"]
+- !private ["5Argos10ViewRouterC", "init"]
+- !private ["5Argos23VisionActivityTrackViewV", ""]
+- !private ["5Argos23VisionActivityTrackViewV", "init"]
+- !private ["7SwiftUI6ZStackV", "edgesIgnoringSafeArea"]
+- !private ["7SwiftUI6ZStackV", "init"]
+- !private ["s15_CVarArgAlignedP", "infinity"]
+- !private ["s15_CVarArgAlignedP", "leading"]
+- !private ["s22_CVarArgPassedAsDoubleP", "infinity"]
+- !private ["s22_CVarArgPassedAsDoubleP", "leading"]
+- ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", ""]
+- !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "init"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", ""]
+- !private ["7SwiftUI18_FormatSpecifiableP", "infinity"]
+- !private ["7SwiftUI18_FormatSpecifiableP", "leading"]
+- !private ["s21_ObjectiveCBridgeableP", "infinity"]
+- !private ["s21_ObjectiveCBridgeableP", "leading"]
+- ["7SwiftUI16_PreviewProviderP", "Default_Previews"]
+- ["7SwiftUI16_PreviewProviderP", "Previews"]
+- !private ["7SwiftUI16_PreviewProviderP", "StageView"]
+- !private ["7SwiftUI16_PreviewProviderP", "ViewRouter"]
+- ["7SwiftUI16_PreviewProviderP", ""]
+- ["7SwiftUI16_PreviewProviderP", "_Default_Previews"]
+- ["7SwiftUI16_PreviewProviderP", "_platform"]
+- ["7SwiftUI16_PreviewProviderP", "_previews"]
+- ["7SwiftUI16_PreviewProviderP", "platform"]
+- ["7SwiftUI16_PreviewProviderP", "previews"]
+- !private ["7SwiftUI11_VectorMathP", "leading"]
+depends-nominal:
+- !private "s18AdditiveArithmeticP"
+- !private "7SwiftUI9AlignmentV"
+- "7SwiftUI10AnimatableP"
+- "SK"
+- !private "SB"
+- !private "7SwiftUI6ButtonV"
+- !private "12CoreGraphics7CGFloatV"
+- !private "s7CVarArgP"
+- "Sl"
+- !private "7SwiftUI5ColorV"
+- "SL"
+- !private "s28CustomDebugStringConvertibleP"
+- !private "s17CustomReflectableP"
+- "s23CustomStringConvertibleP"
+- !private "Se"
+- !private "5Argos17DemonstrationViewV"
+- "7SwiftUI15DynamicPropertyP"
+- !private "7SwiftUI10EdgeInsetsV"
+- !private "SE"
+- "SQ"
+- !private "s25ExpressibleByArrayLiteralP"
+- "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- !private "s25ExpressibleByFloatLiteralP"
+- !private "s27ExpressibleByIntegerLiteralP"
+- !private "s23ExpressibleByNilLiteralP"
+- "s32ExpressibleByStringInterpolationP"
+- "s26ExpressibleByStringLiteralP"
+- "s33ExpressibleByUnicodeScalarLiteralP"
+- !private "5Argos18ExternalSignalViewV"
+- !private "SF"
+- !private "7SwiftUI7GestureP"
+- !private "7SwiftUI6HStackV"
+- "SH"
+- "s25LosslessStringConvertibleP"
+- "So8NSCodingP"
+- !private "Sj"
+- !private "7Combine16ObservableObjectP"
+- "7SwiftUI14ObservedObjectV"
+- !private "s9OptionSetP"
+- !private "Sq"
+- "7SwiftUI15PreviewProviderP"
+- !private "SY"
+- "ST"
+- !private "7SwiftUI4EdgeO3SetV"
+- !private "s10SetAlgebraP"
+- !private "7SwiftUI10ShapeStyleP"
+- !private "s13SignedNumericP"
+- "5Argos9StageViewV"
+- "5Argos18StageView_PreviewsV"
+- !private "7SwiftUI5StateV"
+- !private "Sx"
+- !private "7SwiftUI4TextV"
+- "s16TextOutputStreamP"
+- "s20TextOutputStreamableP"
+- !private "7SwiftUI6VStackV"
+- !private "7SwiftUI16VectorArithmeticP"
+- "7SwiftUI4ViewP"
+- !private "7SwiftUI11ViewBuilderV"
+- "5Argos10ViewRouterC"
+- !private "5Argos23VisionActivityTrackViewV"
+- !private "7SwiftUI6ZStackV"
+- !private "s15_CVarArgAlignedP"
+- !private "s22_CVarArgPassedAsDoubleP"
+- "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- !private "s35_ExpressibleByBuiltinIntegerLiteralP"
+- !private "s34_ExpressibleByBuiltinStringLiteralP"
+- "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- !private "7SwiftUI18_FormatSpecifiableP"
+- !private "s21_ObjectiveCBridgeableP"
+- "7SwiftUI16_PreviewProviderP"
+- !private "7SwiftUI11_VectorMathP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/ObjectiveC.swiftmodule/arm64-apple-ios.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/CoreMIDI.swiftmodule/arm64-apple-ios.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/SwiftUI.swiftmodule/arm64-apple-ios.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/_AVKit_SwiftUI.swiftmodule/arm64-apple-ios.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/CoreML.swiftmodule/arm64-apple-ios.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/ModelIO.swiftmodule/arm64-apple-ios.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/CoreMedia.swiftmodule/arm64-apple-ios.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/CoreData.swiftmodule/arm64-apple-ios.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/simd.swiftmodule/arm64-apple-ios.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/CoreImage.swiftmodule/arm64-apple-ios.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/Combine.swiftmodule/arm64-apple-ios.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/QuartzCore.swiftmodule/arm64-apple-ios.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/Dispatch.swiftmodule/arm64-apple-ios.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/Metal.swiftmodule/arm64-apple-ios.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/Darwin.swiftmodule/arm64-apple-ios.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/Vision.swiftmodule/arm64-apple-ios.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/CoreLocation.swiftmodule/arm64-apple-ios.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/Foundation.swiftmodule/arm64-apple-ios.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/AVFoundation.swiftmodule/arm64-apple-ios.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/CoreFoundation.swiftmodule/arm64-apple-ios.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/CoreAudio.swiftmodule/arm64-apple-ios.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/CoreGraphics.swiftmodule/arm64-apple-ios.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/os.swiftmodule/arm64-apple-ios.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/UniformTypeIdentifiers.swiftmodule/arm64-apple-ios.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/Swift.swiftmodule/arm64-apple-ios.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/UIKit.swiftmodule/arm64-apple-ios.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/GLKit.swiftmodule/arm64-apple-ios.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/ARKit.swiftmodule/arm64-apple-ios.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/CloudKit.swiftmodule/arm64-apple-ios.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/SceneKit.swiftmodule/arm64-apple-ios.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/SpriteKit.swiftmodule/arm64-apple-ios.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/RealityKit.swiftmodule/arm64-apple-ios.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/SwiftOnoneSupport.swiftmodule/arm64-apple-ios.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/DeveloperToolsSupport.swiftmodule/arm64-apple-ios.swiftmodule"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/usr/include/mach-o/dyld.modulemap"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/usr/include/mach-o/compact_unwind_encoding.modulemap"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/CoreML.framework/Headers/CoreML.apinotes"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/ModelIO.framework/Headers/ModelIO.apinotes"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/CoreMedia.framework/Headers/CoreMedia.apinotes"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/CoreData.framework/Headers/CoreData.apinotes"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/apinotes/Dispatch.apinotes"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/QuickLook.framework/Headers/QuickLook.apinotes"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Vision.framework/Headers/Vision.apinotes"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/CoreLocation.framework/Headers/CoreLocation.apinotes"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/AVFoundation.framework/Headers/AVFoundation.apinotes"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/AuthenticationServices.framework/Headers/AuthenticationServices.apinotes"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/CoreAudioTypes.framework/Headers/CoreAudioTypes.apinotes"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/UserNotifications.framework/Headers/UserNotifications.apinotes"
+- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/apinotes/os.apinotes"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/UniformTypeIdentifiers.framework/Headers/UniformTypeIdentifiers.apinotes"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/GLKit.framework/Headers/GLKit.apinotes"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/AVKit.framework/Headers/AVKit.apinotes"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/CloudKit.framework/Headers/CloudKit.apinotes"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/SceneKit.framework/Headers/SceneKit.apinotes"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/StoreKit.framework/Headers/StoreKit.apinotes"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/SpriteKit.framework/Headers/SpriteKit.apinotes"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/MediaToolbox.framework/Headers/MediaToolbox.apinotes"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AudioToolbox.apinotes"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/MultipeerConnectivity.framework/Headers/MultipeerConnectivity.apinotes"
+interface-hash: "959878dd03ffe48a586f311707313ee8"

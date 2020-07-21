@@ -31,6 +31,7 @@
 		B0D0B9E324C445280094FB77 /* sample_video_1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = B0D0B9E224C445280094FB77 /* sample_video_1.mp4 */; };
 		B0DAA14324C559DE00DDE7B8 /* VisionActivityTrackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0DAA14224C559DE00DDE7B8 /* VisionActivityTrackView.swift */; };
 		B0DAA14524C5713300DDE7B8 /* ActivityCameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0DAA14424C5713300DDE7B8 /* ActivityCameraViewController.swift */; };
+		B0DAA14724C6A84B00DDE7B8 /* TestActionClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = B0DAA14624C6A84A00DDE7B8 /* TestActionClassifier.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +82,7 @@
 		B0D0B9E224C445280094FB77 /* sample_video_1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = sample_video_1.mp4; sourceTree = "<group>"; };
 		B0DAA14224C559DE00DDE7B8 /* VisionActivityTrackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisionActivityTrackView.swift; sourceTree = "<group>"; };
 		B0DAA14424C5713300DDE7B8 /* ActivityCameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityCameraViewController.swift; sourceTree = "<group>"; };
+		B0DAA14624C6A84A00DDE7B8 /* TestActionClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = TestActionClassifier.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +152,7 @@
 		B02EA6B824B33A0B00CC3023 /* Argos */ = {
 			isa = PBXGroup;
 			children = (
+				B0DAA14624C6A84A00DDE7B8 /* TestActionClassifier.mlmodel */,
 				B013ECD724BEDEE400BC1A53 /* VideoPlayer */,
 				B013ECD424BEA82000BC1A53 /* ExternalSignal */,
 				B02EA6B924B33A0B00CC3023 /* AppDelegate.swift */,
@@ -279,7 +282,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1150;
-				LastUpgradeCheck = 1150;
+				LastUpgradeCheck = 1200;
 				ORGANIZATIONNAME = "Supat Saetia";
 				TargetAttributes = {
 					B02EA6B524B33A0B00CC3023 = {
@@ -366,6 +369,7 @@
 				B02EA6EA24B33AFB00CC3023 /* BodyTrackedView.swift in Sources */,
 				B013ECD624BEA86B00BC1A53 /* ExternalSignalView.swift in Sources */,
 				B02EA6F924B461F800CC3023 /* StartActionView.swift in Sources */,
+				B0DAA14724C6A84B00DDE7B8 /* TestActionClassifier.mlmodel in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -438,6 +442,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -498,6 +503,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;

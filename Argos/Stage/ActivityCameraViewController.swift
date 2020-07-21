@@ -8,6 +8,7 @@
 
 import AVFoundation
 import UIKit
+import Vision
 
 class ActivityCameraViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDelegate {
     
@@ -15,6 +16,14 @@ class ActivityCameraViewController: UIViewController, AVCaptureVideoDataOutputSa
     var previewLayer: AVCaptureVideoPreviewLayer!;
     
     private let videoDataOutput = AVCaptureVideoDataOutput();
+    
+    private let humanBodyPoseRequest = VNDetectHumanBodyPoseRequest();
+    
+    private var posesWindow: [VNRecognizedPointsObservation?] = [];
+    
+    private let bodyPoseDetectionMinConfidence: VNConfidence = 0.6;
+    
+    private let predictor = TestActionClassifier();
     
     override func viewDidLoad() {
         super.viewDidLoad();
@@ -42,6 +51,8 @@ class ActivityCameraViewController: UIViewController, AVCaptureVideoDataOutputSa
         previewLayer.frame = self.view.frame;
         previewLayer.videoGravity = .resizeAspectFill;
         view.layer.addSublayer(previewLayer);
+        
+        posesWindow.reserveCapacity(120);
 
         captureSession.startRunning();
     }
@@ -82,6 +93,49 @@ class ActivityCameraViewController: UIViewController, AVCaptureVideoDataOutputSa
 
         if captureSession?.isRunning == true {
             captureSession.stopRunning()
+        }
+    }
+    
+    // AVCaptureVideoDataOutputSampleBufferDelegate protocol implementation
+    func captureOutput(_ output: AVCaptureOutput, didOutput sampleBuffer: CMSampleBuffer, from connection: AVCaptureConnection) {
+        let visionHandler = VNImageRequestHandler(cmSampleBuffer: sampleBuffer, orientation: .up, options: [:]);
+        
+        do {
+            try visionHandler.perform([humanBodyPoseRequest])
+            if let observations = humanBodyPoseRequest.results as? [VNRecognizedPointsObservation] {
+                if (observations.count > 0) {
+                    //print(observations[0].confidence);
+                    //let poseArray = try? observations[0].keypointsMultiArray();
+                    //print(poseArray?.count);
+                    posesWindow.append(observations[0]);
+                    //print("Before \(posesWindow.count)");
+                    if (posesWindow.count >= 60) {
+                        //print("Ready for Prediction");
+                        let poseMultiArrays: [MLMultiArray] = try posesWindow.map { person in
+                            guard let person = person else {
+                                let zeroArray = try MLMultiArray(shape: [1, 3, 18], dataType: .double);
+                                return zeroArray;
+                            }
+                            return try person.keypointsMultiArray()
+                        }
+                        
+                        let modelInput = MLMultiArray(concatenating: poseMultiArrays, axis: 0, dataType: .float);
+                        
+                        let predictions = try predictor.prediction(poses: modelInput);
+                        
+                        posesWindow.removeFirst(60);
+                        
+                        print(predictions.label);
+                        print(predictions.labelProbabilities[predictions.label]!);
+                        
+                        //print("After \(posesWindow.count)");
+                    }
+                } else {
+                    //print("No human detected");
+                }
+            }
+        } catch {
+            
         }
     }
 }

@@ -10,7 +10,7 @@
 		</data>
 		<key>Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<data>
-		UZ+nWjd2u/+Wyc4zLXITUZnX7A8=
+		I8q/Zg6wXGzwvYgTJnbENzQ97Kg=
 		</data>
 		<key>Base.lproj/LaunchScreen.storyboardc/Info.plist</key>
 		<data>
@@ -18,19 +18,55 @@
 		</data>
 		<key>Base.lproj/LaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib</key>
 		<data>
-		wT0Qg8TfEc4EHtbmCbc5VEhv/a0=
+		Mvr6cI05QFrVE/IVinhDZrUrvK4=
 		</data>
 		<key>Experience.reality</key>
 		<data>
-		gUxahNzAJfFUTRlaZJ3Tu7RHFN4=
+		/0SXwc+7TVhIp/kwSP9mLpYsDqI=
+		</data>
+		<key>Frameworks/libclang_rt.asan_ios_dynamic.dylib</key>
+		<data>
+		J6FXedU4QoG/FzCf/ZGIjEkEMxM=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		X69CvAEdH4fny/b8p/j38dy9FYc=
+		MtDwXWDlSzscYgqv+X/wjjT47HI=
 		</data>
 		<key>PkgInfo</key>
 		<data>
 		n57qDP4tZfLD1rCS43W0B4LQjzE=
+		</data>
+		<key>TestActionClassifier.mlmodelc/coremldata.bin</key>
+		<data>
+		Eil+rq5YzcrqbMY4odgyBoDLhGQ=
+		</data>
+		<key>TestActionClassifier.mlmodelc/metadata.json</key>
+		<data>
+		3U0spN3USxsCi/34gQjvwc9IzaU=
+		</data>
+		<key>TestActionClassifier.mlmodelc/model.espresso.net</key>
+		<data>
+		o7clEZkiAHGefrCJWFWCbnfKs5o=
+		</data>
+		<key>TestActionClassifier.mlmodelc/model.espresso.shape</key>
+		<data>
+		cEHoNS7SJCxr9v4UUUQVgasyIkQ=
+		</data>
+		<key>TestActionClassifier.mlmodelc/model.espresso.weights</key>
+		<data>
+		LBb+xjAfgcAtNsaCizoNXI7P6dk=
+		</data>
+		<key>TestActionClassifier.mlmodelc/model.rank.info.json</key>
+		<data>
+		FDr/jdD8XWvY5R8/BPEts55ZUpM=
+		</data>
+		<key>TestActionClassifier.mlmodelc/model/coremldata.bin</key>
+		<data>
+		yNfQ7w7t+oLS6hqlkoRbmm1LArc=
+		</data>
+		<key>TestActionClassifier.mlmodelc/neural_network_optionals/coremldata.bin</key>
+		<data>
+		F4eV5mXReQYVzJ6dkMJcS5UbxSA=
 		</data>
 		<key>character/robot.usdz</key>
 		<data>
@@ -58,7 +94,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			8ipvGzk3Rh3eNqqvhVLRgZJTGuPwLUkQsMKk2Wf2s3I=
+			HCCfL23pYcXXAI1CdV1S8ulnZKbszs8CmOaoIygx3Cs=
 			</data>
 		</dict>
 		<key>Base.lproj/LaunchScreen.storyboardc/Info.plist</key>
@@ -72,14 +108,77 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			aMnywU1HDkaA/C7AyKYql8qKSLD4mDNQJzikVTBY9qs=
+			N9LSQil3+A76RmmCHp2b3cg36liV9J/aAYNDfwB33lk=
 			</data>
 		</dict>
 		<key>Experience.reality</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			8qw6iEPh5IsNu9z+8Dpp1hSDie84iUL2oddLbXOvoOw=
+			QSW7qQeTXw6uPLW+OI6uWuJ5aCzcT3yZmrALiFx2L+k=
+			</data>
+		</dict>
+		<key>Frameworks/libclang_rt.asan_ios_dynamic.dylib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			gAZKrfnZsyBKE3kB40SueowvQMnR7iv950DNaS47M2Q=
+			</data>
+		</dict>
+		<key>TestActionClassifier.mlmodelc/coremldata.bin</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			mv01mZDJlV8VMaaWOdhbNhfha2YEQIpUICI9lZkUMPY=
+			</data>
+		</dict>
+		<key>TestActionClassifier.mlmodelc/metadata.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			rrpDLMWv3OsKvO+dWuFZfBgnxMen1lzlmHec3F0wN4Y=
+			</data>
+		</dict>
+		<key>TestActionClassifier.mlmodelc/model.espresso.net</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			LP4IMWT41LKH/0XW8f0Yb+QTjRN8FpaUu6aT6qmJ4TM=
+			</data>
+		</dict>
+		<key>TestActionClassifier.mlmodelc/model.espresso.shape</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			O3+hQaku+8CZR2Sl3iQa7MNIGpA9sLmx0x3J+YdAAas=
+			</data>
+		</dict>
+		<key>TestActionClassifier.mlmodelc/model.espresso.weights</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			YlKA/VT4fgQMB63KwtKtAmufwQs+/4zuPXHszurmh/E=
+			</data>
+		</dict>
+		<key>TestActionClassifier.mlmodelc/model.rank.info.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			VFe6pd2GyzaW6e8/iMxDPV5+yP/McGiXaztcs9alM9E=
+			</data>
+		</dict>
+		<key>TestActionClassifier.mlmodelc/model/coremldata.bin</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			9aX9QtFqIDAnmO9u0wmXm0MAPSMg2fDo6pgxqSdZ+0s=
+			</data>
+		</dict>
+		<key>TestActionClassifier.mlmodelc/neural_network_optionals/coremldata.bin</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			fqS+FcI4rEwuh08zvYHDQXdsHxzEcqyRceEHSzm0arE=
 			</data>
 		</dict>
 		<key>character/robot.usdz</key>
