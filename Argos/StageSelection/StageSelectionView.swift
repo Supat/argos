@@ -11,15 +11,20 @@ import SwiftUI
 struct StageSelectionView: View {
     
     @ObservedObject var viewRouter: ViewRouter;
+    @Environment(\.managedObjectContext) var context
+
+    var categories: [Category] {
+        get {
+            firstLoad()
+            let categories = Category.fetchAllCategories(context: context) ?? []
+            return categories
+        }
+    }
     
     var body: some View {
         NavigationView {
-            List {
-                ActionCategoryRow(viewRouter: viewRouter);
-                ActionCategoryRow(viewRouter: viewRouter);
-                ActionCategoryRow(viewRouter: viewRouter);
-                ActionCategoryRow(viewRouter: viewRouter);
-                ActionCategoryRow(viewRouter: viewRouter);
+            List(categories, id: \.self) { category in
+                ActionCategoryRow(viewRouter: viewRouter, context: context, category: category)
             }
             .navigationBarTitle("Select Action");
             

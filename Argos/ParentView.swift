@@ -11,15 +11,17 @@ import SwiftUI
 struct ParentView: View {
     
     @ObservedObject var viewRouter: ViewRouter;
+    @Environment(\.managedObjectContext) var context
     
     var body: some View {
         ZStack {
             VStack {
                 if viewRouter.currentPage == "selectionPage" {
-                    StageSelectionView(viewRouter: viewRouter);
-                } else if viewRouter.currentPage == "stagePage" {
-                    StageView(viewRouter: viewRouter);
-                }
+                    StageSelectionView(viewRouter: viewRouter) }
+                
+//                } else if viewRouter.currentPage == "stagePage" {
+//                    StageView(viewRouter: viewRouter)
+//                }
             }
         }
     }

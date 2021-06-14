@@ -11,6 +11,8 @@ import SwiftUI
 struct StageView: View {
     
     @ObservedObject var viewRouter: ViewRouter;
+    let video: Video
+    
     
     var body: some View {
         ZStack(alignment: .bottom) {
@@ -22,17 +24,17 @@ struct StageView: View {
                         .frame(minWidth: 0, maxWidth: .infinity)
                     
                     VStack {
-                        DemonstrationView();
+                        DemonstrationView(video: video);
                     }
                         .frame(minWidth: 0, maxWidth: .infinity);
                 }
-                
-                Button(action: {
-                    self.viewRouter.currentPage = "selectionPage";
-                }) {
-                    Text("Back");
-                }
-                    .padding(.leading);
+//                
+//                Button(action: {
+//                    self.viewRouter.currentPage = "selectionPage";
+//                }) {
+//                    Text("Back");
+//                }
+//                    .padding(.leading);
             }
             VStack {
                 ExternalSignalView();
@@ -45,8 +47,8 @@ struct StageView: View {
     }
 }
 
-struct StageView_Previews: PreviewProvider {
-    static var previews: some View {
-        StageView(viewRouter: ViewRouter())
-    }
-}
+//struct StageView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        StageView(viewRouter: ViewRouter())
+//    }
+//}
