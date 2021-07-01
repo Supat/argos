@@ -31,6 +31,18 @@
 		B0DAA14324C559DE00DDE7B8 /* VisionActivityTrackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0DAA14224C559DE00DDE7B8 /* VisionActivityTrackView.swift */; };
 		B0DAA14524C5713300DDE7B8 /* ActivityCameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0DAA14424C5713300DDE7B8 /* ActivityCameraViewController.swift */; };
 		B0DAA14724C6A84B00DDE7B8 /* TestActionClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = B0DAA14624C6A84A00DDE7B8 /* TestActionClassifier.mlmodel */; };
+		B0FA38E0268E064100DFE310 /* Argos.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B0FA38DE268E064100DFE310 /* Argos.xcdatamodeld */; };
+		B0FA38E2268E095600DFE310 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0FA38E1268E095600DFE310 /* Persistence.swift */; };
+		B0FA3933268E2F3600DFE310 /* video04_04.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = B0FA3929268E2F2800DFE310 /* video04_04.mp4 */; };
+		B0FA3934268E2F3600DFE310 /* video01_04.mov in Resources */ = {isa = PBXBuildFile; fileRef = B0FA392A268E2F2A00DFE310 /* video01_04.mov */; };
+		B0FA3935268E2F3600DFE310 /* video05_02.mov in Resources */ = {isa = PBXBuildFile; fileRef = B0FA392B268E2F2B00DFE310 /* video05_02.mov */; };
+		B0FA3936268E2F3600DFE310 /* video010_02.mov in Resources */ = {isa = PBXBuildFile; fileRef = B0FA392C268E2F2C00DFE310 /* video010_02.mov */; };
+		B0FA3937268E2F3600DFE310 /* video02_04.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = B0FA392D268E2F2D00DFE310 /* video02_04.mp4 */; };
+		B0FA3938268E2F3600DFE310 /* video03_04.mov in Resources */ = {isa = PBXBuildFile; fileRef = B0FA392E268E2F3100DFE310 /* video03_04.mov */; };
+		B0FA3939268E2F3600DFE310 /* video04_02.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = B0FA392F268E2F3300DFE310 /* video04_02.mp4 */; };
+		B0FA393A268E2F3600DFE310 /* video01_02.mov in Resources */ = {isa = PBXBuildFile; fileRef = B0FA3930268E2F3400DFE310 /* video01_02.mov */; };
+		B0FA393B268E2F3600DFE310 /* video02_02.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = B0FA3931268E2F3500DFE310 /* video02_02.mp4 */; };
+		B0FA393C268E2F3600DFE310 /* video03_02.mov in Resources */ = {isa = PBXBuildFile; fileRef = B0FA3932268E2F3600DFE310 /* video03_02.mov */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +93,18 @@
 		B0DAA14224C559DE00DDE7B8 /* VisionActivityTrackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisionActivityTrackView.swift; sourceTree = "<group>"; };
 		B0DAA14424C5713300DDE7B8 /* ActivityCameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityCameraViewController.swift; sourceTree = "<group>"; };
 		B0DAA14624C6A84A00DDE7B8 /* TestActionClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = TestActionClassifier.mlmodel; sourceTree = "<group>"; };
+		B0FA38DF268E064100DFE310 /* Argos.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Argos.xcdatamodel; sourceTree = "<group>"; };
+		B0FA38E1268E095600DFE310 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		B0FA3929268E2F2800DFE310 /* video04_04.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = video04_04.mp4; sourceTree = "<group>"; };
+		B0FA392A268E2F2A00DFE310 /* video01_04.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = video01_04.mov; sourceTree = "<group>"; };
+		B0FA392B268E2F2B00DFE310 /* video05_02.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = video05_02.mov; sourceTree = "<group>"; };
+		B0FA392C268E2F2C00DFE310 /* video010_02.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = video010_02.mov; sourceTree = "<group>"; };
+		B0FA392D268E2F2D00DFE310 /* video02_04.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = video02_04.mp4; sourceTree = "<group>"; };
+		B0FA392E268E2F3100DFE310 /* video03_04.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = video03_04.mov; sourceTree = "<group>"; };
+		B0FA392F268E2F3300DFE310 /* video04_02.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = video04_02.mp4; sourceTree = "<group>"; };
+		B0FA3930268E2F3400DFE310 /* video01_02.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = video01_02.mov; sourceTree = "<group>"; };
+		B0FA3931268E2F3500DFE310 /* video02_02.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = video02_02.mp4; sourceTree = "<group>"; };
+		B0FA3932268E2F3600DFE310 /* video03_02.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = video03_02.mov; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,7 +152,8 @@
 		B02EA6AD24B33A0B00CC3023 = {
 			isa = PBXGroup;
 			children = (
-				B0D0B9E224C445280094FB77 /* sample_video_1.mp4 */,
+				B0FA393D268E2F4200DFE310 /* Video */,
+				B0FA38DE268E064100DFE310 /* Argos.xcdatamodeld */,
 				B013ECD224B5BF4000BC1A53 /* ModalGraphView.swift */,
 				B02EA6B824B33A0B00CC3023 /* Argos */,
 				B02EA6CF24B33A0D00CC3023 /* ArgosTests */,
@@ -154,6 +179,7 @@
 				B013ECD724BEDEE400BC1A53 /* VideoPlayer */,
 				B013ECD424BEA82000BC1A53 /* ExternalSignal */,
 				B02EA6B924B33A0B00CC3023 /* AppDelegate.swift */,
+				B0FA38E1268E095600DFE310 /* Persistence.swift */,
 				B02EA6FA24B4946000CC3023 /* ParentView.swift */,
 				B02EA6FC24B495F000CC3023 /* ViewRouter.swift */,
 				B02EA6F724B44E9F00CC3023 /* StageSelection */,
@@ -214,6 +240,24 @@
 				B02EA6F824B461F800CC3023 /* StartActionView.swift */,
 			);
 			path = StageSelection;
+			sourceTree = "<group>";
+		};
+		B0FA393D268E2F4200DFE310 /* Video */ = {
+			isa = PBXGroup;
+			children = (
+				B0FA3930268E2F3400DFE310 /* video01_02.mov */,
+				B0FA392A268E2F2A00DFE310 /* video01_04.mov */,
+				B0FA3931268E2F3500DFE310 /* video02_02.mp4 */,
+				B0FA392D268E2F2D00DFE310 /* video02_04.mp4 */,
+				B0FA3932268E2F3600DFE310 /* video03_02.mov */,
+				B0FA392E268E2F3100DFE310 /* video03_04.mov */,
+				B0FA392F268E2F3300DFE310 /* video04_02.mp4 */,
+				B0FA3929268E2F2800DFE310 /* video04_04.mp4 */,
+				B0FA392B268E2F2B00DFE310 /* video05_02.mov */,
+				B0FA392C268E2F2C00DFE310 /* video010_02.mov */,
+				B0D0B9E224C445280094FB77 /* sample_video_1.mp4 */,
+			);
+			path = Video;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -323,7 +367,17 @@
 				B0D0B9E324C445280094FB77 /* sample_video_1.mp4 in Resources */,
 				B02EA6C624B33A0D00CC3023 /* LaunchScreen.storyboard in Resources */,
 				B02EA6C324B33A0D00CC3023 /* Preview Assets.xcassets in Resources */,
+				B0FA393B268E2F3600DFE310 /* video02_02.mp4 in Resources */,
+				B0FA3935268E2F3600DFE310 /* video05_02.mov in Resources */,
+				B0FA393A268E2F3600DFE310 /* video01_02.mov in Resources */,
+				B0FA3933268E2F3600DFE310 /* video04_04.mp4 in Resources */,
+				B0FA3939268E2F3600DFE310 /* video04_02.mp4 in Resources */,
+				B0FA3938268E2F3600DFE310 /* video03_04.mov in Resources */,
 				B02EA6ED24B33CB200CC3023 /* character in Resources */,
+				B0FA3936268E2F3600DFE310 /* video010_02.mov in Resources */,
+				B0FA393C268E2F3600DFE310 /* video03_02.mov in Resources */,
+				B0FA3937268E2F3600DFE310 /* video02_04.mp4 in Resources */,
+				B0FA3934268E2F3600DFE310 /* video01_04.mov in Resources */,
 				B02EA6C024B33A0D00CC3023 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -349,6 +403,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B0FA38E0268E064100DFE310 /* Argos.xcdatamodeld in Sources */,
 				B02EA6F324B35BD600CC3023 /* StageSelectionView.swift in Sources */,
 				B02EA6F124B353CB00CC3023 /* DemonstrationView.swift in Sources */,
 				B02EA6EF24B3530B00CC3023 /* StageView.swift in Sources */,
@@ -356,6 +411,7 @@
 				B02EA6FB24B4946000CC3023 /* ParentView.swift in Sources */,
 				B0DAA14524C5713300DDE7B8 /* ActivityCameraViewController.swift in Sources */,
 				B013ECD324B5BF4000BC1A53 /* ModalGraphView.swift in Sources */,
+				B0FA38E2268E095600DFE310 /* Persistence.swift in Sources */,
 				B013ECDB24C1799E00BC1A53 /* VideoView.swift in Sources */,
 				B02EA6BA24B33A0B00CC3023 /* AppDelegate.swift in Sources */,
 				B02EA6BE24B33A0C00CC3023 /* Experience.rcproject in Sources */,
@@ -692,6 +748,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		B0FA38DE268E064100DFE310 /* Argos.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				B0FA38DF268E064100DFE310 /* Argos.xcdatamodel */,
+			);
+			currentVersion = B0FA38DF268E064100DFE310 /* Argos.xcdatamodel */;
+			path = Argos.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = B02EA6AE24B33A0B00CC3023 /* Project object */;
 }

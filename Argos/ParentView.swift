@@ -11,6 +11,7 @@ import SwiftUI
 struct ParentView: View {
     
     @ObservedObject var viewRouter: ViewRouter;
+    @Environment(\.managedObjectContext) private var viewContext;
     
     var body: some View {
         ZStack {

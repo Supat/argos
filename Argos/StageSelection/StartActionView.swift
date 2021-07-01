@@ -11,36 +11,40 @@ import SwiftUI
 struct StartActionView: View {
     
     @ObservedObject var viewRouter: ViewRouter;
-    
-    let videoURL: URL? = Bundle.main.url(forResource: "sample_video_1", withExtension: "mp4");
+    let video: Video;
+    let category: Category;
     
     var body: some View {
         VStack {
-            Text("Action Type at Difficulty Level")
+            Text(generateTitleText(for: category.name ?? "Unknown", at: video.difficulty))
                 .font(.headline);
             
             Spacer()
                 .frame(height: 50);
             
-            Text("Detail instruction for this session appears here");
+            Text("\(String(describing: video.explanation))");
             
             Spacer()
                 .frame(height: 50);
             
             Text("Are you ready to start?");
             Button(action: {
-                print("Start button is pressed");
-                self.viewRouter.videoURL = videoURL;
+                print(video.name ?? "URL not found.");
+                self.viewRouter.videoURL = Bundle.main.url(forResource: video.name, withExtension: video.ext);
                 self.viewRouter.currentPage = "stagePage";
             }) {
                 Text("Start");
             }
         }
     }
-}
-
-struct StartActionView_Previews: PreviewProvider {
-    static var previews: some View {
-        StartActionView(viewRouter: ViewRouter())
+    
+    func generateTitleText(for stance: String, at level: Int16) -> String {
+        return stance + " at Difficulty Level: " + String(level);
     }
 }
+
+//struct StartActionView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        StartActionView(viewRouter: ViewRouter())
+//    }
+//}

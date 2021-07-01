@@ -11,35 +11,30 @@ import SwiftUI
 struct ActionCategoryRow: View {
     
     @ObservedObject var viewRouter: ViewRouter;
+    @Environment(\.managedObjectContext) private var viewContext;
+    var category: Category;
+
+    @FetchRequest(
+        sortDescriptors: [NSSortDescriptor(keyPath: \Video.type, ascending: true)],
+        predicate: NSPredicate(format: "type == %@", "Tekki-shodan"),
+        animation: .default)
+    private var videos: FetchedResults<Video>
     
     var body: some View {
         VStack(alignment: .leading) {
-            Text("Action Type")
+            Text(category.name!)
                 .font(.headline)
                 .padding(.leading, 15)
                 .padding(.top, 5);
             
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack(alignment: .top, spacing: 0) {
-                    NavigationLink(
-                        destination: StartActionView(viewRouter: viewRouter)
-                    ) {
-                        ActionCategoryItem();
-                    }
-                    NavigationLink(
-                        destination: StartActionView(viewRouter: viewRouter)
-                    ) {
-                        ActionCategoryItem();
-                    }
-                    NavigationLink(
-                        destination: StartActionView(viewRouter: viewRouter)
-                    ) {
-                        ActionCategoryItem();
-                    }
-                    NavigationLink(
-                        destination: StartActionView(viewRouter: viewRouter)
-                    ) {
-                        ActionCategoryItem();
+                    ForEach(videos) { video in
+                        NavigationLink(
+                            destination: StartActionView(viewRouter: viewRouter, video: video, category: category)
+                        ) {
+                            ActionCategoryItem(video: video);
+                        }
                     }
                 }
             }
@@ -49,6 +44,8 @@ struct ActionCategoryRow: View {
 }
 
 struct ActionCategoryItem: View {
+    let video: Video;
+    
     var body: some View {
         VStack(alignment: .leading) {
             Image(systemName: ("person.fill")).resizable()
@@ -57,7 +54,7 @@ struct ActionCategoryItem: View {
                 .background(Color.gray)
                 .cornerRadius(10)
                 
-            Text("Difficulty Level")
+            Text("Difficulty Level: \(video.difficulty)")
                 .foregroundColor(.primary)
                 .font(.caption);
         }
@@ -65,8 +62,8 @@ struct ActionCategoryItem: View {
     }
 }
 
-struct ActionCategoryRow_Previews: PreviewProvider {
-    static var previews: some View {
-        ActionCategoryRow(viewRouter: ViewRouter())
-    }
-}
+//struct ActionCategoryRow_Previews: PreviewProvider {
+//    static var previews: some View {
+//        ActionCategoryRow(viewRouter: ViewRouter())
+//    }
+//}
