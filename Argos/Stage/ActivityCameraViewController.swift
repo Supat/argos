@@ -108,7 +108,7 @@ class ActivityCameraViewController: UIViewController, AVCaptureVideoDataOutputSa
         
         do {
             try visionHandler.perform([humanBodyPoseRequest])
-            if let observations = humanBodyPoseRequest.results as? [VNRecognizedPointsObservation] {
+            if let observations = humanBodyPoseRequest.results {
                 if (observations.count > 0) {
                     //print(observations[0].confidence);
                     //let poseArray = try? observations[0].keypointsMultiArray();

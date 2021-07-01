@@ -22,7 +22,7 @@ struct StageView: View {
                         .frame(minWidth: 0, maxWidth: .infinity)
                     
                     VStack {
-                        DemonstrationView();
+                        DemonstrationView(viewRouter: viewRouter);
                     }
                         .frame(minWidth: 0, maxWidth: .infinity);
                 }

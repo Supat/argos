@@ -13,11 +13,11 @@ import SwiftUI
 class ViewRouter: ObservableObject {
     
     let objectWillChange = PassthroughSubject<ViewRouter, Never>();
+    var videoURL: URL!;
     
     var currentPage: String = "selectionPage" {
         didSet {
             objectWillChange.send(self);
         }
     }
-    
 }

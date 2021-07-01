@@ -12,6 +12,8 @@ struct StartActionView: View {
     
     @ObservedObject var viewRouter: ViewRouter;
     
+    let videoURL: URL? = Bundle.main.url(forResource: "sample_video_1", withExtension: "mp4");
+    
     var body: some View {
         VStack {
             Text("Action Type at Difficulty Level")
@@ -28,6 +30,7 @@ struct StartActionView: View {
             Text("Are you ready to start?");
             Button(action: {
                 print("Start button is pressed");
+                self.viewRouter.videoURL = videoURL;
                 self.viewRouter.currentPage = "stagePage";
             }) {
                 Text("Start");
