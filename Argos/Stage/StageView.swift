@@ -26,22 +26,29 @@ struct StageView: View {
                     }
                         .frame(minWidth: 0, maxWidth: .infinity);
                 }
-                
-                Button(action: {
-                    self.viewRouter.currentPage = "selectionPage";
-                }) {
-                    Text("Back");
+                VStack {
+                    Spacer()
+                        .frame(height: 25)
+                    Button(action: {
+                        self.viewRouter.currentPage = "selectionPage";
+                    }) {
+                        Text("Back");
+                    }
+                        .padding(.leading);
                 }
-                    .padding(.leading);
             }
-            VStack {
-                ExternalSignalView();
-            }
-                .frame(maxHeight: 240)
-                .frame(maxWidth: .infinity)
-                .background(Color.gray);
+//            VStack {
+//                ExternalSignalView();
+//            }
+//                .frame(maxHeight: 240)
+//                .frame(maxWidth: .infinity)
+//                .background(Color.gray);
         }
         .edgesIgnoringSafeArea(.bottom)
+        
+        .onAppear() {
+            print("Stage View appeared.")
+        }
     }
 }
 

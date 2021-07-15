@@ -19,12 +19,18 @@ struct VisionActivityTrackView: View {
         ZStack {
             ActivityCameraRepresentable(label: $label, confidence: $confidence);
             VStack {
+                Spacer()
+                    .frame(height: 25)
                 HStack {
-                    Text(label);
-                    Text("with confidence \(confidence)");
+                    Text(label)
+                        .font(.system(.title))
+                }
+                HStack {
+                    Text("\(confidence, specifier: "%0.2f")")
+                        .font(.system(.largeTitle))
                 }
                     .padding(.top)
-                    .background(Color.white);
+                    .background(Color.clear);
                 Spacer()
             }
         }

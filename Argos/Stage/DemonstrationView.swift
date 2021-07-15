@@ -24,9 +24,9 @@ struct DemonstrationView: View {
 
             Spacer()
             
-            Image(systemName: "play.circle.fill").resizable()
-                .frame(width: 120.0, height: 120.0)
-            Text("Demonstration video clip appears here.")
+//            Image(systemName: "play.circle.fill").resizable()
+//                .frame(width: 120.0, height: 120.0)
+//            Text("Demonstration video clip appears here.")
         }
     }
 }
