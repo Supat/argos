@@ -13,7 +13,9 @@ import SwiftUI
 class ViewRouter: ObservableObject {
     
     let objectWillChange = PassthroughSubject<ViewRouter, Never>();
-    var videoURL: URL!;
+    
+    var videoURL: URL?
+    var stageTimeLimit: Int?
     
     var currentPage: String = "selectionPage" {
         didSet {

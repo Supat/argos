@@ -34,6 +34,7 @@ struct StartActionView: View {
                 print(video.name ?? "URL not found.");
                 self.viewRouter.videoURL = Bundle.main.url(forResource: video.name, withExtension: video.ext);
                 self.viewRouter.currentPage = "stagePage";
+                self.viewRouter.stageTimeLimit = 60;
             }) {
                 Text("Start");
             }

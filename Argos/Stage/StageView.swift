@@ -13,8 +13,13 @@ struct StageView: View {
     @ObservedObject var viewRouter: ViewRouter;
     
     @State private var showingReportSheet: Bool = false
-    @State private var timeRemaining: Int = 10
+    @State private var timeRemaining: Int = 100
     let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
+    
+    init(viewRouter: ViewRouter) {
+        self.viewRouter = viewRouter
+        self._timeRemaining = State(initialValue: viewRouter.stageTimeLimit ?? 5)
+    }
     
     var body: some View {
         ZStack(alignment: .bottom) {
