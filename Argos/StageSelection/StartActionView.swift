@@ -15,33 +15,34 @@ struct StartActionView: View {
     
     let video: Video;
     let category: Category;
-    
     var body: some View {
-        VStack {
-            Text(generateTitleText(for: category.name ?? "Unknown", at: video.difficulty))
-                .font(.headline);
-            
-            Spacer()
-                .frame(height: 50);
-            
-            Text("\(String(describing: video.explanation))");
-            
-            Spacer()
-                .frame(height: 50);
-            
-            Text("Are you ready to start?");
-            Button(action: {
-                print(video.name ?? "URL not found.");
-                self.viewRouter.videoURL = Bundle.main.url(forResource: video.name, withExtension: video.ext);
-                self.viewRouter.currentPage = "stagePage";
-                self.viewRouter.stageTimeLimit = 60;
-            }) {
-                Text("Start");
+        ZStack {
+            VStack {
+                Text(generateTitleText(for: category.name ?? "Unknown", at: video.difficulty))
+                    .font(.headline);
+                
+                Spacer()
+                    .frame(height: 50);
+                
+                Text("\(String(describing: video.explanation))");
+                
+                Spacer()
+                    .frame(height: 50);
+                
+                Text("Are you ready to start?");
+                Button(action: {
+                    print(video.name ?? "URL not found.");
+                    self.viewRouter.videoURL = Bundle.main.url(forResource: video.name, withExtension: video.ext);
+                    self.viewRouter.stageTimeLimit = 60;
+                    self.viewRouter.currentPage = "countdownPage";
+                }) {
+                    Text("Start");
+                }
             }
         }
     }
     
-    func generateTitleText(for stance: String, at level: Int16) -> String {
+    private func generateTitleText(for stance: String, at level: Int16) -> String {
         return stance + " at Difficulty Level: " + String(level);
     }
 }
