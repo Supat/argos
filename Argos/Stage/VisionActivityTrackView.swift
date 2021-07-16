@@ -24,10 +24,25 @@ struct VisionActivityTrackView: View {
                 HStack {
                     Text(label)
                         .font(.system(.title))
+                        .padding(.horizontal, 20)
+                        .padding(.vertical, 5)
+                        .background(
+                            Capsule()
+                                .fill(.black)
+                                .opacity(0.75)
+                        )
                 }
                 HStack {
                     Text("\(confidence, specifier: "%0.2f")")
-                        .font(.system(.largeTitle))
+                        .font(.largeTitle)
+                        .padding(.horizontal, 20)
+                        .padding(.vertical, 5)
+                        .background(
+                            Capsule()
+                                .fill(.black)
+                                .opacity(0.75)
+                        )
+                    
                 }
                     .padding(.top)
                     .background(Color.clear);
