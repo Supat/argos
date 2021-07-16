@@ -32,6 +32,7 @@
 		B0DAA14524C5713300DDE7B8 /* ActivityCameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0DAA14424C5713300DDE7B8 /* ActivityCameraViewController.swift */; };
 		B0DAA14724C6A84B00DDE7B8 /* TestActionClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = B0DAA14624C6A84A00DDE7B8 /* TestActionClassifier.mlmodel */; };
 		B0EF0C8826A0630800482C97 /* CountDown.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0EF0C8726A0630800482C97 /* CountDown.swift */; };
+		B0EF0C8A26A1762C00482C97 /* ReportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0EF0C8926A1762C00482C97 /* ReportView.swift */; };
 		B0FA38E0268E064100DFE310 /* Argos.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B0FA38DE268E064100DFE310 /* Argos.xcdatamodeld */; };
 		B0FA38E2268E095600DFE310 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0FA38E1268E095600DFE310 /* Persistence.swift */; };
 		B0FA3933268E2F3600DFE310 /* video04_04.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = B0FA3929268E2F2800DFE310 /* video04_04.mp4 */; };
@@ -95,6 +96,7 @@
 		B0DAA14424C5713300DDE7B8 /* ActivityCameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityCameraViewController.swift; sourceTree = "<group>"; };
 		B0DAA14624C6A84A00DDE7B8 /* TestActionClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = TestActionClassifier.mlmodel; sourceTree = "<group>"; };
 		B0EF0C8726A0630800482C97 /* CountDown.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountDown.swift; sourceTree = "<group>"; };
+		B0EF0C8926A1762C00482C97 /* ReportView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportView.swift; sourceTree = "<group>"; };
 		B0FA38DF268E064100DFE310 /* Argos.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Argos.xcdatamodel; sourceTree = "<group>"; };
 		B0FA38E1268E095600DFE310 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		B0FA3929268E2F2800DFE310 /* video04_04.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = video04_04.mp4; sourceTree = "<group>"; };
@@ -231,6 +233,7 @@
 				B0DAA14224C559DE00DDE7B8 /* VisionActivityTrackView.swift */,
 				B0DAA14424C5713300DDE7B8 /* ActivityCameraViewController.swift */,
 				B02EA6F024B353CB00CC3023 /* DemonstrationView.swift */,
+				B0EF0C8926A1762C00482C97 /* ReportView.swift */,
 			);
 			path = Stage;
 			sourceTree = "<group>";
@@ -425,6 +428,7 @@
 				B013ECD324B5BF4000BC1A53 /* ModalGraphView.swift in Sources */,
 				B0FA38E2268E095600DFE310 /* Persistence.swift in Sources */,
 				B013ECDB24C1799E00BC1A53 /* VideoView.swift in Sources */,
+				B0EF0C8A26A1762C00482C97 /* ReportView.swift in Sources */,
 				B02EA6BA24B33A0B00CC3023 /* AppDelegate.swift in Sources */,
 				B02EA6BE24B33A0C00CC3023 /* Experience.rcproject in Sources */,
 				B02EA6FD24B495F000CC3023 /* ViewRouter.swift in Sources */,

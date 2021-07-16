@@ -12,8 +12,8 @@ struct StageView: View {
     
     @ObservedObject var viewRouter: ViewRouter;
     
-    
-    @State private var timeRemaining = 100
+    @State private var showingReportSheet: Bool = false
+    @State private var timeRemaining: Int = 10
     let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
     
     var body: some View {
@@ -72,12 +72,26 @@ struct StageView: View {
         }
         
         .onReceive(timer) { time in
-            if self.timeRemaining > 0 {
+            if (self.timeRemaining > 0) {
                 self.timeRemaining -= 1
+                
+                if (self.timeRemaining == 0) {
+                    self.showingReportSheet.toggle()
+                }
             }
         }
+        
+        .sheet(isPresented: $showingReportSheet, onDismiss: didDismissReportSheet) {
+            ReportView(showingReportSheet: self.$showingReportSheet)
+        }
+    }
+    
+    private func didDismissReportSheet() {
+        print("Report sheet dismissed.")
+        self.viewRouter.currentPage = "selectionPage";
     }
 }
+
 
 struct StageView_Previews: PreviewProvider {
     static var previews: some View {
