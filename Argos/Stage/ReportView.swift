@@ -27,12 +27,13 @@ struct ReportView: View {
                 HStack {
                     Spacer()
                     Text("Score: " + self.performanceScore.description)
+                        .font(.largeTitle)
                     Spacer()
                 }
                 Spacer()
                 HStack {
                     Spacer()
-                    Text("Dismiss")
+                    Text("End Session")
                     Spacer()
                 }
                 Spacer()

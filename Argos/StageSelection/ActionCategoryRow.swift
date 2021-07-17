@@ -15,7 +15,7 @@ struct ActionCategoryRow: View {
     var category: Category;
 
     @FetchRequest(
-        sortDescriptors: [NSSortDescriptor(keyPath: \Video.type, ascending: true)],
+        sortDescriptors: [NSSortDescriptor(keyPath: \Video.difficulty, ascending: true)],
         predicate: NSPredicate(format: "type == %@", "Tekki-shodan"),
         animation: .default)
     private var videos: FetchedResults<Video>

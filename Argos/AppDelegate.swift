@@ -108,24 +108,39 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         newCategory.name = "Tekki-shodan";
 
 
-        let newVideo = Video(context: persistenceController.container.viewContext);
-        newVideo.url = Bundle.main.url(forResource: "sample_video_1", withExtension: "mp4")?.absoluteString;
-        newVideo.type = "Tekki-shodan";
-        newVideo.name = "sample_video_1"
-        newVideo.ext = "mp4"
-        newVideo.label = "Tekki-shodan"
-        newVideo.difficulty = 0;
-        newVideo.explanation = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi semper dui sed posuere lobortis. Nunc bibendum leo auctor justo vulputate, eu vulputate libero pulvinar. Morbi ut semper justo.";
+        let easyVideo = Video(context: persistenceController.container.viewContext);
+        easyVideo.url = Bundle.main.url(forResource: "sample_video_1", withExtension: "mp4")?.absoluteString;
+        easyVideo.type = "Tekki-shodan";
+        easyVideo.name = "sample_video_1"
+        easyVideo.ext = "mp4"
+        easyVideo.label = "Tekki-shodan"
+        easyVideo.confidence = 0.5
+        easyVideo.difficulty = 0;
+        easyVideo.icon = Bundle.main.url(forResource: "TSiconsBeginner", withExtension: "png")?.absoluteString
+        easyVideo.explanation = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi semper dui sed posuere lobortis. Nunc bibendum leo auctor justo vulputate, eu vulputate libero pulvinar. Morbi ut semper justo.";
 
 
-        let newVideo2 = Video(context: persistenceController.container.viewContext);
-        newVideo2.url = Bundle.main.url(forResource: "video05_02", withExtension: "mov")?.absoluteString;
-        newVideo2.type = "Tekki-shodan";
-        newVideo2.name = "video05_02"
-        newVideo2.ext = "mov"
-        newVideo2.label = "Tekki-shodan"
-        newVideo2.difficulty = 1;
-        newVideo2.explanation = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi semper dui sed posuere lobortis. Nunc bibendum leo auctor justo vulputate, eu vulputate libero pulvinar. Morbi ut semper justo.";
+        let mediumVideo = Video(context: persistenceController.container.viewContext);
+        mediumVideo.url = Bundle.main.url(forResource: "video05_02", withExtension: "mov")?.absoluteString;
+        mediumVideo.type = "Tekki-shodan";
+        mediumVideo.name = "video05_02"
+        mediumVideo.ext = "mov"
+        mediumVideo.label = "Tekki-shodan"
+        mediumVideo.confidence = 0.8
+        mediumVideo.difficulty = 1;
+        mediumVideo.icon = Bundle.main.url(forResource: "TSiconsMedium", withExtension: "png")?.absoluteString
+        mediumVideo.explanation = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi semper dui sed posuere lobortis. Nunc bibendum leo auctor justo vulputate, eu vulputate libero pulvinar. Morbi ut semper justo.";
+        
+        let hardVideo = Video(context: persistenceController.container.viewContext);
+        hardVideo.url = Bundle.main.url(forResource: "video05_02", withExtension: "mov")?.absoluteString;
+        hardVideo.type = "Tekki-shodan";
+        hardVideo.name = "video05_02"
+        hardVideo.ext = "mov"
+        hardVideo.label = "Tekki-shodan"
+        hardVideo.confidence = 0.8
+        hardVideo.difficulty = 2;
+        hardVideo.icon = Bundle.main.url(forResource: "TSiconsMedium", withExtension: "png")?.absoluteString
+        hardVideo.explanation = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi semper dui sed posuere lobortis. Nunc bibendum leo auctor justo vulputate, eu vulputate libero pulvinar. Morbi ut semper justo.";
 
         do {
             try persistenceController.container.viewContext.save()

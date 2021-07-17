@@ -27,6 +27,9 @@
 		B02EA6F924B461F800CC3023 /* StartActionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02EA6F824B461F800CC3023 /* StartActionView.swift */; };
 		B02EA6FB24B4946000CC3023 /* ParentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02EA6FA24B4946000CC3023 /* ParentView.swift */; };
 		B02EA6FD24B495F000CC3023 /* ViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02EA6FC24B495F000CC3023 /* ViewRouter.swift */; };
+		B0BCAB1526A322960098AEB7 /* TSiconsAdvance.png in Resources */ = {isa = PBXBuildFile; fileRef = B0BCAB1226A322960098AEB7 /* TSiconsAdvance.png */; };
+		B0BCAB1626A322960098AEB7 /* TSiconsBeginner.png in Resources */ = {isa = PBXBuildFile; fileRef = B0BCAB1326A322960098AEB7 /* TSiconsBeginner.png */; };
+		B0BCAB1726A322960098AEB7 /* TSiconsMedium.png in Resources */ = {isa = PBXBuildFile; fileRef = B0BCAB1426A322960098AEB7 /* TSiconsMedium.png */; };
 		B0D0B9E324C445280094FB77 /* sample_video_1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = B0D0B9E224C445280094FB77 /* sample_video_1.mp4 */; };
 		B0DAA14324C559DE00DDE7B8 /* VisionActivityTrackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0DAA14224C559DE00DDE7B8 /* VisionActivityTrackView.swift */; };
 		B0DAA14524C5713300DDE7B8 /* ActivityCameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0DAA14424C5713300DDE7B8 /* ActivityCameraViewController.swift */; };
@@ -92,6 +95,9 @@
 		B02EA6F824B461F800CC3023 /* StartActionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartActionView.swift; sourceTree = "<group>"; };
 		B02EA6FA24B4946000CC3023 /* ParentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentView.swift; sourceTree = "<group>"; };
 		B02EA6FC24B495F000CC3023 /* ViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewRouter.swift; sourceTree = "<group>"; };
+		B0BCAB1226A322960098AEB7 /* TSiconsAdvance.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TSiconsAdvance.png; sourceTree = "<group>"; };
+		B0BCAB1326A322960098AEB7 /* TSiconsBeginner.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TSiconsBeginner.png; sourceTree = "<group>"; };
+		B0BCAB1426A322960098AEB7 /* TSiconsMedium.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TSiconsMedium.png; sourceTree = "<group>"; };
 		B0D0B9E224C445280094FB77 /* sample_video_1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = sample_video_1.mp4; sourceTree = "<group>"; };
 		B0DAA14224C559DE00DDE7B8 /* VisionActivityTrackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisionActivityTrackView.swift; sourceTree = "<group>"; };
 		B0DAA14424C5713300DDE7B8 /* ActivityCameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityCameraViewController.swift; sourceTree = "<group>"; };
@@ -158,6 +164,7 @@
 		B02EA6AD24B33A0B00CC3023 = {
 			isa = PBXGroup;
 			children = (
+				B0BCAB1126A322820098AEB7 /* Icon */,
 				B0FA393D268E2F4200DFE310 /* Video */,
 				B0FA38DE268E064100DFE310 /* Argos.xcdatamodeld */,
 				B013ECD224B5BF4000BC1A53 /* ModalGraphView.swift */,
@@ -249,6 +256,16 @@
 				B02EA6F824B461F800CC3023 /* StartActionView.swift */,
 			);
 			path = StageSelection;
+			sourceTree = "<group>";
+		};
+		B0BCAB1126A322820098AEB7 /* Icon */ = {
+			isa = PBXGroup;
+			children = (
+				B0BCAB1226A322960098AEB7 /* TSiconsAdvance.png */,
+				B0BCAB1326A322960098AEB7 /* TSiconsBeginner.png */,
+				B0BCAB1426A322960098AEB7 /* TSiconsMedium.png */,
+			);
+			path = Icon;
 			sourceTree = "<group>";
 		};
 		B0EF0C8626A062E400482C97 /* Component */ = {
@@ -381,6 +398,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B0BCAB1726A322960098AEB7 /* TSiconsMedium.png in Resources */,
+				B0BCAB1626A322960098AEB7 /* TSiconsBeginner.png in Resources */,
 				B0D0B9E324C445280094FB77 /* sample_video_1.mp4 in Resources */,
 				B02EA6C624B33A0D00CC3023 /* LaunchScreen.storyboard in Resources */,
 				B02EA6C324B33A0D00CC3023 /* Preview Assets.xcassets in Resources */,
@@ -391,6 +410,7 @@
 				B0FA3939268E2F3600DFE310 /* video04_02.mp4 in Resources */,
 				B0FA3938268E2F3600DFE310 /* video03_04.mov in Resources */,
 				B02EA6ED24B33CB200CC3023 /* character in Resources */,
+				B0BCAB1526A322960098AEB7 /* TSiconsAdvance.png in Resources */,
 				B0FA3936268E2F3600DFE310 /* video010_02.mov in Resources */,
 				B0FA393C268E2F3600DFE310 /* video03_02.mov in Resources */,
 				B0FA3937268E2F3600DFE310 /* video02_04.mp4 in Resources */,

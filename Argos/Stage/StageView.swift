@@ -20,8 +20,8 @@ struct StageView: View {
     @State var clssifyLabel: String = "Not Available"
     @State var classifyConfidence: Double = 0.0
     
-    let targetLabel: String = "Pose"
-    let targetConfidence: Double = 0.8
+    var targetLabel: String = "Pose"
+    var targetConfidence: Double = 0.8
     
     init(viewRouter: ViewRouter) {
         self.viewRouter = viewRouter
@@ -56,16 +56,31 @@ struct StageView: View {
             
             ZStack(alignment: .bottomTrailing) {
                 VStack {
-                    Text("Time: \(timeRemaining)")
-                        .font(.largeTitle)
-                        .foregroundColor(.white)
-                        .padding(.horizontal, 20)
-                        .padding(.vertical, 5)
-                        .background(
-                            Capsule()
-                                .fill(.black)
-                                .opacity(0.75)
-                        )
+                    HStack {
+                        Spacer()
+                        Text("Score: \(performanceScore)")
+                            .font(.largeTitle)
+                            .foregroundColor(.white)
+                            .padding(.horizontal, 20)
+                            .padding(.vertical, 5)
+                            .background(
+                                Capsule()
+                                    .fill(.black)
+                                    .opacity(0.75)
+                            )
+                        Spacer()
+                        Text("Time: \(timeRemaining)")
+                            .font(.largeTitle)
+                            .foregroundColor(.white)
+                            .padding(.horizontal, 20)
+                            .padding(.vertical, 5)
+                            .background(
+                                Capsule()
+                                    .fill(.black)
+                                    .opacity(0.75)
+                            )
+                        Spacer()
+                    }
                     Spacer()
                         .frame(height: 25)
                 }
