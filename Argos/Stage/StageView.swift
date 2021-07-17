@@ -16,6 +16,8 @@ struct StageView: View {
     @State private var timeRemaining: Int = 100
     let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
     
+    @State private var performanceScore: Int = 0
+    
     init(viewRouter: ViewRouter) {
         self.viewRouter = viewRouter
         self._timeRemaining = State(initialValue: viewRouter.stageTimeLimit ?? 5)
@@ -26,7 +28,7 @@ struct StageView: View {
             ZStack(alignment: .topLeading) {
                 HStack {
                     VStack {
-                        VisionActivityTrackView();
+                        VisionActivityTrackView(performanceScore: self.$performanceScore);
                     }
                         .frame(minWidth: 0, maxWidth: .infinity)
                     
@@ -87,7 +89,7 @@ struct StageView: View {
         }
         
         .sheet(isPresented: $showingReportSheet, onDismiss: didDismissReportSheet) {
-            ReportView(showingReportSheet: self.$showingReportSheet)
+            ReportView(showingReportSheet: self.$showingReportSheet, performanceScore: self.$performanceScore)
         }
     }
     

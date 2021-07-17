@@ -11,8 +11,13 @@ import SwiftUI
 
 struct VisionActivityTrackView: View {
     
-    @State private var label = "Not Available";
-    @State private var confidence = 0.0;
+    @State private var label = "Not Available"
+    @State private var confidence = 0.0
+    
+    @Binding var performanceScore: Int
+    
+    let targetLabel: String = "Pose"
+    let targetConfidence: Double = 0.8
     
     var body: some View {
         //Text("Vision Activity Track");
@@ -34,6 +39,13 @@ struct VisionActivityTrackView: View {
                 }
                 HStack {
                     Text("\(confidence, specifier: "%0.2f")")
+                        .onChange(of: self.confidence) { _ in
+                            if (self.confidence >= self.targetConfidence) {
+                                if (self.label == self.targetLabel) {
+                                    self.performanceScore += 1
+                                }
+                            }
+                        }
                         .font(.largeTitle)
                         .padding(.horizontal, 20)
                         .padding(.vertical, 5)
@@ -85,8 +97,8 @@ struct ActivityCameraRepresentable: UIViewControllerRepresentable {
     }
 }
 
-struct VisionActivityTrackView_Previews: PreviewProvider {
-    static var previews: some View {
-        VisionActivityTrackView()
-    }
-}
+//struct VisionActivityTrackView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        VisionActivityTrackView()
+//    }
+//}

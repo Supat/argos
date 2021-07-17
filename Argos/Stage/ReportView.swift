@@ -11,18 +11,30 @@ import SwiftUI
 struct ReportView: View {
     
     @Binding var showingReportSheet: Bool
+    @Binding var performanceScore: Int
     
-    init(showingReportSheet: Binding<Bool>) {
+    init(showingReportSheet: Binding<Bool>, performanceScore: Binding<Int>) {
         self._showingReportSheet = showingReportSheet
+        self._performanceScore = performanceScore
     }
     
     var body: some View {
         Button(action: {
             self.showingReportSheet = false
         }) {
-            HStack {
+            VStack {
                 Spacer()
-                Text("Dismiss")
+                HStack {
+                    Spacer()
+                    Text("Score: " + self.performanceScore.description)
+                    Spacer()
+                }
+                Spacer()
+                HStack {
+                    Spacer()
+                    Text("Dismiss")
+                    Spacer()
+                }
                 Spacer()
             }
         }
