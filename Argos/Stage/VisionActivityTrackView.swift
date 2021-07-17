@@ -14,10 +14,8 @@ struct VisionActivityTrackView: View {
     @State private var label = "Not Available"
     @State private var confidence = 0.0
     
-    @Binding var performanceScore: Int
-    
-    let targetLabel: String = "Pose"
-    let targetConfidence: Double = 0.8
+    @Binding var classifyLabel: String
+    @Binding var classifyConfidence: Double
     
     var body: some View {
         //Text("Vision Activity Track");
@@ -40,11 +38,8 @@ struct VisionActivityTrackView: View {
                 HStack {
                     Text("\(confidence, specifier: "%0.2f")")
                         .onChange(of: self.confidence) { _ in
-                            if (self.confidence >= self.targetConfidence) {
-                                if (self.label == self.targetLabel) {
-                                    self.performanceScore += 1
-                                }
-                            }
+                            self.classifyLabel = self.label
+                            self.classifyConfidence = self.confidence
                         }
                         .font(.largeTitle)
                         .padding(.horizontal, 20)
@@ -68,6 +63,11 @@ struct ActivityCameraRepresentable: UIViewControllerRepresentable {
     
     @Binding var label: String;
     @Binding var confidence: Double;
+    
+    init(label: Binding<String>, confidence: Binding<Double>) {
+        self._label = label
+        self._confidence = confidence
+    }
     
     func makeCoordinator() -> Coordinator {
         Coordinator(self);

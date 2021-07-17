@@ -113,6 +113,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         newVideo.type = "Tekki-shodan";
         newVideo.name = "sample_video_1"
         newVideo.ext = "mp4"
+        newVideo.label = "Tekki-shodan"
         newVideo.difficulty = 0;
         newVideo.explanation = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi semper dui sed posuere lobortis. Nunc bibendum leo auctor justo vulputate, eu vulputate libero pulvinar. Morbi ut semper justo.";
 
@@ -122,6 +123,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         newVideo2.type = "Tekki-shodan";
         newVideo2.name = "video05_02"
         newVideo2.ext = "mov"
+        newVideo2.label = "Tekki-shodan"
         newVideo2.difficulty = 1;
         newVideo2.explanation = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi semper dui sed posuere lobortis. Nunc bibendum leo auctor justo vulputate, eu vulputate libero pulvinar. Morbi ut semper justo.";
 

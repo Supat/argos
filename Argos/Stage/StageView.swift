@@ -17,6 +17,11 @@ struct StageView: View {
     let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
     
     @State private var performanceScore: Int = 0
+    @State var clssifyLabel: String = "Not Available"
+    @State var classifyConfidence: Double = 0.0
+    
+    let targetLabel: String = "Pose"
+    let targetConfidence: Double = 0.8
     
     init(viewRouter: ViewRouter) {
         self.viewRouter = viewRouter
@@ -28,7 +33,7 @@ struct StageView: View {
             ZStack(alignment: .topLeading) {
                 HStack {
                     VStack {
-                        VisionActivityTrackView(performanceScore: self.$performanceScore);
+                        VisionActivityTrackView(classifyLabel: self.$clssifyLabel, classifyConfidence: self.$classifyConfidence);
                     }
                         .frame(minWidth: 0, maxWidth: .infinity)
                     
@@ -81,6 +86,12 @@ struct StageView: View {
         .onReceive(timer) { time in
             if (self.timeRemaining > 0) {
                 self.timeRemaining -= 1
+                
+                if (self.clssifyLabel == self.targetLabel) {
+                    if (self.classifyConfidence >= self.targetConfidence) {
+                        self.performanceScore += 1
+                    }
+                }
                 
                 if (self.timeRemaining == 0) {
                     self.showingReportSheet.toggle()
