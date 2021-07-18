@@ -16,6 +16,8 @@ class ViewRouter: ObservableObject {
     
     var videoURL: URL?
     var stageTimeLimit: Int?
+    var stageName: String?
+    var stageLevel: Int16?
     
     var currentPage: String = "selectionPage" {
         didSet {

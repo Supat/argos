@@ -21,11 +21,12 @@ struct StageView: View {
     @State var classifyConfidence: Double = 0.0
     
     var targetLabel: String = "Pose"
-    var targetConfidence: Double = 0.8
+    var targetConfidence: Double = 0.75
     
     init(viewRouter: ViewRouter) {
         self.viewRouter = viewRouter
         self._timeRemaining = State(initialValue: viewRouter.stageTimeLimit ?? 5)
+        self.targetLabel = viewRouter.stageName!
     }
     
     var body: some View {
@@ -33,7 +34,7 @@ struct StageView: View {
             ZStack(alignment: .topLeading) {
                 HStack {
                     VStack {
-                        VisionActivityTrackView(classifyLabel: self.$clssifyLabel, classifyConfidence: self.$classifyConfidence);
+                        VisionActivityTrackView(classifyLabel: self.$clssifyLabel, classifyConfidence: self.$classifyConfidence, stageName: viewRouter.stageName, stageLevel: viewRouter.stageLevel);
                     }
                         .frame(minWidth: 0, maxWidth: .infinity)
                     
