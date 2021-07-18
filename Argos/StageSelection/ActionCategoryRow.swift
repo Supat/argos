@@ -48,11 +48,32 @@ struct ActionCategoryItem: View {
     
     var body: some View {
         VStack(alignment: .leading) {
-            Image(systemName: ("person.fill")).resizable()
-                .renderingMode(.original)
-                .frame(width: 120.0, height: 120.0)
-                .background(Color.gray)
-                .cornerRadius(10)
+            switch video.difficulty {
+            case 0:
+                Image("TSiconsBeginner").resizable()
+                    .renderingMode(.original)
+                    .frame(width: 120.0, height: 120.0)
+                    .background(Color.gray)
+                    .cornerRadius(10)
+            case 1:
+                Image("TSiconsMedium").resizable()
+                    .renderingMode(.original)
+                    .frame(width: 120.0, height: 120.0)
+                    .background(Color.gray)
+                    .cornerRadius(10)
+            case 2:
+                Image("TSiconsAdvance").resizable()
+                    .renderingMode(.original)
+                    .frame(width: 120.0, height: 120.0)
+                    .background(Color.gray)
+                    .cornerRadius(10)
+            default:
+                Image(systemName: ("person.fill")).resizable()
+                    .renderingMode(.original)
+                    .frame(width: 120.0, height: 120.0)
+                    .background(Color.gray)
+                    .cornerRadius(10)
+            }
                 
             Text("Difficulty Level: \(video.difficulty)")
                 .foregroundColor(.primary)
