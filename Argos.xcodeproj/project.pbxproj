@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		35F4660326A17E1F006A00AD /* TekkiShodanView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35F4660226A17E1F006A00AD /* TekkiShodanView2.swift */; };
+		35F4660526A184F8006A00AD /* TekkiShodanView3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35F4660426A184F8006A00AD /* TekkiShodanView3.swift */; };
+		438D7335268565ED007D60E5 /* AppInstruction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438D7334268565ED007D60E5 /* AppInstruction.swift */; };
+		438D733A26858530007D60E5 /* TekkiShodanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438D733926858530007D60E5 /* TekkiShodanView.swift */; };
 		B013ECD324B5BF4000BC1A53 /* ModalGraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B013ECD224B5BF4000BC1A53 /* ModalGraphView.swift */; };
 		B013ECD624BEA86B00BC1A53 /* ExternalSignalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B013ECD524BEA86B00BC1A53 /* ExternalSignalView.swift */; };
 		B013ECD924BEDF2000BC1A53 /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B013ECD824BEDF2000BC1A53 /* PlayerView.swift */; };
@@ -52,6 +56,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		35F4660226A17E1F006A00AD /* TekkiShodanView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TekkiShodanView2.swift; sourceTree = "<group>"; };
+		35F4660426A184F8006A00AD /* TekkiShodanView3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TekkiShodanView3.swift; sourceTree = "<group>"; };
+		438D7334268565ED007D60E5 /* AppInstruction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppInstruction.swift; sourceTree = "<group>"; };
+		438D733926858530007D60E5 /* TekkiShodanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TekkiShodanView.swift; sourceTree = "<group>"; };
 		B013ECD224B5BF4000BC1A53 /* ModalGraphView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalGraphView.swift; sourceTree = "<group>"; };
 		B013ECD524BEA86B00BC1A53 /* ExternalSignalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExternalSignalView.swift; sourceTree = "<group>"; };
 		B013ECD824BEDF2000BC1A53 /* PlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
@@ -213,8 +221,12 @@
 			isa = PBXGroup;
 			children = (
 				B02EA6F224B35BD600CC3023 /* StageSelectionView.swift */,
+				438D7334268565ED007D60E5 /* AppInstruction.swift */,
 				B02EA6F524B4488300CC3023 /* ActionCategoryRow.swift */,
+				438D733926858530007D60E5 /* TekkiShodanView.swift */,
 				B02EA6F824B461F800CC3023 /* StartActionView.swift */,
+				35F4660426A184F8006A00AD /* TekkiShodanView3.swift */,
+				35F4660226A17E1F006A00AD /* TekkiShodanView2.swift */,
 			);
 			path = StageSelection;
 			sourceTree = "<group>";
@@ -352,12 +364,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35F4660526A184F8006A00AD /* TekkiShodanView3.swift in Sources */,
 				B02EA6F324B35BD600CC3023 /* StageSelectionView.swift in Sources */,
 				B02EA6F124B353CB00CC3023 /* DemonstrationView.swift in Sources */,
 				B02EA6EF24B3530B00CC3023 /* StageView.swift in Sources */,
 				B02EA6BC24B33A0B00CC3023 /* ContentView.swift in Sources */,
+				438D733A26858530007D60E5 /* TekkiShodanView.swift in Sources */,
 				B02EA6FB24B4946000CC3023 /* ParentView.swift in Sources */,
+				438D7335268565ED007D60E5 /* AppInstruction.swift in Sources */,
 				B0DAA14524C5713300DDE7B8 /* ActivityCameraViewController.swift in Sources */,
+				35F4660326A17E1F006A00AD /* TekkiShodanView2.swift in Sources */,
 				B013ECD324B5BF4000BC1A53 /* ModalGraphView.swift in Sources */,
 				B013ECDB24C1799E00BC1A53 /* VideoView.swift in Sources */,
 				B02EA6BA24B33A0B00CC3023 /* AppDelegate.swift in Sources */,
@@ -538,14 +554,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Argos/Preview Content\"";
-				DEVELOPMENT_TEAM = LV4TZ9M6Q9;
+				DEVELOPMENT_TEAM = M44XKR5R24;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Argos/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.supatsaetia.Argos;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xinjie.Argos;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -558,14 +574,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Argos/Preview Content\"";
-				DEVELOPMENT_TEAM = LV4TZ9M6Q9;
+				DEVELOPMENT_TEAM = M44XKR5R24;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Argos/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.supatsaetia.Argos;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xinjie.Argos;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

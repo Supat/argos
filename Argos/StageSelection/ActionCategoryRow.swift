@@ -13,38 +13,42 @@ struct ActionCategoryRow: View {
     @ObservedObject var viewRouter: ViewRouter;
     
     var body: some View {
-        VStack(alignment: .leading) {
-            Text("Action Type")
-                .font(.headline)
-                .padding(.leading, 15)
-                .padding(.top, 5);
+        //ZStack{
             
-            ScrollView(.horizontal, showsIndicators: false) {
-                HStack(alignment: .top, spacing: 0) {
-                    NavigationLink(
-                        destination: StartActionView(viewRouter: viewRouter)
-                    ) {
-                        ActionCategoryItem();
-                    }
-                    NavigationLink(
-                        destination: StartActionView(viewRouter: viewRouter)
-                    ) {
-                        ActionCategoryItem();
-                    }
-                    NavigationLink(
-                        destination: StartActionView(viewRouter: viewRouter)
-                    ) {
-                        ActionCategoryItem();
-                    }
-                    NavigationLink(
-                        destination: StartActionView(viewRouter: viewRouter)
-                    ) {
-                        ActionCategoryItem();
+            
+            VStack(alignment: .leading) {
+                Text("Action Type")
+                    .font(.headline)
+                    .padding(.leading, 15)
+                    .padding(.top, 5);
+                
+                ScrollView(.horizontal, showsIndicators: false) {
+                    HStack(alignment: .top, spacing: 0) {
+                        NavigationLink(
+                            destination: StartActionView(viewRouter: viewRouter)
+                        ) {
+                            ActionCategoryItem();
+                        }
+                        NavigationLink(
+                            destination: StartActionView(viewRouter: viewRouter)
+                        ) {
+                            ActionCategoryItem();
+                        }
+                        NavigationLink(
+                            destination: StartActionView(viewRouter: viewRouter)
+                        ) {
+                            ActionCategoryItem();
+                        }
+                        NavigationLink(
+                            destination: StartActionView(viewRouter: viewRouter)
+                        ) {
+                            ActionCategoryItem();
+                        }
                     }
                 }
+                .frame(height: 185);
             }
-            .frame(height: 185);
-        }
+        //}
     }
 }
 
@@ -52,6 +56,7 @@ struct ActionCategoryItem: View {
     var body: some View {
         VStack(alignment: .leading) {
             Image(systemName: ("person.fill")).resizable()
+            //Image(systemName: ("TSiconsBeginner")).resizable()
                 .renderingMode(.original)
                 .frame(width: 120.0, height: 120.0)
                 .background(Color.gray)
@@ -59,14 +64,17 @@ struct ActionCategoryItem: View {
                 
             Text("Difficulty Level")
                 .foregroundColor(.primary)
-                .font(.caption);
+                .font(.caption)
         }
         .padding(.leading, 15);
     }
 }
 
+
+    
 struct ActionCategoryRow_Previews: PreviewProvider {
     static var previews: some View {
         ActionCategoryRow(viewRouter: ViewRouter())
+        
     }
 }
