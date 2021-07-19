@@ -14,10 +14,14 @@ class ViewRouter: ObservableObject {
     
     let objectWillChange = PassthroughSubject<ViewRouter, Never>();
     
+    var videoURL: URL?
+    var stageTimeLimit: Int?
+    var stageName: String?
+    var stageLevel: Int16?
+    
     var currentPage: String = "selectionPage" {
         didSet {
             objectWillChange.send(self);
         }
     }
-    
 }

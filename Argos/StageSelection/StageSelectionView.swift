@@ -86,6 +86,11 @@ struct InstructionView: View {
 struct StageSelectionView: View {
     
     @ObservedObject var viewRouter: ViewRouter;
+    @Environment(\.managedObjectContext) private var viewContext;
+    
+    @FetchRequest(
+        sortDescriptors: [NSSortDescriptor(keyPath: \Category.name, ascending: true)])
+    private var categories: FetchedResults<Category>
     
     var body: some View {
         NavigationView {
@@ -98,11 +103,9 @@ struct StageSelectionView: View {
                 
             
             List {
-                ActionCategoryRow(viewRouter: viewRouter);
-                ActionCategoryRow(viewRouter: viewRouter);
-                ActionCategoryRow(viewRouter: viewRouter);
-                ActionCategoryRow(viewRouter: viewRouter);
-                ActionCategoryRow(viewRouter: viewRouter);
+                ForEach(categories) { category in
+                    ActionCategoryRow(viewRouter: viewRouter, category: category);
+                }
             }
             .navigationBarTitle("Select Action");
             
