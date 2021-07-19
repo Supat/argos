@@ -21,6 +21,38 @@ struct ActionCategoryRow: View {
     private var videos: FetchedResults<Video>
     
     var body: some View {
+<<<<<<< HEAD
+        //ZStack{
+            
+            
+            VStack(alignment: .leading) {
+                Text("Action Type")
+                    .font(.headline)
+                    .padding(.leading, 15)
+                    .padding(.top, 5);
+                
+                ScrollView(.horizontal, showsIndicators: false) {
+                    HStack(alignment: .top, spacing: 0) {
+                        NavigationLink(
+                            destination: StartActionView(viewRouter: viewRouter)
+                        ) {
+                            ActionCategoryItem();
+                        }
+                        NavigationLink(
+                            destination: StartActionView(viewRouter: viewRouter)
+                        ) {
+                            ActionCategoryItem();
+                        }
+                        NavigationLink(
+                            destination: StartActionView(viewRouter: viewRouter)
+                        ) {
+                            ActionCategoryItem();
+                        }
+                        NavigationLink(
+                            destination: StartActionView(viewRouter: viewRouter)
+                        ) {
+                            ActionCategoryItem();
+=======
         VStack(alignment: .leading) {
             Text(category.name!)
                 .font(.headline)
@@ -34,12 +66,13 @@ struct ActionCategoryRow: View {
                             destination: StartActionView(viewRouter: viewRouter, video: video, category: category)
                         ) {
                             ActionCategoryItem(video: video);
+>>>>>>> 05689daa43e83924e70dcc81d35b859cfcc37cb9
                         }
                     }
                 }
+                .frame(height: 185);
             }
-            .frame(height: 185);
-        }
+        //}
     }
 }
 
@@ -48,6 +81,14 @@ struct ActionCategoryItem: View {
     
     var body: some View {
         VStack(alignment: .leading) {
+<<<<<<< HEAD
+            Image(systemName: ("person.fill")).resizable()
+            //Image(systemName: ("TSiconsBeginner")).resizable()
+                .renderingMode(.original)
+                .frame(width: 120.0, height: 120.0)
+                .background(Color.gray)
+                .cornerRadius(10)
+=======
             switch video.difficulty {
             case 0:
                 Image("TSiconsBeginner").resizable()
@@ -74,17 +115,29 @@ struct ActionCategoryItem: View {
                     .background(Color.gray)
                     .cornerRadius(10)
             }
+>>>>>>> 05689daa43e83924e70dcc81d35b859cfcc37cb9
                 
             Text("Difficulty Level: \(video.difficulty)")
                 .foregroundColor(.primary)
-                .font(.caption);
+                .font(.caption)
         }
         .padding(.leading, 15);
     }
 }
 
+<<<<<<< HEAD
+
+    
+struct ActionCategoryRow_Previews: PreviewProvider {
+    static var previews: some View {
+        ActionCategoryRow(viewRouter: ViewRouter())
+        
+    }
+}
+=======
 //struct ActionCategoryRow_Previews: PreviewProvider {
 //    static var previews: some View {
 //        ActionCategoryRow(viewRouter: ViewRouter())
 //    }
 //}
+>>>>>>> 05689daa43e83924e70dcc81d35b859cfcc37cb9
