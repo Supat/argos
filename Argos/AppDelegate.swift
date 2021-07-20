@@ -109,10 +109,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
         let easyVideo = Video(context: persistenceController.container.viewContext);
-        easyVideo.url = Bundle.main.url(forResource: "sample_video_1", withExtension: "mp4")?.absoluteString;
+        easyVideo.url = Bundle.main.url(forResource: "video05_02", withExtension: "mov")?.absoluteString;
         easyVideo.type = "Tekki-shodan";
-        easyVideo.name = "sample_video_1"
-        easyVideo.ext = "mp4"
+        easyVideo.name = "video05_02"
+        easyVideo.ext = "mov"
         easyVideo.label = "Tekki-shodan"
         easyVideo.confidence = 0.5
         easyVideo.difficulty = 0;
@@ -136,7 +136,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         hardVideo.type = "Tekki-shodan";
         hardVideo.name = "video05_02"
         hardVideo.ext = "mov"
-        hardVideo.label = "Tekki-shodan"
+        hardVideo.label = "TekkiShodan"
         hardVideo.confidence = 0.8
         hardVideo.difficulty = 2;
         hardVideo.icon = Bundle.main.url(forResource: "TSiconsMedium", withExtension: "png")?.absoluteString

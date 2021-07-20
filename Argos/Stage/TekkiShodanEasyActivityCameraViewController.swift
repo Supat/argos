@@ -86,6 +86,9 @@ class TekkiShodanEasyActivityCameraViewController: UIViewController, AVCaptureVi
             previewLayer.connection?.videoOrientation = .portrait;
         }
         
+        previewLayer.connection?.automaticallyAdjustsVideoMirroring = false
+        previewLayer.connection?.isVideoMirrored = true
+        
         previewLayer.videoGravity = .resizeAspectFill;
 
     }

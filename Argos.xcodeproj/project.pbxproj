@@ -39,6 +39,7 @@
 		B0BCAB2C26A463ED0098AEB7 /* TS01.png in Resources */ = {isa = PBXBuildFile; fileRef = B0BCAB2926A463EC0098AEB7 /* TS01.png */; };
 		B0BCAB2D26A463ED0098AEB7 /* TS02.png in Resources */ = {isa = PBXBuildFile; fileRef = B0BCAB2A26A463EC0098AEB7 /* TS02.png */; };
 		B0BCAB2E26A463ED0098AEB7 /* TS03.png in Resources */ = {isa = PBXBuildFile; fileRef = B0BCAB2B26A463ED0098AEB7 /* TS03.png */; };
+		B0BCAB3026A4FF080098AEB7 /* HardTekkiShodanClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = B0BCAB2F26A4FF080098AEB7 /* HardTekkiShodanClassifier.mlmodel */; };
 		B0D0B9E324C445280094FB77 /* sample_video_1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = B0D0B9E224C445280094FB77 /* sample_video_1.mp4 */; };
 		B0DAA14324C559DE00DDE7B8 /* VisionActivityTrackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0DAA14224C559DE00DDE7B8 /* VisionActivityTrackView.swift */; };
 		B0DAA14524C5713300DDE7B8 /* ActivityCameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0DAA14424C5713300DDE7B8 /* ActivityCameraViewController.swift */; };
@@ -116,6 +117,7 @@
 		B0BCAB2926A463EC0098AEB7 /* TS01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TS01.png; sourceTree = "<group>"; };
 		B0BCAB2A26A463EC0098AEB7 /* TS02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TS02.png; sourceTree = "<group>"; };
 		B0BCAB2B26A463ED0098AEB7 /* TS03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TS03.png; sourceTree = "<group>"; };
+		B0BCAB2F26A4FF080098AEB7 /* HardTekkiShodanClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = HardTekkiShodanClassifier.mlmodel; sourceTree = "<group>"; };
 		B0D0B9E224C445280094FB77 /* sample_video_1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = sample_video_1.mp4; sourceTree = "<group>"; };
 		B0DAA14224C559DE00DDE7B8 /* VisionActivityTrackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisionActivityTrackView.swift; sourceTree = "<group>"; };
 		B0DAA14424C5713300DDE7B8 /* ActivityCameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityCameraViewController.swift; sourceTree = "<group>"; };
@@ -209,6 +211,7 @@
 			children = (
 				B0EF0C8626A062E400482C97 /* Component */,
 				B0DAA14624C6A84A00DDE7B8 /* TestActionClassifier.mlmodel */,
+				B0BCAB2F26A4FF080098AEB7 /* HardTekkiShodanClassifier.mlmodel */,
 				B0BCAB2626A43F220098AEB7 /* TekkiShodanEasyActionClassifier.mlmodel */,
 				B0BCAB1F26A3A8DA0098AEB7 /* TekkiShodanHardActionClassifier.mlmodel */,
 				B0BCAB2026A3A8DB0098AEB7 /* TekkiShodanMediumActionClassifier.mlmodel */,
@@ -504,6 +507,7 @@
 				B02EA6F624B4488300CC3023 /* ActionCategoryRow.swift in Sources */,
 				B013ECD624BEA86B00BC1A53 /* ExternalSignalView.swift in Sources */,
 				B0BCAB2726A43F220098AEB7 /* TekkiShodanEasyActionClassifier.mlmodel in Sources */,
+				B0BCAB3026A4FF080098AEB7 /* HardTekkiShodanClassifier.mlmodel in Sources */,
 				B02EA6F924B461F800CC3023 /* StartActionView.swift in Sources */,
 				B0DAA14724C6A84B00DDE7B8 /* TestActionClassifier.mlmodel in Sources */,
 			);

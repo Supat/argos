@@ -86,6 +86,9 @@ class TekkiShodanHardActivityCameraViewController: UIViewController, AVCaptureVi
             previewLayer.connection?.videoOrientation = .portrait;
         }
         
+        previewLayer.connection?.automaticallyAdjustsVideoMirroring = false
+        previewLayer.connection?.isVideoMirrored = true
+        
         previewLayer.videoGravity = .resizeAspectFill;
 
     }
@@ -111,7 +114,7 @@ class TekkiShodanHardActivityCameraViewController: UIViewController, AVCaptureVi
                     //print(poseArray?.count);
                     posesWindow.append(observations[0]);
                     //print("Before \(posesWindow.count)");
-                    if (posesWindow.count >= 15) {
+                    if (posesWindow.count >= 60) {
                         //print("Ready for Prediction");
                         let poseMultiArrays: [MLMultiArray] = try posesWindow.map { person in
                             guard let person = person else {
@@ -125,7 +128,7 @@ class TekkiShodanHardActivityCameraViewController: UIViewController, AVCaptureVi
                         
                         let predictions = try predictor.prediction(poses: modelInput);
                         
-                        posesWindow.removeFirst(15);
+                        posesWindow.removeFirst(60);
                         
                         //print(predictions.label);
                         //print(predictions.labelProbabilities[predictions.label]!);
