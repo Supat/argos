@@ -33,7 +33,12 @@ struct StartActionView: View {
                 Button(action: {
                     print(video.name ?? "URL not found.");
                     self.viewRouter.videoURL = Bundle.main.url(forResource: video.name, withExtension: video.ext);
-                    self.viewRouter.stageTimeLimit = 60;
+                    print(viewRouter.videoURL)
+                    if (video.difficulty == 0) {
+                        self.viewRouter.stageTimeLimit = 120
+                    } else {
+                        self.viewRouter.stageTimeLimit = 60;
+                    }
                     self.viewRouter.stageName = video.label
                     self.viewRouter.stageLevel = video.difficulty
                     self.viewRouter.currentPage = "countdownPage";

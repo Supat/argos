@@ -21,7 +21,7 @@ struct StageView: View {
     @State var classifyConfidence: Double = 0.0
     
     var targetLabel: String = "Pose"
-    var targetConfidence: Double = 0.75
+    var targetConfidence: Double = 0.50
     
     init(viewRouter: ViewRouter) {
         self.viewRouter = viewRouter

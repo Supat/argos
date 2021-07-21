@@ -109,10 +109,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
         let easyVideo = Video(context: persistenceController.container.viewContext);
-        easyVideo.url = Bundle.main.url(forResource: "video05_02", withExtension: "mov")?.absoluteString;
+        easyVideo.url = Bundle.main.url(forResource: "video05_02_slow", withExtension: "mp4")?.absoluteString;
         easyVideo.type = "Tekki-shodan";
-        easyVideo.name = "video05_02"
-        easyVideo.ext = "mov"
+        easyVideo.name = "video05_02_slow"
+        easyVideo.ext = "mp4"
         easyVideo.label = "Tekki-shodan"
         easyVideo.confidence = 0.5
         easyVideo.difficulty = 0;
