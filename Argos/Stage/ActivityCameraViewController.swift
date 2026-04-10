@@ -7,145 +7,164 @@
 //
 
 import AVFoundation
+import CoreML
 import UIKit
 import Vision
 
 protocol ActivityCameraViewDelegate: AnyObject {
-    func didRecognizeActivity(_ label: String, withConfidence confidence:Double);
+    func didRecognizeActivity(_ label: String, withConfidence confidence: Double)
 }
 
+/// Reusable base for all action-classifier camera screens.
+///
+/// Subclasses should override `predictionWindowSize` and
+/// `prediction(from:)` to plug in their CoreML model. The capture session,
+/// preview layer, body-pose request, and rolling pose buffer are shared.
 class ActivityCameraViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDelegate {
-    
-    weak var outputDelegate: ActivityCameraViewDelegate?;
-    
-    var captureSession: AVCaptureSession!;
-    var previewLayer: AVCaptureVideoPreviewLayer!;
-    
-    private let videoDataOutput = AVCaptureVideoDataOutput();
-    
-    private let humanBodyPoseRequest = VNDetectHumanBodyPoseRequest();
-    
-    private var posesWindow: [VNRecognizedPointsObservation?] = [];
-    
-    private let bodyPoseDetectionMinConfidence: VNConfidence = 0.6;
-    
-    private let predictor = TestActionClassifier();
-    
-    override func viewDidLoad() {
-        super.viewDidLoad();
-        
-        captureSession = AVCaptureSession();
-        
-        guard let videoCaptureDevice = AVCaptureDevice.default(for: .video) else { return };
-        let videoInput: AVCaptureDeviceInput;
-        
-        do {
-            videoInput = try AVCaptureDeviceInput(device: videoCaptureDevice);
-        } catch { return }
-        
-        if (captureSession.canAddInput(videoInput)) {
-            captureSession.addInput(videoInput);
-        }
-        
-        self.videoDataOutput.videoSettings = [(kCVPixelBufferPixelFormatTypeKey as NSString) : NSNumber(value: kCVPixelFormatType_32BGRA)] as [String : Any];
-        
-        self.videoDataOutput.alwaysDiscardsLateVideoFrames = true;
-        self.videoDataOutput.setSampleBufferDelegate(self, queue: DispatchQueue(label: "camera_frame_processing_queue"));
-        self.captureSession.addOutput(self.videoDataOutput);
-        
-        previewLayer = AVCaptureVideoPreviewLayer(session: captureSession);
-        previewLayer.frame = self.view.frame;
-        previewLayer.videoGravity = .resizeAspectFill;
-        view.layer.addSublayer(previewLayer);
-        
-        posesWindow.reserveCapacity(120);
 
-        captureSession.startRunning();
+    // MARK: - Output
+
+    weak var outputDelegate: ActivityCameraViewDelegate?
+
+    // MARK: - Configurable hooks
+
+    /// Number of pose observations to feed each prediction. Subclasses
+    /// override; defaults to a 60-frame window for the legacy
+    /// `TestActionClassifier`.
+    var predictionWindowSize: Int { 60 }
+
+    /// Run the bundled CoreML model on the assembled pose multi-array and
+    /// return the top label / confidence pair.
+    func prediction(from poses: MLMultiArray) throws -> (label: String, confidence: Double)? {
+        let predictor = try TestActionClassifier(configuration: MLModelConfiguration())
+        let result = try predictor.prediction(poses: poses)
+        return (result.label, result.labelProbabilities[result.label] ?? 0)
     }
-    
+
+    // MARK: - Capture pipeline
+
+    private var captureSession: AVCaptureSession?
+    private var previewLayer: AVCaptureVideoPreviewLayer?
+    private let videoDataOutput = AVCaptureVideoDataOutput()
+    private let processingQueue = DispatchQueue(label: "argos.camera.frame_processing")
+    private let humanBodyPoseRequest = VNDetectHumanBodyPoseRequest()
+    private var posesWindow: [VNHumanBodyPoseObservation?] = []
+
+    // MARK: - Lifecycle
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        let session = AVCaptureSession()
+
+        guard
+            let device = AVCaptureDevice.default(for: .video),
+            let input = try? AVCaptureDeviceInput(device: device),
+            session.canAddInput(input)
+        else {
+            return
+        }
+        session.addInput(input)
+
+        videoDataOutput.videoSettings = [
+            kCVPixelBufferPixelFormatTypeKey as String: kCVPixelFormatType_32BGRA
+        ]
+        videoDataOutput.alwaysDiscardsLateVideoFrames = true
+        videoDataOutput.setSampleBufferDelegate(self, queue: processingQueue)
+        session.addOutput(videoDataOutput)
+
+        let preview = AVCaptureVideoPreviewLayer(session: session)
+        preview.videoGravity = .resizeAspectFill
+        view.layer.addSublayer(preview)
+
+        captureSession = session
+        previewLayer = preview
+
+        posesWindow.reserveCapacity(max(120, predictionWindowSize * 2))
+
+        Task.detached { [weak session] in
+            session?.startRunning()
+        }
+    }
+
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-
-        self.videoDataOutput.setSampleBufferDelegate(self, queue: DispatchQueue(label: "camera_frame_processing_queue"))
-        
-        if captureSession?.isRunning == false {
-            captureSession.startRunning()
+        guard let session = captureSession, !session.isRunning else { return }
+        Task.detached { [weak session] in
+            session?.startRunning()
         }
-    }
-    
-    override func viewDidLayoutSubviews() {
-        super.viewDidLayoutSubviews()
-        self.previewLayer.frame = self.view.layer.bounds
-
-        let orientation: UIDeviceOrientation = UIDevice.current.orientation;
-
-        switch (orientation) {
-        case .portrait:
-            previewLayer.connection?.videoOrientation = .portrait;
-        case .landscapeRight:
-            previewLayer.connection?.videoOrientation = .landscapeLeft;
-        case .landscapeLeft:
-            previewLayer.connection?.videoOrientation = .landscapeRight;
-        default:
-            previewLayer.connection?.videoOrientation = .portrait;
-        }
-        
-        previewLayer.connection?.automaticallyAdjustsVideoMirroring = false
-        previewLayer.connection?.isVideoMirrored = true
-        
-        previewLayer.videoGravity = .resizeAspectFill;
-
     }
 
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
-
-        if captureSession?.isRunning == true {
-            captureSession.stopRunning()
+        guard let session = captureSession, session.isRunning else { return }
+        Task.detached { [weak session] in
+            session?.stopRunning()
         }
     }
-    
-    // AVCaptureVideoDataOutputSampleBufferDelegate protocol implementation
-    func captureOutput(_ output: AVCaptureOutput, didOutput sampleBuffer: CMSampleBuffer, from connection: AVCaptureConnection) {
-        let visionHandler = VNImageRequestHandler(cmSampleBuffer: sampleBuffer, orientation: .up, options: [:]);
-        
+
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+
+        guard let preview = previewLayer else { return }
+        preview.frame = view.layer.bounds
+        preview.videoGravity = .resizeAspectFill
+
+        if let connection = preview.connection {
+            connection.videoOrientation = videoOrientation(for: UIDevice.current.orientation)
+            connection.automaticallyAdjustsVideoMirroring = false
+            connection.isVideoMirrored = true
+        }
+    }
+
+    private func videoOrientation(for deviceOrientation: UIDeviceOrientation) -> AVCaptureVideoOrientation {
+        switch deviceOrientation {
+        case .portrait:        return .portrait
+        case .landscapeRight:  return .landscapeLeft
+        case .landscapeLeft:   return .landscapeRight
+        default:               return .portrait
+        }
+    }
+
+    // MARK: - Sample buffer delegate
+
+    func captureOutput(
+        _ output: AVCaptureOutput,
+        didOutput sampleBuffer: CMSampleBuffer,
+        from connection: AVCaptureConnection
+    ) {
+        let handler = VNImageRequestHandler(cmSampleBuffer: sampleBuffer, orientation: .up, options: [:])
+
         do {
-            try visionHandler.perform([humanBodyPoseRequest])
-            if let observations = humanBodyPoseRequest.results {
-                if (observations.count > 0) {
-                    //print(observations[0].confidence);
-                    //let poseArray = try? observations[0].keypointsMultiArray();
-                    //print(poseArray?.count);
-                    posesWindow.append(observations[0]);
-                    //print("Before \(posesWindow.count)");
-                    if (posesWindow.count >= 60) {
-                        //print("Ready for Prediction");
-                        let poseMultiArrays: [MLMultiArray] = try posesWindow.map { person in
-                            guard let person = person else {
-                                let zeroArray = try MLMultiArray(shape: [1, 3, 18], dataType: .double);
-                                return zeroArray;
-                            }
-                            return try person.keypointsMultiArray()
-                        }
-                        
-                        let modelInput = MLMultiArray(concatenating: poseMultiArrays, axis: 0, dataType: .float);
-                        
-                        let predictions = try predictor.prediction(poses: modelInput);
-                        
-                        posesWindow.removeFirst(60);
-                        
-                        //print(predictions.label);
-                        //print(predictions.labelProbabilities[predictions.label]!);
-                        
-                        self.outputDelegate?.didRecognizeActivity(predictions.label, withConfidence: predictions.labelProbabilities[predictions.label]!);
-                        //print("After \(posesWindow.count)");
-                    }
-                } else {
-                    //print("No human detected");
-                }
-            }
+            try handler.perform([humanBodyPoseRequest])
+            guard let observation = humanBodyPoseRequest.results?.first else { return }
+
+            posesWindow.append(observation)
+
+            guard posesWindow.count >= predictionWindowSize else { return }
+            try runPrediction()
         } catch {
-            
+            // Silently ignore — Vision will retry on the next frame.
+        }
+    }
+
+    private func runPrediction() throws {
+        let window = Array(posesWindow.prefix(predictionWindowSize))
+        posesWindow.removeFirst(predictionWindowSize)
+
+        let arrays: [MLMultiArray] = try window.map { observation in
+            if let observation {
+                return try observation.keypointsMultiArray()
+            }
+            return try MLMultiArray(shape: [1, 3, 18], dataType: .double)
+        }
+
+        let modelInput = MLMultiArray(concatenating: arrays, axis: 0, dataType: .float)
+
+        guard let result = try prediction(from: modelInput) else { return }
+
+        DispatchQueue.main.async { [weak self] in
+            self?.outputDelegate?.didRecognizeActivity(result.label, withConfidence: result.confidence)
         }
     }
 }

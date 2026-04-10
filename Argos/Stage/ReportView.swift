@@ -1,6 +1,6 @@
 //
 //  ReportView.swift
-//  ReportView
+//  Argos
 //
 //  Created by Supat Saetia on 2021/07/16.
 //  Copyright © 2021 Supat Saetia. All rights reserved.
@@ -9,41 +9,25 @@
 import SwiftUI
 
 struct ReportView: View {
-    
-    @Binding var showingReportSheet: Bool
-    @Binding var performanceScore: Int
-    
-    init(showingReportSheet: Binding<Bool>, performanceScore: Binding<Int>) {
-        self._showingReportSheet = showingReportSheet
-        self._performanceScore = performanceScore
-    }
-    
+    let performanceScore: Int
+    let onDismiss: () -> Void
+
     var body: some View {
-        Button(action: {
-            self.showingReportSheet = false
-        }) {
-            VStack {
+        Button(action: onDismiss) {
+            VStack(spacing: 40) {
                 Spacer()
-                HStack {
-                    Spacer()
-                    Text("Score: " + self.performanceScore.description)
-                        .font(.largeTitle)
-                    Spacer()
-                }
-                Spacer()
-                HStack {
-                    Spacer()
-                    Text("End Session")
-                    Spacer()
-                }
+                Text("Score: \(performanceScore)")
+                    .font(.largeTitle)
+                Text("End Session")
                 Spacer()
             }
+            .frame(maxWidth: .infinity, maxHeight: .infinity)
+            .contentShape(Rectangle())
         }
+        .buttonStyle(.plain)
     }
 }
 
-//struct ReportView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        ReportView()
-//    }
-//}
+#Preview {
+    ReportView(performanceScore: 42, onDismiss: {})
+}

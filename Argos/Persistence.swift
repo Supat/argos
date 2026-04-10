@@ -9,64 +9,128 @@
 import CoreData
 
 struct PersistenceController {
-    static let shared = PersistenceController();
-    
-    static var preview: PersistenceController = {
-        let result = PersistenceController(inMemory: true);
-        let viewContext = result.container.viewContext;
-        
-        let newCategory = Category(context: viewContext);
-        newCategory.name = "Tekki-shodan";
-        
-        do {
-            try viewContext.save()
-        } catch {
-            // Replace this implementation with code to handle the error appropriately.
-            // fatalError() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
-            let nsError = error as NSError
-            fatalError("Unresolved error \(nsError), \(nsError.userInfo)")
-        }
-        
-        let newVideo = Video(context: viewContext);
-        newVideo.url = Bundle.main.url(forResource: "sample_video_1", withExtension: "mp4")?.absoluteString;
-        newVideo.type = "Tekki-shodan";
-        newVideo.difficulty = 0;
-        newVideo.explanation = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi semper dui sed posuere lobortis. Nunc bibendum leo auctor justo vulputate, eu vulputate libero pulvinar. Morbi ut semper justo.";
-        
-        do {
-            try viewContext.save()
-        } catch {
-            // Replace this implementation with code to handle the error appropriately.
-            // fatalError() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
-            let nsError = error as NSError
-            fatalError("Unresolved error \(nsError), \(nsError.userInfo)")
-        }
-        
-        return result;
-    }();
-    
+    static let shared = PersistenceController()
+
+    @MainActor
+    static let preview: PersistenceController = {
+        let controller = PersistenceController(inMemory: true)
+        SeedData.tekkiShodan.seed(into: controller.container.viewContext)
+        return controller
+    }()
+
     let container: NSPersistentContainer
 
     init(inMemory: Bool = false) {
         container = NSPersistentContainer(name: "Argos")
-        if inMemory {
-            container.persistentStoreDescriptions.first!.url = URL(fileURLWithPath: "/dev/null")
-        }
-        container.loadPersistentStores(completionHandler: { (storeDescription, error) in
-            if let error = error as NSError? {
-                // Replace this implementation with code to handle the error appropriately.
-                // fatalError() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
 
-                /*
-                Typical reasons for an error here include:
-                * The parent directory does not exist, cannot be created, or disallows writing.
-                * The persistent store is not accessible, due to permissions or data protection when the device is locked.
-                * The device is out of space.
-                * The store could not be migrated to the current model version.
-                Check the error message to determine what the actual problem was.
-                */
-                fatalError("Unresolved error \(error), \(error.userInfo)")
+        if inMemory {
+            container.persistentStoreDescriptions.first?.url = URL(fileURLWithPath: "/dev/null")
+        }
+
+        container.loadPersistentStores { _, error in
+            if let error {
+                fatalError("Unresolved Core Data error: \(error)")
             }
-        })
+        }
+
+        container.viewContext.automaticallyMergesChangesFromParent = true
+
+        if !inMemory {
+            seedFirstLaunchIfNeeded()
+        }
+    }
+
+    private func seedFirstLaunchIfNeeded() {
+        let key = "isAppAlreadyLaunchedOnce"
+        let defaults = UserDefaults.standard
+
+        guard defaults.string(forKey: key) == nil else { return }
+        defaults.set(true, forKey: key)
+
+        SeedData.tekkiShodan.seed(into: container.viewContext)
     }
 }
+
+/// Declarative seed data so view-context bootstrapping is reusable between
+/// the live store and the SwiftUI preview store.
+enum SeedData {
+    struct VideoSeed {
+        let name: String
+        let ext: String
+        let label: String
+        let confidence: Double
+        let difficulty: Int16
+        let iconName: String
+        let explanation: String
+    }
+
+    struct CategorySeed {
+        let name: String
+        let videos: [VideoSeed]
+    }
+
+    static let tekkiShodan = CategorySeed(
+        name: "Tekki-shodan",
+        videos: [
+            VideoSeed(
+                name: "video05_02_slow",
+                ext: "mp4",
+                label: "Tekki-shodan",
+                confidence: 0.5,
+                difficulty: 0,
+                iconName: "TSiconsBeginner",
+                explanation: lorem
+            ),
+            VideoSeed(
+                name: "video05_02",
+                ext: "mov",
+                label: "Tekki-shodan",
+                confidence: 0.8,
+                difficulty: 1,
+                iconName: "TSiconsMedium",
+                explanation: lorem
+            ),
+            VideoSeed(
+                name: "video05_02",
+                ext: "mov",
+                label: "TekkiShodan",
+                confidence: 0.8,
+                difficulty: 2,
+                iconName: "TSiconsMedium",
+                explanation: lorem
+            ),
+        ]
+    )
+}
+
+extension SeedData.CategorySeed {
+    func seed(into context: NSManagedObjectContext) {
+        let category = Category(context: context)
+        category.name = name
+
+        for seed in videos {
+            let video = Video(context: context)
+            video.name = seed.name
+            video.ext = seed.ext
+            video.url = Bundle.main.url(forResource: seed.name, withExtension: seed.ext)?.absoluteString
+            video.type = name
+            video.label = seed.label
+            video.confidence = seed.confidence
+            video.difficulty = seed.difficulty
+            video.icon = Bundle.main.url(forResource: seed.iconName, withExtension: "png")?.absoluteString
+            video.explanation = seed.explanation
+        }
+
+        do {
+            try context.save()
+        } catch {
+            assertionFailure("Failed to seed Core Data store: \(error)")
+        }
+    }
+}
+
+private let lorem = """
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi semper dui sed \
+posuere lobortis. Nunc bibendum leo auctor justo vulputate, eu vulputate \
+libero pulvinar. Morbi ut semper justo.
+"""

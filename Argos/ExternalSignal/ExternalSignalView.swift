@@ -14,8 +14,6 @@ struct ExternalSignalView: View {
     }
 }
 
-struct ExternalSignalView_Previews: PreviewProvider {
-    static var previews: some View {
-        ExternalSignalView()
-    }
+#Preview {
+    ExternalSignalView()
 }

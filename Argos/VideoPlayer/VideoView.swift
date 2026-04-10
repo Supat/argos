@@ -7,19 +7,14 @@
 //
 
 import SwiftUI
-import AVFoundation
-import AVKit
 
 struct VideoView: UIViewRepresentable {
-    
-    var videoURL:URL;
-    var previewLength:Double?
-    
-    func makeUIView(context: Context) -> UIView {
-        return PlayerView(frame: .zero, url: videoURL, previewLength: previewLength ?? 15)
+    let videoURL: URL
+    var previewLength: Double = 15
+
+    func makeUIView(context: Context) -> PlayerView {
+        PlayerView(frame: .zero, url: videoURL, previewLength: previewLength)
     }
-        
-    func updateUIView(_ uiView: UIView, context: Context) {
-        
-    }
+
+    func updateUIView(_ uiView: PlayerView, context: Context) {}
 }

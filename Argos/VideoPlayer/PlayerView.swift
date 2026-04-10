@@ -6,58 +6,51 @@
 //  Copyright © 2020 Supat Saetia. All rights reserved.
 //
 
-import UIKit
 import AVFoundation
 import AVKit
+import UIKit
 
-class PlayerView: UIView {
-    
-    private let playerLayer = AVPlayerLayer();
-    private var previewTimer:Timer?
-    var previewLength: Double
-    var playerLooper: AVPlayerLooper!;
-    var queuePlayer: AVQueuePlayer!;
-    
+/// `UIView` subclass that wraps an auto-looping, muted `AVQueuePlayer`.
+/// It plays the supplied URL on repeat with `AVPlayerLooper` so the
+/// SwiftUI demonstration panel can show a continuous clip.
+final class PlayerView: UIView {
+
+    private let playerLayer = AVPlayerLayer()
+    private var queuePlayer: AVQueuePlayer?
+    private var playerLooper: AVPlayerLooper?
+
+    let previewLength: Double
+
     init(frame: CGRect, url: URL, previewLength: Double) {
-        self.previewLength = previewLength;
-        super.init(frame: frame);
-        
-        /*
-        let player = AVPlayer(url: url);
-        player.volume = 0;
-        player.play();
-         */
-        
-        let options = [AVURLAssetAllowsCellularAccessKey: false];
-        let asset = AVURLAsset(url: url, options: options);
-        let playerItem = AVPlayerItem(asset: asset);
-        
-        self.queuePlayer = AVQueuePlayer(playerItem: playerItem);
-        self.playerLooper = AVPlayerLooper(player: queuePlayer, templateItem: playerItem);
-        self.queuePlayer.volume = 0;
-        self.queuePlayer.play();
-        
-        self.playerLayer.player = queuePlayer;
-        self.playerLayer.videoGravity = .resizeAspectFill;
-        self.playerLayer.backgroundColor = UIColor.black.cgColor;
-        
-        /*
-        previewTimer = Timer.scheduledTimer(withTimeInterval: previewLength, repeats: true, block: { (timer) in
-            player.seek(to: CMTime(seconds: 0, preferredTimescale: CMTimeScale(1)));
-        })
-         */
-        
-        layer.addSublayer(playerLayer);
+        self.previewLength = previewLength
+        super.init(frame: frame)
+        configurePlayer(with: url)
     }
-    
+
     required init?(coder: NSCoder) {
-        self.previewLength = 15;
-        super.init(coder: coder);
+        self.previewLength = 15
+        super.init(coder: coder)
     }
-    
+
     override func layoutSubviews() {
-        super.layoutSubviews();
-        playerLayer.frame = bounds;
+        super.layoutSubviews()
+        playerLayer.frame = bounds
     }
-    
+
+    private func configurePlayer(with url: URL) {
+        let asset = AVURLAsset(url: url, options: [AVURLAssetAllowsCellularAccessKey: false])
+        let item = AVPlayerItem(asset: asset)
+
+        let player = AVQueuePlayer(playerItem: item)
+        player.volume = 0
+        playerLooper = AVPlayerLooper(player: player, templateItem: item)
+        player.play()
+
+        playerLayer.player = player
+        playerLayer.videoGravity = .resizeAspectFill
+        playerLayer.backgroundColor = UIColor.black.cgColor
+
+        layer.addSublayer(playerLayer)
+        queuePlayer = player
+    }
 }

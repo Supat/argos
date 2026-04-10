@@ -9,42 +9,27 @@
 import SwiftUI
 
 struct StageSelectionView: View {
-    
-    @ObservedObject var viewRouter: ViewRouter;
-    @Environment(\.managedObjectContext) private var viewContext;
-    
     @FetchRequest(
-        sortDescriptors: [NSSortDescriptor(keyPath: \Category.name, ascending: true)])
+        sortDescriptors: [SortDescriptor(\Category.name, order: .forward)]
+    )
     private var categories: FetchedResults<Category>
-    
+
     var body: some View {
-        NavigationView {
+        NavigationStack {
             List {
                 ForEach(categories) { category in
-                    ActionCategoryRow(viewRouter: viewRouter, category: category);
+                    ActionCategoryRow(category: category)
+                        .listRowSeparator(.hidden)
                 }
             }
-            .navigationBarTitle("Select Action");
-            
-            InstructionView();
+            .listStyle(.plain)
+            .navigationTitle("Select Action")
         }
     }
 }
 
-struct InstructionView: View {
-    var body: some View {
-        VStack {
-            Text("Instruction appears here")
-                .font(.largeTitle);
-            
-            Text("Additional detail instructions")
-                .font(.body);
-        }
-    }
-}
-
-struct StageSelectionView_Previews: PreviewProvider {
-    static var previews: some View {
-        StageSelectionView(viewRouter: ViewRouter())
-    }
+#Preview {
+    StageSelectionView()
+        .environment(ViewRouter())
+        .environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
 }

@@ -1,6 +1,6 @@
 //
 //  CountdownView.swift
-//  CountdownView
+//  Argos
 //
 //  Created by Supat Saetia on 2021/07/16.
 //  Copyright © 2021 Supat Saetia. All rights reserved.
@@ -9,50 +9,54 @@
 import SwiftUI
 
 struct CountdownView: View {
-    @ObservedObject var viewRouter: ViewRouter
-    
-    @State var startTimeRemaining: Int = 6
-    @State var readyText: String = "Ready..."
-    let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
-    
+    @Environment(ViewRouter.self) private var router
+
+    let context: StageContext
+
+    @State private var secondsRemaining = 5
+
     var body: some View {
         ZStack {
-            Text(self.readyText)
-                .font(.largeTitle)
-                .foregroundColor(.white)
-                .padding(.horizontal, 20)
-                .padding(.vertical, 5)
-                .background(
-                    Capsule()
-                        .fill(.black)
-                        .opacity(0.75)
-                    )
-        }
-        
-        .onReceive(timer) { time in
-            if (startTimeRemaining > 0) {
-                self.startTimeRemaining -= 1
-                
-                switch self.startTimeRemaining {
-                case 3:
-                    self.readyText = "Set.."
-                case 1:
-                    self.readyText = "Go!"
-                default:
-                    break
-                }
-                
-                if (self.startTimeRemaining == 0) {
-                    self.viewRouter.currentPage = "stagePage";
-                }
-            }
+            Color.black.ignoresSafeArea()
 
+            Text(displayText)
+                .font(.system(size: 96, weight: .bold, design: .rounded))
+                .foregroundStyle(.white)
+                .padding(.horizontal, 32)
+                .padding(.vertical, 12)
+                .background(
+                    Capsule().fill(.black.opacity(0.75))
+                )
         }
+        .task {
+            await runCountdown()
+        }
+    }
+
+    private var displayText: String {
+        switch secondsRemaining {
+        case 5, 4: "Ready..."
+        case 3, 2: "Set.."
+        case 1: "Go!"
+        default: " "
+        }
+    }
+
+    private func runCountdown() async {
+        while secondsRemaining > 0 {
+            try? await Task.sleep(for: .seconds(1))
+            if Task.isCancelled { return }
+            secondsRemaining -= 1
+        }
+        router.enterStage(with: context)
     }
 }
 
-//struct CountdownView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        CountdownView()
-//    }
-//}
+#Preview {
+    CountdownView(context: StageContext(
+        videoURL: URL(fileURLWithPath: "/dev/null"),
+        stageName: "Tekki-shodan",
+        difficulty: .beginner
+    ))
+    .environment(ViewRouter())
+}

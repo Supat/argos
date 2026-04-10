@@ -9,30 +9,22 @@
 import SwiftUI
 
 struct ParentView: View {
-    
-    @ObservedObject var viewRouter: ViewRouter;
-    @Environment(\.managedObjectContext) private var viewContext;
-    
+    @Environment(ViewRouter.self) private var router
+
     var body: some View {
-        ZStack {
-            VStack {
-                switch viewRouter.currentPage{
-                case "selectionPage":
-                    StageSelectionView(viewRouter: viewRouter);
-                case "stagePage":
-                    StageView(viewRouter: viewRouter);
-                case "countdownPage":
-                    CountdownView(viewRouter: viewRouter)
-                default:
-                    EmptyView()
-                }
-            }
+        switch router.route {
+        case .selection:
+            StageSelectionView()
+        case .countdown(let context):
+            CountdownView(context: context)
+        case .stage(let context):
+            StageView(context: context)
         }
     }
 }
 
-struct ParentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ParentView(viewRouter: ViewRouter())
-    }
+#Preview {
+    ParentView()
+        .environment(ViewRouter())
+        .environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
 }

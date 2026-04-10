@@ -9,82 +9,59 @@
 import SwiftUI
 
 struct ActionCategoryRow: View {
-    
-    @ObservedObject var viewRouter: ViewRouter;
-    @Environment(\.managedObjectContext) private var viewContext;
-    var category: Category;
+    let category: Category
 
     @FetchRequest(
-        sortDescriptors: [NSSortDescriptor(keyPath: \Video.difficulty, ascending: true)],
+        sortDescriptors: [SortDescriptor(\Video.difficulty, order: .forward)],
         predicate: NSPredicate(format: "type == %@", "Tekki-shodan"),
-        animation: .default)
+        animation: .default
+    )
     private var videos: FetchedResults<Video>
-    
+
     var body: some View {
         VStack(alignment: .leading) {
-            Text(category.name!)
+            Text(category.name ?? "Unknown")
                 .font(.headline)
                 .padding(.leading, 15)
-                .padding(.top, 5);
-            
+                .padding(.top, 5)
+
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack(alignment: .top, spacing: 0) {
                     ForEach(videos) { video in
-                        NavigationLink(
-                            destination: StartActionView(viewRouter: viewRouter, video: video, category: category)
-                        ) {
-                            ActionCategoryItem(video: video);
+                        NavigationLink {
+                            StartActionView(video: video, category: category)
+                        } label: {
+                            ActionCategoryItem(video: video)
                         }
+                        .buttonStyle(.plain)
                     }
                 }
             }
-            .frame(height: 185);
+            .frame(height: 185)
         }
     }
 }
 
 struct ActionCategoryItem: View {
-    let video: Video;
-    
+    let video: Video
+
+    private var iconName: String {
+        StageDifficulty(rawValue: video.difficulty)?.iconAssetName ?? "person.fill"
+    }
+
     var body: some View {
         VStack(alignment: .leading) {
-            switch video.difficulty {
-            case 0:
-                Image("TSiconsBeginner").resizable()
-                    .renderingMode(.original)
-                    .frame(width: 120.0, height: 120.0)
-                    .background(Color.gray)
-                    .cornerRadius(10)
-            case 1:
-                Image("TSiconsMedium").resizable()
-                    .renderingMode(.original)
-                    .frame(width: 120.0, height: 120.0)
-                    .background(Color.gray)
-                    .cornerRadius(10)
-            case 2:
-                Image("TSiconsAdvance").resizable()
-                    .renderingMode(.original)
-                    .frame(width: 120.0, height: 120.0)
-                    .background(Color.gray)
-                    .cornerRadius(10)
-            default:
-                Image(systemName: ("person.fill")).resizable()
-                    .renderingMode(.original)
-                    .frame(width: 120.0, height: 120.0)
-                    .background(Color.gray)
-                    .cornerRadius(10)
-            }
-                
+            Image(iconName)
+                .resizable()
+                .renderingMode(.original)
+                .frame(width: 120, height: 120)
+                .background(Color.gray)
+                .clipShape(RoundedRectangle(cornerRadius: 10))
+
             Text("Difficulty Level: \(video.difficulty)")
-                .foregroundColor(.primary)
-                .font(.caption);
+                .foregroundStyle(.primary)
+                .font(.caption)
         }
-        .padding(.leading, 15);
+        .padding(.leading, 15)
     }
 }
-
-//struct ActionCategoryRow_Previews: PreviewProvider {
-//    static var previews: some View {
-//        ActionCategoryRow(viewRouter: ViewRouter())
-//    }
-//}
