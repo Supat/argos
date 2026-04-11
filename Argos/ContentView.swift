@@ -7,6 +7,9 @@
 //
 //  Legacy RealityKit playground view. Not part of the live navigation
 //  graph; kept here because the file is still wired into the build phase.
+//  The original `Experience.loadBox()` call has been removed because the
+//  Reality Composer (.rcproject) Swift codegen is no longer produced by
+//  modern Xcode toolchains.
 //
 
 import RealityKit
@@ -21,11 +24,7 @@ struct ContentView: View {
 
 struct ARViewContainer: UIViewRepresentable {
     func makeUIView(context: Context) -> ARView {
-        let arView = ARView(frame: .zero)
-        if let boxAnchor = try? Experience.loadBox() {
-            arView.scene.anchors.append(boxAnchor)
-        }
-        return arView
+        ARView(frame: .zero)
     }
 
     func updateUIView(_ uiView: ARView, context: Context) {}
