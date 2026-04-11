@@ -111,18 +111,25 @@ class ActivityCameraViewController: UIViewController, AVCaptureVideoDataOutputSa
         preview.videoGravity = .resizeAspectFill
 
         if let connection = preview.connection {
-            connection.videoOrientation = videoOrientation(for: UIDevice.current.orientation)
+            let angle = videoRotationAngle(for: UIDevice.current.orientation)
+            if connection.isVideoRotationAngleSupported(angle) {
+                connection.videoRotationAngle = angle
+            }
             connection.automaticallyAdjustsVideoMirroring = false
             connection.isVideoMirrored = true
         }
     }
 
-    private func videoOrientation(for deviceOrientation: UIDeviceOrientation) -> AVCaptureVideoOrientation {
+    /// Maps a `UIDeviceOrientation` to the clockwise rotation, in degrees,
+    /// that an `AVCaptureConnection` needs in order to display the camera
+    /// feed upright. Replaces the deprecated `videoOrientation` API
+    /// (removed in iOS 17).
+    private func videoRotationAngle(for deviceOrientation: UIDeviceOrientation) -> CGFloat {
         switch deviceOrientation {
-        case .portrait:        return .portrait
-        case .landscapeRight:  return .landscapeLeft
-        case .landscapeLeft:   return .landscapeRight
-        default:               return .portrait
+        case .portrait:        return 90
+        case .landscapeRight:  return 180
+        case .landscapeLeft:   return 0
+        default:               return 90
         }
     }
 
